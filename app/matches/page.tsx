@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export function Groups() {
+export default function MatchesPage() {
   return(
     <div>
       <Link

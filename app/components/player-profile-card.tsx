@@ -27,7 +27,7 @@ export function StarPlayerCard({image, name, country, position, club, age, debut
           alt={name}
           height={156}
           width={222}
-          className='aspect-square object-cover'
+          className=''
         />
         <div
           className='absolute bottom-3 left-3

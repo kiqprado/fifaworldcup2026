@@ -1,8 +1,8 @@
-import { HeroSection } from '@/app/pages/home/hero-section'
-import { HistorySection } from '@/app/pages/home/history-section'
-import { AboutSection } from '@/app/pages/home/about-section'
-import { LineUpSection} from '@/app/pages/home/lineUp-section'
-import { StadiumsSection } from '@/app/pages/home/stadiums-section'
+import { HeroSection } from '@/app/home/hero-section'
+import { HistorySection } from '@/app/home/history-section'
+import { AboutSection } from '@/app/home/about-section'
+import { LineUpSection} from '@/app/home/lineUp-section'
+import { StadiumsSection } from '@/app/home/stadiums-section'
 
 export default function Home() {
   return (
