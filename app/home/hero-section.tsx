@@ -43,7 +43,7 @@ export function HeroSection() {
 
       
         <Button
-          href={'*'}
+          href={'/lineup'}
           variant='absolute'
         >
           Explorar

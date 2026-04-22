@@ -1,16 +1,25 @@
 'use client'
 
 import { useState } from 'react'
+import { useSearchParams } from 'next/navigation'
 
 import Link from 'next/link'
 
 import { groups } from '@/data/groups'
-import { CardGroup, CardGroupQualifier } from '@/app/components/card-group'
+import { CardGroup, CardGroupQualifier, IGroup } from '@/app/components/card-group'
 
 import { LayoutGrid, TableOfContents} from 'lucide-react'
 
 export default function GroupsPage() {
   const [ view, setView ] = useState<'card' | 'table'>('card')
+
+  const searchParams = useSearchParams()
+  const teamCode = searchParams.get('team')
+
+  function IsTeamSelectedOnGroup(group: IGroup) {
+    if(!teamCode) return false
+    return group.teams.some(team => team.code === teamCode)
+  }
 
   return(
     <div>
@@ -51,21 +60,25 @@ export default function GroupsPage() {
       <div
         className='flex flex-wrap justify-center gap-4'
       >
-        {groups.map(group => (
-          view === 'card' 
-          ?
-          <CardGroup
-            key={group.keyGroup}
-            keyGroup={group.keyGroup}
-            teams={group.teams}
-          />
-          :
-          <CardGroupQualifier
-            key={group.keyGroup}
-            keyGroup={group.keyGroup}
-            teams={group.teams}
-          />
-        ))}
+        {groups.map(group => {
+          const highlight = IsTeamSelectedOnGroup(group)
+          return view === 'card'
+            ? (
+              <CardGroup
+                key={group.keyGroup}
+                keyGroup={group.keyGroup}
+                teams={group.teams}
+                highlight={highlight}
+              />
+            ) : (
+              <CardGroupQualifier
+                key={group.keyGroup}
+                keyGroup={group.keyGroup}
+                teams={group.teams}
+                highlight={highlight}
+              />
+            )
+        })}
       </div>
     </div>
   )

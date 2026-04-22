@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export interface ITeam {
   name: string;
   code: string;
@@ -35,8 +37,16 @@ export function CardTeam({ name, code, flag, history }: ITeam) {
       <div
         className='flex items-center justify-evenly gap-4'
       >
-        <button>Grupo</button>
-        <button>Escalação</button>
+        <Link
+          href={`/groups?team=${code}`}
+        >
+          Grupo
+        </Link>
+        <Link
+          href={`/lineup/${code}`}
+        >
+          Escalação
+        </Link>
       </div>
     </div>
   )

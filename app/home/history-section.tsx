@@ -109,7 +109,7 @@ export function HistorySection() {
       </div>
 
       <Button
-        href={'/'}
+        href={'/history'}
         variant='absolute'
       >
         Conheça mais da história nas Copas

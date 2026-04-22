@@ -1,15 +1,4 @@
-export interface Player {
-  name: string;
-  number: number;
-  position: "GOL" | "ZAG" | "LAT" | "VOL" | "MEI" | "ATA";
-}
-
-export interface Squad {
-  code: string;
-  formation: string;
-  starters: Player[];
-  reserves: Player[];
-}
+import { ISquad } from '@/app/components/card-squad-lineup'
 
 // Positions on the pitch for common formations (percentage-based x,y)
 export const formationPositions: Record<string, { x: number; y: number }[]> = {
@@ -67,7 +56,7 @@ export const formationPositions: Record<string, { x: number; y: number }[]> = {
   ],
 };
 
-export const squads: Squad[] = [
+export const squads: ISquad[] = [
   {
     code: "BRA",
     formation: "4-3-3",

@@ -1,4 +1,5 @@
 export interface IGroupTeam {
+  code: string
   name: string;
   flag: string;
   // Standings data
@@ -17,13 +18,18 @@ export interface IGroup {
   teams: IGroupTeam[];
 }
 
-export function CardGroup({ teams, keyGroup }: IGroup ) {
+export function CardGroup({ teams, keyGroup, highlight }: IGroup & { highlight?: boolean }  ) {
   return(
     <div
-      className='flex flex-col w-66
+      className={`flex flex-col w-66
         border border-zinc-400 rounded-xl
         hover:border-amber-300
-        transition-all duration-300 ease-in-out'
+        transition-all duration-300 ease-in-out
+          ${
+      highlight
+        ? 'border-amber-300 ring-2 ring-amber-300'
+        : 'border-zinc-400 hover:border-amber-300'
+          }`}
     >
       <h2
         className='py-3 px-3 text-3xl text-amber-300 tracking-wide font-bold'
@@ -44,7 +50,7 @@ export function CardGroup({ teams, keyGroup }: IGroup ) {
   )
 }
 
-export function CardGroupQualifier({ keyGroup, teams }:  IGroup) {
+export function CardGroupQualifier({ keyGroup, teams, highlight }:  IGroup & { highlight?: boolean }) {
    function GetRowTableBg(i: number) {
     if(i === 0) return 'bg-emerald-700/50 hover:bg-emerald-700'
     if(i === 1) return 'bg-emerald-800/50 hover:bg-emerald-800'
@@ -52,10 +58,14 @@ export function CardGroupQualifier({ keyGroup, teams }:  IGroup) {
   }
   return(
     <div
-      className='w-136 overflow-hidden
+      className={`w-136 overflow-hidden
         border border-zinc-400 rounded-xl
         hover:border-amber-300
-        transition-all duration-300 ease-in-out'
+        transition-all duration-300 ease-in-out
+        ${highlight
+        ? 'border-amber-500 ring-2 ring-amber-500'
+        : 'border-zinc-400 hover:border-amber-300'}
+      `}
     >
       <h2
         className='py-3 px-3 text-3xl text-amber-300 tracking-wide font-bold bg-zinc-900'

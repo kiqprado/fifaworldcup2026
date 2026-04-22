@@ -1,15 +1,6 @@
-export interface Match {
-  id: number;
-  group: string;
-  date: string;
-  time: string;
-  home: { name: string; code: string; flag: string };
-  away: { name: string; code: string; flag: string };
-  stadium: string;
-  city: string;
-}
+import { IMatch } from '@/app/components/card-match'
 
-export const matches: Match[] = [
+export const matches: IMatch[] = [
   // ── Grupo A ──
   { id: 1, group: "A", date: "11/06", time: "17:00", home: { name: "México", code: "MEX", flag: "🇲🇽" }, away: { name: "Tchéquia", code: "CZE", flag: "🇨🇿" }, stadium: "Estadio Azteca", city: "Cidade do México" },
   { id: 2, group: "A", date: "12/06", time: "14:00", home: { name: "África do Sul", code: "RSA", flag: "🇿🇦" }, away: { name: "Coreia do Sul", code: "KOR", flag: "🇰🇷" }, stadium: "SoFi Stadium", city: "Los Angeles" },
@@ -27,11 +18,11 @@ export const matches: Match[] = [
   { id: 12, group: "B", date: "22/06", time: "17:00", home: { name: "Bósnia e Herzegovina", code: "BIH", flag: "🇧🇦" }, away: { name: "Canadá", code: "CAN", flag: "🇨🇦" }, stadium: "BMO Field", city: "Toronto" },
 
   // ── Grupo C ──
-  { id: 13, group: "C", date: "12/06", time: "20:00", home: { name: "Brasil", code: "BRA", flag: "🇧🇷" }, away: { name: "Escócia", code: "SCO", flag: "🏴󠁧󠁢󠁳󠁣󠁴U+E007F" }, stadium: "Rose Bowl", city: "Los Angeles" },
+  { id: 13, group: "C", date: "12/06", time: "20:00", home: { name: "Brasil", code: "BRA", flag: "🇧🇷" }, away: { name: "Escócia", code: "SCO", flag: "sc" }, stadium: "Rose Bowl", city: "Los Angeles" },
   { id: 14, group: "C", date: "13/06", time: "14:00", home: { name: "Marrocos", code: "MAR", flag: "🇲🇦" }, away: { name: "Haiti", code: "HAI", flag: "🇭🇹" }, stadium: "Lincoln Financial Field", city: "Filadélfia" },
   { id: 15, group: "C", date: "17/06", time: "20:00", home: { name: "Brasil", code: "BRA", flag: "🇧🇷" }, away: { name: "Haiti", code: "HAI", flag: "🇭🇹" }, stadium: "AT&T Stadium", city: "Dallas" },
-  { id: 16, group: "C", date: "18/06", time: "14:00", home: { name: "Escócia", code: "SCO", flag: "🏴󠁧󠁢󠁳󠁣󠁴U+E007F" }, away: { name: "Marrocos", code: "MAR", flag: "🇲🇦" }, stadium: "MetLife Stadium", city: "Nova York" },
-  { id: 17, group: "C", date: "23/06", time: "17:00", home: { name: "Haiti", code: "HAI", flag: "🇭🇹" }, away: { name: "Escócia", code: "SCO", flag: "🏴󠁧󠁢󠁳󠁣󠁴U+E007F" }, stadium: "Lincoln Financial Field", city: "Filadélfia" },
+  { id: 16, group: "C", date: "18/06", time: "14:00", home: { name: "Escócia", code: "SCO", flag: "sc" }, away: { name: "Marrocos", code: "MAR", flag: "🇲🇦" }, stadium: "MetLife Stadium", city: "Nova York" },
+  { id: 17, group: "C", date: "23/06", time: "17:00", home: { name: "Haiti", code: "HAI", flag: "🇭🇹" }, away: { name: "Escócia", code: "SCO", flag: "sc" }, stadium: "Lincoln Financial Field", city: "Filadélfia" },
   { id: 18, group: "C", date: "23/06", time: "17:00", home: { name: "Marrocos", code: "MAR", flag: "🇲🇦" }, away: { name: "Brasil", code: "BRA", flag: "🇧🇷" }, stadium: "Rose Bowl", city: "Los Angeles" },
 
   // ── Grupo D ──
@@ -99,10 +90,10 @@ export const matches: Match[] = [
   { id: 66, group: "K", date: "22/06", time: "14:00", home: { name: "Iraque", code: "IRQ", flag: "🇮🇶" }, away: { name: "Portugal", code: "POR", flag: "🇵🇹" }, stadium: "Mercedes-Benz Stadium", city: "Atlanta" },
 
   // ── Grupo L ──
-  { id: 67, group: "L", date: "11/06", time: "14:00", home: { name: "Inglaterra", code: "ENG", flag: "🏴󠁧󠁢󠁥󠁮󠁧U+E007F" }, away: { name: "Panamá", code: "PAN", flag: "🇵🇦" }, stadium: "Levi's Stadium", city: "São Francisco" },
+  { id: 67, group: "L", date: "11/06", time: "14:00", home: { name: "Inglaterra", code: "ENG", flag: "en" }, away: { name: "Panamá", code: "PAN", flag: "🇵🇦" }, stadium: "Levi's Stadium", city: "São Francisco" },
   { id: 68, group: "L", date: "11/06", time: "11:00", home: { name: "Croácia", code: "CRO", flag: "🇭🇷" }, away: { name: "Gana", code: "GHA", flag: "🇬🇭" }, stadium: "Geodis Park", city: "Nashville" },
-  { id: 69, group: "L", date: "16/06", time: "20:00", home: { name: "Inglaterra", code: "ENG", flag: "🏴󠁧󠁢󠁥󠁮󠁧U+E007F" }, away: { name: "Gana", code: "GHA", flag: "🇬🇭" }, stadium: "Gillette Stadium", city: "Boston" },
+  { id: 69, group: "L", date: "16/06", time: "20:00", home: { name: "Inglaterra", code: "ENG", flag: "en" }, away: { name: "Gana", code: "GHA", flag: "🇬🇭" }, stadium: "Gillette Stadium", city: "Boston" },
   { id: 70, group: "L", date: "16/06", time: "14:00", home: { name: "Panamá", code: "PAN", flag: "🇵🇦" }, away: { name: "Croácia", code: "CRO", flag: "🇭🇷" }, stadium: "Levi's Stadium", city: "São Francisco" },
   { id: 71, group: "L", date: "22/06", time: "20:00", home: { name: "Gana", code: "GHA", flag: "🇬🇭" }, away: { name: "Panamá", code: "PAN", flag: "🇵🇦" }, stadium: "Geodis Park", city: "Nashville" },
-  { id: 72, group: "L", date: "22/06", time: "20:00", home: { name: "Croácia", code: "CRO", flag: "🇭🇷" }, away: { name: "Inglaterra", code: "ENG", flag: "🏴󠁧󠁢󠁥󠁮󠁧U+E007F" }, stadium: "Gillette Stadium", city: "Boston" },
+  { id: 72, group: "L", date: "22/06", time: "20:00", home: { name: "Croácia", code: "CRO", flag: "🇭🇷" }, away: { name: "Inglaterra", code: "ENG", flag: "en" }, stadium: "Gillette Stadium", city: "Boston" },
 ];
