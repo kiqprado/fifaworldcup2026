@@ -4,53 +4,36 @@ export interface Player {
   position: "GOL" | "ZAG" | "LAT" | "VOL" | "MEI" | "ATA";
 }
 
-export interface ISquad {
-  title?: string
-  code: string;
-  formation: string;
-  starters: Player[];
-  reserves: Player[];
+export interface ICardSquadLineUp{
+  title: string
+  players: Player[]
+  variant: 'starter' | 'reserve'
 }
 
-export function CardSquadLineUpStarters({title, code, formation, starters}: ISquad) {
+export function CardSquadLineUp({ title, players, variant}: ICardSquadLineUp) {
+
   return(
-    <div>
-      <h3>{title}</h3>
-      <ul>
-        {starters.map(starter => (
-          <li
-            key={starter.number}
-          >
-            <h3>{starter.number}</h3>
-            <ul>
-              <li>{starter.name}</li>
-              <li>{starter.position}</li>
-            </ul>
-          </li>
-        ))}
-      </ul>
+    <div
+      className=' px-8 py-3
+        border rounded-xl
+      bg-zinc-900 border-zinc-400
+      hover:border-amber-300
+      transition-all duration-300 ease-in-out'
+    >
+      <h3
+        className='text-3xl tracking-wider'
+      >{title}</h3>
+      {players.map(player => (
+        <div
+          key={player.number}
+        >
+          <h4  className='px-4 py-2 w-fit rounded-full bg-amber-400'>{player.number}</h4>
+          <div>
+            <span>{player.name}</span>
+            <span>{player.position}</span>
+          </div>
+        </div>
+      ))}
     </div>
   )
 }
-
-export function CardSquadLineUpReserves({title, reserves}: ISquad) {
-  return(
-    <div>
-      <h3>{title}</h3>
-      <ul>
-        {reserves.map(reserve => (
-          <li
-            key={reserve.number}
-          >
-            <h3>{reserve.number}</h3>
-            <ul>
-              <li>{reserve.name}</li>
-              <li>{reserve.position}</li>
-            </ul>
-          </li>
-        ))}
-      </ul>
-    </div>
-  )
-}
-

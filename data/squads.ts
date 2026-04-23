@@ -1,4 +1,12 @@
-import { ISquad } from '@/app/components/card-squad-lineup'
+import {Player} from '@/app/components/card-squad-lineup'
+
+export interface ISquad {
+  title?: string
+  code: string;
+  formation: string;
+  starters: Player[];
+  reserves: Player[];
+}
 
 // Positions on the pitch for common formations (percentage-based x,y)
 export const formationPositions: Record<string, { x: number; y: number }[]> = {

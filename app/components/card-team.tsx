@@ -8,6 +8,7 @@ export interface ITeam {
 }
 
 export function CardTeam({ name, code, flag, history }: ITeam) {
+  console.log(`codigo vindo da pagina de time indo pro parametro da url: ${code}`)
   return(
     <div
       className='px-4 py-2 w-fit
