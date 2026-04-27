@@ -35,9 +35,11 @@ export function LineUpSection() {
         {stars.map((star => (
         <StarPlayerCard
           image={star.image}
+          badge={star.badge}
           key={star.name}
           name={star.name}
           country={star.country}
+          countryCode={star.countryCode}
           position={star.position}
           club={star.club}
           age={star.age}
@@ -46,7 +48,6 @@ export function LineUpSection() {
         />
       )))}
       </div>
-      
     </div>
   )
 }

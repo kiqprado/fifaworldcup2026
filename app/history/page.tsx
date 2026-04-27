@@ -1,7 +1,8 @@
 import Link from 'next/link'
 
 import { editions } from '@/data/history-editions'
-import { HistoryEditionCard} from '@/app/components/card-history-edition'
+import { HistoryEditionCard } from '@/app/components/card-history-edition'
+import { HeaderPageTitle } from '@/app/elements/header-page-title'
 
 export default function HistoryPage() {
   return(
@@ -13,16 +14,12 @@ export default function HistoryPage() {
       >
         voltar
       </Link>
-      <div>
-        <h1
-          className='text-7xl tracking-wider text-amber-300'
-        >
-          História das Copas
-        </h1>
-        <span
-          className='text-zinc-400 tracking-wider'
-        >De 1930 a 2022 — cada edição deixou sua marca. Reviva os momentos que definiram o futebol mundial.</span>
-      </div>
+
+      <HeaderPageTitle
+        title='História das Copas'
+        description='De 1930 a 2022 — cada edição deixou sua marca. Reviva os momentos que definiram o futebol mundial.'
+      />
+      
 
       <div className='flex flex-col gap-8 items-center'>
         {editions.map(edition => (

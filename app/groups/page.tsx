@@ -7,6 +7,7 @@ import Link from 'next/link'
 
 import { groups } from '@/data/groups'
 import { CardGroup, CardGroupQualifier, IGroup } from '@/app/components/card-group'
+import { HeaderPageTitle } from '@/app/elements/header-page-title'
 
 import { LayoutGrid, TableOfContents} from 'lucide-react'
 
@@ -28,18 +29,11 @@ export default function GroupsPage() {
       >
         Voltar
       </Link>
-      <div
-        className='space-y-4'
-      >
-        <h1
-          className='text-7xl font-bold tracking-wider text-amber-300'
-        >
-          Grupos
-        </h1>
-        <span
-          className='text-zinc-400'
-        >12 grupos com 4 seleções cada. A fase de grupos define os classificados para o mata-mata.</span>
-      </div>
+      
+      <HeaderPageTitle
+        title='Grupos'
+        description='12 grupos com 4 seleções cada. A fase de grupos define os classificados para o mata-mata.'
+      />
 
       <div
         className='flex items-center gap-6'

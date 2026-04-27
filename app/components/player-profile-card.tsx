@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 import Image from 'next/image'
 import { Shield, Star, CalendarDays, Crosshair} from 'lucide-react'
 
@@ -13,14 +11,27 @@ export interface StarPlayer {
   goals: number;
   position: string;
   image: string;
+  badge: string
 }
 
-export function StarPlayerCard({image, name, country, position, club, age, debutDate, goals}:StarPlayer ) {
+export function StarPlayerCard({image, name, country, countryCode,  position, club, age, debutDate, goals, badge}:StarPlayer ) {
   return(
     <div
-      className='w-fit overflow-hidden
+      className='relative w-fit overflow-hidden
         border border-zinc-700 rounded-lg'
     >
+      <div
+        className="absolute z-20 flex justify-between w-full"
+      >
+        <h2 className=''>{countryCode}</h2>
+        <Image
+          src={badge}
+          alt={countryCode}
+          width={126}
+          height={156}
+          className='aspect-square object-cover -mr-5 -mt-5'
+        />
+      </div>
       <div
         className='relative'
       >
