@@ -44,7 +44,6 @@ export function HeroSection() {
       
         <Button
           href={'/lineup'}
-          variant='absolute'
         >
           Explorar
         </Button>

@@ -1,3 +1,5 @@
+
+import { HeaderSectionTitle } from '@/app/elements/header-section-title'
 import { stadiums } from '@/data/stadiums'
 import { StadiumCard } from '@/app/components/stadium-profile-card'
 
@@ -10,12 +12,11 @@ export function StadiumsSection() {
       <div
         className='text-center'
       >
-        <h2
-          className='text-5xl tracking-wider'
-        >Estádios da Copa 2026</h2>
-        <span
-          className='tracking-wider text-zinc-400'
-        >16 arenas espetaculares espalhadas pelos EUA, México e Canadá receberão os jogos da maior Copa da história.</span>
+        <HeaderSectionTitle
+          title='Estádios da Copa 2026'
+          description='16 arenas espetaculares espalhadas pelos EUA, México e Canadá receberão os jogos da maior Copa da história.'
+          align='center'
+        />
       </div>
       <div
         className='flex flex-wrap justify-center gap-6'

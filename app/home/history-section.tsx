@@ -1,81 +1,46 @@
+
+import { HeaderSectionTitle } from '@/app/elements/header-section-title'
 import { CupSummaryTimeLine } from '@/app/elements/cup-summary-timeline'
 import { VerticalDivider } from '@/app/elements/divider-vertical'
 import { Button } from '@/app/components/button'
+import { DetailsEditionSummary } from '@/app/elements/details-edition-summary'
 
 export function HistorySection() {
   return(
     <div
       className='py-6 relative
         flex flex-col gap-12
-        h-svh bg-zinc-800'
+        bg-zinc-800'
     >
-      <div
-        className='text-center'
-      >
-        <h2
-          className='text-5xl tracking-wider'
-        >A História do Futebol Mundial</h2>
-
-        <span
-          className=''
-        >Mais de 90 anos de emoção, glória e tradição nos gramados do mundo.</span>
-      </div>
+      <HeaderSectionTitle
+        title='A História do Futebol Mundial'
+        description='Mais de 90 anos de emoção, glória e tradição nos gramados do mundo.'
+        align='center'
+      />
 
       <div
         className='px-12 flex gap-12
           justify-evenly'
       >
-        <div
-          className='w-full px-6 py-3
-            flex flex-col gap-3 items-center
-            border border-amber-300 rounded-xl'
-        >
-          <h3
-            className='text-5xl'
-          >22</h3>
-          <span
-            className='tracking-wider'
-          >Edições realizadas</span>
-        </div>
+        <DetailsEditionSummary
+          detail={'22'}
+          data='Edições realizadas'
+        />
 
-        <div
-          className='w-full px-6 py-3
-            flex flex-col gap-3 items-center
-            border border-amber-300 rounded-xl'
-        >
-          <h3
-            className='text-5xl'
-          >22</h3>
-          <span
-            className='tracking-wider'
-          >Edições realizadas</span>
-        </div>
+        <DetailsEditionSummary
+          detail={'8'}
+          data='Países campeões'
+        />
 
-        <div
-          className='w-full px-6 py-3
-            flex flex-col gap-3 items-center
-            border border-amber-300 rounded-xl'
-        >
-          <h3
-            className='text-5xl'
-          >22</h3>
-          <span
-            className='tracking-wider'
-          >Edições realizadas</span>
-        </div>
+        <DetailsEditionSummary
+          detail={'5'}
+          data='Títulos do Brasil'
+        />
 
-        <div
-          className='w-full px-6 py-3
-            flex flex-col gap-3 items-center
-            border border-amber-300 rounded-xl'
-        >
-          <h3
-            className='text-5xl'
-          >22</h3>
-          <span
-            className='tracking-wider'
-          >Edições realizadas</span>
-        </div>
+        <DetailsEditionSummary
+          detail={'900+'}
+          data='Gols em finais'
+        />
       </div>
 
       <div
@@ -108,12 +73,16 @@ export function HistorySection() {
         <VerticalDivider/>
       </div>
 
-      <Button
-        href={'/history'}
-        variant='absolute'
-      >
-        Conheça mais da história nas Copas
-      </Button>
+      <div className='self-center'>
+        <Button
+          href={'/history'}
+          variant='default'
+          size='lg'
+          color='gold'
+        >
+          Conheça mais da história nas Copas
+        </Button>
+      </div>
     </div>
   )
 }

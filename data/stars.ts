@@ -11,7 +11,7 @@ export const stars: StarPlayer[] = [
     goals: 109,
     position: "Atacante",
     image: "/starPlayer/Messi.png",
-    badge: "/badge/brasil.png"
+    badge: "/badge/argentina.png"
   },
   {
     name: "Kylian Mbappé",
@@ -23,7 +23,7 @@ export const stars: StarPlayer[] = [
     goals: 48,
     position: "Atacante",
     image: "/starPlayer/Mbappe.png",
-    badge: "/badge/brasil.png"
+    badge: "/badge/france.png"
   },
   {
     name: "Vinícius Jr.",
@@ -38,6 +38,18 @@ export const stars: StarPlayer[] = [
     badge: "/badge/brasil.png"
   },
   {
+    name: "Cristiano Ronaldo",
+    country: "Portugal",
+    countryCode: "POR",
+    club: "Al-Nassr",
+    age: 41,
+    debutDate: "20/08/2003",
+    goals: 130,
+    position: "Atacante",
+    image: "/starPlayer/Ronaldo.png",
+    badge: "/badge/portugal.png"
+  },
+  {
     name: "Erling Haaland",
     country: "Noruega",
     countryCode: "NOR",
@@ -47,7 +59,7 @@ export const stars: StarPlayer[] = [
     goals: 35,
     position: "Atacante",
     image: "/starPlayer/Haaland.png",
-    badge: "/badge/brasil.png"
+    badge: "/badge/noruega.png"
   },
   {
     name: "Jude Bellingham",
@@ -59,7 +71,7 @@ export const stars: StarPlayer[] = [
     goals: 6,
     position: "Meia",
     image: "/starPlayer/Belligham.png",
-    badge: "/badge/brasil.png"
+    badge: "/badge/england.png"
   },
   {
     name: "Lamine Yamal",
@@ -71,7 +83,7 @@ export const stars: StarPlayer[] = [
     goals: 4,
     position: "Atacante",
     image: "/starPlayer/Yamal.png",
-    badge: "/badge/brasil.png"
+    badge: "/badge/spain.png"
   },
   {
     name: "Florian Wirtz",
@@ -83,7 +95,7 @@ export const stars: StarPlayer[] = [
     goals: 5,
     position: "Meia",
     image: "/starPlayer/Wirtz.png",
-    badge: "/badge/brasil.png"
+    badge: "/badge/germany.png"
   },
   {
     name: "Mohamed Salah",
@@ -95,7 +107,7 @@ export const stars: StarPlayer[] = [
     goals: 56,
     position: "Atacante",
     image: "/starPlayer/Salah.png",
-    badge: "/badge/brasil.png"
+    badge: "/badge/egypt.png"
   },
   {
     name: "Kevin De Bruyne",
@@ -107,7 +119,7 @@ export const stars: StarPlayer[] = [
     goals: 27,
     position: "Meia",
     image: "/starPlayer/DeBruyne.png",
-    badge: "/badge/brasil.png"
+    badge: "/badge/belgium.png"
   },
   {
     name: "Son Heung-min",
@@ -119,7 +131,7 @@ export const stars: StarPlayer[] = [
     goals: 48,
     position: "Atacante",
     image: "/starPlayer/HeungMin.png",
-    badge: "/badge/brasil.png"
+    badge: "/badge/korea.png"
   },
   {
     name: "Pedri",
@@ -131,7 +143,7 @@ export const stars: StarPlayer[] = [
     goals: 2,
     position: "Meia",
     image: "/starPlayer/Pedri.png",
-    badge: "/badge/brasil.png"
+    badge: "/badge/spain.png"
   },
   {
     name: "Phil Foden",
@@ -143,7 +155,7 @@ export const stars: StarPlayer[] = [
     goals: 4,
     position: "Meia",
     image: "/starPlayer/Foden.png",
-    badge: "/badge/brasil.png"
+    badge: "/badge/england.png"
   },
   {
     name: "Bukayo Saka",
@@ -155,7 +167,7 @@ export const stars: StarPlayer[] = [
     goals: 12,
     position: "Atacante",
     image: "/starPlayer/Saka.png",
-    badge: "/badge/brasil.png"
+    badge: "/badge/england.png"
   },
   {
     name: "Rodri",
@@ -167,7 +179,7 @@ export const stars: StarPlayer[] = [
     goals: 3,
     position: "Volante",
     image: "/starPlayer/Rodri.png",
-    badge: "/badge/brasil.png"
+    badge: "/badge/spain.png"
   },
   {
     name: "Alphonso Davies",
@@ -179,6 +191,6 @@ export const stars: StarPlayer[] = [
     goals: 5,
     position: "Lateral",
     image: "/starPlayer/Davies.png",
-    badge: "/badge/brasil.png"
+    badge: "/badge/canada.png"
   },
 ];

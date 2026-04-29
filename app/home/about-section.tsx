@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Trophy from '@/public/trophy.png'
 
+import {HeaderSectionTitle} from '@/app/elements/header-section-title'
 import { ShieldUser, Swords, Sheet  } from 'lucide-react'
 import { CardButton } from '@/app/components/card-button'
 
@@ -14,19 +15,13 @@ export function AboutSection() {
       <div
         className='flex justify-between'
       >
-        <div className='flex flex-col gap-3'>
-          <span
-            className='tracking-widest text-amber-300'
-          >junho - julho 2026</span>
-          <h2
-            className='text-5xl text-transform: uppercase
-              text-amber-300'
-          >FIFA World Cup<br/><span className='text-zinc-100 font-bold'>2026™</span></h2>
-          <p
-            className='max-w-[33%] 
-              text-justify text-zinc-400'
-          >A edição de 2026 será a maior Copa do Mundo já realizada, com <strong className="text-zinc-100">48 seleções</strong> disputando em 16 cidades dos <strong className="text-zinc-100">Estados Unidos, México e Canadá</strong>. Serão 104 partidas ao longo de um mês de competição.</p>
-        </div>
+        <HeaderSectionTitle
+          prefix="Junho — Julho 2026"
+          title="FIFA World Cup"
+          highlight="2026™"
+          description="A edição de 2026 será a maior Copa do Mundo já realizada, com 48 seleções disputando em 16 cidades dos Estados Unidos, México e Canadá. Serão 104 partidas ao longo de um mês de competição."
+          align="left"
+        />
         <div>
           <Image
             src={Trophy}
