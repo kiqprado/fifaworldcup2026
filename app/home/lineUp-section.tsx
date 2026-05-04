@@ -30,7 +30,7 @@ export function LineUpSection() {
       </div>
 
       <div
-        className='flex flex-wrap gap-4 space-y-12 justify-center'
+        className='flex flex-wrap gap-4 space-y-12 justify-center pt-12'
       >
         {stars.map((star => (
         <StarPlayerCard

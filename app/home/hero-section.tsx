@@ -6,8 +6,7 @@ import { Button } from '@/app/components/button'
 export function HeroSection() {
   return(
     <div
-      className='py-6
-        h-svh relative overflow-hidden'
+      className='h-svh relative overflow-hidden'
     >
       <Image
         src={bg}
@@ -41,12 +40,16 @@ export function HeroSection() {
         </p>
       </div>
 
-      
-        <Button
+      <div 
+        className='absolute w-full bottom-6 left-1/2 -translate-x-1/2 
+        flex items-center justify-center'
+      >
+         <Button
           href={'/lineup'}
         >
           Explorar
         </Button>
+      </div>
     </div>
   )
 }

@@ -6,7 +6,7 @@ export const groups: IGroup[] = [
     teams: [
       {
         name: 'México',
-        flag:'mx',
+        flag:'/flags/mx.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -18,7 +18,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'África do Sul',
-        flag:'za',
+        flag:'/flags/za.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -30,7 +30,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Coreia do Sul',
-        flag:'kr',
+        flag:'/flags/kr.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -42,7 +42,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Tchéquia',
-        flag:'cz',
+        flag:'/flags/cz.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -59,7 +59,7 @@ export const groups: IGroup[] = [
     teams: [
       {
         name: 'Canadá',
-        flag:'ca',
+        flag:'/flags/ca.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -71,7 +71,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Bósnia e Herzegovina',
-        flag:'ba',
+        flag:'/flags/ba.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -83,7 +83,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Catar',
-        flag:'qa',
+        flag:'/flags/qa.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -95,7 +95,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Suíça',
-        flag:'ch',
+        flag:'/flags/ch.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -112,7 +112,7 @@ export const groups: IGroup[] = [
     teams: [
       {
         name: 'Brasil',
-        flag:'br',
+        flag:'/flags/br.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -124,7 +124,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Marrocos',
-        flag:'ma',
+        flag:'/flags/ma.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -136,7 +136,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Haiti',
-        flag:'ht',
+        flag:'/flags/ht.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -148,7 +148,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Escócia',
-        flag:'sc',
+        flag:'/flags/sc.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -165,7 +165,7 @@ export const groups: IGroup[] = [
     teams: [
       {
         name: 'Estados Unidos',
-        flag:'us',
+        flag:'/flags/us.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -177,7 +177,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Paraguai',
-        flag:'py',
+        flag:'/flags/py.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -189,7 +189,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Austrália',
-        flag:'au',
+        flag:'/flags/au.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -201,7 +201,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Turquia',
-        flag:'tr',
+        flag:'/flags/tr.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -218,7 +218,7 @@ export const groups: IGroup[] = [
     teams: [
       {
         name: 'Alemanha',
-        flag:'de',
+        flag:'/flags/de.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -230,7 +230,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Curaçau',
-        flag:'cw',
+        flag:'/flags/cw.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -242,7 +242,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Catar',
-        flag:'qa',
+        flag:'/flags/qa.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -254,7 +254,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Costa do Marfim',
-        flag:'ci',
+        flag:'/flags/ci.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -271,7 +271,7 @@ export const groups: IGroup[] = [
     teams: [
       {
         name: 'Holanda',
-        flag:'nl',
+        flag:'/flags/nl.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -283,7 +283,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Japão',
-        flag:'jp',
+        flag:'/flags/jp.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -295,7 +295,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Suécia',
-        flag:'qa',
+        flag:'/flags/se.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -307,7 +307,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Tunísia',
-        flag:'tn',
+        flag:'/flags/tn.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -324,7 +324,7 @@ export const groups: IGroup[] = [
     teams: [
       {
         name: 'Bélgica',
-        flag:'ca',
+        flag:'/flags/be.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -336,7 +336,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Egito',
-        flag:'ba',
+        flag:'/flags/eg.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -348,7 +348,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Irã',
-        flag:'qa',
+        flag:'/flags/ir.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -360,7 +360,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Nova Zelândia',
-        flag:'ch',
+        flag:'/flags/nz.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -377,7 +377,7 @@ export const groups: IGroup[] = [
     teams: [
       {
         name: 'Espanha',
-        flag:'ca',
+        flag:'/flags/es.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -389,7 +389,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Cabo Verde',
-        flag:'ba',
+        flag:'/flags/cv.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -401,7 +401,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Arábia Saudita',
-        flag:'qa',
+        flag:'/flags/sa.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -413,7 +413,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Uruguai',
-        flag:'ch',
+        flag:'/flags/uy.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -430,7 +430,7 @@ export const groups: IGroup[] = [
     teams: [
       {
         name: 'França',
-        flag:'ca',
+        flag:'/flags/fr.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -442,7 +442,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Senegal',
-        flag:'ba',
+        flag:'/flags/sn.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -454,7 +454,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Iraque',
-        flag:'qa',
+        flag:'/flags/iq.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -466,7 +466,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Noruega',
-        flag:'ch',
+        flag:'/flags/no.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -483,7 +483,7 @@ export const groups: IGroup[] = [
     teams: [
       {
         name: 'Argentina',
-        flag:'ca',
+        flag:'/flags/ar.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -495,7 +495,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Argélia',
-        flag:'ba',
+        flag:'/flags/dz.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -507,7 +507,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Áustria',
-        flag:'qa',
+        flag:'/flags/at.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -519,7 +519,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Jordânia',
-        flag:'ch',
+        flag:'/flags/jo.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -536,7 +536,7 @@ export const groups: IGroup[] = [
     teams: [
       {
         name: 'Portugal',
-        flag:'ca',
+        flag:'/flags/pt.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -548,7 +548,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Congo',
-        flag:'ba',
+        flag:'/flags/cd.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -560,7 +560,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Uzbequistão',
-        flag:'qa',
+        flag:'/flags/uz.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -572,7 +572,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Colômbia',
-        flag:'ch',
+        flag:'/flags/co.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -589,7 +589,7 @@ export const groups: IGroup[] = [
     teams: [
       {
         name: 'Inglaterra',
-        flag:'ca',
+        flag:'/flags/en.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -601,7 +601,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Croácia',
-        flag:'ba',
+        flag:'/flags/hr.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -613,7 +613,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Gana',
-        flag:'qa',
+        flag:'/flags/gh.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -625,7 +625,7 @@ export const groups: IGroup[] = [
       },
       {
         name: 'Panamá',
-        flag:'ch',
+        flag:'/flags/pa.png',
         pts: 0,
         j: 0,
         v: 0,
@@ -637,5 +637,4 @@ export const groups: IGroup[] = [
       }
     ]
   }
-  
 ];

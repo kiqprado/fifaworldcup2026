@@ -125,8 +125,7 @@ export function StadiumCard({image, name, capacity, mapsQuery, city, country, cu
               text-justify
               text-sm text-zinc-400
               leading-relaxed
-              line-clamp-3
-              min-h-[106px]
+              min-h-[126px]
               overflow-y-auto
               group-hover:text-zinc-300
               transition-colors

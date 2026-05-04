@@ -26,7 +26,7 @@ const ButtonVariants = tv({
     },
     color: {
       gold: [
-        'text-yellow-200',
+        'text-black',
         'bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-400',
         'border border-yellow-300/20',
         'shadow-[0_0_15px_rgba(255,215,0,0.5)]',

@@ -8,7 +8,7 @@ import { HeaderPageTitle } from '@/app/elements/header-page-title'
 export default function TeamsPage() {
   return(
     <div
-      className='h-svh'
+      className='h-svh px-6 py-4'
     >
       <Link
         href={'/'}

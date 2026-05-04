@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image"
 import Trophy from '@/public/trophy.png'
 
@@ -13,7 +15,7 @@ export function AboutSection() {
         bg-zinc-900'
     >
       <div
-        className='flex justify-between'
+        className='flex justify-between pl-6'
       >
         <HeaderSectionTitle
           prefix="Junho — Julho 2026"

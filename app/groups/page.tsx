@@ -41,18 +41,18 @@ export default function GroupsPage() {
         <button
           onClick={() => setView('card')}
           className='w-46 flex items-center gap-2
-          px-4 py-1.5
+          px-4 py-1.5  cursor-pointer
           border rounded-xl border-zinc-400'
         ><LayoutGrid size={16}/> Cards</button>
         <button
           onClick={() => setView('table')}
           className='w-46 flex items-center gap-2
-          px-4 py-1.5
+          px-4 py-1.5 cursor-pointer
           border rounded-xl border-zinc-400'
         ><TableOfContents size={16}/> Classificação</button>
       </div>
       <div
-        className='flex flex-wrap justify-center gap-4'
+        className='flex flex-wrap justify-center gap-8 py-8'
       >
         {groups.map(group => {
           const highlight = IsTeamSelectedOnGroup(group)
