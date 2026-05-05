@@ -1,3 +1,10 @@
+'use client'
+
+import { useEffect, useRef } from 'react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 import { HeaderSectionTitle } from '@/app/elements/header-section-title'
 import { CupSummaryTimeLine } from '@/app/elements/cup-summary-timeline'
@@ -6,6 +13,34 @@ import { Button } from '@/app/components/button'
 import { DetailsEditionSummary } from '@/app/elements/details-edition-summary'
 
 export function HistorySection() {
+  const timelineRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+  const ctx = gsap.context(() => {
+    const items = gsap.utils.toArray('.timeline-item')
+
+    gsap.fromTo(
+      items,
+      {
+        opacity: 0,
+        y: 30,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.6,
+        ease: 'power3.out',
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: timelineRef.current,
+          start: 'top 80%',
+        },
+      }
+    )
+  }, timelineRef)
+
+  return () => ctx.revert()
+}, [])
   return(
     <div
       className='py-6 relative
@@ -45,32 +80,58 @@ export function HistorySection() {
 
       <div
         className='px-66 flex flex-col gap-2'
+        ref={timelineRef}
       >
-        <CupSummaryTimeLine
-          date='1930'
-          preview='Primeira Copa no Uruguai — 13 seleções disputaram o torneio inaugural.'
-        />
-        <VerticalDivider/>
-        <CupSummaryTimeLine
-          date='1958'
-          preview='O Brasil de Pelé conquista seu primeiro título na Suécia, aos 17 anos.'
-        />
-        <VerticalDivider/>
-        <CupSummaryTimeLine
-          date='1970'
-          preview='Brasil se torna tricampeão no México com o time considerado o maior da história.'
-        />
-        <VerticalDivider/>
-        <CupSummaryTimeLine
-          date='2002'
-          preview='Pentacampeonato brasileiro na Copa Japão-Coreia com Ronaldo e Rivaldo.'
-        />
-        <VerticalDivider/>
-        <CupSummaryTimeLine
-          date='2022'
-          preview='Argentina vence a França nos pênaltis em final épica no Catar.'
-        />
-        <VerticalDivider/>
+        <div className='timeline-item'>
+          <CupSummaryTimeLine
+            date='1930'
+            preview='Primeira Copa no Uruguai — 13 seleções disputaram o torneio inaugural.'
+          />
+        </div>
+
+        <div className='timeline-item'>
+          <VerticalDivider/>
+        </div>
+
+        <div className='timeline-item'>
+          <CupSummaryTimeLine
+            date='1958'
+            preview='O Brasil de Pelé conquista seu primeiro título na Suécia, aos 17 anos.'
+          />
+        </div>
+
+        <div className='timeline-item'>
+          <VerticalDivider/>
+        </div>
+
+        <div className='timeline-item'>
+          <CupSummaryTimeLine
+            date='1970'
+            preview='Brasil se torna tricampeão no México com o time considerado o maior da história.'
+          />
+        </div>
+        
+        <div className='timeline-item'>
+          <VerticalDivider/>
+        </div>
+
+        <div className='timeline-item'>
+          <CupSummaryTimeLine
+            date='2002'
+            preview='Pentacampeonato brasileiro na Copa Japão-Coreia com Ronaldo e Rivaldo.'
+          />
+        </div>
+        
+        <div className='timeline-item'>
+          <VerticalDivider/>
+        </div>
+
+        <div className='timeline-item'>
+          <CupSummaryTimeLine
+            date='2022'
+            preview='Argentina vence a França nos pênaltis em final épica no Catar.'
+          />
+        </div>
       </div>
 
       <div className='self-center'>

@@ -1,17 +1,42 @@
-import Link from 'next/link'
+'use client'
 
+import { useEffect, useRef } from 'react'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+import Link from 'next/link'
 import { editions } from '@/data/history-editions'
 import { HistoryEditionCard } from '@/app/components/card-history-edition'
 import { HeaderPageTitle } from '@/app/elements/header-page-title'
+import { Footer } from '../elements/footer'
+
+gsap.registerPlugin(ScrollTrigger)
 
 export default function HistoryPage() {
-  return(
-    <div
-      className='h-svh'
-    >
-      <Link
-        href={'/'}
-      >
+  const cardsRef = useRef<HTMLDivElement[]>([])
+
+  useEffect(() => {
+    cardsRef.current.forEach((card) => {
+      gsap.fromTo(
+        card,
+        { opacity: 0, y: 40 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.6,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: card,
+            start: 'top 85%',
+          },
+        }
+      )
+    })
+  }, [])
+
+  return (
+    <div className='min-h-svh px-12'>
+      <Link href={'/'} className='ml-4 mt-2 inline-block text-zinc-400 hover:text-white'>
         voltar
       </Link>
 
@@ -19,19 +44,20 @@ export default function HistoryPage() {
         title='História das Copas'
         description='De 1930 a 2022 — cada edição deixou sua marca. Reviva os momentos que definiram o futebol mundial.'
       />
-      
 
-      <div className='flex flex-col gap-8 items-center'>
-        {editions.map(edition => (
-          <HistoryEditionCard
+      <div className='flex flex-col gap-10 items-center py-12'>
+        {editions.map((edition, index) => (
+          <div
             key={edition.year}
-            year={edition.year}
-            host={edition.host}
-            champion={edition.champion}
-            fact={edition.fact}
-          />
+            ref={(el) => {
+              if (el) cardsRef.current[index] = el
+            }}
+          >
+            <HistoryEditionCard {...edition} />
+          </div>
         ))}
       </div>
+      <Footer/>
     </div>
   )
 }

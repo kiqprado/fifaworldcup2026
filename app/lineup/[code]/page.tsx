@@ -3,7 +3,9 @@ import Link from 'next/link'
 import {squads} from '@/data/squads'
 import { CardSquadLineUp } from '@/app/components/card-squad-lineup'
 import { SoccerFieldLineup } from '@/app/components/soccer-field-lineup'
+import { PlayersPositionOnFieldSubtitle } from '@/app/elements/players-position-on-field-subtitle' 
 import { HeaderLineUpSquad, type SquadCode } from '@/app/elements/header-lineup-squad'
+import { Footer } from '@/app/elements/footer'
 
 interface PageProps {
   params: {
@@ -28,30 +30,45 @@ export default async function LineUp({params}: PageProps) {
     >
       <Link
         href={'/'}
-        className='absolute top-4 left-4'
-      >Voltar</Link>
+        className='absolute top-4 left-4 z-30'
+      >
+        Voltar
+      </Link>
 
       <HeaderLineUpSquad
         code={code as SquadCode}
         key={code}
         formation={squad.formation}
       />
-      <SoccerFieldLineup/>
+
+      <SoccerFieldLineup
+        players={squad.starters}
+        formation={squad.formation}
+      />
+
       <div
-        className='w-full flex justify-evenly'
+        className='w-[80%] 
+        flex flex-col gap-12 items-center'
       >
-        <CardSquadLineUp
-          title='Titulares'
-          players={squad.starters}
-          variant='starter'
-        />
-        <CardSquadLineUp
-          title='Reservas'
-          players={squad.reserves}
-          variant='reserve'
-        />
-      </div>
-       
+        <PlayersPositionOnFieldSubtitle/>
+        
+        <div
+          className='w-full flex justify-evenly'
+        >
+          <CardSquadLineUp
+            title='Titulares'
+            players={squad.starters}
+            variant='starter'
+          />
+          <CardSquadLineUp
+            title='Reservas'
+            players={squad.reserves}
+            variant='reserve'
+          />
+        </div>
+      </div> 
+
+      <Footer/>
     </div>
   )
 }

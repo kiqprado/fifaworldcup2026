@@ -45,7 +45,7 @@ export function HeroSection() {
         flex items-center justify-center'
       >
          <Button
-          href={'/lineup'}
+          href={'/about'}
         >
           Explorar
         </Button>

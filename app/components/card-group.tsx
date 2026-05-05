@@ -115,11 +115,9 @@ export function CardGroupQualifier({ keyGroup, teams, highlight,}: IGroup & { hi
       tiltMaxAngleY={5}
       scale={1.015}
       transitionSpeed={1000}
-      glareEnable={false} // ❌ remove neblina
+      glareEnable={false}
     >
       <div className="relative w-136 rounded-xl group">
-
-        {/* 🔶 Borda dourada limpa */}
         <div
           className="
             absolute inset-0 rounded-xl p-[1px]
@@ -128,15 +126,12 @@ export function CardGroupQualifier({ keyGroup, teams, highlight,}: IGroup & { hi
             transition-all duration-500
           "
         />
-
-        {/* 🔲 Card */}
         <div
           className={`
             relative overflow-hidden rounded-xl bg-zinc-900
             border border-zinc-800
             transition-all duration-300
 
-            /* 💡 glow externo premium */
             group-hover:shadow-[0_0_25px_rgba(16,185,129,0.25)]
             ${highlight ? 'shadow-[0_0_30px_rgba(251,191,36,0.25)]' : ''}
           `}
