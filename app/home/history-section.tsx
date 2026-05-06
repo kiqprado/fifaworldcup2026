@@ -13,75 +13,93 @@ import { Button } from '@/app/components/button'
 import { DetailsEditionSummary } from '@/app/elements/details-edition-summary'
 
 export function HistorySection() {
-  const timelineRef = useRef<HTMLDivElement>(null)
+  const sectionRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-  const ctx = gsap.context(() => {
-    const items = gsap.utils.toArray('.timeline-item')
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({
+        defaults: { ease: 'power3.out' },
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: 'top 70%',
+          once: true,
+        }
+      })
 
-    gsap.fromTo(
-      items,
-      {
+      // HEADER
+      tl.from('.history-header', {
+        opacity: 0,
+        y: 40,
+        duration: 0.7,
+      })
+
+      // STATS
+      tl.from('.history-stat', {
         opacity: 0,
         y: 30,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 0.6,
-        ease: 'power3.out',
-        stagger: 0.2,
-        scrollTrigger: {
-          trigger: timelineRef.current,
-          start: 'top 80%',
-        },
-      }
-    )
-  }, timelineRef)
+        duration: 0.5,
+        stagger: 0.15,
+      }, '-=0.3')
 
-  return () => ctx.revert()
-}, [])
+      //ITEMS
+      tl.from('.timeline-item', {
+        opacity: 0,
+        y: 35,
+        duration: 0.5,
+        stagger: 0.18,
+      }, '-=0.2')
+
+      // DIVIDERS
+      tl.from('.timeline-divider', {
+        opacity: 0,
+        scaleY: 0,
+        transformOrigin: 'top',
+        duration: 0.4,
+        stagger: 0.18,
+      }, '-=1')
+
+      // CTA
+      tl.from('.history-cta', {
+        opacity: 0,
+        y: 20,
+        duration: 0.5,
+      }, '-=0.3')
+
+    }, sectionRef)
+
+    return () => ctx.revert()
+  }, [])
+
   return(
     <div
-      className='py-6 relative
-        flex flex-col gap-12
-        bg-zinc-800'
+      ref={sectionRef}
+      className='py-10 relative flex flex-col gap-14 bg-zinc-800'
     >
-      <HeaderSectionTitle
-        title='A História do Futebol Mundial'
-        description='Mais de 90 anos de emoção, glória e tradição nos gramados do mundo.'
-        align='center'
-      />
 
-      <div
-        className='px-12 flex gap-12
-          justify-evenly'
-      >
-        <DetailsEditionSummary
-          detail={'22'}
-          data='Edições realizadas'
-        />
-
-        <DetailsEditionSummary
-          detail={'8'}
-          data='Países campeões'
-        />
-
-        <DetailsEditionSummary
-          detail={'5'}
-          data='Títulos do Brasil'
-        />
-
-        <DetailsEditionSummary
-          detail={'900+'}
-          data='Gols em finais'
+      <div className='history-header'>
+        <HeaderSectionTitle
+          title='A História do Futebol Mundial'
+          description='Mais de 90 anos de emoção, glória e tradição nos gramados do mundo.'
+          align='center'
         />
       </div>
 
-      <div
-        className='px-66 flex flex-col gap-2'
-        ref={timelineRef}
-      >
+      <div className='px-12 flex gap-12 justify-evenly'>
+        <div className='history-stat'>
+          <DetailsEditionSummary detail={'22'} data='Edições realizadas' />
+        </div>
+        <div className='history-stat'>
+          <DetailsEditionSummary detail={'8'} data='Países campeões' />
+        </div>
+        <div className='history-stat'>
+          <DetailsEditionSummary detail={'5'} data='Títulos do Brasil' />
+        </div>
+        <div className='history-stat'>
+          <DetailsEditionSummary detail={'900+'} data='Gols em finais' />
+        </div>
+      </div>
+
+      <div className='px-40 flex flex-col gap-3'>
         <div className='timeline-item'>
           <CupSummaryTimeLine
             date='1930'
@@ -89,7 +107,7 @@ export function HistorySection() {
           />
         </div>
 
-        <div className='timeline-item'>
+        <div className='timeline-divider'>
           <VerticalDivider/>
         </div>
 
@@ -100,7 +118,7 @@ export function HistorySection() {
           />
         </div>
 
-        <div className='timeline-item'>
+        <div className='timeline-divider'>
           <VerticalDivider/>
         </div>
 
@@ -110,8 +128,8 @@ export function HistorySection() {
             preview='Brasil se torna tricampeão no México com o time considerado o maior da história.'
           />
         </div>
-        
-        <div className='timeline-item'>
+
+        <div className='timeline-divider'>
           <VerticalDivider/>
         </div>
 
@@ -121,8 +139,8 @@ export function HistorySection() {
             preview='Pentacampeonato brasileiro na Copa Japão-Coreia com Ronaldo e Rivaldo.'
           />
         </div>
-        
-        <div className='timeline-item'>
+
+        <div className='timeline-divider'>
           <VerticalDivider/>
         </div>
 
@@ -132,9 +150,10 @@ export function HistorySection() {
             preview='Argentina vence a França nos pênaltis em final épica no Catar.'
           />
         </div>
+
       </div>
 
-      <div className='self-center'>
+      <div className='self-center history-cta'>
         <Button
           href={'/history'}
           variant='default'
