@@ -1,7 +1,9 @@
 'use client'
 
+import Link from 'next/link'
 import Image from 'next/image'
 import { useEffect, useRef } from 'react'
+
 import { CalendarCheck, MapPinCheck } from 'lucide-react'
 import gsap from 'gsap'
 import Tilt from 'react-parallax-tilt'
@@ -72,7 +74,7 @@ export function CardMatch({
             fill
             className="
               object-cover
-              opacity-50
+              opacity-60
               scale-105
               transition duration-700
               group-hover:scale-110
@@ -93,18 +95,18 @@ export function CardMatch({
             <span>{time} • {date}</span>
           </div>
 
-          <span className="
-            px-2 py-0.5 rounded-md
+          <Link
+            href={'/groups'}
+            className=" px-2 py-0.5 rounded-md
             bg-white/5
             border border-white/10
             group-hover:border-cyan-400/50
-            transition-all duration-300 ease-in-out
-          ">
+            transition-all duration-300 ease-in-out"
+          >
             Grupo {group}
-          </span>
+          </Link>
         </div>
 
-        {/* MATCH */}
         <div className="flex items-center justify-evenly">
 
           <div className="flex flex-col items-center gap-2 w-24">
@@ -123,9 +125,11 @@ export function CardMatch({
               />
             </div>
 
-            <span className="text-sm text-center leading-tight text-nowrap">
+            <Link 
+              href={`/lineup/${home.code}`}
+              className="text-sm text-center leading-tight text-nowrap">
               {home.name}
-            </span>
+            </Link>
           </div>
 
           <div className="
@@ -155,13 +159,17 @@ export function CardMatch({
               />
             </div>
 
-            <span className="text-sm text-center leading-tight text-nowrap">
+            <Link
+              href={`/lineup/${away.code}`} 
+              className="text-sm text-center leading-tight text-nowrap">
               {away.name}
-            </span>
+            </Link>
           </div>
         </div>
 
-        <div className="flex items-center gap-2 text-sm text-zinc-400">
+        <div 
+          className="flex items-center gap-2 text-sm text-zinc-400
+            group-hover:text-zinc-100 transition-all duration-300 ease-in-out">
           <MapPinCheck size={14} />
           <span className="truncate tracking-wider">
             {stadium}, {city}

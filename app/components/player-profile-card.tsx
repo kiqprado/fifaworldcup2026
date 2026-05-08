@@ -4,6 +4,8 @@ import Image from 'next/image'
 import { Shield, Star, CalendarDays, Crosshair } from 'lucide-react'
 import Tilt from 'react-parallax-tilt'
 
+import Link from 'next/link'
+
 export interface StarPlayer {
   name: string;
   country: string;
@@ -129,11 +131,12 @@ export function StarPlayerCard({
             </span>
 
             {/* BUTTON */}
-            <button
+            <Link
+              href={`/lineup/${countryCode}`}
               className="
               mt-2 py-2 rounded-md
               border border-cyan-400
-              text-cyan-400
+              text-center text-cyan-400
               bg-transparent
               hover:bg-cyan-400 hover:text-black
               hover:shadow-[0_0_20px_rgba(34,211,238,0.7)]
@@ -141,7 +144,7 @@ export function StarPlayerCard({
             "
             >
               Ver Escalação {country}
-            </button>
+            </Link>
 
           </div>
 

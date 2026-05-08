@@ -22,7 +22,7 @@ export default function TeamsPage() {
       />
 
       <div
-        className='flex flex-wrap gap-4 justify-center'
+        className='flex flex-wrap gap-6 justify-center space-y-4 py-12'
       >
         {teams.map(team => (
           <CardTeam
