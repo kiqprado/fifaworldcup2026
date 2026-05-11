@@ -9,13 +9,15 @@ export interface ITeam {
   code: string
   flag: string
   history: string
+  highlighted?: boolean
 }
 
 export function CardTeam({
   name,
   code,
   flag,
-  history
+  history,
+  highlighted = false
 }: ITeam) {
 
   return(
@@ -30,11 +32,18 @@ export function CardTeam({
       className='rounded-xl'
     >
       <div 
-        className=' relative group rounded-xl
-        border border-zinc-500
-        transition-all duration-300 ease-in-out
-        hover:border-cyan-400
-        hover:shadow-[0_0_25px_rgba(34,211,238,0.25)]'
+        className={`
+          relative group rounded-xl
+          border border-zinc-500
+          transition-all duration-300 ease-in-out
+          hover:border-cyan-400
+          hover:shadow-[0_0_25px_rgba(34,211,238,0.25)]
+
+          ${highlighted
+            ? 'border-cyan-400 shadow-[0_0_25px_rgba(34,211,238,0.25)]'
+            : ''
+          }
+        `}
       >
         <span 
           className='absolute -top-5 left-0 z-20

@@ -7,6 +7,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { HeaderSectionTitle } from '@/app/elements/header-section-title'
 import { stadiums } from '@/data/stadiums'
 import { StadiumCard } from '@/app/components/stadium-profile-card'
+import { Footer } from '../elements/footer'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -61,9 +62,8 @@ export function StadiumsSection() {
   return(
     <div
       ref={sectionRef}
-      className='min-h-svh py-16 space-y-16 bg-zinc-950'
+      className='min-h-svh pt-16 space-y-16 bg-zinc-950'
     >
-      {/* HEADER */}
       <div className='stadium-header text-center px-6'>
         <HeaderSectionTitle
           title='Estádios da Copa 2026'
@@ -90,6 +90,7 @@ export function StadiumsSection() {
           </div>
         ))}
       </div>
+      <Footer/>
     </div>
   )
 }

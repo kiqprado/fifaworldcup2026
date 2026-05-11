@@ -88,9 +88,12 @@ export function CardGroup({ teams, keyGroup, highlight }: IGroup & { highlight?:
                   />
                 </div>
 
-                <span className="text-lg text-zinc-200 tracking-wide">
+                <Link 
+                  href={`/lineup/${team.code}`}
+                  className="text-lg text-zinc-200 tracking-wide"
+                >
                   {team.name}
-                </span>
+                </Link>
               </div>
             ))}
           </div>

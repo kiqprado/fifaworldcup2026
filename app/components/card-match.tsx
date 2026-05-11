@@ -18,6 +18,7 @@ export interface IMatch {
   stadium: string;
   stadiumView: string;
   city: string;
+  highlighted?: boolean
 }
 
 export function CardMatch({
@@ -29,7 +30,8 @@ export function CardMatch({
   away,
   stadium,
   stadiumView,
-  city
+  city,
+  highlighted = false
 }: IMatch) {
   const ref = useRef<HTMLDivElement>(null)
 
@@ -55,16 +57,19 @@ export function CardMatch({
     >
       <div
         ref={ref}
-        className="
+        className={`
           group relative overflow-hidden
           w-96 min-h-66 rounded-2xl
           bg-zinc-900/70 backdrop-blur-lg
           p-4 flex flex-col gap-8
-
-          border border-white/10
-          transition-all duration-300
+          border transition-all duration-300
           hover:shadow-[0_0_35px_rgba(0,255,255,0.15)]
-        "
+          ${
+            highlighted
+              ? 'border-cyan-400 shadow-[0_0_35px_rgba(0,255,255,0.15)]'
+              : 'border-white/10'
+          }
+        `}
       >
         {/* BG */}
         <div className="absolute inset-0 -z-10">
@@ -109,7 +114,7 @@ export function CardMatch({
 
         <div className="flex items-center justify-evenly">
 
-          <div className="flex flex-col items-center gap-2 w-24">
+          <div className="flex flex-col items-center gap-2">
             <div className="
               p-1.5 rounded-md
               bg-white/5
@@ -119,8 +124,8 @@ export function CardMatch({
               <Image
                 src={home.flag}
                 alt={home.name}
-                width={96}
-                height={96}
+                width={106}
+                height={106}
                 className="rounded-sm"
               />
             </div>
@@ -143,7 +148,7 @@ export function CardMatch({
             VS
           </div>
 
-          <div className="flex flex-col items-center gap-2 w-24">
+          <div className="flex flex-col items-center gap-2">
             <div className="
               p-1.5 rounded-md
               bg-white/5
@@ -153,8 +158,8 @@ export function CardMatch({
               <Image
                 src={away.flag}
                 alt={away.name}
-                width={96}
-                height={96}
+                width={106}
+                height={106}
                 className="rounded-sm"
               />
             </div>
