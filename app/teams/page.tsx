@@ -66,10 +66,11 @@ export default function TeamsPage() {
 
   return(
     <div
-      className='h-svh px-6 py-4'
+      className='min-h-svh relative'
     >
       <Link
         href={'/'}
+        className='absolute top-4 left-4'
       >
         Voltar
       </Link>
@@ -79,11 +80,14 @@ export default function TeamsPage() {
         description='48 seleções classificadas para a Copa do Mundo 2026. Conheça a história de cada uma nas Copas.'
       />
 
-      <Input
-        value={searchValue}
-        onChange={setSearchValue}
-        hasAnyResult={orderedTeams.length > 0}
-      />
+      <div className='absolute right-6 top-26 z-30 w-[25%]'>
+        <Input
+          value={searchValue}
+          onChange={setSearchValue}
+          hasAnyResult={orderedTeams.length > 0}
+        />
+      </div>
+      
 
       <div
         className='flex flex-wrap gap-6 justify-center space-y-4 py-12'

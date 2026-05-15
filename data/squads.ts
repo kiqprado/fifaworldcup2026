@@ -62,6 +62,23 @@ export const formationPositions: Record<string, { x: number; y: number }[]> = {
     { x: 85, y: 35 },
     { x: 50, y: 18 },
   ],
+  "3-4-2-1": [
+    { x: 50, y: 90 }, // GK
+
+    { x: 25, y: 72 }, // LCB
+    { x: 50, y: 74 }, // CB
+    { x: 75, y: 72 }, // RCB
+
+    { x: 10, y: 50 }, // LWB
+    { x: 38, y: 52 }, // CM
+    { x: 62, y: 52 }, // CM
+    { x: 90, y: 50 }, // RWB
+
+    { x: 35, y: 30 }, // LAM
+    { x: 65, y: 30 }, // RAM
+
+    { x: 50, y: 18 }, // ST
+  ],
 };
 
 export const squads: ISquad[] = [

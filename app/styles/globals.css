@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+button, link {
+  cursor: pointer;
+}
 
 .scrollbar-dark {
   scrollbar-width: thin;                 /* Firefox */

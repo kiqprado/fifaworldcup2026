@@ -8,6 +8,7 @@ import Link from 'next/link'
 import { groups } from '@/data/groups'
 import { CardGroup, CardGroupQualifier, IGroup } from '@/app/components/card-group'
 import { NormalizeText } from '../utils/normalize-input-search'
+import { ButtonFilterElement } from '@/app/elements/button-matches-filter'
 
 import { HeaderPageTitle } from '@/app/elements/header-page-title'
 
@@ -87,9 +88,10 @@ export default function GroupsPage() {
     !searchValue.trim() || highlightedGroupKey !== null
 
   return(
-    <div>
+    <div className='min-h-svh relative flex flex-col items-center'>
       <Link
         href={'/'}
+        className='absolute top-4 left-4'
       >
         Voltar
       </Link>
@@ -99,28 +101,102 @@ export default function GroupsPage() {
         description='12 grupos com 4 seleções cada. A fase de grupos define os classificados para o mata-mata.'
       />
 
-      <div
-        className='flex items-center gap-6'
-      >
-        <button
-          onClick={() => setView('card')}
-          className='w-46 flex items-center gap-2
-          px-4 py-1.5  cursor-pointer
-          border rounded-xl border-zinc-400'
-        ><LayoutGrid size={16}/> Cards</button>
-        <button
-          onClick={() => setView('table')}
-          className='w-46 flex items-center gap-2
-          px-4 py-1.5 cursor-pointer
-          border rounded-xl border-zinc-400'
-        ><TableOfContents size={16}/> Classificação</button>
-      </div>
+      <div className="w-[80%]">
+  <div
+    className="overflow-hidden
+      relative rounded-3xl
+      border border-amber-400/15
+      bg-zinc-950/75 backdrop-blur-2xl
+      shadow-[0_0_60px_rgba(0,0,0,0.65)]
+    "
+  >
+    {/* Glow decorativo */}
+    <div
+      className="
+        pointer-events-none absolute inset-0
+        bg-[radial-gradient(circle_at_top_left,rgba(251,191,36,0.10),transparent_35%),radial-gradient(circle_at_top_right,rgba(34,211,238,0.08),transparent_30%),radial-gradient(circle_at_bottom,rgba(168,85,247,0.06),transparent_35%)]
+      "
+    />
 
-      <Input
-        value={searchValue}
-        onChange={setSearchValue}
-        hasAnyResult={hasAnyResult}
-      />
+    <div className="relative z-10 p-3">
+      <div
+        className="
+          flex flex-col xl:flex-row
+          xl:items-center
+          gap-3
+        "
+      >
+        {/* MENU DE VISUALIZAÇÃO */}
+        <div
+          className="
+            flex-1
+            grid grid-cols-2 gap-4
+            rounded-2xl
+            border border-white/8
+            bg-gradient-to-r
+            from-zinc-900/95
+            via-zinc-900/85
+            to-zinc-900/95
+            shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]
+            xl:min-w-[520px]
+            xl:flex-shrink-0
+          "
+        >
+          <ButtonFilterElement
+            onClick={() => setView('card')}
+            icon={<LayoutGrid size={16} />}
+            title="Cards"
+            active={view === 'card'}
+            accent="amber"
+            showPulse={view === 'card'}
+          />
+
+          <ButtonFilterElement
+            onClick={() => setView('table')}
+            icon={<TableOfContents size={16} />}
+            title="Classificação"
+            active={view === 'table'}
+            accent="cyan"
+            showPulse={view === 'table'}
+          />
+        </div>
+
+        {/* INPUT DE PESQUISA */}
+        <div className="relative min-w-fit">
+          <div
+            className="
+              pointer-events-none absolute -inset-[1px]
+              rounded-2xl
+              bg-gradient-to-r
+              from-amber-400/20
+              via-cyan-400/10
+              to-amber-400/20
+              blur-sm
+              opacity-70
+            "
+          />
+
+          <div
+            className="
+              relative rounded-2xl
+              border border-white/10
+              bg-zinc-950/90 backdrop-blur-xl
+              shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]
+            "
+          >
+            <Input
+              value={searchValue}
+              onChange={setSearchValue}
+              hasAnyResult={hasAnyResult}
+              placeholder="Procure sua seleção"
+              variant="min"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
       
       <div
         className='flex flex-wrap justify-center gap-8 py-8'

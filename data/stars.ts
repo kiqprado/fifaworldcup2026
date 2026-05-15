@@ -50,6 +50,42 @@ export const stars: StarPlayer[] = [
     badge: "/badge/portugal.png"
   },
   {
+    "name": "Luka Modrić",
+    "country": "Croácia",
+    "countryCode": "CRO",
+    "club": "AC Milan",
+    "age": 40,
+    "debutDate": "01/03/2006",
+    "goals": 28,
+    "position": "Meio-Campista",
+    "image": "/starPlayer/Modric.png",
+    "badge": "/badge/croatia.png"
+  },
+  {
+    "name": "Harry Kane",
+    "country": "Inglaterra",
+    "countryCode": "ENG",
+    "club": "Bayern de Munique",
+    "age": 32,
+    "debutDate": "27/03/2015",
+    "goals": 68,
+    "position": "Atacante",
+    "image": "/starPlayer/Kane.png",
+    "badge": "/badge/england.png"
+  },
+  {
+    "name": "Neymar Jr.",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "club": "Santos",
+    "age": 34,
+    "debutDate": "10/08/2010",
+    "goals": 79,
+    "position": "Atacante",
+    "image": "/starPlayer/Neymar.png",
+    "badge": "/badge/brasil.png"
+  },
+  {
     name: "Erling Haaland",
     country: "Noruega",
     countryCode: "NOR",

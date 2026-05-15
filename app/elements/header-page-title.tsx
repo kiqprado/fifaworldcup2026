@@ -6,7 +6,8 @@ interface IHeaderPageTitle {
 export function HeaderPageTitle({ title, description }: IHeaderPageTitle) {
   return(
     <div
-      className='flex flex-col gap-3'
+      className="w-full flex flex-col gap-6 h-46 px-12 py-6 justify-center
+        bg-[url('/header-bg.png')] bg-cover bg-center bg-no-repeat"
     >
       <h1
         className='text-6xl font-bold text-amber-300 tracking-wider'

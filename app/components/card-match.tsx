@@ -121,13 +121,18 @@ export function CardMatch({
               border border-white/10
               shadow-inner
             ">
-              <Image
-                src={home.flag}
-                alt={home.name}
-                width={106}
-                height={106}
-                className="rounded-sm"
-              />
+              <Link
+                href={`/lineup/${home.code}`}
+              >
+                <Image
+                  src={home.flag}
+                  alt={home.name}
+                  width={106}
+                  height={106}
+                  className="rounded-sm"
+                />
+              </Link>
+              
             </div>
 
             <Link 
@@ -155,13 +160,18 @@ export function CardMatch({
               border border-white/10
               shadow-inner
             ">
-              <Image
-                src={away.flag}
-                alt={away.name}
-                width={106}
-                height={106}
-                className="rounded-sm"
-              />
+              <Link
+                href={`/lineup/${away.code}`}
+              >
+                <Image
+                  src={away.flag}
+                  alt={away.name}
+                  width={106}
+                  height={106}
+                  className="rounded-sm"
+                />
+              </Link>
+              
             </div>
 
             <Link
@@ -179,6 +189,42 @@ export function CardMatch({
           <span className="truncate tracking-wider">
             {stadium}, {city}
           </span>
+        </div>
+
+        <div>
+        <h4>Assista ao vivo em:</h4>
+        <div
+          className='flex justify-evenly items-center'
+        >
+          <Link
+          href={`https://www.youtube.com/@CazeTV`}
+          target='_blank'
+          className='px-6 py-1 rounded-lg
+          border border-zinc-950 bg-red-700'
+        >
+          <Image
+            src={'/midia/caze-tv.png'}
+            alt='caze tv image logo'
+            width={56}
+            height={52}
+            className='object-fill'
+          />
+        </Link>
+        <Link
+          href={`https://globoplay.globo.com/sportv/ao-vivo/7339108/`}
+          target='_blank'
+          className='px-6 py-1 rounded-lg
+          border border-zinc-950 bg-red-700'
+        >
+          <Image
+            src={'/midia/sportv.png'}
+            alt='sportv image logo'
+            width={56}
+            height={52}
+          />
+        </Link>
+
+        </div>
         </div>
 
         <div className="

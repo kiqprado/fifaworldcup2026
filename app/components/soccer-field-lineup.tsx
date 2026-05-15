@@ -73,7 +73,6 @@ export function SoccerFieldLineup({ players, formation }: ISoccerFieldLineUp) {
             <div className='h-[60%] w-[50%] border border-white/20' />
           </div>
 
-          {/* Jogadores */}
           {positions.map((pos, index) => {
             const player = players[index]
             if (!player) return null
