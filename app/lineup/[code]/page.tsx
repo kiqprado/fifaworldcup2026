@@ -5,7 +5,6 @@ import { CardSquadLineUp } from '@/app/components/card-squad-lineup'
 import { SoccerFieldLineup } from '@/app/components/soccer-field-lineup'
 import { PlayersPositionOnFieldSubtitle } from '@/app/elements/players-position-on-field-subtitle' 
 import { HeaderLineUpSquad, type SquadCode } from '@/app/elements/header-lineup-squad'
-import { Footer } from '@/app/elements/footer'
 
 interface PageProps {
   params: {
@@ -26,7 +25,7 @@ export default async function LineUp({params}: PageProps) {
 
   return(
     <div
-      className='w-full flex flex-col items-center gap-8 relative'
+      className='w-full flex flex-col items-center gap-8 relative mb-12'
     >
       <Link
         href={'/'}
@@ -67,8 +66,6 @@ export default async function LineUp({params}: PageProps) {
           />
         </div>
       </div> 
-
-      <Footer/>
     </div>
   )
 }

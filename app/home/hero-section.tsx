@@ -11,7 +11,11 @@ import { Button } from '@/app/components/button'
 
 gsap.registerPlugin(ScrollTrigger)
 
-export function HeroSection() {
+interface IHeroSectionProps {
+  onExplore: () => void
+}
+
+export function HeroSection({onExplore}: IHeroSectionProps) {
   const sectionRef = useRef<HTMLDivElement>(null)
   const titleRef = useRef<HTMLHeadingElement>(null)
   const subtitleRef = useRef<HTMLHeadingElement>(null)
@@ -135,9 +139,20 @@ export function HeroSection() {
         className='absolute w-full bottom-8 left-1/2 -translate-x-1/2 
         flex items-center justify-center'
       >
-        <Button href={'/about'}>
+        <button
+          onClick={onExplore}
+          className='inline-flex items-center justify-center
+          px-10 py-3 rounded-xl outline-none
+          transition-all duration-300 ease-in-out
+          will-change-transform hover:scale-[1.03] active:scale-[0.98]
+          font-medium tracking-wide text-black
+          bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-400
+          border border-yellow-300/20
+          shadow-[0_0_15px_rgba(255,215,0,0.5)]
+          hover:shadow-[0_0_25px_rgba(255,215,0,0.8)]'
+        >
           Explorar
-        </Button>
+        </button>
       </div>
     </div>
   )

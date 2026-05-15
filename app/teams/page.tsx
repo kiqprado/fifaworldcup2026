@@ -82,6 +82,7 @@ export default function TeamsPage() {
 
       <div className='absolute right-6 top-26 z-30 w-[25%]'>
         <Input
+          placeholder='Busque por sua seleção'
           value={searchValue}
           onChange={setSearchValue}
           hasAnyResult={orderedTeams.length > 0}

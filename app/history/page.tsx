@@ -8,7 +8,6 @@ import Link from 'next/link'
 import { editions } from '@/data/history-editions'
 import { HistoryEditionCard } from '@/app/components/card-history-edition'
 import { HeaderPageTitle } from '@/app/elements/header-page-title'
-import { Footer } from '../elements/footer'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -35,8 +34,8 @@ export default function HistoryPage() {
   }, [])
 
   return (
-    <div className='min-h-svh px-12'>
-      <Link href={'/'} className='ml-4 mt-2 inline-block text-zinc-400 hover:text-white'>
+    <div className='min-h-svh relative'>
+      <Link href={'/#history-section'} className='absolute top-4 left-4 text-zinc-400 hover:text-white'>
         voltar
       </Link>
 
@@ -57,7 +56,6 @@ export default function HistoryPage() {
           </div>
         ))}
       </div>
-      <Footer/>
     </div>
   )
 }

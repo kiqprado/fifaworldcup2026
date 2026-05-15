@@ -72,6 +72,7 @@ export function HistorySection() {
 
   return(
     <div
+      id='history-section'
       ref={sectionRef}
       className='py-10 relative flex flex-col gap-14 bg-zinc-800'
     >

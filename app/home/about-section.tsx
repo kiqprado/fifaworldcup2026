@@ -57,6 +57,7 @@ export function AboutSection() {
 
   return (
     <div
+      id="about-section"
       ref={sectionRef}
       className='py-6 px-12 space-y-12
       min-h-svh relative overflow-hidden
