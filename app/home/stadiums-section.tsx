@@ -13,10 +13,49 @@ import { matches } from '@/data/matches'
 
 import { StadiumCard } from '@/app/components/stadium-profile-card'
 
+import { useBreakpoint } from '../hook/use-media-query'
+
 gsap.registerPlugin(ScrollTrigger)
 
 export function StadiumsSection() {
   const sectionRef = useRef<HTMLDivElement>(null)
+
+  // BREAKPOINTS INDIVIDUAIS
+  
+    const isMobileXS = useBreakpoint('mobileXS')
+    const isMobileSM = useBreakpoint('mobileSM')
+    const isMobileMD = useBreakpoint('mobileMD')
+    const isMobileLG = useBreakpoint('mobileLG')
+    const isMobileXL = useBreakpoint('mobileXL')
+  
+    const isTabletSM = useBreakpoint('tabletSM')
+    const isTabletMD = useBreakpoint('tabletMD')
+  
+    const isDesktopSM = useBreakpoint('desktopSM')
+    const isDesktopMD = useBreakpoint('desktopMD')
+    const isDesktopLG = useBreakpoint('desktopLG')
+    const isDesktopXL = useBreakpoint('desktopXL')
+    const isDesktop2XL = useBreakpoint('desktop2XL')
+  
+    // GRUPOS DE BREAKPOINTS
+  
+    const mobileRangeFull =
+      isMobileXS ||
+      isMobileSM ||
+      isMobileMD ||
+      isMobileLG ||
+      isMobileXL
+  
+    const tabletRangeFull =
+      isTabletSM ||
+      isTabletMD
+  
+    const desktopRangeFull =
+      isDesktopSM ||
+      isDesktopMD ||
+      isDesktopLG ||
+      isDesktopXL ||
+      isDesktop2XL
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -75,7 +114,7 @@ export function StadiumsSection() {
         <HeaderSectionTitle
           title="Estádios da Copa 2026"
           description="16 arenas espetaculares espalhadas pelos EUA, México e Canadá receberão os jogos da maior Copa da história."
-          align="center"
+          align={`${mobileRangeFull ? 'mixed' : 'center'}`}
         />
       </div>
 

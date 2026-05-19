@@ -7,7 +7,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import bg from '@/public/stadium-hero.jpg'
 import Image from 'next/image'
 
-import { Button } from '@/app/components/button'
+import { useBreakpoint } from '@/app/hook/use-media-query'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -23,6 +23,42 @@ export function HeroSection({onExplore}: IHeroSectionProps) {
   const descRef = useRef<HTMLParagraphElement>(null)
   const buttonRef = useRef<HTMLDivElement>(null)
   const bgRef = useRef<HTMLImageElement>(null)
+
+  // BREAKPOINTS INDIVIDUALS
+  const isMobileXS = useBreakpoint('mobileXS')
+  const isMobileSM = useBreakpoint('mobileSM')
+  const isMobileMD = useBreakpoint('mobileMD')
+  const isMobileLG = useBreakpoint('mobileLG')
+  const isMobileXL = useBreakpoint('mobileXL')
+
+  const isTabletSM = useBreakpoint('tabletSM')
+  const isTabletMD = useBreakpoint('tabletMD')
+
+  const isDesktopSM = useBreakpoint('desktopSM')
+  const isDesktopMD = useBreakpoint('desktopMD')
+  const isDesktopLG = useBreakpoint('desktopLG')
+  const isDesktopXL = useBreakpoint('desktopXL')
+  const isDesktop2XL = useBreakpoint('desktop2XL')
+
+  // GROUPS DE BREAKPOINTS
+
+  const mobileRangeFull =
+    isMobileXS ||
+    isMobileSM ||
+    isMobileMD ||
+    isMobileLG ||
+    isMobileXL
+
+  const tabletRangeFull =
+    isTabletSM ||
+    isTabletMD
+
+  const desktopRangeFull =
+    isDesktopSM ||
+    isDesktopMD ||
+    isDesktopLG ||
+    isDesktopXL ||
+    isDesktop2XL
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -86,7 +122,7 @@ export function HeroSection({onExplore}: IHeroSectionProps) {
   return (
     <div
       ref={sectionRef}
-      className='h-svh relative overflow-hidden'
+      className='min-h-svh relative overflow-hidden flex'
     >
       <Image
         ref={bgRef}
@@ -99,12 +135,13 @@ export function HeroSection({onExplore}: IHeroSectionProps) {
       <div className='absolute inset-0 bg-black/50 -z-40' />
 
       <div
-        className='h-full flex flex-col gap-4 
-        items-center justify-center text-center px-6'
+        className={`m-auto flex flex-col 
+          ${mobileRangeFull ? 'gap-6' : 'gap-4'}
+        items-center justify-center text-center px-6`}
       >
         <h3
           ref={subtitleRef}
-          className='uppercase tracking-[0.4em] text-sm text-zinc-300'
+          className={`uppercase tracking-[0.4em] text-sm text-zinc-300`}
         >
           A maior competição do planeta
         </h3>
@@ -126,7 +163,9 @@ export function HeroSection({onExplore}: IHeroSectionProps) {
 
         <p
           ref={descRef}
-          className='max-w-[600px] text-zinc-300 text-sm md:text-base leading-relaxed'
+          className={`max-w-[600px]
+            text-zinc-300 md:text-base leading-relaxed
+            ${mobileRangeFull? 'text-md px-6' : 'text-sm'}`}
         >
           Desde 1930, a Copa do Mundo une nações em torno da paixão pelo futebol.
           22 edições, bilhões de torcedores e momentos que marcaram a história

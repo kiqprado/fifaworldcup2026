@@ -6,6 +6,8 @@ import Tilt from 'react-parallax-tilt'
 
 import Link from 'next/link'
 
+import { useBreakpoint } from '../hook/use-media-query'
+
 export interface StarPlayer {
   name: string;
   country: string;
@@ -31,6 +33,42 @@ export function StarPlayerCard({
   goals,
   badge
 }: StarPlayer) {
+
+  // BREAKPOINTS INDIVIDUALS
+        const isMobileXS = useBreakpoint('mobileXS')
+        const isMobileSM = useBreakpoint('mobileSM')
+        const isMobileMD = useBreakpoint('mobileMD')
+        const isMobileLG = useBreakpoint('mobileLG')
+        const isMobileXL = useBreakpoint('mobileXL')
+      
+        const isTabletSM = useBreakpoint('tabletSM')
+        const isTabletMD = useBreakpoint('tabletMD')
+      
+        const isDesktopSM = useBreakpoint('desktopSM')
+        const isDesktopMD = useBreakpoint('desktopMD')
+        const isDesktopLG = useBreakpoint('desktopLG')
+        const isDesktopXL = useBreakpoint('desktopXL')
+        const isDesktop2XL = useBreakpoint('desktop2XL')
+      
+        // GROUPS DE BREAKPOINTS
+      
+        const mobileRangeFull =
+          isMobileXS ||
+          isMobileSM ||
+          isMobileMD ||
+          isMobileLG ||
+          isMobileXL
+      
+        const tabletRangeFull =
+          isTabletSM ||
+          isTabletMD
+      
+        const desktopRangeFull =
+          isDesktopSM ||
+          isDesktopMD ||
+          isDesktopLG ||
+          isDesktopXL ||
+          isDesktop2XL
 
   return (
     <Tilt
@@ -64,7 +102,10 @@ export function StarPlayerCard({
           />
 
           {/* PLAYER IMAGE */}
-          <div className="relative w-[252px] h-[272px] overflow-hidden rounded-t-xl">
+          <div 
+            className={`relative 
+             ${mobileRangeFull ? 'w-[292px] h-[272px]' : 'w-[252px] h-[272px]'} overflow-hidden rounded-t-xl`}
+          >
             <Image
               src={image}
               alt={name}

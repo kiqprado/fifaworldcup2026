@@ -26,16 +26,16 @@ export const stars: StarPlayer[] = [
     badge: "/badge/france.png"
   },
   {
-    name: "Vinícius Jr.",
-    country: "Brasil",
-    countryCode: "BRA",
-    club: "Real Madrid",
-    age: 25,
-    debutDate: "10/09/2019",
-    goals: 7,
-    position: "Atacante",
-    image: "/starPlayer/Vinicius.png",
-    badge: "/badge/brasil.png"
+    "name": "Neymar Jr.",
+    "country": "Brasil",
+    "countryCode": "BRA",
+    "club": "Santos",
+    "age": 34,
+    "debutDate": "10/08/2010",
+    "goals": 79,
+    "position": "Atacante",
+    "image": "/starPlayer/Neymar.png",
+    "badge": "/badge/brasil.png"
   },
   {
     name: "Cristiano Ronaldo",
@@ -62,6 +62,18 @@ export const stars: StarPlayer[] = [
     "badge": "/badge/croatia.png"
   },
   {
+    name: "Vinícius Jr.",
+    country: "Brasil",
+    countryCode: "BRA",
+    club: "Real Madrid",
+    age: 25,
+    debutDate: "10/09/2019",
+    goals: 7,
+    position: "Atacante",
+    image: "/starPlayer/Vinicius.png",
+    badge: "/badge/brasil.png"
+  },
+  {
     "name": "Harry Kane",
     "country": "Inglaterra",
     "countryCode": "ENG",
@@ -72,18 +84,6 @@ export const stars: StarPlayer[] = [
     "position": "Atacante",
     "image": "/starPlayer/Kane.png",
     "badge": "/badge/england.png"
-  },
-  {
-    "name": "Neymar Jr.",
-    "country": "Brasil",
-    "countryCode": "BRA",
-    "club": "Santos",
-    "age": 34,
-    "debutDate": "10/08/2010",
-    "goals": 79,
-    "position": "Atacante",
-    "image": "/starPlayer/Neymar.png",
-    "badge": "/badge/brasil.png"
   },
   {
     name: "Erling Haaland",

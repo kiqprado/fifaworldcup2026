@@ -1,28 +1,77 @@
+import { useBreakpoint } from "../hook/use-media-query"
 interface ICupSummary {
   date: string
   preview: string
 }
 
 export function CupSummaryTimeLine({ date, preview }: ICupSummary) {
-  return(
-    <div
-      className='group flex items-baseline gap-4 cursor-default'
+  // BREAKPOINTS INDIVIDUALS
+      const isMobileXS = useBreakpoint('mobileXS')
+      const isMobileSM = useBreakpoint('mobileSM')
+      const isMobileMD = useBreakpoint('mobileMD')
+      const isMobileLG = useBreakpoint('mobileLG')
+      const isMobileXL = useBreakpoint('mobileXL')
+    
+      const isTabletSM = useBreakpoint('tabletSM')
+      const isTabletMD = useBreakpoint('tabletMD')
+    
+      const isDesktopSM = useBreakpoint('desktopSM')
+      const isDesktopMD = useBreakpoint('desktopMD')
+      const isDesktopLG = useBreakpoint('desktopLG')
+      const isDesktopXL = useBreakpoint('desktopXL')
+      const isDesktop2XL = useBreakpoint('desktop2XL')
+    
+      // GROUPS DE BREAKPOINTS
+    
+      const mobileRangeFull =
+        isMobileXS ||
+        isMobileSM ||
+        isMobileMD ||
+        isMobileLG ||
+        isMobileXL
+    
+      const tabletRangeFull =
+        isTabletSM ||
+        isTabletMD
+    
+      const desktopRangeFull =
+        isDesktopSM ||
+        isDesktopMD ||
+        isDesktopLG ||
+        isDesktopXL ||
+        isDesktop2XL
+return (
+  <div
+    className={`group flex cursor-default items-center
+      ${mobileRangeFull ? 'gap-4':'gap-3'}`}
+  >
+    <h4
+      className='
+        shrink-0
+        text-lg font-bold tracking-wider text-amber-300
+        sm:text-xl
+        md:text-2xl
+        transition-all duration-300 ease-in-out
+        group-hover:text-amber-200
+        group-hover:[text-shadow:
+          0_0_8px_rgba(251,191,36,0.8),
+          0_0_16px_rgba(251,191,36,0.6)
+        ]
+      '
     >
-      <h4
-        className='
-          text-amber-300 font-bold tracking-wider
-          transition-all duration-300 ease-in-out
-          group-hover:text-amber-200
-          group-hover:[text-shadow:0_0_8px_rgba(251,191,36,0.8),0_0_16px_rgba(251,191,36,0.6)]'
-      >
-        {date}
-      </h4>
+      {date}
+    </h4>
 
-      <span
-        className='text-zinc-400 group-hover:text-zinc-300 transition-colors duration-300'
-      >
-        {preview}
-      </span>
-    </div>
-  )
+    <span
+      className='
+        text-sm leading-relaxed text-zinc-400
+        sm:text-base
+        group-hover:text-zinc-300
+        transition-colors duration-300
+      '
+    >
+      {preview}
+    </span>
+  </div>
+)
 }

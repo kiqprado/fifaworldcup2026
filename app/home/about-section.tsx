@@ -11,12 +11,50 @@ import { HeaderSectionTitle } from '@/app/elements/header-section-title'
 import { ShieldUser, Swords, Sheet } from 'lucide-react'
 import { CardButton } from '@/app/components/card-button'
 
+import { useBreakpoint } from "../hook/use-media-query"
+
 gsap.registerPlugin(ScrollTrigger)
 
 export function AboutSection() {
   const sectionRef = useRef<HTMLDivElement>(null)
   const headerRef = useRef<HTMLDivElement>(null)
   const trophyRef = useRef<HTMLDivElement>(null)
+
+   // BREAKPOINTS INDIVIDUALS
+    const isMobileXS = useBreakpoint('mobileXS')
+    const isMobileSM = useBreakpoint('mobileSM')
+    const isMobileMD = useBreakpoint('mobileMD')
+    const isMobileLG = useBreakpoint('mobileLG')
+    const isMobileXL = useBreakpoint('mobileXL')
+  
+    const isTabletSM = useBreakpoint('tabletSM')
+    const isTabletMD = useBreakpoint('tabletMD')
+  
+    const isDesktopSM = useBreakpoint('desktopSM')
+    const isDesktopMD = useBreakpoint('desktopMD')
+    const isDesktopLG = useBreakpoint('desktopLG')
+    const isDesktopXL = useBreakpoint('desktopXL')
+    const isDesktop2XL = useBreakpoint('desktop2XL')
+  
+    // GROUPS DE BREAKPOINTS
+  
+    const mobileRangeFull =
+      isMobileXS ||
+      isMobileSM ||
+      isMobileMD ||
+      isMobileLG ||
+      isMobileXL
+  
+    const tabletRangeFull =
+      isTabletSM ||
+      isTabletMD
+  
+    const desktopRangeFull =
+      isDesktopSM ||
+      isDesktopMD ||
+      isDesktopLG ||
+      isDesktopXL ||
+      isDesktop2XL
 
   useEffect(() => {
   const ctx = gsap.context(() => {
@@ -59,11 +97,11 @@ export function AboutSection() {
     <div
       id="about-section"
       ref={sectionRef}
-      className='py-6 px-12 space-y-12
+      className='py-6 px-6 space-y-12
       min-h-svh relative overflow-hidden
       bg-zinc-900'
     >
-      <div className='flex justify-between pl-6'>
+      <div className={`flex justify-between relative ${ desktopRangeFull ? 'pl-6' : ''}`}>
         
         <div ref={headerRef}>
           <HeaderSectionTitle
@@ -75,7 +113,7 @@ export function AboutSection() {
           />
         </div>
 
-        <div ref={trophyRef}>
+        <div ref={trophyRef} className={`${mobileRangeFull ? 'absolute opacity-15' : 'visible'}`}>
           <Image
             src={Trophy}
             alt='Trophy World Cup 2026'
@@ -84,7 +122,7 @@ export function AboutSection() {
         </div>
       </div>
 
-      <div className='flex justify-evenly'>
+      <div className={`flex ${mobileRangeFull ? 'flex-col gap-6 justify-center' : 'justify-evenly'}`}>
         
         <div className='about-card'>
           <CardButton
