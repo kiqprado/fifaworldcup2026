@@ -15,12 +15,50 @@ import { HeaderPageTitle } from '@/app/elements/header-page-title'
 import { LayoutGrid, TableOfContents} from 'lucide-react'
 import { Input } from '../components/input'
 
+import { useBreakpoint } from '../hook/use-media-query'
+
 export default function GroupsPage() {
   const [ view, setView ] = useState<'card' | 'table'>('card')
   const [searchValue, setSearchValue] = useState('')
 
   const searchParams = useSearchParams()
   const teamCode = searchParams.get('team')
+
+  // BREAKPOINTS INDIVIDUALS
+  const isMobileXS = useBreakpoint('mobileXS')
+  const isMobileSM = useBreakpoint('mobileSM')
+  const isMobileMD = useBreakpoint('mobileMD')
+  const isMobileLG = useBreakpoint('mobileLG')
+  const isMobileXL = useBreakpoint('mobileXL')
+        
+  const isTabletSM = useBreakpoint('tabletSM')
+  const isTabletMD = useBreakpoint('tabletMD')
+        
+  const isDesktopSM = useBreakpoint('desktopSM')
+  const isDesktopMD = useBreakpoint('desktopMD')
+  const isDesktopLG = useBreakpoint('desktopLG')
+  const isDesktopXL = useBreakpoint('desktopXL')
+  const isDesktop2XL = useBreakpoint('desktop2XL')
+        
+  // GROUPS DE BREAKPOINTS
+        
+  const mobileRangeFull =
+    isMobileXS ||
+    isMobileSM ||
+    isMobileMD ||
+    isMobileLG ||
+    isMobileXL
+        
+  const tabletRangeFull =
+    isTabletSM ||
+    isTabletMD
+        
+  const desktopRangeFull =
+    isDesktopSM ||
+    isDesktopMD ||
+    isDesktopLG ||
+    isDesktopXL ||
+    isDesktop2XL
 
   function IsTeamSelectedOnGroup(group: IGroup) {
     if(!teamCode) return false
@@ -101,105 +139,104 @@ export default function GroupsPage() {
         description='12 grupos com 4 seleções cada. A fase de grupos define os classificados para o mata-mata.'
       />
 
-      <div className="w-[80%]">
-  <div
-    className="overflow-hidden
-      relative rounded-3xl
-      border border-amber-400/15
-      bg-zinc-950/75 backdrop-blur-2xl
-      shadow-[0_0_60px_rgba(0,0,0,0.65)]
-    "
-  >
-    {/* Glow decorativo */}
-    <div
-      className="
-        pointer-events-none absolute inset-0
-        bg-[radial-gradient(circle_at_top_left,rgba(251,191,36,0.10),transparent_35%),radial-gradient(circle_at_top_right,rgba(34,211,238,0.08),transparent_30%),radial-gradient(circle_at_bottom,rgba(168,85,247,0.06),transparent_35%)]
-      "
-    />
-
-    <div className="relative z-10 p-3">
-      <div
-        className="
-          flex flex-col xl:flex-row
-          xl:items-center
-          gap-3
-        "
-      >
-        {/* MENU DE VISUALIZAÇÃO */}
+      <div className={`${mobileRangeFull ? 'w-full' : 'w-[80%]'}`}>
         <div
-          className="
-            flex-1
-            grid grid-cols-2 gap-4
-            rounded-2xl
-            border border-white/8
-            bg-gradient-to-r
-            from-zinc-900/95
-            via-zinc-900/85
-            to-zinc-900/95
-            shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]
-            xl:min-w-[520px]
-            xl:flex-shrink-0
-          "
+          className={`overflow-hidden relative
+            ${mobileRangeFull ? 'rounded-b-3xl' : 'rounded-3xl'}
+            border border-amber-400/15
+            bg-zinc-950/75 backdrop-blur-2xl
+            shadow-[0_0_60px_rgba(0,0,0,0.65)]`}
         >
-          <ButtonFilterElement
-            onClick={() => setView('card')}
-            icon={<LayoutGrid size={16} />}
-            title="Cards"
-            active={view === 'card'}
-            accent="amber"
-            showPulse={view === 'card'}
-          />
-
-          <ButtonFilterElement
-            onClick={() => setView('table')}
-            icon={<TableOfContents size={16} />}
-            title="Classificação"
-            active={view === 'table'}
-            accent="cyan"
-            showPulse={view === 'table'}
-          />
-        </div>
-
-        {/* INPUT DE PESQUISA */}
-        <div className="relative min-w-fit">
+          {/* Glow decorativo */}
           <div
             className="
-              pointer-events-none absolute -inset-[1px]
-              rounded-2xl
-              bg-gradient-to-r
-              from-amber-400/20
-              via-cyan-400/10
-              to-amber-400/20
-              blur-sm
-              opacity-70
+              pointer-events-none absolute inset-0
+              bg-[radial-gradient(circle_at_top_left,rgba(251,191,36,0.10),transparent_35%),radial-gradient(circle_at_top_right,rgba(34,211,238,0.08),transparent_30%),radial-gradient(circle_at_bottom,rgba(168,85,247,0.06),transparent_35%)]
             "
           />
 
-          <div
-            className="
-              relative rounded-2xl
-              border border-white/10
-              bg-zinc-950/90 backdrop-blur-xl
-              shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]
-            "
-          >
-            <Input
-              value={searchValue}
-              onChange={setSearchValue}
-              hasAnyResult={hasAnyResult}
-              placeholder="Procure sua seleção"
-              variant="min"
-            />
+          <div className="relative z-10 p-3">
+            <div
+              className="
+                flex flex-col xl:flex-row
+                xl:items-center
+                gap-3
+              "
+            >
+              {/* MENU DE VISUALIZAÇÃO */}
+              <div
+                className="
+                  flex-1
+                  grid grid-cols-2 gap-4
+                  rounded-2xl
+                  border border-white/8
+                  bg-gradient-to-r
+                  from-zinc-900/95
+                  via-zinc-900/85
+                  to-zinc-900/95
+                  shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]
+                  xl:min-w-[520px]
+                  xl:flex-shrink-0
+                "
+              >
+                <ButtonFilterElement
+                  onClick={() => setView('card')}
+                  icon={<LayoutGrid size={16} />}
+                  title="Cards"
+                  active={view === 'card'}
+                  accent="amber"
+                  showPulse={view === 'card'}
+                />
+
+                <ButtonFilterElement
+                  onClick={() => setView('table')}
+                  icon={<TableOfContents size={16} />}
+                  title="Classificação"
+                  active={view === 'table'}
+                  accent="cyan"
+                  showPulse={view === 'table'}
+                />
+              </div>
+
+              {/* INPUT DE PESQUISA */}
+              <div className="relative min-w-fit">
+                <div
+                  className="
+                    pointer-events-none absolute -inset-[1px]
+                    rounded-2xl
+                    bg-gradient-to-r
+                    from-amber-400/20
+                    via-cyan-400/10
+                    to-amber-400/20
+                    blur-sm
+                    opacity-70
+                  "
+                />
+
+                <div
+                  className="
+                    relative rounded-2xl
+                    border border-white/10
+                    bg-zinc-950/90 backdrop-blur-xl
+                    shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]
+                  "
+                >
+                  <Input
+                    value={searchValue}
+                    onChange={setSearchValue}
+                    hasAnyResult={hasAnyResult}
+                    placeholder="Procure sua seleção"
+                    variant="min"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
       
       <div
-        className='flex flex-wrap justify-center gap-8 py-8'
+        className={`flex flex-wrap justify-center gap-8 py-8 ${mobileRangeFull ? 'px-6' : ''}`}
       >
         {orderedGroups.map(group => {
           const highlight =

@@ -15,6 +15,8 @@ import { ButtonFilterElement} from '@/app/elements/button-matches-filter'
 import { NormalizeText } from '../utils/normalize-input-search'
 import { NormalizeDate, CreateMatchDate, IsSameDate, AddDays } from '@/app/utils/nomalize-date'
 
+import { useBreakpoint } from '@/app/hook/use-media-query'
+
 gsap.registerPlugin(ScrollTrigger)
 
 type TDateFilter = 'upcoming' | 'yesterday' | 'today' | 'tomorrow'
@@ -149,6 +151,42 @@ export default function MatchesPage() {
 
   cardsRef.current = []
 
+  // BREAKPOINTS INDIVIDUALS
+          const isMobileXS = useBreakpoint('mobileXS')
+          const isMobileSM = useBreakpoint('mobileSM')
+          const isMobileMD = useBreakpoint('mobileMD')
+          const isMobileLG = useBreakpoint('mobileLG')
+          const isMobileXL = useBreakpoint('mobileXL')
+        
+          const isTabletSM = useBreakpoint('tabletSM')
+          const isTabletMD = useBreakpoint('tabletMD')
+        
+          const isDesktopSM = useBreakpoint('desktopSM')
+          const isDesktopMD = useBreakpoint('desktopMD')
+          const isDesktopLG = useBreakpoint('desktopLG')
+          const isDesktopXL = useBreakpoint('desktopXL')
+          const isDesktop2XL = useBreakpoint('desktop2XL')
+        
+          // GROUPS DE BREAKPOINTS
+        
+          const mobileRangeFull =
+            isMobileXS ||
+            isMobileSM ||
+            isMobileMD ||
+            isMobileLG ||
+            isMobileXL
+        
+          const tabletRangeFull =
+            isTabletSM ||
+            isTabletMD
+        
+          const desktopRangeFull =
+            isDesktopSM ||
+            isDesktopMD ||
+            isDesktopLG ||
+            isDesktopXL ||
+            isDesktop2XL
+
   return (
     <div className='min-h-svh relative'>
       <Link href={'/'} className='absolute top-4 left-4'>Voltar</Link>
@@ -233,14 +271,14 @@ export default function MatchesPage() {
             >
 
               <ButtonFilterElement
-                title="O que rolou ontem"
+                title={`${mobileRangeFull || tabletRangeFull ? 'Ontem': 'O que rolou ontem'}`}
                 active={dateFilter === 'yesterday'}
                 accent="amber"
                 onClick={() => setDateFilter('yesterday')}
               />
 
               <ButtonFilterElement
-                title="Jogos do dia"
+                title={`${mobileRangeFull || tabletRangeFull ? 'Hoje' : 'Jogos do dia'}`}
                 active={dateFilter === 'today'}
                 accent="cyan"
                 showPulse
@@ -248,7 +286,7 @@ export default function MatchesPage() {
               />
 
               <ButtonFilterElement
-                title="O que vem amanhã?"
+                title={`${mobileRangeFull || tabletRangeFull ? 'Amanhã': 'O que vem amanhã?'}`}
                 active={dateFilter === 'tomorrow'}
                 accent="purple"
                 onClick={() => setDateFilter('tomorrow')}
@@ -291,7 +329,7 @@ export default function MatchesPage() {
     </div>
       
 
-      <div className='flex flex-wrap gap-6 py-12 justify-center'>
+      <div className={`flex flex-wrap gap-6 py-12 ${mobileRangeFull ? 'px-6' : ''} justify-center`}>
         {orderedMatches.map((match, index) => (
           <div
             key={match.id}

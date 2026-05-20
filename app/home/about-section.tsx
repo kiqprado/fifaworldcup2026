@@ -122,7 +122,7 @@ export function AboutSection() {
         </div>
       </div>
 
-      <div className={`flex ${mobileRangeFull ? 'flex-col gap-6 justify-center' : 'justify-evenly'}`}>
+      <div className={`flex ${mobileRangeFull || tabletRangeFull ? 'flex-col gap-6 justify-center' : 'justify-evenly'}`}>
         
         <div className='about-card'>
           <CardButton

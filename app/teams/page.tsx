@@ -11,10 +11,49 @@ import { HeaderPageTitle } from '@/app/elements/header-page-title'
 import { Input } from '../components/input'
 import { NormalizeText } from '../utils/normalize-input-search'
 
+import { useBreakpoint } from '../hook/use-media-query'
+
 export default function TeamsPage() {
   const [ searchValue, setSearchValue ] = useState('')
 
   const normalizedSearch = NormalizeText(searchValue)
+
+
+  // BREAKPOINTS INDIVIDUALS
+  const isMobileXS = useBreakpoint('mobileXS')
+  const isMobileSM = useBreakpoint('mobileSM')
+  const isMobileMD = useBreakpoint('mobileMD')
+  const isMobileLG = useBreakpoint('mobileLG')
+  const isMobileXL = useBreakpoint('mobileXL')
+        
+  const isTabletSM = useBreakpoint('tabletSM')
+  const isTabletMD = useBreakpoint('tabletMD')
+        
+  const isDesktopSM = useBreakpoint('desktopSM')
+  const isDesktopMD = useBreakpoint('desktopMD')
+  const isDesktopLG = useBreakpoint('desktopLG')
+  const isDesktopXL = useBreakpoint('desktopXL')
+  const isDesktop2XL = useBreakpoint('desktop2XL')
+        
+  // GROUPS DE BREAKPOINTS
+        
+  const mobileRangeFull =
+    isMobileXS ||
+    isMobileSM ||
+    isMobileMD ||
+    isMobileLG ||
+    isMobileXL
+        
+  const tabletRangeFull =
+    isTabletSM ||
+    isTabletMD
+        
+  const desktopRangeFull =
+    isDesktopSM ||
+    isDesktopMD ||
+    isDesktopLG ||
+    isDesktopXL ||
+    isDesktop2XL
 
   const orderedTeams = useMemo(() => {
     if (!normalizedSearch) {
@@ -80,7 +119,8 @@ export default function TeamsPage() {
         description='48 seleções classificadas para a Copa do Mundo 2026. Conheça a história de cada uma nas Copas.'
       />
 
-      <div className='absolute right-6 top-26 z-30 w-[25%]'>
+      <div className={`absolute z-30 
+        ${mobileRangeFull ? 'top-50 left-1/2 -translate-x-1/2 w-[86%]' : 'right-6 top-26 w-[25%]'}  `}>
         <Input
           placeholder='Busque por sua seleção'
           value={searchValue}

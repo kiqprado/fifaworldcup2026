@@ -3,6 +3,8 @@
 import Image from 'next/image'
 import Tilt from 'react-parallax-tilt'
 
+import { useBreakpoint } from '../hook/use-media-query'
+
 export interface IHistoryEdition {
   year: string
   host: string
@@ -18,25 +20,68 @@ export function HistoryEditionCard({
   champion,
   fact,
 }: IHistoryEdition) {
+
+  // BREAKPOINTS INDIVIDUALS
+          const isMobileXS = useBreakpoint('mobileXS')
+          const isMobileSM = useBreakpoint('mobileSM')
+          const isMobileMD = useBreakpoint('mobileMD')
+          const isMobileLG = useBreakpoint('mobileLG')
+          const isMobileXL = useBreakpoint('mobileXL')
+        
+          const isTabletSM = useBreakpoint('tabletSM')
+          const isTabletMD = useBreakpoint('tabletMD')
+        
+          const isDesktopSM = useBreakpoint('desktopSM')
+          const isDesktopMD = useBreakpoint('desktopMD')
+          const isDesktopLG = useBreakpoint('desktopLG')
+          const isDesktopXL = useBreakpoint('desktopXL')
+          const isDesktop2XL = useBreakpoint('desktop2XL')
+        
+          // GROUPS DE BREAKPOINTS
+        
+          const mobileRangeFull =
+            isMobileXS ||
+            isMobileSM ||
+            isMobileMD ||
+            isMobileLG ||
+            isMobileXL
+        
+          const tabletRangeFull =
+            isTabletSM ||
+            isTabletMD
+        
+          const desktopRangeFull =
+            isDesktopSM ||
+            isDesktopMD ||
+            isDesktopLG ||
+            isDesktopXL ||
+            isDesktop2XL
   return (
     <div
-      className='group w-fit relative rounded-2xl p-[1px]
-      bg-gradient-to-br from-amber-400/80 via-amber-700/40 to-zinc-900
-      transition-all duration-500'
-    >
+  className={`group
+    ${mobileRangeFull || tabletRangeFull ? 'w-full' : 'max-w-6xl w-full'}
+    relative rounded-2xl p-[1px]
+    bg-gradient-to-br from-amber-400/80 via-amber-700/40 to-zinc-900
+    transition-all duration-500`}
+>
       <div
-        className='w-fit relative rounded-2xl bg-zinc-900
-        px-8 py-4 flex gap-6 items-center
-        border border-zinc-800
-        transition-all duration-500
-        group-hover:border-amber-400/60
-        group-hover:shadow-[0_25px_70px_rgba(0,0,0,0.95),0_10px_30px_rgba(120,72,20,0.35),0_0_20px_rgba(251,191,36,0.12)]'
+        className={`w-full relative rounded-2xl bg-zinc-900
+          ${mobileRangeFull || tabletRangeFull ? 'flex-col' : 'flex-row'}
+          ${desktopRangeFull ? 'max-w-6xl': ''}
+          px-8 py-4 flex gap-6 items-center
+          border border-zinc-800
+          transition-all duration-500
+          group-hover:border-amber-400/60
+          group-hover:shadow-[0_25px_70px_rgba(0,0,0,0.95),0_10px_30px_rgba(120,72,20,0.35),0_0_20px_rgba(251,191,36,0.12)]`}
       >
-        <div className='flex flex-col items-center justify-center min-w-[110px]'>
+        <div 
+          className={`flex ${mobileRangeFull || tabletRangeFull ? 'flex-row gap-3' : 'flex-col'} 
+            items-center justify-center min-w-[110px]`}
+        >
           <h2
-            className='text-5xl font-bold tracking-widest
+            className={`${mobileRangeFull ? 'text-4xl' : 'text-5xl'} font-bold tracking-widest
             bg-gradient-to-b from-amber-300 to-yellow-500
-            bg-clip-text text-transparent'
+            bg-clip-text text-transparent`}
           >
             {year}
           </h2>
@@ -50,7 +95,10 @@ export function HistoryEditionCard({
         </div>
 
         {/* DIVIDER */}
-        <div className='h-16 w-[1px] bg-gradient-to-b from-transparent via-zinc-700 to-transparent' />
+        <div 
+          className={`${mobileRangeFull || tabletRangeFull ? 'h-0.5 w-full' : 'h-16 w-[1px] '}
+            bg-gradient-to-b from-transparent via-zinc-700 to-transparent`} 
+        />
 
         <div className='flex flex-col gap-2 flex-1'>
           <div className='flex items-center gap-4'>
@@ -67,11 +115,12 @@ export function HistoryEditionCard({
               className='rounded-md'
             >
               <div
-                className='relative w-[44px] h-[44px]
+                className={`relative
+                ${mobileRangeFull ? ' w-[66px] h-[66px]' : ' w-[56px] h-[56px]'}
                 flex items-center justify-center
                 rounded-md overflow-hidden
                 bg-zinc-800
-                shadow-[0_8px_20px_rgba(0,0,0,0.6)]'
+                shadow-[0_8px_20px_rgba(0,0,0,0.6)]`}
               >
                 <Image
                   src={flag}
@@ -89,17 +138,22 @@ export function HistoryEditionCard({
               </div>
             </Tilt>
 
-            <h3 className='text-lg tracking-widest font-semibold text-white uppercase'>
-              Campeão
-              <span className='text-amber-400 ml-2'>
+            <div 
+              className={`flex gap-2 items-center justify-center
+                ${mobileRangeFull ? 'flex-col' : 'flex-row'}`}
+            >
+              <span
+                className={`text-lg tracking-widest font-semibold text-white uppercase `}
+              >Campeão</span>
+              <span className='text-lg tracking-widest font-semibold text-amber-400 uppercase'>
                 {champion}
               </span>
-            </h3>
+            </div>
           </div>
 
           <p
-            className='text-sm leading-relaxed text-zinc-400
-            w-186'
+            className={`text-sm leading-relaxed text-zinc-400
+            ${mobileRangeFull || tabletRangeFull ? 'w-full text-justify mt-4' : 'w-182'}`}
           >
             {fact}
           </p>

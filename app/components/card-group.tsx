@@ -1,10 +1,12 @@
 'use client'
+import React from 'react'
 
 import Image from 'next/image'
 import Link from 'next/link'
 
 import Tilt from 'react-parallax-tilt'
 
+import { useBreakpoint } from '../hook/use-media-query'
 export interface IGroupTeam {
   code?: string
   name: string;
@@ -105,10 +107,46 @@ export function CardGroup({ teams, keyGroup, highlight }: IGroup & { highlight?:
   )
 }
 
-export function CardGroupQualifier({ keyGroup, teams, highlight,}: IGroup & { highlight?: boolean }) {
+export function CardGroupQualifier({ keyGroup, teams, highlight }: IGroup & { highlight?: boolean }) {
+  // BREAKPOINTS INDIVIDUALS
+  const isMobileXS = useBreakpoint('mobileXS')
+  const isMobileSM = useBreakpoint('mobileSM')
+  const isMobileMD = useBreakpoint('mobileMD')
+  const isMobileLG = useBreakpoint('mobileLG')
+  const isMobileXL = useBreakpoint('mobileXL')
+
+  const isTabletSM = useBreakpoint('tabletSM')
+  const isTabletMD = useBreakpoint('tabletMD')
+
+  const isDesktopSM = useBreakpoint('desktopSM')
+  const isDesktopMD = useBreakpoint('desktopSM')
+  const isDesktopLG = useBreakpoint('desktopLG')
+  const isDesktopXL = useBreakpoint('desktopXL')
+  const isDesktop2XL = useBreakpoint('desktop2XL')
+
+  // GROUPS DE BREAKPOINTS
+  const mobileRangeFull =
+    isMobileXS ||
+    isMobileSM ||
+    isMobileMD ||
+    isMobileLG ||
+    isMobileXL
+
+  const tabletRangeFull =
+    isTabletSM ||
+    isTabletMD
+
+  const desktopRangeFull =
+    isDesktopSM ||
+    isDesktopMD ||
+    isDesktopLG ||
+    isDesktopXL ||
+    isDesktop2XL
+
   function getRowTableBg(i: number) {
     if (i === 0) return 'bg-emerald-700/50 hover:bg-emerald-700'
     if (i === 1) return 'bg-emerald-800/50 hover:bg-emerald-800'
+
     return 'bg-zinc-900'
   }
 
@@ -120,7 +158,7 @@ export function CardGroupQualifier({ keyGroup, teams, highlight,}: IGroup & { hi
       transitionSpeed={1000}
       glareEnable={false}
     >
-      <div className="relative w-136 rounded-xl group">
+      <div className={`relative ${mobileRangeFull ? 'w-full' : 'w-136'}  rounded-xl group`}>
         <div
           className="
             absolute inset-0 rounded-xl p-[1px]
@@ -129,12 +167,12 @@ export function CardGroupQualifier({ keyGroup, teams, highlight,}: IGroup & { hi
             transition-all duration-500
           "
         />
+
         <div
           className={`
             relative overflow-hidden rounded-xl bg-zinc-900
             border border-zinc-800
             transition-all duration-300
-
             group-hover:shadow-[0_0_25px_rgba(16,185,129,0.25)]
             ${highlight ? 'shadow-[0_0_30px_rgba(251,191,36,0.25)]' : ''}
           `}
@@ -143,63 +181,51 @@ export function CardGroupQualifier({ keyGroup, teams, highlight,}: IGroup & { hi
             Grupo {keyGroup}
           </h2>
 
-          <div>
-            <table className="w-full text-center bg-zinc-900">
-              <thead>
-                <tr className="text-zinc-400 bg-zinc-950/50">
-                  <th className="text-sm px-2 py-2">#</th>
-                  <th className="text-sm text-start py-2">Seleção</th>
-                  <th className="text-sm px-1 py-2">Pts</th>
-                  <th className="text-sm px-1 py-2">J</th>
-                  <th className="text-sm px-1 py-2">V</th>
-                  <th className="text-sm px-1 py-2">E</th>
-                  <th className="text-sm px-1 py-2">D</th>
-                  <th className="text-sm px-0.5 py-2">GP</th>
-                  <th className="text-sm px-0.5 py-2">GC</th>
-                  <th className="text-sm px-0.5 py-2">SG</th>
-                </tr>
-              </thead>
+          <div className="w-full">
+  <table className="w-full table-fixed text-center bg-zinc-900">
+    <thead>
+      <tr className="text-zinc-400 bg-zinc-950/50">
+        <th className="text-sm px-2 py-2 w-6">#</th>
+        <th className="text-sm text-start py-2 w-full">Seleção</th>  {/* ← stretch aqui */}
+        <th className="text-sm px-1 py-2 w-8">Pts</th>
+        <th className="text-sm px-1 py-2 w-6">J</th>
+        <th className="text-sm px-1 py-2 w-6">V</th>
+        <th className="text-sm px-1 py-2 w-6">E</th>
+        <th className="text-sm px-1 py-2 w-6">D</th>
+        <th className={`${mobileRangeFull || tabletRangeFull ? 'hidden' : ''} text-sm px-0.5 py-2 w-8`}>GP</th>
+        <th className={`${mobileRangeFull || tabletRangeFull ? 'hidden' : ''} text-sm px-0.5 py-2 w-8`}>GC</th>
+        <th className={`${mobileRangeFull ? 'hidden' : ''} text-sm px-0.5 py-2 w-8`}>SG</th>
+      </tr>
+    </thead>
 
-              <tbody>
-                {teams.map((team, i) => {
-                  const bg = getRowTableBg(i)
+    <tbody>
+      {teams.map((team, i) => {
+        const bg = getRowTableBg(i)
+        return (
+          <tr key={team.name} className={`${bg} transition-all duration-300 ease-in-out`}>
+            <td className="py-1.5 text-xs font-extralight">{i + 1}</td>
 
-                  return (
-                    <tr
-                      key={team.name}
-                      className={`${bg} transition-all duration-300 ease-in-out`}
-                    >
-                      <td className="py-1.5 text-xs font-extralight">
-                        {i + 1}
-                      </td>
+            <td className="py-1.5 text-start font-bold tracking-wider">
+              <div className="flex items-center gap-2">  {/* ← tirei flex do <td> */}
+                <Image src={team.flag} alt={team.name} width={36} height={36} />
+                <Link href={`/lineup/${team.code}`}>{team.name}</Link>
+              </div>
+            </td>
 
-                      <td className="py-1.5 text-start font-bold tracking-wider flex items-center gap-2">
-                        <Image
-                          src={team.flag}
-                          alt={team.name}
-                          width={36}
-                          height={36}
-                        />
-
-                        <Link href={`/lineup/${team.code}`}>
-                          {team.name}
-                        </Link>
-                      </td>
-
-                      <td className="py-1.5">{team.pts}</td>
-                      <td className="py-1.5">{team.j}</td>
-                      <td className="py-1.5">{team.v}</td>
-                      <td className="py-1.5">{team.e}</td>
-                      <td className="py-1.5">{team.d}</td>
-                      <td className="py-1.5">{team.gp}</td>
-                      <td className="py-1.5">{team.gc}</td>
-                      <td className="py-1.5">{team.sg}</td>
-                    </tr>
-                  )
-                })}
-              </tbody>
-            </table>
-          </div>
+            <td className="py-1.5">{team.pts}</td>
+            <td className="py-1.5">{team.j}</td>
+            <td className="py-1.5">{team.v}</td>
+            <td className="py-1.5">{team.e}</td>
+            <td className="py-1.5">{team.d}</td>
+            <td className={`${mobileRangeFull || tabletRangeFull ? 'hidden' : ''} py-1.5`}>{team.gp}</td>
+            <td className={`${mobileRangeFull || tabletRangeFull ? 'hidden' : ''} py-1.5`}>{team.gc}</td>
+            <td className={`${mobileRangeFull ? 'hidden' : ''} py-1.5`}>{team.sg}</td>
+          </tr>
+        )
+      })}
+    </tbody>
+  </table>
+</div>
         </div>
       </div>
     </Tilt>

@@ -59,7 +59,7 @@ export function CardMatch({
         ref={ref}
         className={`
           group relative overflow-hidden
-          w-96 min-h-66 rounded-2xl
+          min-w-88 min-h-66 rounded-2xl
           bg-zinc-900/70 backdrop-blur-lg
           p-4 flex flex-col gap-8
           border transition-all duration-300

@@ -138,7 +138,7 @@ export function LineUpSection() {
       </div>
 
       <div
-        className={`flex flex-wrap  justify-center space-y-16  ${desktopRangeFull ? 'gap-8' : ''}`}
+        className={`flex flex-wrap  justify-center space-y-16  ${desktopRangeFull || tabletRangeFull ? 'gap-8' : ''}`}
       >
         {stars.map((star) => (
           <div
