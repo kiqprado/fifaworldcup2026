@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Copa do Mundo FIFA 2026 | Jogos, Seleções e Cidades-Sede",
+  title: "Copa do Mundo FIFA 2026",
 
   description:
     "Acompanhe tudo sobre a Copa do Mundo FIFA 2026: calendário de jogos, seleções classificadas, grupos, cidades-sede, tabelas, notícias e atualizações do torneio.",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "host cities",
     "qualified teams",
   ],
-  
+
   openGraph: {
     title: "FIFA World Cup 2026",
     description:
