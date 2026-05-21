@@ -49,7 +49,7 @@ const ButtonVariants = tv({
 })
 
 interface IButton
-extends ComponentProps<typeof Link>,
+extends Omit<ComponentProps<typeof Link>, 'color'>,
 VariantProps<typeof ButtonVariants> {
   children: ReactNode
 }
