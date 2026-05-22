@@ -89,7 +89,7 @@ export function LineUpSection() {
         duration: 0.8,
         stagger: {
           each: 0.18,
-          from: 'center',
+          from: 'start',
         }
       }, '-=0.4')
 

@@ -8,6 +8,7 @@ import Link from 'next/link'
 import { editions } from '@/data/history-editions'
 import { HistoryEditionCard } from '@/app/components/card-history-edition'
 import { HeaderPageTitle } from '@/app/elements/header-page-title'
+import { LinkToBack } from '../components/link-to-back'
 
 import { useBreakpoint } from '@/app/hook/use-media-query'
 
@@ -17,40 +18,40 @@ export default function HistoryPage() {
   const cardsRef = useRef<HTMLDivElement[]>([])
 
   // BREAKPOINTS INDIVIDUALS
-        const isMobileXS = useBreakpoint('mobileXS')
-        const isMobileSM = useBreakpoint('mobileSM')
-        const isMobileMD = useBreakpoint('mobileMD')
-        const isMobileLG = useBreakpoint('mobileLG')
-        const isMobileXL = useBreakpoint('mobileXL')
+  const isMobileXS = useBreakpoint('mobileXS')
+  const isMobileSM = useBreakpoint('mobileSM')
+  const isMobileMD = useBreakpoint('mobileMD')
+  const isMobileLG = useBreakpoint('mobileLG')
+  const isMobileXL = useBreakpoint('mobileXL')
       
-        const isTabletSM = useBreakpoint('tabletSM')
-        const isTabletMD = useBreakpoint('tabletMD')
+  const isTabletSM = useBreakpoint('tabletSM')
+  const isTabletMD = useBreakpoint('tabletMD')
       
-        const isDesktopSM = useBreakpoint('desktopSM')
-        const isDesktopMD = useBreakpoint('desktopMD')
-        const isDesktopLG = useBreakpoint('desktopLG')
-        const isDesktopXL = useBreakpoint('desktopXL')
-        const isDesktop2XL = useBreakpoint('desktop2XL')
+  const isDesktopSM = useBreakpoint('desktopSM')
+  const isDesktopMD = useBreakpoint('desktopMD')
+  const isDesktopLG = useBreakpoint('desktopLG')
+  const isDesktopXL = useBreakpoint('desktopXL')
+  const isDesktop2XL = useBreakpoint('desktop2XL')
       
-        // GROUPS DE BREAKPOINTS
+  // GROUPS DE BREAKPOINTS
       
-        const mobileRangeFull =
-          isMobileXS ||
-          isMobileSM ||
-          isMobileMD ||
-          isMobileLG ||
-          isMobileXL
+  const mobileRangeFull =
+    isMobileXS ||
+    isMobileSM ||
+    isMobileMD ||
+    isMobileLG ||
+    isMobileXL
       
-        const tabletRangeFull =
-          isTabletSM ||
-          isTabletMD
+  const tabletRangeFull =
+    isTabletSM ||
+    isTabletMD
       
-        const desktopRangeFull =
-          isDesktopSM ||
-          isDesktopMD ||
-          isDesktopLG ||
-          isDesktopXL ||
-          isDesktop2XL
+  const desktopRangeFull =
+    isDesktopSM ||
+    isDesktopMD ||
+    isDesktopLG ||
+    isDesktopXL ||
+    isDesktop2XL
   
 
   useEffect(() => {
@@ -74,9 +75,9 @@ export default function HistoryPage() {
 
   return (
     <div className='min-h-svh relative'>
-      <Link href={'/#history-section'} className='absolute top-4 left-4 text-zinc-400 hover:text-white'>
-        voltar
-      </Link>
+      <LinkToBack
+        href={'/#history-section'}
+      />
 
       <HeaderPageTitle
         title='História das Copas'

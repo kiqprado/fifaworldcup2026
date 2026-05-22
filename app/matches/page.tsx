@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect, useRef, useState, useMemo } from 'react'
-import Link from 'next/link'
 
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -11,11 +10,14 @@ import { CardMatch } from '@/app/components/card-match'
 import { HeaderPageTitle } from '@/app/elements/header-page-title'
 import { Input } from '../components/input'
 import { ButtonFilterElement} from '@/app/elements/button-matches-filter'
+import { LinkToBack } from '../components/link-to-back'
 
 import { NormalizeText } from '../utils/normalize-input-search'
 import { NormalizeDate, CreateMatchDate, IsSameDate, AddDays } from '@/app/utils/nomalize-date'
 
 import { useBreakpoint } from '@/app/hook/use-media-query'
+
+import { ArrowUp } from 'lucide-react'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -25,6 +27,15 @@ export default function MatchesPage() {
   const cardsRef = useRef<HTMLDivElement[]>([])
   const [ searchValue, setSearchValue ] = useState('')
   const [dateFilter, setDateFilter] = useState<TDateFilter>('upcoming')
+
+  const [ showScrollTop, setShowScrollTop ] = useState(false)
+
+  function HandleScrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
 
   function DoesMatchSearch(match: typeof matches[number], search: string) {
     const normalizedSearch = NormalizeText(search)
@@ -52,9 +63,7 @@ export default function MatchesPage() {
   }
 
   function DoesMatchDateFilter(match: typeof matches[number]) {
-    const mockedToday = new Date(2026, 5, 13)
-    // const today = NormalizeDate(new Date())
-    const today = NormalizeDate(mockedToday)
+    const today = NormalizeDate(new Date())
     const yesterday = AddDays(today, -1)
     const tomorrow = AddDays(today, 1)
 
@@ -113,6 +122,43 @@ export default function MatchesPage() {
       )?.id ?? null
     : null
 
+  // BREAKPOINTS INDIVIDUALS
+  const isMobileXS = useBreakpoint('mobileXS')
+  const isMobileSM = useBreakpoint('mobileSM')
+  const isMobileMD = useBreakpoint('mobileMD')
+  const isMobileLG = useBreakpoint('mobileLG')
+  const isMobileXL = useBreakpoint('mobileXL')
+        
+  const isTabletSM = useBreakpoint('tabletSM')
+  const isTabletMD = useBreakpoint('tabletMD')
+        
+  const isDesktopSM = useBreakpoint('desktopSM')
+  const isDesktopMD = useBreakpoint('desktopMD')
+  const isDesktopLG = useBreakpoint('desktopLG')
+  const isDesktopXL = useBreakpoint('desktopXL')
+  const isDesktop2XL = useBreakpoint('desktop2XL')
+        
+  // GROUPS DE BREAKPOINTS
+        
+  const mobileRangeFull =
+    isMobileXS ||
+    isMobileSM ||
+    isMobileMD ||
+    isMobileLG ||
+    isMobileXL
+        
+  const tabletRangeFull =
+    isTabletSM ||
+    isTabletMD
+        
+  const desktopRangeFull =
+    isDesktopSM ||
+    isDesktopMD ||
+    isDesktopLG ||
+    isDesktopXL ||
+    isDesktop2XL
+
+  
   useEffect(() => {
     const cards = cardsRef.current
 
@@ -146,50 +192,25 @@ export default function MatchesPage() {
     }
   }, [orderedMatches])
 
+  useEffect(() => {
+    function HandleScroll() {
+      setShowScrollTop(window.scrollY > window.innerHeight * 4)
+    }
+  
+    window.addEventListener('scroll', HandleScroll)
+    return () => window.removeEventListener('scroll', HandleScroll)
+  }, [])
+  
   const hasAnyResult =
     !searchValue.trim() || highlightedMatchId !== null
 
   cardsRef.current = []
 
-  // BREAKPOINTS INDIVIDUALS
-          const isMobileXS = useBreakpoint('mobileXS')
-          const isMobileSM = useBreakpoint('mobileSM')
-          const isMobileMD = useBreakpoint('mobileMD')
-          const isMobileLG = useBreakpoint('mobileLG')
-          const isMobileXL = useBreakpoint('mobileXL')
-        
-          const isTabletSM = useBreakpoint('tabletSM')
-          const isTabletMD = useBreakpoint('tabletMD')
-        
-          const isDesktopSM = useBreakpoint('desktopSM')
-          const isDesktopMD = useBreakpoint('desktopMD')
-          const isDesktopLG = useBreakpoint('desktopLG')
-          const isDesktopXL = useBreakpoint('desktopXL')
-          const isDesktop2XL = useBreakpoint('desktop2XL')
-        
-          // GROUPS DE BREAKPOINTS
-        
-          const mobileRangeFull =
-            isMobileXS ||
-            isMobileSM ||
-            isMobileMD ||
-            isMobileLG ||
-            isMobileXL
-        
-          const tabletRangeFull =
-            isTabletSM ||
-            isTabletMD
-        
-          const desktopRangeFull =
-            isDesktopSM ||
-            isDesktopMD ||
-            isDesktopLG ||
-            isDesktopXL ||
-            isDesktop2XL
-
   return (
     <div className='min-h-svh relative'>
-      <Link href={'/'} className='absolute top-4 left-4'>Voltar</Link>
+      <LinkToBack
+        href={'/'}
+      />
 
       <HeaderPageTitle
         title='Partidas'
@@ -352,6 +373,26 @@ export default function MatchesPage() {
           </div>
         ))}
       </div>
+      
+      {showScrollTop && (
+        <button
+          onClick={HandleScrollToTop}
+          className={`fixed bottom-4 right-4 z-50
+          flex items-center justify-center
+          px-3 py-3 rounded-xl outline-none
+          transition-all duration-300 ease-in-out
+          will-change-transform hover:scale-[1.03] active:scale-[0.98]
+          font-medium tracking-wide text-black
+          bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-400
+          border border-yellow-300/20
+          shadow-[0_0_15px_rgba(255,215,0,0.5)]
+          hover:shadow-[0_0_25px_rgba(255,215,0,0.8)]`}
+          title='Voltar ao início.'
+        >
+          <ArrowUp size={22}/>
+        </button>
+      )}
+
     </div>
   )
 }
