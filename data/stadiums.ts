@@ -20,6 +20,15 @@ export const stadiums: IStadium[] = [
     mapsQuery: "SoFi+Stadium,+Inglewood,+CA",
   },
   {
+    name: "Estadio El Gigante de Acero",
+    city: "Guadalupe, Nuevo León",
+    country: "México",
+    image: '/stadiums/BBVA.png',
+    capacity: "53.500",
+    curiosity: "Conhecido como 'El Gigante de Acero' devido à sua estrutura metálica imponente e moderna. Foi inaugurado em 2015 e é a casa do Club de Fútbol Monterrey. Destaca-se por sua localização panorâmica com vista para o Cerro de la Silla.",
+    mapsQuery: "Estadio+Monterrey,+Guadalupe,+Nuevo+León",
+  },
+  {
     name: "AT&T Stadium",
     city: "Dallas",
     country: "EUA",
@@ -117,6 +126,15 @@ export const stadiums: IStadium[] = [
     capacity: "71.000",
     curiosity: "Seu teto retrátil com 8 painéis em formato de pétala é inspirado no Panteão de Roma. Sede do Atlanta United, campeão da MLS 2018.",
     mapsQuery: "Mercedes-Benz+Stadium,+Atlanta,+GA",
+  },
+  {
+    name: "Arrowhead Stadium",
+    city: "Kansas City",
+    country: "EUA",
+    image: '/stadiums/ArrowHead.png',
+    capacity: "76.416",
+    curiosity: "Detém o recorde mundial do Guinness de estádio mais barulhento do mundo, atingindo impressionantes 142,2 decibéis. É a famosa e temida casa dos Kansas City Chiefs na NFL.",
+    mapsQuery: "Arrowhead+Stadium,+Kansas+City,+MO",
   },
   {
     name: "Geodis Park",
