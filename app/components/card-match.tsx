@@ -2,14 +2,16 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, } from 'react'
 
-import { CalendarCheck, MapPinCheck } from 'lucide-react'
+import { CalendarCheck, MapPinCheck, Star } from 'lucide-react'
 import gsap from 'gsap'
 import Tilt from 'react-parallax-tilt'
 
 export interface IMatch {
   id: number;
+  isFavorite: boolean
+  onFavorite: (id: number) => void
   group: string;
   date: string;
   time: string;
@@ -23,6 +25,8 @@ export interface IMatch {
 
 export function CardMatch({
   id,
+  isFavorite = false,
+  onFavorite,
   group,
   date,
   time,
@@ -95,21 +99,45 @@ export function CardMatch({
 
 
         <div className="flex items-center justify-between text-xs text-zinc-300">
-          <div className="flex items-center gap-2">
+
+          <div className="flex items-center gap-2 min-w-fit">
             <CalendarCheck size={14} />
             <span>{time} • {date}</span>
           </div>
 
           <Link
             href={'/groups'}
-            className=" px-2 py-0.5 rounded-md
-            bg-white/5
-            border border-white/10
-            group-hover:border-cyan-400/50
-            transition-all duration-300 ease-in-out"
+            className="
+              px-2 py-0.5 rounded-md
+              bg-white/5
+              border border-white/10
+              group-hover:border-cyan-400/50
+              transition-all duration-300 ease-in-out
+            "
           >
             Grupo {group}
           </Link>
+
+          <button
+            onClick={() => onFavorite?.(id)}
+            className="
+              flex items-center justify-center
+              transition-all duration-300
+              hover:scale-110
+            "
+          >
+            <Star
+              size={18}
+              className={`
+                transition-all duration-300
+                ${
+                  isFavorite
+                    ? 'fill-yellow-400 text-yellow-400 drop-shadow-[0_0_8px_rgba(250,204,21,0.7)]'
+                    : 'text-zinc-400 hover:text-yellow-400'
+                }
+              `}
+            />
+          </button>
         </div>
 
         <div className="flex items-center justify-evenly">

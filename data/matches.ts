@@ -21,7 +21,7 @@ export const matches: IMatch[] = [
 
   // ── Grupo C ──
   { id: 13, group: "C", date: "13/06", time: "19:00", home: { name: "Brasil", code: "BRA", flag: "/flags/br.png" }, away: { name: "Marrocos", code: "MAR", flag: "/flags/ma.png" }, stadium: "MetLife Stadium", stadiumView: "/stadiums/MetLife.png", city: "Nova York / Nova Jersey" },
-  { id: 14, group: "C", date: "13/06", time: "22:00", home: { name: "Haiti", code: "HAI", flag: "/flags/ht.png" }, away: { name: "Escócia", code: "SCO", flag: "/flags/sc.png" }, stadium: "Gillette Stadium", stadiumView: "/stadiums/Gillette.png", city: "Nova York" },
+  { id: 14, group: "C", date: "13/06", time: "22:00", home: { name: "Haiti", code: "HAI", flag: "/flags/ht.png" }, away: { name: "Escócia", code: "SCO", flag: "/flags/sc.png" }, stadium: "Gillette Stadium", stadiumView: "/stadiums/Gillette.png", city: "Boston" },
   { id: 15, group: "C", date: "19/06", time: "19:00", home: { name: "Escócia", code: "SCO", flag: "/flags/sc.png" }, away: { name: "Marrocos", code: "MAR", flag: "/flags/ma.png" }, stadium: "Gillette Stadium", stadiumView: "/stadiums/Gillette.png", city: "Boston" 
 },
   { id: 16, group: "C", date: "19/06", time: "21:30", home: { name: "Brasil", code: "BRA", flag: "/flags/br.png" }, away: { name: "Haiti", code: "HAI", flag: "/flags/ht.png" }, stadium: "Lincoln Financial Field", stadiumView: "/stadiums/Lincoln.png", city: "Filadélfia" },
