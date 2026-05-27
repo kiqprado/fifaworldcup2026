@@ -10,8 +10,8 @@ import Tilt from 'react-parallax-tilt'
 
 export interface IMatch {
   id: number;
-  isFavorite: boolean
-  onFavorite: (id: number) => void
+  isFavorite?: boolean
+  onFavorite?: (id: number) => void
   group: string;
   date: string;
   time: string;
