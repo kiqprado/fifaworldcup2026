@@ -88,36 +88,40 @@ export const squads: ISquad[] = [
     starters: [
       { name: "Alisson", number: 1, position: "GOL" },
 
-      { name: "Danilo", number: 2, position: "LAT" },
+      { name: "Wesley", number: 2, position: "LAT" },
       { name: "Marquinhos", number: 4, position: "ZAG" },
       { name: "Gabriel Magalhães", number: 3, position: "ZAG" },
-      { name: "Guilherme Arana", number: 6, position: "LAT" },
+      { name: "Alex Sandro", number: 6, position: "LAT" },
 
-      { name: "Bruno Guimarães", number: 5, position: "VOL" },
-      { name: "João Gomes", number: 8, position: "MEI" },
+      { name: "Casemiro", number: 5, position: "VOL" },
+      { name: "Bruno Guimarães", number: 8, position: "MEI" },
       { name: "Lucas Paquetá", number: 10, position: "MEI" },
 
       { name: "Raphinha", number: 11, position: "ATA" },
-      { name: "Rodrygo", number: 9, position: "ATA" },
       { name: "Vinícius Jr.", number: 7, position: "ATA" },
+      { name: "Neymar", number: 9, position: "ATA" },
     ],
+
     reserves: [
       { name: "Ederson", number: 23, position: "GOL" },
-      { name: "Bento", number: 12, position: "GOL" },
+      { name: "Weverton", number: 12, position: "GOL" },
 
-      { name: "Éder Militão", number: 14, position: "ZAG" },
-      { name: "Beraldo", number: 13, position: "ZAG" },
+      { name: "Bremer", number: 14, position: "ZAG" },
+      { name: "Léo Pereira", number: 13, position: "ZAG" },
+      { name: "Ibañez", number: 15, position: "ZAG" },
 
-      { name: "Vanderson", number: 22, position: "LAT" },
-      { name: "Wendell", number: 16, position: "LAT" },
+      { name: "Danilo", number: 22, position: "LAT" },
+      { name: "Douglas Santos", number: 16, position: "LAT" },
 
-      { name: "André", number: 15, position: "VOL" },
-      { name: "Douglas Luiz", number: 18, position: "MEI" },
+      { name: "Fabinho", number: 18, position: "VOL" },
+      { name: "Danilo Santos", number: 17, position: "MEI" },
 
-      { name: "Savinho", number: 19, position: "ATA" },
-      { name: "Gabriel Martinelli", number: 21, position: "ATA" },
-      { name: "Endrick", number: 20, position: "ATA" },
-      { name: "João Pedro", number: 17, position: "ATA" },
+      { name: "Gabriel Martinelli", number: 19, position: "ATA" },
+      { name: "Matheus Cunha", number: 20, position: "ATA" },
+      { name: "Endrick", number: 21, position: "ATA" },
+      { name: "Luiz Henrique", number: 24, position: "ATA" },
+      { name: "Igor Thiago", number: 25, position: "ATA" },
+      { name: "Rayan", number: 26, position: "ATA" },
     ],
   },
   {
@@ -139,38 +143,42 @@ export const squads: ISquad[] = [
       { name: "Julián Álvarez", number: 9, position: "ATA" },
       { name: "Nicolás González", number: 15, position: "ATA" },
     ],
+
     reserves: [
-      { name: "Franco Armani", number: 1, position: "GOL" },
       { name: "Gerónimo Rulli", number: 12, position: "GOL" },
+      { name: "Juan Musso", number: 1, position: "GOL" },
 
-      { name: "Germán Pezzella", number: 6, position: "ZAG" },
-      { name: "Nehuén Pérez", number: 4, position: "ZAG" },
+      { name: "Nicolás Otamendi", number: 6, position: "ZAG" },
+      { name: "Leonardo Balerdi", number: 4, position: "ZAG" },
+      { name: "Facundo Medina", number: 18, position: "ZAG" },
 
-      { name: "Marcos Acuña", number: 8, position: "LAT" },
-      { name: "Gonzalo Montiel", number: 4, position: "LAT" },
+      { name: "Gonzalo Montiel", number: 14, position: "LAT" },
+      { name: "Valentín Barco", number: 16, position: "LAT" },
 
-      { name: "Leandro Paredes", number: 14, position: "VOL" },
-      { name: "Giovani Lo Celso", number: 16, position: "MEI" },
+      { name: "Leandro Paredes", number: 8, position: "VOL" },
+      { name: "Giovani Lo Celso", number: 11, position: "MEI" },
+      { name: "Exequiel Palacios", number: 17, position: "MEI" },
+      { name: "Thiago Almada", number: 19, position: "MEI" },
+      { name: "Nico Paz", number: 21, position: "MEI" },
 
-      { name: "Ángel Di María", number: 11, position: "ATA" },
       { name: "Lautaro Martínez", number: 22, position: "ATA" },
-      { name: "Alejandro Garnacho", number: 17, position: "ATA" },
-      { name: "Valentín Carboni", number: 19, position: "ATA" },
+      { name: "Giuliano Simeone", number: 24, position: "ATA" },
+      { name: "Flaco Lopez", number: 26, position: "ATA" },
     ],
   },
   {
     code: "CAN",
     formation: "4-2-3-1",
     starters: [
-      { name: "Milan Borjan", number: 1, position: "GOL" },
+      { name: "Dayne St. Clair", number: 1, position: "GOL" },
 
       { name: "Alistair Johnston", number: 2, position: "LAT" },
-      { name: "Moïse Bombito", number: 15, position: "ZAG" },
+      { name: "Moise Bombito", number: 15, position: "ZAG" },
       { name: "Derek Cornelius", number: 13, position: "ZAG" },
       { name: "Alphonso Davies", number: 19, position: "LAT" },
 
       { name: "Stephen Eustáquio", number: 7, position: "VOL" },
-      { name: "Ismaël Koné", number: 8, position: "VOL" },
+      { name: "Ismael Koné", number: 8, position: "VOL" },
 
       { name: "Tajon Buchanan", number: 17, position: "MEI" },
       { name: "Jonathan David", number: 10, position: "MEI" },
@@ -178,23 +186,27 @@ export const squads: ISquad[] = [
 
       { name: "Cyle Larin", number: 9, position: "ATA" },
     ],
-    reserves: [
-      { name: "Dayne St. Clair", number: 16, position: "GOL" },
-      { name: "Maxime Crépeau", number: 18, position: "GOL" },
 
-      { name: "Kamal Miller", number: 4, position: "ZAG" },
-      { name: "Steven Vitória", number: 5, position: "ZAG" },
+    reserves: [
+      { name: "Maxim Crépeau", number: 16, position: "GOL" },
+      { name: "Owen Goodman", number: 18, position: "GOL" },
+
+      { name: "Joel Waterman", number: 4, position: "ZAG" },
+      { name: "Alfie Jones", number: 5, position: "ZAG" },
+      { name: "Luc de Fougerolles", number: 6, position: "ZAG" },
 
       { name: "Richie Laryea", number: 22, position: "LAT" },
-      { name: "Sam Adekugbe", number: 3, position: "LAT" },
+      { name: "Kiko Sigur", number: 3, position: "LAT" },
 
-      { name: "Atiba Hutchinson", number: 6, position: "VOL" },
       { name: "Mathieu Choinière", number: 14, position: "MEI" },
-
-      { name: "Junior Hoilett", number: 21, position: "ATA" },
-      { name: "Jacob Shaffelburg", number: 12, position: "ATA" },
       { name: "Jonathan Osorio", number: 20, position: "MEI" },
-      { name: "Theo Bair", number: 23, position: "ATA" },
+      { name: "Nathan Saliba", number: 21, position: "MEI" },
+      { name: "Ali Ahmed", number: 24, position: "MEI" },
+
+      { name: "Jacob Shaffelburg", number: 12, position: "ATA" },
+      { name: "Marcelo Flores", number: 23, position: "ATA" },
+      { name: "Tani Oluwaseyi", number: 25, position: "ATA" },
+      { name: "Promise David", number: 26, position: "ATA" },
     ],
   },
   {
@@ -210,29 +222,32 @@ export const squads: ISquad[] = [
 
       { name: "Tyler Adams", number: 6, position: "VOL" },
       { name: "Weston McKennie", number: 8, position: "MEI" },
-      { name: "Yunus Musah", number: 10, position: "MEI" },
+      { name: "Gio Reyna", number: 10, position: "MEI" },
 
-      { name: "Timothy Weah", number: 21, position: "ATA" },
+      { name: "Tim Weah", number: 21, position: "ATA" },
       { name: "Folarin Balogun", number: 9, position: "ATA" },
       { name: "Christian Pulisic", number: 7, position: "ATA" },
     ],
-    reserves: [
-      { name: "Ethan Horvath", number: 18, position: "GOL" },
-      { name: "Drake Callender", number: 25, position: "GOL" },
 
-      { name: "Cameron Carter-Vickers", number: 20, position: "ZAG" },
+    reserves: [
+      { name: "Chris Brady", number: 18, position: "GOL" },
+      { name: "Matt Freese", number: 25, position: "GOL" },
+
       { name: "Miles Robinson", number: 12, position: "ZAG" },
+      { name: "Mark McKenzie", number: 20, position: "ZAG" },
+      { name: "Auston Trusty", number: 22, position: "ZAG" },
 
       { name: "Joe Scally", number: 19, position: "LAT" },
-      { name: "Kristoffer Lund", number: 23, position: "LAT" },
+      { name: "Alex Freeman", number: 23, position: "LAT" },
+      { name: "Max Arfsten", number: 24, position: "LAT" },
 
-      { name: "Johnny Cardoso", number: 4, position: "VOL" },
-      { name: "Gio Reyna", number: 11, position: "MEI" },
-
+      { name: "Cristian Roldan", number: 4, position: "VOL" },
       { name: "Brenden Aaronson", number: 14, position: "MEI" },
       { name: "Malik Tillman", number: 17, position: "MEI" },
+
       { name: "Ricardo Pepi", number: 16, position: "ATA" },
-      { name: "Josh Sargent", number: 24, position: "ATA" },
+      { name: "Haji Wright", number: 11, position: "ATA" },
+      { name: "Alex Zendejas", number: 15, position: "ATA" },
     ],
   },
   {
@@ -250,27 +265,31 @@ export const squads: ISquad[] = [
       { name: "Luis Chávez", number: 24, position: "MEI" },
       { name: "Orbelín Pineda", number: 17, position: "MEI" },
 
-      { name: "Hirving Lozano", number: 22, position: "ATA" },
-      { name: "Santiago Giménez", number: 9, position: "ATA" },
-      { name: "Uriel Antuna", number: 21, position: "ATA" },
+      { name: "Raúl Jiménez", number: 9, position: "ATA" },
+      { name: "Santiago Giménez", number: 11, position: "ATA" },
+      { name: "Julián Quiñones", number: 21, position: "ATA" },
     ],
+
     reserves: [
-      { name: "Luis Malagón", number: 1, position: "GOL" },
+      { name: "Raúl Rangel", number: 1, position: "GOL" },
       { name: "Carlos Acevedo", number: 12, position: "GOL" },
 
-      { name: "Víctor Guzmán", number: 15, position: "ZAG" },
-      { name: "Néstor Araujo", number: 14, position: "ZAG" },
+      { name: "Israel Reyes", number: 14, position: "ZAG" },
+      { name: "Erik Lira", number: 15, position: "ZAG" },
 
-      { name: "Kevin Álvarez", number: 19, position: "LAT" },
-      { name: "Gerardo Arteaga", number: 6, position: "LAT" },
+      { name: "Mateo Chávez", number: 6, position: "LAT" },
+      { name: "Luis Romo", number: 7, position: "LAT" },
 
-      { name: "Erick Sánchez", number: 8, position: "MEI" },
-      { name: "Luis Romo", number: 7, position: "VOL" },
+      { name: "Álvaro Fidalgo", number: 8, position: "MEI" },
+      { name: "Obed Vargas", number: 18, position: "MEI" },
+      { name: "Gilberto Mora", number: 19, position: "MEI" },
 
-      { name: "Diego Lainez", number: 10, position: "ATA" },
-      { name: "Henry Martín", number: 20, position: "ATA" },
-      { name: "Julián Quiñones", number: 11, position: "ATA" },
       { name: "Roberto Alvarado", number: 16, position: "ATA" },
+      { name: "César Huerta", number: 20, position: "ATA" },
+      { name: "Brian Gutiérrez", number: 22, position: "ATA" },
+      { name: "Alexis Vega", number: 25, position: "ATA" },
+      { name: "Guillermo Martínez", number: 26, position: "ATA" },
+      { name: "Armando González", number: 27, position: "ATA" },
     ],
   },
   {
@@ -280,43 +299,46 @@ export const squads: ISquad[] = [
       { name: "Eloy Room", number: 1, position: "GOL" },
 
       { name: "Jurien Gaari", number: 2, position: "LAT" },
-      { name: "Cuco Martina", number: 3, position: "ZAG" },
-      { name: "Vurnon Anita", number: 4, position: "ZAG" },
-      { name: "Rangelo Janga", number: 5, position: "LAT" },
+      { name: "Riechedly Bazoer", number: 3, position: "ZAG" },
+      { name: "Armando Obispo", number: 4, position: "ZAG" },
+      { name: "Sherel Floranus", number: 5, position: "LAT" },
 
       { name: "Leandro Bacuna", number: 8, position: "VOL" },
       { name: "Juninho Bacuna", number: 10, position: "VOL" },
 
       { name: "Brandley Kuwas", number: 11, position: "MEI" },
       { name: "Gervane Kastaneer", number: 7, position: "MEI" },
-      { name: "Elson Hooi", number: 14, position: "MEI" },
+      { name: "Tahith Chong", number: 14, position: "MEI" },
 
-      { name: "Jürgen Locadia", number: 9, position: "ATA" },
+      { name: "Jurgen Locadia", number: 9, position: "ATA" },
     ],
+
     reserves: [
       { name: "Tyrick Bodak", number: 12, position: "GOL" },
-      { name: "Joshua Smits", number: 16, position: "GOL" },
+      { name: "Trevor Doornbusch", number: 16, position: "GOL" },
 
-      { name: "Sherel Floranus", number: 15, position: "LAT" },
-      { name: "Darryl Lachman", number: 6, position: "ZAG" },
+      { name: "Joshua Brenet", number: 15, position: "LAT" },
+      { name: "Roshon Van Eijma", number: 6, position: "ZAG" },
+      { name: "Shurandy Sambo", number: 19, position: "LAT" },
+      { name: "Deveron Fonville", number: 24, position: "ZAG" },
 
-      { name: "Kenji Gorré", number: 17, position: "ATA" },
-      { name: "Charlison Benschop", number: 18, position: "ATA" },
-
-      { name: "Roly Bonevacia", number: 20, position: "MEI" },
-      { name: "Michael Maria", number: 19, position: "LAT" },
-
-      { name: "Jeremy Antonisse", number: 21, position: "ATA" },
-      { name: "Jearl Margaritha", number: 22, position: "ATA" },
       { name: "Kevin Felida", number: 23, position: "VOL" },
       { name: "Godfried Roemeratoe", number: 13, position: "MEI" },
+      { name: "Livano Comenencia", number: 20, position: "MEI" },
+
+      { name: "Kenji Gorré", number: 17, position: "ATA" },
+      { name: "Jeremy Antonisse", number: 21, position: "ATA" },
+      { name: "Jearl Margaritha", number: 22, position: "ATA" },
+      { name: "Tyrese Noslin", number: 18, position: "ATA" },
+      { name: "Sontje Hansen", number: 25, position: "ATA" },
+      { name: "AR'Jany Martha", number: 26, position: "ATA" },
     ],
   },
   {
     code: "HAI",
     formation: "4-4-2",
     starters: [
-      { name: "Johny Placide", number: 1, position: "GOL" },
+      { name: "Johnny Placide", number: 1, position: "GOL" },
 
       { name: "Carlens Arcus", number: 2, position: "LAT" },
       { name: "Ricardo Adé", number: 4, position: "ZAG" },
@@ -326,28 +348,31 @@ export const squads: ISquad[] = [
       { name: "Danley Jean-Jacques", number: 17, position: "VOL" },
       { name: "Leverton Pierre", number: 14, position: "VOL" },
       { name: "Jean-Ricner Bellegarde", number: 10, position: "MEI" },
-      { name: "Derrick Étienne Jr.", number: 7, position: "MEI" },
+      { name: "Derrick Étienne", number: 7, position: "MEI" },
 
       { name: "Frantzdy Pierrot", number: 9, position: "ATA" },
       { name: "Duckens Nazon", number: 20, position: "ATA" },
     ],
+
     reserves: [
       { name: "Alexandre Pierre", number: 12, position: "GOL" },
       { name: "Josué Duverger", number: 23, position: "GOL" },
 
       { name: "Hannes Delcroix", number: 5, position: "ZAG" },
-      { name: "Garven Metusala", number: 13, position: "ZAG" },
+      { name: "Keeto Thermoncy", number: 13, position: "ZAG" },
 
       { name: "Wilguens Paugain", number: 18, position: "LAT" },
       { name: "Duke Lacroix", number: 6, position: "LAT" },
 
-      { name: "Christopher Attys", number: 8, position: "MEI" },
-      { name: "Carl Sainté", number: 15, position: "VOL" },
+      { name: "Carl-Fred Sainthe", number: 15, position: "VOL" },
+      { name: "Pierre Woodenski", number: 8, position: "MEI" },
 
       { name: "Louicius Deedson", number: 11, position: "ATA" },
       { name: "Ruben Providence", number: 19, position: "ATA" },
-      { name: "Yassin Fortuné", number: 21, position: "ATA" },
-      { name: "Mondy Prunier", number: 16, position: "ATA" },
+      { name: "Yassin Fortune", number: 21, position: "ATA" },
+      { name: "Dominique Simon", number: 16, position: "ATA" },
+      { name: "Wilson Isidor", number: 24, position: "ATA" },
+      { name: "Lenny Joseph", number: 25, position: "ATA" },
     ],
   },
   {
@@ -356,11 +381,11 @@ export const squads: ISquad[] = [
     starters: [
       { name: "Orlando Mosquera", number: 1, position: "GOL" },
 
-      { name: "Michael Murillo", number: 2, position: "LAT" },
+      { name: "Amir Murillo", number: 2, position: "LAT" },
       { name: "Fidel Escobar", number: 3, position: "ZAG" },
       { name: "Andrés Andrade", number: 4, position: "ZAG" },
       { name: "José Córdoba", number: 5, position: "ZAG" },
-      { name: "Éric Davis", number: 15, position: "LAT" },
+      { name: "Eric David", number: 15, position: "LAT" },
 
       { name: "Adalberto Carrasquilla", number: 8, position: "MEI" },
       { name: "Aníbal Godoy", number: 20, position: "VOL" },
@@ -369,38 +394,42 @@ export const squads: ISquad[] = [
 
       { name: "José Fajardo", number: 9, position: "ATA" },
     ],
+
     reserves: [
       { name: "Luis Mejía", number: 12, position: "GOL" },
       { name: "César Samudio", number: 22, position: "GOL" },
 
-      { name: "Harold Cummings", number: 6, position: "ZAG" },
       { name: "Jiovany Ramos", number: 13, position: "ZAG" },
-
       { name: "Roderick Miller", number: 16, position: "ZAG" },
-      { name: "Omar Valencia", number: 18, position: "LAT" },
+      { name: "Edgardo Fariña", number: 6, position: "ZAG" },
 
-      { name: "César Yanis", number: 7, position: "MEI" },
-      { name: "Abdiel Ayarza", number: 14, position: "VOL" },
+      { name: "César Blackman", number: 18, position: "LAT" },
+      { name: "Jorge Gutiérrez", number: 14, position: "LAT" },
 
-      { name: "Ismael Díaz", number: 17, position: "ATA" },
-      { name: "Alfredo Stephens", number: 19, position: "ATA" },
+      { name: "Carlos Harvey", number: 7, position: "VOL" },
+      { name: "César Yanis", number: 17, position: "MEI" },
+
+      { name: "Ismael Díaz", number: 19, position: "ATA" },
       { name: "Cecilio Waterman", number: 21, position: "ATA" },
-      { name: "Eduardo Guerrero", number: 23, position: "ATA" },
+      { name: "José Luis Rodríguez", number: 23, position: "ATA" },
+      { name: "Alberto Quintero", number: 24, position: "ATA" },
+      { name: "Tomás Rodríguez", number: 25, position: "ATA" },
+      { name: "Azarías Londoño", number: 26, position: "ATA" },
     ],
   },
   {
     code: "GER",
     formation: "4-2-3-1",
     starters: [
-      { name: "Marc-André ter Stegen", number: 1, position: "GOL" },
+      { name: "Manuel Neuer", number: 1, position: "GOL" },
 
       { name: "Joshua Kimmich", number: 6, position: "LAT" },
       { name: "Antonio Rüdiger", number: 2, position: "ZAG" },
       { name: "Jonathan Tah", number: 4, position: "ZAG" },
       { name: "David Raum", number: 3, position: "LAT" },
 
-      { name: "Ilkay Gündogan", number: 8, position: "VOL" },
-      { name: "Robert Andrich", number: 23, position: "VOL" },
+      { name: "Aleksandar Pavlović", number: 23, position: "VOL" },
+      { name: "Leon Goretzka", number: 8, position: "VOL" },
 
       { name: "Jamal Musiala", number: 10, position: "MEI" },
       { name: "Florian Wirtz", number: 17, position: "MEI" },
@@ -408,23 +437,27 @@ export const squads: ISquad[] = [
 
       { name: "Kai Havertz", number: 9, position: "ATA" },
     ],
+
     reserves: [
-      { name: "Manuel Neuer", number: 22, position: "GOL" },
       { name: "Oliver Baumann", number: 12, position: "GOL" },
+      { name: "Alexander Nübel", number: 22, position: "GOL" },
 
       { name: "Nico Schlotterbeck", number: 15, position: "ZAG" },
-      { name: "Niklas Süle", number: 5, position: "ZAG" },
+      { name: "Waldemar Anton", number: 5, position: "ZAG" },
+      { name: "Malick Thiaw", number: 13, position: "ZAG" },
 
-      { name: "Benjamin Henrichs", number: 20, position: "LAT" },
-      { name: "Maximilian Mittelstädt", number: 18, position: "LAT" },
+      { name: "Nathaniel Brown", number: 18, position: "LAT" },
 
-      { name: "Aleksandar Pavlović", number: 16, position: "VOL" },
-      { name: "Leon Goretzka", number: 14, position: "MEI" },
+      { name: "Angelo Stiller", number: 16, position: "VOL" },
+      { name: "Pascal Gross", number: 20, position: "MEI" },
+      { name: "Felix Nmecha", number: 14, position: "MEI" },
+      { name: "Nadiem Amiri", number: 21, position: "MEI" },
 
-      { name: "Serge Gnabry", number: 11, position: "ATA" },
-      { name: "Niclas Füllkrug", number: 13, position: "ATA" },
-      { name: "Chris Führich", number: 21, position: "ATA" },
       { name: "Deniz Undav", number: 24, position: "ATA" },
+      { name: "Maximilian Beier", number: 11, position: "ATA" },
+      { name: "Jamie Leweling", number: 25, position: "ATA" },
+      { name: "Nick Woltemade", number: 26, position: "ATA" },
+      { name: "Lennart Karl", number: 27, position: "ATA" },
     ],
   },
   {
@@ -435,7 +468,7 @@ export const squads: ISquad[] = [
 
       { name: "Stefan Posch", number: 5, position: "LAT" },
       { name: "Kevin Danso", number: 4, position: "ZAG" },
-      { name: "Maximilian Wöber", number: 2, position: "ZAG" },
+      { name: "David Alaba", number: 2, position: "ZAG" },
       { name: "Phillipp Mwene", number: 16, position: "LAT" },
 
       { name: "Konrad Laimer", number: 20, position: "VOL" },
@@ -447,100 +480,110 @@ export const squads: ISquad[] = [
 
       { name: "Marko Arnautović", number: 7, position: "ATA" },
     ],
+
     reserves: [
-      { name: "Heinz Lindner", number: 12, position: "GOL" },
       { name: "Patrick Pentz", number: 13, position: "GOL" },
+      { name: "Florian Wiegele", number: 12, position: "GOL" },
 
-      { name: "Gernot Trauner", number: 3, position: "ZAG" },
       { name: "Philipp Lienhart", number: 15, position: "ZAG" },
+      { name: "David Affengruber", number: 3, position: "ZAG" },
+      { name: "Marco Friedl", number: 22, position: "ZAG" },
+      { name: "Michael Svoboda", number: 24, position: "ZAG" },
 
-      { name: "Flavius Daniliuc", number: 21, position: "LAT" },
-      { name: "Andreas Weimann", number: 10, position: "ATA" },
+      { name: "Alexander Prass", number: 21, position: "LAT" },
 
       { name: "Romano Schmid", number: 18, position: "MEI" },
-      { name: "Matthias Seidl", number: 17, position: "MEI" },
+      { name: "Florian Grillitsch", number: 17, position: "VOL" },
+      { name: "Alessandro Schopf", number: 10, position: "MEI" },
+      { name: "Carney Chukwuemeka", number: 14, position: "MEI" },
 
       { name: "Michael Gregoritsch", number: 11, position: "ATA" },
-      { name: "Junior Adamu", number: 14, position: "ATA" },
       { name: "Sasa Kalajdzic", number: 25, position: "ATA" },
-      { name: "Leopold Querfeld", number: 22, position: "ZAG" },
+      { name: "Paul Wanner", number: 26, position: "ATA" },
     ],
   },
   {
     code: "BEL",
     formation: "4-2-3-1",
     starters: [
-      { name: "Koen Casteels", number: 1, position: "GOL" },
+      { name: "Courtois", number: 1, position: "GOL" },
 
       { name: "Timothy Castagne", number: 21, position: "LAT" },
-      { name: "Wout Faes", number: 4, position: "ZAG" },
-      { name: "Jan Vertonghen", number: 5, position: "ZAG" },
+      { name: "Zeno Debast", number: 2, position: "ZAG" },
+      { name: "Koni De Winter", number: 4, position: "ZAG" },
       { name: "Arthur Theate", number: 3, position: "LAT" },
 
       { name: "Amadou Onana", number: 18, position: "VOL" },
       { name: "Youri Tielemans", number: 8, position: "VOL" },
 
-      { name: "Johan Bakayoko", number: 19, position: "ATA" },
+      { name: "Jeremy Doku", number: 22, position: "ATA" },
       { name: "Kevin De Bruyne", number: 7, position: "MEI" },
-      { name: "Jérémy Doku", number: 22, position: "ATA" },
+      { name: "Leandro Trossard", number: 17, position: "ATA" },
 
       { name: "Romelu Lukaku", number: 9, position: "ATA" },
     ],
+
     reserves: [
-      { name: "Matz Sels", number: 13, position: "GOL" },
-      { name: "Thomas Kaminski", number: 12, position: "GOL" },
+      { name: "Lammens", number: 12, position: "GOL" },
+      { name: "Mike Penders", number: 13, position: "GOL" },
 
-      { name: "Zeno Debast", number: 2, position: "ZAG" },
-      { name: "Arthur Vermeeren", number: 6, position: "VOL" },
+      { name: "Brandon Mechele", number: 5, position: "ZAG" },
+      { name: "Nathan Ngoy", number: 15, position: "ZAG" },
 
-      { name: "Yannick Carrasco", number: 11, position: "LAT" },
-      { name: "Leandro Trossard", number: 17, position: "ATA" },
+      { name: "Thomas Meunier", number: 11, position: "LAT" },
+      { name: "Maxim De Cuyper", number: 20, position: "LAT" },
+      { name: "Joaquin Seys", number: 23, position: "LAT" },
 
-      { name: "Orel Mangala", number: 15, position: "VOL" },
-      { name: "Aster Vranckx", number: 20, position: "MEI" },
+      { name: "Nicolas Raskin", number: 6, position: "VOL" },
+      { name: "Hans Vanaken", number: 14, position: "MEI" },
+      { name: "Axel Witsel", number: 16, position: "VOL" },
 
-      { name: "Loïs Openda", number: 10, position: "ATA" },
-      { name: "Charles De Ketelaere", number: 16, position: "MEI" },
-      { name: "Dodi Lukebakio", number: 14, position: "ATA" },
-      { name: "Malick Fofana", number: 23, position: "ATA" },
+      { name: "Charles De Ketelaere", number: 10, position: "MEI" },
+      { name: "Dodi Lukebakio", number: 19, position: "ATA" },
+      { name: "Alexis Saelemaekers", number: 24, position: "ATA" },
+      { name: "Mathias Fernandez-Pardo", number: 25, position: "ATA" },
+      { name: "Diego Moreira", number: 26, position: "ATA" },
     ],
   },
   {
     code: "BIH",
     formation: "3-5-2",
     starters: [
-      { name: "Ibrahim Šehić", number: 1, position: "GOL" },
+      { name: "Nikola Vasilj", number: 1, position: "GOL" },
 
-      { name: "Anel Ahmedhodžić", number: 16, position: "ZAG" },
-      { name: "Sead Kolašinac", number: 5, position: "ZAG" },
       { name: "Dennis Hadžikadunić", number: 3, position: "ZAG" },
+      { name: "Sead Kolašinac", number: 5, position: "ZAG" },
+      { name: "Tarik Muharemović", number: 16, position: "ZAG" },
 
       { name: "Amar Dedić", number: 7, position: "LAT" },
       { name: "Benjamin Tahirović", number: 6, position: "VOL" },
-      { name: "Rade Krunić", number: 8, position: "MEI" },
-      { name: "Haris Hajradinović", number: 10, position: "MEI" },
-      { name: "Eldar Ćivić", number: 13, position: "LAT" },
+      { name: "Amir Hadžiahmetović", number: 21, position: "MEI" },
+      { name: "Armin Gigović", number: 8, position: "MEI" },
+      { name: "Dženis Burnić", number: 13, position: "LAT" },
 
       { name: "Edin Džeko", number: 11, position: "ATA" },
       { name: "Ermedin Demirović", number: 9, position: "ATA" },
     ],
+
     reserves: [
-      { name: "Kenan Pirić", number: 12, position: "GOL" },
-      { name: "Nikola Vasilj", number: 23, position: "GOL" },
+      { name: "Martin Zlomislić", number: 12, position: "GOL" },
+      { name: "Osman Hadžikić", number: 23, position: "GOL" },
 
-      { name: "Adrian Leon Barišić", number: 4, position: "ZAG" },
       { name: "Stjepan Radeljić", number: 15, position: "ZAG" },
+      { name: "Nikola Katić", number: 4, position: "ZAG" },
+      { name: "Nihad Mujakić", number: 18, position: "ZAG" },
+      { name: "Nidal Čelik", number: 2, position: "ZAG" },
 
-      { name: "Jusuf Gazibegović", number: 2, position: "LAT" },
-      { name: "Miha Mevlja", number: 18, position: "ZAG" },
+      { name: "Ivan Šunjić", number: 14, position: "VOL" },
+      { name: "Ivan Bašić", number: 17, position: "MEI" },
+      { name: "Kerim Alajbegović", number: 20, position: "MEI" },
 
-      { name: "Gojko Cimirot", number: 14, position: "VOL" },
-      { name: "Amir Hadžiahmetović", number: 21, position: "MEI" },
-
-      { name: "Luka Menalo", number: 20, position: "ATA" },
-      { name: "Smail Prevljak", number: 19, position: "ATA" },
-      { name: "Kenan Kodro", number: 22, position: "ATA" },
-      { name: "Dario Šarić", number: 17, position: "MEI" },
+      { name: "Esmir Bajraktarević", number: 19, position: "ATA" },
+      { name: "Amar Memić", number: 22, position: "ATA" },
+      { name: "Haris Tabaković", number: 24, position: "ATA" },
+      { name: "Samed Baždar", number: 25, position: "ATA" },
+      { name: "Jovo Lukić", number: 26, position: "ATA" },
+      { name: "Ermin Mahmić", number: 27, position: "ATA" },
     ],
   },
   {
@@ -549,36 +592,41 @@ export const squads: ISquad[] = [
     starters: [
       { name: "Dominik Livaković", number: 1, position: "GOL" },
 
-      { name: "Josip Juranović", number: 22, position: "LAT" },
+      { name: "Josip Stanišić", number: 2, position: "LAT" },
       { name: "Joško Gvardiol", number: 4, position: "ZAG" },
       { name: "Josip Šutalo", number: 6, position: "ZAG" },
-      { name: "Borna Sosa", number: 3, position: "LAT" },
+      { name: "Duje Ćaleta-Car", number: 3, position: "LAT" },
 
-      { name: "Marcelo Brozović", number: 11, position: "VOL" },
-      { name: "Mateo Kovačić", number: 8, position: "MEI" },
+      { name: "Mateo Kovačić", number: 8, position: "VOL" },
       { name: "Luka Modrić", number: 10, position: "MEI" },
+      { name: "Petar Sučić", number: 11, position: "MEI" },
 
       { name: "Mario Pašalić", number: 15, position: "ATA" },
       { name: "Andrej Kramarić", number: 9, position: "ATA" },
       { name: "Ivan Perišić", number: 14, position: "ATA" },
     ],
+
     reserves: [
-      { name: "Ivica Ivušić", number: 23, position: "GOL" },
-      { name: "Nediljko Labrović", number: 12, position: "GOL" },
+      { name: "Dominik Kotarski", number: 12, position: "GOL" },
+      { name: "Ivor Pandur", number: 23, position: "GOL" },
 
-      { name: "Domagoj Vida", number: 21, position: "ZAG" },
       { name: "Martin Erlić", number: 5, position: "ZAG" },
+      { name: "Marin Pongračić", number: 21, position: "ZAG" },
+      { name: "Luka Vušković", number: 22, position: "ZAG" },
 
-      { name: "Josip Stanišić", number: 2, position: "LAT" },
-      { name: "Borna Barišić", number: 19, position: "LAT" },
+      { name: "Joško Gvardiol", number: 19, position: "LAT" },
 
       { name: "Luka Sučić", number: 17, position: "MEI" },
-      { name: "Lovro Majer", number: 7, position: "MEI" },
-
-      { name: "Bruno Petković", number: 16, position: "ATA" },
-      { name: "Marko Livaja", number: 18, position: "ATA" },
-      { name: "Josip Brekalo", number: 20, position: "ATA" },
       { name: "Nikola Vlašić", number: 13, position: "MEI" },
+      { name: "Martin Baturina", number: 7, position: "MEI" },
+      { name: "Nikola Moro", number: 18, position: "VOL" },
+      { name: "Kristijan Jakić", number: 20, position: "VOL" },
+
+      { name: "Ante Budimir", number: 16, position: "ATA" },
+      { name: "Petar Musa", number: 24, position: "ATA" },
+      { name: "Igor Matanović", number: 25, position: "ATA" },
+      { name: "Marco Pašalić", number: 26, position: "ATA" },
+      { name: "Toni Fruk", number: 27, position: "ATA" },
     ],
   },
   {
@@ -587,7 +635,7 @@ export const squads: ISquad[] = [
     starters: [
       { name: "Angus Gunn", number: 1, position: "GOL" },
 
-      { name: "Ryan Porteous", number: 5, position: "ZAG" },
+      { name: "Jack Hendry", number: 13, position: "ZAG" },
       { name: "Grant Hanley", number: 6, position: "ZAG" },
       { name: "Kieran Tierney", number: 3, position: "ZAG" },
 
@@ -601,23 +649,27 @@ export const squads: ISquad[] = [
 
       { name: "Lyndon Dykes", number: 9, position: "ATA" },
     ],
+
     reserves: [
-      { name: "Zander Clark", number: 12, position: "GOL" },
+      { name: "Craig Gordon", number: 12, position: "GOL" },
       { name: "Liam Kelly", number: 21, position: "GOL" },
 
-      { name: "Jack Hendry", number: 13, position: "ZAG" },
       { name: "Scott McKenna", number: 15, position: "ZAG" },
+      { name: "John Souttar", number: 5, position: "ZAG" },
+      { name: "Dom Hyam", number: 18, position: "ZAG" },
 
       { name: "Aaron Hickey", number: 22, position: "LAT" },
-      { name: "Greg Taylor", number: 19, position: "LAT" },
+      { name: "Anthony Ralston", number: 19, position: "LAT" },
 
       { name: "Kenny McLean", number: 23, position: "MEI" },
-      { name: "Callum McGregor", number: 14, position: "VOL" },
-
-      { name: "Che Adams", number: 10, position: "ATA" },
-      { name: "Lawrence Shankland", number: 20, position: "ATA" },
-      { name: "Stuart Armstrong", number: 17, position: "MEI" },
       { name: "Lewis Ferguson", number: 16, position: "MEI" },
+
+      { name: "Che Adams", number: 17, position: "ATA" },
+      { name: "Lawrence Shankland", number: 20, position: "ATA" },
+      { name: "George Hirst", number: 24, position: "ATA" },
+      { name: "Ross Stewart", number: 25, position: "ATA" },
+      { name: "Ben Doak", number: 14, position: "ATA" },
+      { name: "Findlay Curtis", number: 26, position: "ATA" },
     ],
   },
   {
@@ -627,7 +679,7 @@ export const squads: ISquad[] = [
       { name: "Unai Simón", number: 23, position: "GOL" },
 
       { name: "Pedro Porro", number: 2, position: "LAT" },
-      { name: "Robin Le Normand", number: 5, position: "ZAG" },
+      { name: "Aymeric Laporte", number: 5, position: "ZAG" },
       { name: "Pau Cubarsí", number: 4, position: "ZAG" },
       { name: "Marc Cucurella", number: 3, position: "LAT" },
 
@@ -636,26 +688,30 @@ export const squads: ISquad[] = [
       { name: "Fabián Ruiz", number: 10, position: "MEI" },
 
       { name: "Lamine Yamal", number: 19, position: "ATA" },
-      { name: "Álvaro Morata", number: 7, position: "ATA" },
+      { name: "Mikel Oyarzabal", number: 7, position: "ATA" },
       { name: "Nico Williams", number: 11, position: "ATA" },
     ],
+
     reserves: [
       { name: "David Raya", number: 1, position: "GOL" },
-      { name: "Álex Remiro", number: 13, position: "GOL" },
+      { name: "Joan García", number: 13, position: "GOL" },
 
-      { name: "Aymeric Laporte", number: 14, position: "ZAG" },
-      { name: "Dean Huijsen", number: 6, position: "ZAG" },
+      { name: "Eric García", number: 6, position: "ZAG" },
+      { name: "Álvaro Carreras Pubill", number: 14, position: "ZAG" },
 
       { name: "Alejandro Grimaldo", number: 12, position: "LAT" },
       { name: "Marcos Llorente", number: 20, position: "LAT" },
 
       { name: "Martín Zubimendi", number: 18, position: "VOL" },
       { name: "Gavi", number: 9, position: "MEI" },
+      { name: "Mikel Merino", number: 15, position: "MEI" },
+      { name: "Álex Baena", number: 24, position: "MEI" },
 
       { name: "Dani Olmo", number: 21, position: "MEI" },
-      { name: "Mikel Oyarzabal", number: 22, position: "ATA" },
       { name: "Ferran Torres", number: 17, position: "ATA" },
-      { name: "Joselu", number: 15, position: "ATA" },
+      { name: "Yeremy Pino", number: 22, position: "ATA" },
+      { name: "Borja Iglesias", number: 25, position: "ATA" },
+      { name: "Víctor Muñoz", number: 26, position: "ATA" },
     ],
   },
   {
@@ -673,28 +729,32 @@ export const squads: ISquad[] = [
       { name: "Adrien Rabiot", number: 14, position: "VOL" },
 
       { name: "Ousmane Dembélé", number: 11, position: "ATA" },
-      { name: "Antoine Griezmann", number: 7, position: "MEI" },
+      { name: "Michael Olise", number: 7, position: "MEI" },
       { name: "Kylian Mbappé", number: 10, position: "ATA" },
 
-      { name: "Olivier Giroud", number: 9, position: "ATA" },
+      { name: "Marcus Thuram", number: 9, position: "ATA" },
     ],
+
     reserves: [
       { name: "Brice Samba", number: 1, position: "GOL" },
-      { name: "Alphonse Areola", number: 23, position: "GOL" },
+      { name: "Robin Risser", number: 23, position: "GOL" },
 
       { name: "Ibrahima Konaté", number: 15, position: "ZAG" },
       { name: "Lucas Hernández", number: 21, position: "ZAG" },
+      { name: "Maxence Lacroix", number: 24, position: "ZAG" },
 
-      { name: "Benjamin Pavard", number: 2, position: "LAT" },
-      { name: "Ferland Mendy", number: 3, position: "LAT" },
+      { name: "Lucas Digne", number: 3, position: "LAT" },
+      { name: "Malo Gusto", number: 2, position: "LAT" },
 
-      { name: "Eduardo Camavinga", number: 6, position: "MEI" },
+      { name: "N'Golo Kanté", number: 6, position: "VOL" },
       { name: "Warren Zaïre-Emery", number: 18, position: "MEI" },
+      { name: "Manu Koné", number: 12, position: "MEI" },
 
-      { name: "Kingsley Coman", number: 20, position: "ATA" },
-      { name: "Randal Kolo Muani", number: 12, position: "ATA" },
-      { name: "Marcus Thuram", number: 13, position: "ATA" },
       { name: "Bradley Barcola", number: 19, position: "ATA" },
+      { name: "Désiré Doué", number: 20, position: "ATA" },
+      { name: "Rayan Cherki", number: 25, position: "MEI" },
+      { name: "Maghnes Akliouche", number: 26, position: "ATA" },
+      { name: "Jean-Philippe Mateta", number: 13, position: "ATA" },
     ],
   },
   {
@@ -712,27 +772,31 @@ export const squads: ISquad[] = [
       { name: "Teun Koopmeiners", number: 14, position: "MEI" },
       { name: "Tijjani Reijnders", number: 16, position: "MEI" },
 
-      { name: "Xavi Simons", number: 7, position: "ATA" },
+      { name: "Justin Kluivert", number: 7, position: "ATA" },
       { name: "Memphis Depay", number: 10, position: "ATA" },
       { name: "Cody Gakpo", number: 11, position: "ATA" },
     ],
+
     reserves: [
       { name: "Mark Flekken", number: 13, position: "GOL" },
-      { name: "Justin Bijlow", number: 23, position: "GOL" },
+      { name: "Robin Roefs", number: 23, position: "GOL" },
 
-      { name: "Matthijs de Ligt", number: 3, position: "ZAG" },
-      { name: "Stefan de Vrij", number: 6, position: "ZAG" },
+      { name: "Jan Paul van Hecke", number: 3, position: "ZAG" },
+      { name: "Jorrel Hato", number: 6, position: "ZAG" },
 
-      { name: "Lutsharel Geertruida", number: 2, position: "LAT" },
-      { name: "Daley Blind", number: 17, position: "LAT" },
+      { name: "Jurriën Timber", number: 2, position: "LAT" },
 
-      { name: "Joey Veerman", number: 8, position: "MEI" },
+      { name: "Ryan Gravenberch", number: 8, position: "MEI" },
       { name: "Quinten Timber", number: 19, position: "MEI" },
+      { name: "Marten de Roon", number: 17, position: "VOL" },
+      { name: "Mats Wieffer", number: 24, position: "VOL" },
+      { name: "Guus Til", number: 25, position: "MEI" },
 
       { name: "Donyell Malen", number: 18, position: "ATA" },
       { name: "Brian Brobbey", number: 9, position: "ATA" },
-      { name: "Steven Bergwijn", number: 20, position: "ATA" },
       { name: "Noa Lang", number: 12, position: "ATA" },
+      { name: "Crysencio Summerville", number: 20, position: "ATA" },
+      { name: "Wout Weghorst", number: 26, position: "ATA" },
     ],
   },
   {
@@ -741,37 +805,41 @@ export const squads: ISquad[] = [
     starters: [
       { name: "Jordan Pickford", number: 1, position: "GOL" },
 
-      { name: "Kyle Walker", number: 2, position: "LAT" },
+      { name: "Reece James", number: 2, position: "LAT" },
       { name: "John Stones", number: 5, position: "ZAG" },
       { name: "Marc Guéhi", number: 6, position: "ZAG" },
-      { name: "Luke Shaw", number: 3, position: "LAT" },
+      { name: "Tino Livramento", number: 3, position: "LAT" },
 
       { name: "Declan Rice", number: 4, position: "VOL" },
-      { name: "Trent Alexander-Arnold", number: 8, position: "MEI" },
+      { name: "Kobbie Mainoo", number: 8, position: "MEI" },
 
       { name: "Bukayo Saka", number: 7, position: "ATA" },
       { name: "Jude Bellingham", number: 10, position: "MEI" },
-      { name: "Phil Foden", number: 11, position: "ATA" },
+      { name: "Anthony Gordon", number: 11, position: "ATA" },
 
       { name: "Harry Kane", number: 9, position: "ATA" },
     ],
+
     reserves: [
-      { name: "Aaron Ramsdale", number: 13, position: "GOL" },
       { name: "Dean Henderson", number: 23, position: "GOL" },
+      { name: "James Trafford", number: 13, position: "GOL" },
 
       { name: "Ezri Konsa", number: 14, position: "ZAG" },
-      { name: "Lewis Dunk", number: 15, position: "ZAG" },
+      { name: "Jarell Quansah", number: 15, position: "ZAG" },
+      { name: "Dan Burn", number: 21, position: "ZAG" },
 
-      { name: "Kieran Trippier", number: 12, position: "LAT" },
-      { name: "Ben Chilwell", number: 21, position: "LAT" },
+      { name: "Djed Spence", number: 12, position: "LAT" },
+      { name: "Nico O'Reilly", number: 16, position: "LAT" },
 
-      { name: "Kalvin Phillips", number: 16, position: "VOL" },
-      { name: "Conor Gallagher", number: 18, position: "MEI" },
+      { name: "Jordan Henderson", number: 18, position: "VOL" },
+      { name: "Elliot Anderson", number: 17, position: "MEI" },
+      { name: "Morgan Rogers", number: 20, position: "MEI" },
+      { name: "Eberechi Eze", number: 19, position: "MEI" },
 
-      { name: "Jack Grealish", number: 17, position: "ATA" },
-      { name: "Jarrod Bowen", number: 20, position: "ATA" },
-      { name: "Ollie Watkins", number: 19, position: "ATA" },
-      { name: "Ivan Toney", number: 22, position: "ATA" },
+      { name: "Marcus Rashford", number: 22, position: "ATA" },
+      { name: "Ollie Watkins", number: 24, position: "ATA" },
+      { name: "Ivan Toney", number: 25, position: "ATA" },
+      { name: "Noni Madueke", number: 26, position: "ATA" },
     ],
   },
   {
@@ -783,7 +851,7 @@ export const squads: ISquad[] = [
       { name: "Julian Ryerson", number: 14, position: "LAT" },
       { name: "Kristoffer Ajer", number: 3, position: "ZAG" },
       { name: "Leo Østigård", number: 4, position: "ZAG" },
-      { name: "Birger Meling", number: 5, position: "LAT" },
+      { name: "Fredrik Bjørkan", number: 5, position: "LAT" },
 
       { name: "Patrick Berg", number: 6, position: "VOL" },
       { name: "Sander Berge", number: 8, position: "MEI" },
@@ -793,23 +861,27 @@ export const squads: ISquad[] = [
       { name: "Erling Haaland", number: 9, position: "ATA" },
       { name: "Alexander Sørloth", number: 7, position: "ATA" },
     ],
+
     reserves: [
-      { name: "Mathias Dyngeland", number: 12, position: "GOL" },
       { name: "Egil Selvik", number: 23, position: "GOL" },
+      { name: "Sander Tangvik", number: 12, position: "GOL" },
 
-      { name: "Stian Gregersen", number: 2, position: "ZAG" },
-      { name: "Fredrik Bjørkan", number: 15, position: "LAT" },
+      { name: "Henrik Falchener", number: 2, position: "ZAG" },
+      { name: "Sondre Langås", number: 15, position: "ZAG" },
+      { name: "Torbjørn Heggem", number: 17, position: "ZAG" },
 
-      { name: "Marcus Pedersen", number: 16, position: "LAT" },
-      { name: "Andreas Hanche-Olsen", number: 17, position: "ZAG" },
+      { name: "Holmgren Pedersen", number: 16, position: "LAT" },
 
       { name: "Morten Thorsby", number: 18, position: "VOL" },
       { name: "Kristian Thorstvedt", number: 19, position: "MEI" },
+      { name: "Fredrik Aursnes", number: 21, position: "MEI" },
+      { name: "Thelo Aasgaard", number: 22, position: "MEI" },
+      { name: "David Møller Wolfe", number: 24, position: "LAT" },
 
       { name: "Jørgen Strand Larsen", number: 11, position: "ATA" },
-      { name: "Mohamed Elyounoussi", number: 22, position: "ATA" },
-      { name: "Ola Solbakken", number: 13, position: "ATA" },
-      { name: "Aron Dønnum", number: 21, position: "ATA" },
+      { name: "Oscar Bobb", number: 13, position: "ATA" },
+      { name: "Andreas Schjelderup", number: 25, position: "ATA" },
+      { name: "Jens Petter Hauge", number: 26, position: "ATA" },
     ],
   },
   {
@@ -823,7 +895,7 @@ export const squads: ISquad[] = [
       { name: "Gonçalo Inácio", number: 14, position: "ZAG" },
       { name: "Nuno Mendes", number: 19, position: "LAT" },
 
-      { name: "João Palhinha", number: 6, position: "VOL" },
+      { name: "João Neves", number: 6, position: "VOL" },
       { name: "Bruno Fernandes", number: 8, position: "MEI" },
       { name: "Vitinha", number: 23, position: "MEI" },
 
@@ -831,23 +903,28 @@ export const squads: ISquad[] = [
       { name: "Cristiano Ronaldo", number: 7, position: "ATA" },
       { name: "Rafael Leão", number: 17, position: "ATA" },
     ],
+
     reserves: [
       { name: "José Sá", number: 12, position: "GOL" },
-      { name: "Rui Patrício", number: 22, position: "GOL" },
+      { name: "Rui Silva", number: 22, position: "GOL" },
+      { name: "Ricardo Velho", number: 24, position: "GOL" },
 
-      { name: "Pepe", number: 3, position: "ZAG" },
-      { name: "António Silva", number: 5, position: "ZAG" },
+      { name: "Tomás Araújo", number: 3, position: "ZAG" },
+      { name: "Renato Veiga", number: 5, position: "ZAG" },
 
       { name: "Diogo Dalot", number: 2, position: "LAT" },
-      { name: "Raphaël Guerreiro", number: 13, position: "LAT" },
+      { name: "Nélson Semedo", number: 13, position: "LAT" },
 
       { name: "Rúben Neves", number: 18, position: "VOL" },
       { name: "Matheus Nunes", number: 16, position: "MEI" },
+      { name: "Samuel Costa", number: 25, position: "VOL" },
 
       { name: "João Félix", number: 11, position: "ATA" },
       { name: "Gonçalo Ramos", number: 9, position: "ATA" },
-      { name: "Diogo Jota", number: 21, position: "ATA" },
       { name: "Pedro Neto", number: 15, position: "ATA" },
+      { name: "Francisco Conceição", number: 21, position: "ATA" },
+      { name: "Trincão", number: 26, position: "ATA" },
+      { name: "Gonçalo Guedes", number: 27, position: "ATA" },
     ],
   },
   {
@@ -862,76 +939,78 @@ export const squads: ISquad[] = [
       { name: "David Jurásek", number: 13, position: "LAT" },
 
       { name: "Tomáš Souček", number: 15, position: "VOL" },
-      { name: "Alex Král", number: 21, position: "VOL" },
+      { name: "Michal Sadílek", number: 20, position: "VOL" },
 
-      { name: "Václav Černý", number: 17, position: "ATA" },
+      { name: "Pavel Šulc", number: 17, position: "ATA" },
       { name: "Adam Hložek", number: 9, position: "MEI" },
       { name: "Lukáš Provod", number: 14, position: "ATA" },
 
       { name: "Patrik Schick", number: 10, position: "ATA" },
     ],
+
     reserves: [
       { name: "Matěj Kovář", number: 23, position: "GOL" },
-      { name: "Tomáš Vaclík", number: 12, position: "GOL" },
+      { name: "Lukáš Horníček", number: 12, position: "GOL" },
 
       { name: "Ladislav Krejčí", number: 2, position: "ZAG" },
-      { name: "Jakub Brabec", number: 6, position: "ZAG" },
+      { name: "David Zima", number: 6, position: "ZAG" },
 
-      { name: "Pavel Kadeřábek", number: 18, position: "LAT" },
+      { name: "David Douděra", number: 18, position: "LAT" },
       { name: "Jaroslav Zelený", number: 19, position: "LAT" },
 
-      { name: "Antonín Barák", number: 8, position: "MEI" },
-      { name: "Michal Sadílek", number: 20, position: "MEI" },
+      { name: "Lukáš Červ", number: 8, position: "VOL" },
+      { name: "Vladimír Darida", number: 21, position: "MEI" },
 
       { name: "Jan Kuchta", number: 11, position: "ATA" },
       { name: "Mojmír Chytil", number: 16, position: "ATA" },
-      { name: "Tomáš Čvančara", number: 22, position: "ATA" },
-      { name: "Ondřej Lingr", number: 7, position: "MEI" },
+      { name: "Tomáš Chorý", number: 22, position: "ATA" },
+      { name: "Denis Višinský", number: 7, position: "ATA" },
     ],
   },
   {
     code: "SWE",
     formation: "4-4-2",
     starters: [
-      { name: "Robin Olsen", number: 1, position: "GOL" },
+      { name: "Viktor Johansson", number: 1, position: "GOL" },
 
-      { name: "Viktor Claesson", number: 17, position: "LAT" },
-      { name: "Victor Lindelöf", number: 3, position: "ZAG" },
+      { name: "Emil Holm", number: 2, position: "LAT" },
+      { name: "Victor Nilsson Lindelöf", number: 3, position: "ZAG" },
       { name: "Isak Hien", number: 4, position: "ZAG" },
-      { name: "Ludwig Augustinsson", number: 6, position: "LAT" },
+      { name: "Gabriel Gudmundsson", number: 6, position: "LAT" },
 
-      { name: "Dejan Kulusevski", number: 21, position: "MEI" },
-      { name: "Emil Forsberg", number: 10, position: "MEI" },
-      { name: "Albin Ekdal", number: 8, position: "VOL" },
-      { name: "Jesper Karlsson", number: 11, position: "MEI" },
+      { name: "Anthony Elanga", number: 21, position: "MEI" },
+      { name: "Lucas Bergvall", number: 8, position: "MEI" },
+      { name: "Yasin Ayari", number: 14, position: "VOL" },
+      { name: "Benjamin Nygren", number: 11, position: "MEI" },
 
       { name: "Alexander Isak", number: 9, position: "ATA" },
       { name: "Viktor Gyökeres", number: 19, position: "ATA" },
     ],
+
     reserves: [
-      { name: "Viktor Johansson", number: 12, position: "GOL" },
-      { name: "Kristoffer Nordfeldt", number: 23, position: "GOL" },
+      { name: "Kristoffer Nordfeldt", number: 12, position: "GOL" },
+      { name: "Jacob Widell Zetterström", number: 23, position: "GOL" },
 
       { name: "Carl Starfelt", number: 5, position: "ZAG" },
-      { name: "Filip Helander", number: 15, position: "ZAG" },
+      { name: "Hjalmar Ekdal", number: 15, position: "ZAG" },
 
-      { name: "Emil Krafth", number: 2, position: "LAT" },
-      { name: "Gabriel Gudmundsson", number: 13, position: "LAT" },
+      { name: "Daniel Svensson", number: 13, position: "LAT" },
+      { name: "Elliot Stroud", number: 18, position: "LAT" },
 
-      { name: "Jens Cajuste", number: 14, position: "VOL" },
-      { name: "Mattias Svanberg", number: 16, position: "MEI" },
+      { name: "Mattias Svanberg", number: 16, position: "VOL" },
+      { name: "Jesper Karlström", number: 17, position: "VOL" },
 
-      { name: "Anthony Elanga", number: 20, position: "ATA" },
-      { name: "Jordan Larsson", number: 18, position: "ATA" },
-      { name: "Alexander Bernhardsson", number: 22, position: "ATA" },
-      { name: "Hugo Larsson", number: 7, position: "MEI" },
+      { name: "Alexander Bernhardsson", number: 20, position: "ATA" },
+      { name: "Gustaf Nilsson", number: 22, position: "ATA" },
+      { name: "Taha Ali", number: 7, position: "ATA" },
+      { name: "Ken Sema", number: 10, position: "MEI" },
     ],
   },
   {
     code: "SUI",
     formation: "3-4-2-1",
     starters: [
-      { name: "Yann Sommer", number: 1, position: "GOL" },
+      { name: "Gregor Kobel", number: 1, position: "GOL" },
 
       { name: "Manuel Akanji", number: 5, position: "ZAG" },
       { name: "Nico Elvedi", number: 4, position: "ZAG" },
@@ -942,28 +1021,29 @@ export const squads: ISquad[] = [
       { name: "Remo Freuler", number: 8, position: "VOL" },
       { name: "Ruben Vargas", number: 17, position: "LAT" },
 
-      { name: "Xherdan Shaqiri", number: 23, position: "MEI" },
       { name: "Dan Ndoye", number: 19, position: "MEI" },
+      { name: "Zeki Amdouni", number: 20, position: "MEI" },
 
       { name: "Breel Embolo", number: 7, position: "ATA" },
     ],
+
     reserves: [
-      { name: "Gregor Kobel", number: 12, position: "GOL" },
-      { name: "Yvon Mvogo", number: 21, position: "GOL" },
+      { name: "Yvon Mvogo", number: 12, position: "GOL" },
+      { name: "Marvin Keller", number: 21, position: "GOL" },
 
-      { name: "Fabian Schär", number: 22, position: "ZAG" },
-      { name: "Cedric Zesiger", number: 15, position: "ZAG" },
+      { name: "Aurèle Amenda", number: 22, position: "ZAG" },
+      { name: "Eray Cömert", number: 15, position: "ZAG" },
 
-      { name: "Kevin Mbabu", number: 2, position: "LAT" },
-      { name: "Ulisses Garcia", number: 6, position: "LAT" },
+      { name: "Miro Muheim", number: 2, position: "LAT" },
+      { name: "Luca Jaquez", number: 6, position: "ZAG" },
 
       { name: "Denis Zakaria", number: 18, position: "VOL" },
       { name: "Ardon Jashari", number: 14, position: "MEI" },
 
       { name: "Noah Okafor", number: 11, position: "ATA" },
-      { name: "Zeki Amdouni", number: 20, position: "ATA" },
-      { name: "Andi Zeqiri", number: 9, position: "ATA" },
-      { name: "Michel Aebischer", number: 16, position: "MEI" },
+      { name: "Cedric Itten", number: 9, position: "ATA" },
+      { name: "Fabian Rieder", number: 16, position: "ATA" },
+      { name: "Michel Aebischer", number: 23, position: "MEI" },
     ],
   },
   {
@@ -984,13 +1064,14 @@ export const squads: ISquad[] = [
       { name: "Kenan Yıldız", number: 11, position: "ATA" },
       { name: "Barış Alper Yılmaz", number: 7, position: "ATA" },
 
-      { name: "Cenk Tosun", number: 9, position: "ATA" },
+      { name: "Kerem Aktürkoğlu", number: 9, position: "ATA" },
     ],
+
     reserves: [
       { name: "Altay Bayındır", number: 12, position: "GOL" },
-      { name: "Doğan Alemdar", number: 23, position: "GOL" },
+      { name: "Mert Günok", number: 23, position: "GOL" },
 
-      { name: "Ozan Kabak", number: 5, position: "ZAG" },
+      { name: "Çağlar Söyüncü", number: 5, position: "ZAG" },
       { name: "Samet Akaydin", number: 14, position: "ZAG" },
 
       { name: "Mert Müldür", number: 18, position: "LAT" },
@@ -1000,9 +1081,9 @@ export const squads: ISquad[] = [
       { name: "İsmail Yüksek", number: 16, position: "VOL" },
 
       { name: "Yunus Akgün", number: 17, position: "ATA" },
-      { name: "Kerem Aktürkoğlu", number: 19, position: "ATA" },
-      { name: "Enes Ünal", number: 21, position: "ATA" },
-      { name: "Bertuğ Yıldırım", number: 22, position: "ATA" },
+      { name: "Can Uzun", number: 19, position: "ATA" },
+      { name: "İrfan Can Kahveci", number: 21, position: "ATA" },
+      { name: "Oğuz Aydın", number: 22, position: "ATA" },
     ],
   },
   {
@@ -1012,81 +1093,83 @@ export const squads: ISquad[] = [
       { name: "Ronwen Williams", number: 1, position: "GOL" },
 
       { name: "Khuliso Mudau", number: 20, position: "LAT" },
-      { name: "Siyanda Xulu", number: 5, position: "ZAG" },
-      { name: "Mothobi Mvala", number: 14, position: "ZAG" },
+      { name: "Nkosinathi Sibisi", number: 5, position: "ZAG" },
+      { name: "Ime Okon", number: 14, position: "ZAG" },
       { name: "Aubrey Modiba", number: 6, position: "LAT" },
 
       { name: "Teboho Mokoena", number: 4, position: "VOL" },
       { name: "Sphephelo Sithole", number: 13, position: "VOL" },
 
-      { name: "Elias Mokwana", number: 17, position: "ATA" },
-      { name: "Percy Tau", number: 10, position: "MEI" },
-      { name: "Themba Zwane", number: 11, position: "ATA" },
+      { name: "Oswin Appollis", number: 17, position: "ATA" },
+      { name: "Themba Zwane", number: 10, position: "MEI" },
+      { name: "Relebohile Mofokeng", number: 11, position: "ATA" },
 
       { name: "Evidence Makgopa", number: 9, position: "ATA" },
     ],
+    
     reserves: [
-      { name: "Veli Mothwa", number: 12, position: "GOL" },
-      { name: "Ricardo Goss", number: 23, position: "GOL" },
+      { name: "Ricardo Goss", number: 12, position: "GOL" },
+      { name: "Sipho Chaine", number: 23, position: "GOL" },
 
-      { name: "Grant Kekana", number: 3, position: "ZAG" },
-      { name: "Nkosinathi Sibisi", number: 15, position: "ZAG" },
+      { name: "Khulumani Ndamane", number: 3, position: "ZAG" },
+      { name: "Samukelo Kabini", number: 15, position: "ZAG" },
 
-      { name: "Terrence Mashego", number: 21, position: "LAT" },
-      { name: "Nyiko Mobbie", number: 2, position: "LAT" },
+      { name: "Bradley Cross", number: 21, position: "LAT" },
+      { name: "Thabang Matuludi", number: 2, position: "LAT" },
 
-      { name: "Thabang Monare", number: 8, position: "VOL" },
-      { name: "Bathusi Aubaas", number: 16, position: "VOL" },
+      { name: "Jayden Adams", number: 8, position: "VOL" },
+      { name: "Thalente Mbatha", number: 16, position: "VOL" },
 
-      { name: "Zakhele Lepasa", number: 19, position: "ATA" },
-      { name: "Oswin Appollis", number: 22, position: "ATA" },
-      { name: "Thapelo Morena", number: 7, position: "ATA" },
-      { name: "Mduduzi Shabalala", number: 18, position: "MEI" },
+      { name: "Lyle Foster", number: 19, position: "ATA" },
+      { name: "Iqraam Rayners", number: 22, position: "ATA" },
+      { name: "Thapelo Maseko", number: 7, position: "ATA" },
+      { name: "Tshepang Moremi", number: 18, position: "ATA" },
     ],
   },
   {
     code: "ALG",
     formation: "4-3-3",
     starters: [
-      { name: "Anthony Mandréa", number: 1, position: "GOL" },
+      { name: "Luca Zidane", number: 1, position: "GOL" },
 
       { name: "Aïssa Mandi", number: 2, position: "LAT" },
-      { name: "Ramiz Zerrouki", number: 4, position: "ZAG" },
       { name: "Mohamed Amine Tougai", number: 5, position: "ZAG" },
+      { name: "Ramy Bensebaini", number: 4, position: "ZAG" },
       { name: "Rayan Aït-Nouri", number: 3, position: "LAT" },
 
-      { name: "Ismaël Bennacer", number: 8, position: "VOL" },
+      { name: "Ramiz Zerrouki", number: 8, position: "VOL" },
       { name: "Houssem Aouar", number: 10, position: "MEI" },
       { name: "Nabil Bentaleb", number: 14, position: "MEI" },
 
       { name: "Riyad Mahrez", number: 7, position: "ATA" },
-      { name: "Baghdad Bounedjah", number: 9, position: "ATA" },
-      { name: "Saïd Benrahma", number: 11, position: "ATA" },
+      { name: "Amine Gouiri", number: 9, position: "ATA" },
+      { name: "Mohamed Amine Amoura", number: 11, position: "ATA" },
     ],
+    
     reserves: [
-      { name: "Alexandre Oukidja", number: 12, position: "GOL" },
-      { name: "Raïs M'Bolhi", number: 23, position: "GOL" },
+      { name: "Oussama Benbot", number: 12, position: "GOL" },
+      { name: "Abdelatif Ramdane", number: 23, position: "GOL" },
 
-      { name: "Youcef Atal", number: 20, position: "LAT" },
-      { name: "Fares Chaïbi", number: 6, position: "MEI" },
+      { name: "Zineddine Belaid", number: 15, position: "ZAG" },
+      { name: "Samir Chergui", number: 21, position: "ZAG" },
 
-      { name: "Ahmed Touba", number: 15, position: "ZAG" },
-      { name: "Djamel Benlamri", number: 21, position: "ZAG" },
+      { name: "Jaouen Hadjam", number: 20, position: "LAT" },
+      { name: "Rafik Belghali", number: 13, position: "LAT" },
 
-      { name: "Himad Abdelli", number: 17, position: "MEI" },
-      { name: "Adam Ounas", number: 18, position: "ATA" },
+      { name: "Farès Chaïbi", number: 6, position: "MEI" },
+      { name: "Ibrahim Maza", number: 17, position: "MEI" },
 
-      { name: "Amine Gouiri", number: 19, position: "ATA" },
-      { name: "Islam Slimani", number: 13, position: "ATA" },
-      { name: "Youcef Belaïli", number: 22, position: "ATA" },
-      { name: "Yacine Brahimi", number: 16, position: "MEI" },
+      { name: "Anis Hadj Moussa", number: 18, position: "ATA" },
+      { name: "Adil Boulbina", number: 19, position: "ATA" },
+      { name: "Nadhir Benbouali", number: 22, position: "ATA" },
+      { name: "Farès Ghedjemis", number: 16, position: "ATA" },
     ],
   },
   {
     code: "CPV",
     formation: "4-3-3",
     starters: [
-      { name: "Vozinha", number: 1, position: "GOL" },
+      { name: "Josimar Dias", number: 1, position: "GOL" },
 
       { name: "Steven Moreira", number: 22, position: "LAT" },
       { name: "Logan Costa", number: 5, position: "ZAG" },
@@ -1095,29 +1178,30 @@ export const squads: ISquad[] = [
 
       { name: "Kevin Pina", number: 8, position: "VOL" },
       { name: "Deroy Duarte", number: 14, position: "MEI" },
-      { name: "Kenny Rocha Santos", number: 6, position: "MEI" },
+      { name: "Jamiro Monteiro", number: 6, position: "MEI" },
 
       { name: "Garry Rodrigues", number: 11, position: "ATA" },
       { name: "Ryan Mendes", number: 7, position: "ATA" },
-      { name: "Bebé", number: 10, position: "ATA" },
+      { name: "Jovane Cabral", number: 10, position: "ATA" },
     ],
+
     reserves: [
-      { name: "Marcio Rosa", number: 12, position: "GOL" },
-      { name: "Dylan Silva", number: 23, position: "GOL" },
+      { name: "Márcio Rosa", number: 12, position: "GOL" },
+      { name: "Carlos Santos", number: 23, position: "GOL" },
 
       { name: "Diney Borges", number: 3, position: "ZAG" },
-      { name: "Jefferson Encada", number: 19, position: "LAT" },
+      { name: "Kelvin Pires", number: 19, position: "ZAG" },
 
-      { name: "Patrick Andrade", number: 16, position: "MEI" },
-      { name: "Jovane Cabral", number: 17, position: "ATA" },
+      { name: "Wagner Pina", number: 21, position: "LAT" },
+      { name: "Sidny Cabral", number: 13, position: "LAT" },
 
-      { name: "Willy Semedo", number: 21, position: "ATA" },
-      { name: "Zé Luís", number: 9, position: "ATA" },
-
-      { name: "Lisandro Semedo", number: 18, position: "ATA" },
-      { name: "Heldon Ramos", number: 20, position: "ATA" },
       { name: "João Paulo Fernandes", number: 15, position: "VOL" },
-      { name: "Sidny Cabral", number: 13, position: "MEI" },
+      { name: "Laros Duarte", number: 16, position: "MEI" },
+
+      { name: "Willy Semedo", number: 17, position: "ATA" },
+      { name: "Dailon Livramento", number: 9, position: "ATA" },
+      { name: "Gilson Benchimol", number: 18, position: "ATA" },
+      { name: "Hélio Varela", number: 20, position: "ATA" },
     ],
   },
   {
@@ -1126,36 +1210,37 @@ export const squads: ISquad[] = [
     starters: [
       { name: "Yahia Fofana", number: 1, position: "GOL" },
 
-      { name: "Serge Aurier", number: 17, position: "LAT" },
+      { name: "Guela Doué", number: 17, position: "LAT" },
       { name: "Evan Ndicka", number: 21, position: "ZAG" },
-      { name: "Ousmane Diomande", number: 2, position: "ZAG" },
+      { name: "Ousmane Diomandé", number: 2, position: "ZAG" },
       { name: "Ghislain Konan", number: 3, position: "LAT" },
 
-      { name: "Seko Fofana", number: 8, position: "MEI" },
       { name: "Franck Kessié", number: 6, position: "VOL" },
+      { name: "Seko Fofana", number: 8, position: "MEI" },
       { name: "Jean Michaël Seri", number: 4, position: "MEI" },
 
-      { name: "Nicolas Pépé", number: 19, position: "ATA" },
-      { name: "Sébastien Haller", number: 22, position: "ATA" },
+      { name: "Amad Diallo", number: 10, position: "ATA" },
+      { name: "Elye Wahi", number: 22, position: "ATA" },
       { name: "Simon Adingra", number: 24, position: "ATA" },
     ],
+    
     reserves: [
-      { name: "Badra Ali Sangaré", number: 12, position: "GOL" },
-      { name: "Charles Folly", number: 23, position: "GOL" },
+      { name: "Mohamed Koné", number: 12, position: "GOL" },
+      { name: "Alban Lafont", number: 23, position: "GOL" },
 
-      { name: "Willy Boly", number: 5, position: "ZAG" },
       { name: "Odilon Kossounou", number: 7, position: "ZAG" },
+      { name: "Emmanuel Agbadou", number: 5, position: "ZAG" },
 
       { name: "Wilfried Singo", number: 18, position: "LAT" },
-      { name: "Hassane Kamara", number: 13, position: "LAT" },
+      { name: "Clément Akpa", number: 13, position: "LAT" },
 
       { name: "Ibrahim Sangaré", number: 15, position: "VOL" },
-      { name: "Lazare Amani", number: 10, position: "MEI" },
+      { name: "Parfait Guiagon", number: 16, position: "MEI" },
 
-      { name: "Jonathan Bamba", number: 11, position: "ATA" },
-      { name: "Maxwel Cornet", number: 20, position: "ATA" },
-      { name: "Christian Kouamé", number: 9, position: "ATA" },
-      { name: "Karim Konaté", number: 14, position: "ATA" },
+      { name: "Nicolas Pépé", number: 19, position: "ATA" },
+      { name: "Evann Guessand", number: 20, position: "ATA" },
+      { name: "Ange-Yoan Bonny", number: 9, position: "ATA" },
+      { name: "Bazoumana Touré", number: 14, position: "ATA" },
     ],
   },
   {
@@ -1165,36 +1250,36 @@ export const squads: ISquad[] = [
       { name: "Mohamed El Shenawy", number: 1, position: "GOL" },
 
       { name: "Mohamed Hany", number: 2, position: "LAT" },
-      { name: "Ahmed Hegazi", number: 6, position: "ZAG" },
       { name: "Mohamed Abdelmonem", number: 24, position: "ZAG" },
-      { name: "Ahmed Fattouh", number: 13, position: "LAT" },
+      { name: "Ramy Rabia", number: 6, position: "ZAG" },
+      { name: "Ahmed Fatouh", number: 13, position: "LAT" },
 
-      { name: "Mohamed Elneny", number: 17, position: "VOL" },
       { name: "Hamdi Fathi", number: 8, position: "VOL" },
+      { name: "Marwan Attia", number: 19, position: "VOL" },
       { name: "Emam Ashour", number: 22, position: "MEI" },
 
       { name: "Mohamed Salah", number: 10, position: "ATA" },
-      { name: "Mostafa Mohamed", number: 11, position: "ATA" },
       { name: "Omar Marmoush", number: 7, position: "ATA" },
+      { name: "Mahmoud Trezeguet", number: 15, position: "ATA" },
     ],
 
     reserves: [
-      { name: "Mohamed Sobhi", number: 16, position: "GOL" },
-      { name: "Mahmoud Gad", number: 23, position: "GOL" },
+      { name: "Mostafa Shobeir", number: 16, position: "GOL" },
+      { name: "El Mahdy Soliman", number: 23, position: "GOL" },
 
       { name: "Yasser Ibrahim", number: 5, position: "ZAG" },
-      { name: "Osama Galal", number: 4, position: "ZAG" },
+      { name: "Hossam Abdelmaguid", number: 4, position: "ZAG" },
 
-      { name: "Omar Kamal", number: 3, position: "LAT" },
-      { name: "Karim Fouad", number: 14, position: "LAT" },
+      { name: "Karim Hafez", number: 14, position: "LAT" },
+      { name: "Tarek Alaa", number: 3, position: "LAT" },
 
-      { name: "Zizo", number: 21, position: "MEI" },
-      { name: "Marwan Attia", number: 19, position: "VOL" },
+      { name: "Ahmed Sayed Zizo", number: 21, position: "MEI" },
+      { name: "Mohannad Lasheen", number: 17, position: "VOL" },
 
-      { name: "Trezeguet", number: 15, position: "ATA" },
-      { name: "Mostafa Fathi", number: 18, position: "ATA" },
-      { name: "Ahmed Hassan Kouka", number: 9, position: "ATA" },
       { name: "Ibrahim Adel", number: 20, position: "ATA" },
+      { name: "Haitham Hassan", number: 18, position: "ATA" },
+      { name: "Mostafa Ziko", number: 11, position: "ATA" },
+      { name: "Hamza Abdel Karim", number: 9, position: "ATA" },
     ],
   },
   {
@@ -1203,37 +1288,38 @@ export const squads: ISquad[] = [
     starters: [
       { name: "Lawrence Ati-Zigi", number: 1, position: "GOL" },
 
-      { name: "Tariq Lamptey", number: 2, position: "LAT" },
-      { name: "Daniel Amartey", number: 18, position: "ZAG" },
-      { name: "Alexander Djiku", number: 23, position: "ZAG" },
+      { name: "Marvin Senaya", number: 2, position: "LAT" },
+      { name: "Jerome Opoku", number: 18, position: "ZAG" },
+      { name: "Abdul Mumin", number: 23, position: "ZAG" },
       { name: "Gideon Mensah", number: 14, position: "LAT" },
 
       { name: "Thomas Partey", number: 5, position: "VOL" },
-      { name: "Mohammed Kudus", number: 20, position: "MEI" },
+      { name: "Elisha Owusu", number: 6, position: "VOL" },
 
       { name: "Jordan Ayew", number: 9, position: "ATA" },
-      { name: "André Ayew", number: 10, position: "MEI" },
+      { name: "Ernest Nuamah", number: 11, position: "ATA" },
       { name: "Inaki Williams", number: 19, position: "ATA" },
 
       { name: "Antoine Semenyo", number: 25, position: "ATA" },
     ],
+
     reserves: [
-      { name: "Richard Ofori", number: 12, position: "GOL" },
-      { name: "Jojo Wollacott", number: 16, position: "GOL" },
+      { name: "Benjamin Asare", number: 12, position: "GOL" },
+      { name: "Joseph Anang", number: 16, position: "GOL" },
 
-      { name: "Nicholas Opoku", number: 4, position: "ZAG" },
-      { name: "Joseph Aidoo", number: 15, position: "ZAG" },
+      { name: "Alidu Seidu", number: 4, position: "ZAG" },
+      { name: "Jonas Adjetey", number: 15, position: "ZAG" },
 
-      { name: "Denis Odoi", number: 3, position: "LAT" },
-      { name: "Kingsley Schindler", number: 17, position: "LAT" },
+      { name: "Baba Abdul Rahman", number: 3, position: "LAT" },
+      { name: "Derrick Luckassen", number: 17, position: "LAT" },
 
-      { name: "Salis Abdul Samed", number: 21, position: "VOL" },
-      { name: "Elisha Owusu", number: 6, position: "VOL" },
+      { name: "Kwasi Sibo", number: 21, position: "VOL" },
+      { name: "Augustine Boakye", number: 8, position: "MEI" },
 
-      { name: "Ernest Nuamah", number: 11, position: "ATA" },
-      { name: "Osman Bukari", number: 7, position: "ATA" },
       { name: "Kamaldeen Sulemana", number: 22, position: "ATA" },
-      { name: "Ransford-Yeboah Königsdörffer", number: 13, position: "ATA" },
+      { name: "Abdul Fatawu Issahaku", number: 7, position: "ATA" },
+      { name: "Brandon Thomas-Asante", number: 13, position: "ATA" },
+      { name: "Christopher Bonsu Baah", number: 20, position: "ATA" },
     ],
   },
   {
@@ -1243,35 +1329,36 @@ export const squads: ISquad[] = [
       { name: "Yassine Bounou", number: 1, position: "GOL" },
 
       { name: "Achraf Hakimi", number: 2, position: "LAT" },
-      { name: "Romain Saïss", number: 6, position: "ZAG" },
       { name: "Nayef Aguerd", number: 5, position: "ZAG" },
-      { name: "Noussair Mazraoui", number: 3, position: "LAT" },
+      { name: "Chadi Riad", number: 6, position: "ZAG" },
+      { name: "Adam Aznou", number: 3, position: "LAT" },
 
       { name: "Sofyan Amrabat", number: 4, position: "VOL" },
-      { name: "Azzedine Ounahi", number: 8, position: "MEI" },
-      { name: "Selim Amallah", number: 15, position: "MEI" },
+      { name: "Bilal El Khannouss", number: 8, position: "MEI" },
+      { name: "Ismael Saibari", number: 15, position: "MEI" },
 
-      { name: "Hakim Ziyech", number: 7, position: "ATA" },
-      { name: "Youssef En-Nesyri", number: 9, position: "ATA" },
-      { name: "Sofiane Boufal", number: 17, position: "ATA" },
+      { name: "Brahim Díaz", number: 10, position: "ATA" },
+      { name: "Ayoub El Kaabi", number: 9, position: "ATA" },
+      { name: "Abde Ezzalzouli", number: 17, position: "ATA" },
     ],
+
     reserves: [
       { name: "Munir El Kajoui", number: 12, position: "GOL" },
-      { name: "Yassine Bounou", number: 22, position: "GOL" },
+      { name: "Ahmed Reda Tagnaouti", number: 22, position: "GOL" },
 
-      { name: "Jawad El Yamiq", number: 18, position: "ZAG" },
-      { name: "Chadi Riad", number: 24, position: "ZAG" },
+      { name: "Omar El Hilali", number: 18, position: "LAT" },
+      { name: "Abdel Abqar", number: 24, position: "ZAG" },
 
-      { name: "Yahya Attiat-Allah", number: 25, position: "LAT" },
-      { name: "Noussair Mazraoui", number: 26, position: "LAT" },
+      { name: "Noussair Mazraoui", number: 25, position: "LAT" },
+      { name: "Jamal Harkass", number: 26, position: "ZAG" },
 
-      { name: "Bilal El Khannouss", number: 23, position: "MEI" },
-      { name: "Amine Harit", number: 10, position: "MEI" },
+      { name: "Neil El Aynaoui", number: 23, position: "MEI" },
+      { name: "Azzedine Ounahi", number: 14, position: "MEI" },
 
-      { name: "Abde Ezzalzouli", number: 16, position: "ATA" },
-      { name: "Tarik Tissoudali", number: 19, position: "ATA" },
-      { name: "Ayoub El Kaabi", number: 20, position: "ATA" },
-      { name: "Ilias Chair", number: 11, position: "MEI" },
+      { name: "Chemsdine Talbi", number: 16, position: "ATA" },
+      { name: "Soufiane Rahimi", number: 19, position: "ATA" },
+      { name: "Hamza Igamane", number: 20, position: "ATA" },
+      { name: "Ayman Azhil", number: 11, position: "MEI" },
     ],
   },
   {
@@ -1280,36 +1367,37 @@ export const squads: ISquad[] = [
     starters: [
       { name: "Lionel Mpasi", number: 1, position: "GOL" },
 
-      { name: "Gédéon Kalulu", number: 2, position: "LAT" },
+      { name: "Aaron Wan-Bissaka", number: 2, position: "LAT" },
       { name: "Chancel Mbemba", number: 5, position: "ZAG" },
       { name: "Dylan Batubinsika", number: 4, position: "ZAG" },
       { name: "Arthur Masuaku", number: 3, position: "LAT" },
 
       { name: "Samuel Moutoussamy", number: 8, position: "VOL" },
       { name: "Charles Pickel", number: 18, position: "MEI" },
-      { name: "Grady Diangana", number: 11, position: "MEI" },
+      { name: "Noah Sadiki", number: 11, position: "MEI" },
 
       { name: "Yoane Wissa", number: 20, position: "ATA" },
-      { name: "Cédric Bakambu", number: 17, position: "ATA" },
-      { name: "Silas Katompa Mvumpa", number: 7, position: "ATA" },
+      { name: "Simon Banza", number: 9, position: "ATA" },
+      { name: "Théo Bongonda", number: 7, position: "ATA" },
     ],
+
     reserves: [
-      { name: "Joël Kiassumbua", number: 16, position: "GOL" },
       { name: "Timothy Fayulu", number: 23, position: "GOL" },
+      { name: "Matthieu Epolo", number: 16, position: "GOL" },
 
-      { name: "Christian Luyindama", number: 6, position: "ZAG" },
-      { name: "Henock Inonga", number: 15, position: "ZAG" },
+      { name: "Steve Kapuadi", number: 6, position: "ZAG" },
+      { name: "Axel Tuanzebe", number: 15, position: "ZAG" },
 
-      { name: "Joris Kayembe", number: 12, position: "LAT" },
-      { name: "Vital Nsimba", number: 21, position: "LAT" },
+      { name: "Gédéon Kalulu", number: 12, position: "LAT" },
+      { name: "Joris Kayembe", number: 21, position: "LAT" },
 
-      { name: "Gaël Kakuta", number: 14, position: "MEI" },
       { name: "Edo Kayembe", number: 22, position: "VOL" },
+      { name: "Ngal'ayel Mukau", number: 14, position: "MEI" },
 
-      { name: "Dieumerci Mbokani", number: 9, position: "ATA" },
+      { name: "Cédric Bakambu", number: 17, position: "ATA" },
       { name: "Meschack Elia", number: 13, position: "ATA" },
       { name: "Fiston Mayele", number: 19, position: "ATA" },
-      { name: "Ben Malango", number: 10, position: "ATA" },
+      { name: "Gaël Kakuta", number: 10, position: "MEI" },
     ],
   },
   {
@@ -1318,36 +1406,37 @@ export const squads: ISquad[] = [
     starters: [
       { name: "Édouard Mendy", number: 16, position: "GOL" },
 
+      { name: "Krépin Diatta", number: 15, position: "LAT" },
       { name: "Kalidou Koulibaly", number: 3, position: "ZAG" },
-      { name: "Abdou Diallo", number: 22, position: "ZAG" },
-      { name: "Krèpin Diatta", number: 15, position: "LAT" },
+      { name: "Moussa Niakhaté", number: 19, position: "ZAG" },
       { name: "Ismail Jakobs", number: 14, position: "LAT" },
 
-      { name: "Idrissa Gueye", number: 5, position: "VOL" },
+      { name: "Idrissa Gana Gueye", number: 5, position: "VOL" },
       { name: "Pape Matar Sarr", number: 17, position: "MEI" },
-      { name: "Nampalys Mendy", number: 6, position: "VOL" },
+      { name: "Lamine Camara", number: 26, position: "MEI" },
 
-      { name: "Ismaïla Sarr", number: 18, position: "ATA" },
+      { name: "Ismaila Sarr", number: 18, position: "ATA" },
       { name: "Nicolas Jackson", number: 7, position: "ATA" },
       { name: "Sadio Mané", number: 10, position: "ATA" },
     ],
+
     reserves: [
-      { name: "Alfred Gomis", number: 1, position: "GOL" },
-      { name: "Seny Dieng", number: 23, position: "GOL" },
+      { name: "Mory Diaw", number: 1, position: "GOL" },
+      { name: "Yehvann Diouf", number: 23, position: "GOL" },
 
-      { name: "Pape Abou Cissé", number: 4, position: "ZAG" },
-      { name: "Formose Mendy", number: 2, position: "ZAG" },
+      { name: "Mamadou Sarr", number: 4, position: "ZAG" },
+      { name: "Abdoulaye Seck", number: 2, position: "ZAG" },
 
-      { name: "Fodé Ballo-Touré", number: 12, position: "LAT" },
-      { name: "Youssouf Sabaly", number: 21, position: "LAT" },
+      { name: "Antoine Mendy", number: 12, position: "LAT" },
+      { name: "El Hadji Malick Diouf", number: 21, position: "LAT" },
 
-      { name: "Cheikhou Kouyaté", number: 8, position: "VOL" },
-      { name: "Lamine Camara", number: 26, position: "MEI" },
+      { name: "Pape Gueye", number: 8, position: "VOL" },
+      { name: "Habib Diarra", number: 6, position: "MEI" },
 
-      { name: "Habib Diallo", number: 9, position: "ATA" },
-      { name: "Boulaye Dia", number: 19, position: "ATA" },
       { name: "Iliman Ndiaye", number: 11, position: "ATA" },
+      { name: "Assane Diao", number: 9, position: "ATA" },
       { name: "Bamba Dieng", number: 20, position: "ATA" },
+      { name: "Chérif Ndiaye", number: 22, position: "ATA" },
     ],
   },
   {
@@ -1356,113 +1445,116 @@ export const squads: ISquad[] = [
     starters: [
       { name: "Aymen Dahmen", number: 1, position: "GOL" },
 
-      { name: "Wajdi Kechrida", number: 21, position: "LAT" },
-      { name: "Yassine Meriah", number: 4, position: "ZAG" },
+      { name: "Valery", number: 21, position: "LAT" },
+      { name: "Dylan Bronn", number: 5, position: "ZAG" },
       { name: "Montassar Talbi", number: 3, position: "ZAG" },
       { name: "Ali Abdi", number: 24, position: "LAT" },
 
       { name: "Ellyes Skhiri", number: 17, position: "VOL" },
-      { name: "Aïssa Laïdouni", number: 14, position: "MEI" },
       { name: "Hannibal Mejbri", number: 10, position: "MEI" },
+      { name: "Anis Ben Slimane", number: 7, position: "MEI" },
 
-      { name: "Anis Ben Slimane", number: 7, position: "ATA" },
-      { name: "Seifeddine Jaziri", number: 9, position: "ATA" },
-      { name: "Youssef Msakni", number: 11, position: "ATA" },
+      { name: "Elias Achouri", number: 11, position: "ATA" },
+      { name: "Hazem Mastouri", number: 9, position: "ATA" },
+      { name: "Sayfallah Ltaief", number: 20, position: "ATA" },
     ],
+
     reserves: [
-      { name: "Bechir Ben Said", number: 23, position: "GOL" },
-      { name: "Mouez Hassen", number: 16, position: "GOL" },
+      { name: "Ben Hassen", number: 16, position: "GOL" },
+      { name: "Chamakh", number: 23, position: "GOL" },
 
-      { name: "Dylan Bronn", number: 5, position: "ZAG" },
-      { name: "Nader Ghandri", number: 6, position: "ZAG" },
+      { name: "Alaa Ghram", number: 4, position: "ZAG" },
+      { name: "Rekik", number: 6, position: "ZAG" },
 
-      { name: "Hamza Mathlouthi", number: 2, position: "LAT" },
-      { name: "Oussama Haddadi", number: 12, position: "LAT" },
+      { name: "Neffati", number: 2, position: "LAT" },
+      { name: "Ben Hmida", number: 12, position: "LAT" },
 
-      { name: "Ferjani Sassi", number: 13, position: "MEI" },
-      { name: "Ghaylen Chaalali", number: 18, position: "VOL" },
+      { name: "Mohamed Ali Ben Romdhane", number: 13, position: "MEI" },
+      { name: "Aymen Ben Mohamed", number: 18, position: "MEI" },
 
-      { name: "Issam Jebali", number: 19, position: "ATA" },
-      { name: "Taha Yassine Khenissi", number: 20, position: "ATA" },
-      { name: "Naim Sliti", number: 15, position: "ATA" },
-      { name: "Haythem Jouini", number: 22, position: "ATA" },
+      { name: "Youssef Snana", number: 19, position: "ATA" },
+      { name: "Chaouat", number: 22, position: "ATA" },
+      { name: "Ayari", number: 15, position: "ATA" },
+      { name: "Gharbi", number: 14, position: "MEI" },
     ],
   },
   {
     code: "KSA",
     formation: "4-3-3",
     starters: [
-      { name: "Mohammed Al-Owais", number: 1, position: "GOL" },
+      { name: "Mohammed Al Owais", number: 1, position: "GOL" },
 
       { name: "Saud Abdulhamid", number: 12, position: "LAT" },
-      { name: "Ali Al-Bulaihi", number: 5, position: "ZAG" },
-      { name: "Hassan Al-Tambakti", number: 4, position: "ZAG" },
-      { name: "Yasser Al-Shahrani", number: 13, position: "LAT" },
+      { name: "Hassan Tambakti", number: 4, position: "ZAG" },
+      { name: "Ali Lajami", number: 5, position: "ZAG" },
+      { name: "Moteb Al Harbi", number: 13, position: "LAT" },
 
-      { name: "Abdullah Al-Khaibari", number: 6, position: "VOL" },
+      { name: "Abdullah Al Khaibari", number: 6, position: "VOL" },
       { name: "Mohammed Kanno", number: 23, position: "MEI" },
-      { name: "Salem Al-Dawsari", number: 10, position: "MEI" },
+      { name: "Nasser Al Dawsari", number: 18, position: "MEI" },
 
-      { name: "Firas Al-Buraikan", number: 9, position: "ATA" },
-      { name: "Saleh Al-Shehri", number: 11, position: "ATA" },
-      { name: "Abdulrahman Ghareeb", number: 7, position: "ATA" },
+      { name: "Salem Al Dawsari", number: 10, position: "ATA" },
+      { name: "Feras Al Brikan", number: 9, position: "ATA" },
+      { name: "Ayman Yahya", number: 7, position: "ATA" },
     ],
+
     reserves: [
-      { name: "Nawaf Al-Aqidi", number: 21, position: "GOL" },
-      { name: "Mohammed Al-Yami", number: 22, position: "GOL" },
+      { name: "Ahmed Al Kassar", number: 21, position: "GOL" },
+      { name: "Nawaf Al Aqidi", number: 22, position: "GOL" },
 
-      { name: "Abdulelah Al-Amri", number: 2, position: "ZAG" },
-      { name: "Osama Hawsawi", number: 3, position: "ZAG" },
+      { name: "Abdulelah Al Amri", number: 2, position: "ZAG" },
+      { name: "Hassan Kadesh", number: 3, position: "ZAG" },
 
-      { name: "Sultan Al-Ghannam", number: 8, position: "LAT" },
-      { name: "Hamad Al-Yami", number: 20, position: "LAT" },
+      { name: "Nawaf Boushal", number: 8, position: "LAT" },
+      { name: "Ali Majrashi", number: 20, position: "LAT" },
 
-      { name: "Ali Al-Hassan", number: 14, position: "MEI" },
-      { name: "Nasser Al-Dawsari", number: 18, position: "VOL" },
+      { name: "Ziyad Al Johani", number: 14, position: "MEI" },
+      { name: "Musab Al Juwayr", number: 16, position: "MEI" },
 
-      { name: "Hattan Bahebri", number: 19, position: "ATA" },
-      { name: "Fahad Al-Muwallad", number: 15, position: "ATA" },
-      { name: "Abdullah Al-Hamdan", number: 16, position: "ATA" },
-      { name: "Ayman Yahya", number: 17, position: "ATA" },
+      { name: "Abdullah Al Hamdan", number: 11, position: "ATA" },
+      { name: "Saleh Al Shehri", number: 15, position: "ATA" },
+      { name: "Sultan Mandash", number: 17, position: "ATA" },
+      { name: "Alaa Al Hajji", number: 19, position: "MEI" },
     ],
   },
   {
     code: "AUS",
     formation: "4-2-3-1",
     starters: [
-      { name: "Mathew Ryan", number: 1, position: "GOL" },
+      { name: "Maty Ryan", number: 1, position: "GOL" },
 
-      { name: "Nathaniel Atkinson", number: 3, position: "LAT" },
+      { name: "Jason Geria", number: 3, position: "LAT" },
       { name: "Harry Souttar", number: 19, position: "ZAG" },
-      { name: "Kye Rowles", number: 4, position: "ZAG" },
+      { name: "Alessandro Circati", number: 4, position: "ZAG" },
       { name: "Aziz Behich", number: 16, position: "LAT" },
 
       { name: "Jackson Irvine", number: 22, position: "VOL" },
-      { name: "Keanu Baccus", number: 17, position: "VOL" },
+      { name: "Aiden O'Neill", number: 13, position: "VOL" },
 
-      { name: "Martin Boyle", number: 6, position: "ATA" },
-      { name: "Ajdin Hrustić", number: 10, position: "MEI" },
-      { name: "Craig Goodwin", number: 23, position: "ATA" },
+      { name: "Nestory Irankunda", number: 7, position: "ATA" },
+      { name: "Ajdin Hrustic", number: 10, position: "MEI" },
+      { name: "Mathew Leckie", number: 23, position: "ATA" },
 
-      { name: "Mitchell Duke", number: 15, position: "ATA" },
+      { name: "Tete Yengi", number: 9, position: "ATA" },
     ],
+
     reserves: [
-      { name: "Joe Gauci", number: 18, position: "GOL" },
-      { name: "Andrew Redmayne", number: 12, position: "GOL" },
+      { name: "Paul Izzo", number: 18, position: "GOL" },
+      { name: "Patrick Beach", number: 12, position: "GOL" },
 
       { name: "Milos Degenek", number: 2, position: "ZAG" },
       { name: "Cameron Burgess", number: 20, position: "ZAG" },
 
-      { name: "Fran Karačić", number: 21, position: "LAT" },
-      { name: "Joel King", number: 14, position: "LAT" },
-
-      { name: "Aiden O'Neill", number: 13, position: "VOL" },
-      { name: "Riley McGree", number: 7, position: "MEI" },
+      { name: "Jordan Bos", number: 21, position: "LAT" },
+      { name: "Kai Trewin", number: 14, position: "LAT" },
 
       { name: "Connor Metcalfe", number: 8, position: "MEI" },
-      { name: "Brandon Borrello", number: 11, position: "ATA" },
-      { name: "Kusini Yengi", number: 9, position: "ATA" },
-      { name: "Garang Kuol", number: 25, position: "ATA" },
+      { name: "Cameron Devlin", number: 17, position: "VOL" },
+
+      { name: "Cristian Volpato", number: 11, position: "ATA" },
+      { name: "Awer Mabil", number: 25, position: "ATA" },
+      { name: "Mohamed Toure", number: 15, position: "ATA" },
+      { name: "Nishan Velupillay", number: 6, position: "ATA" },
     ],
   },
   {
@@ -1473,10 +1565,10 @@ export const squads: ISquad[] = [
 
       { name: "Pedro Miguel", number: 2, position: "ZAG" },
       { name: "Boualem Khoukhi", number: 16, position: "ZAG" },
-      { name: "Tarek Salman", number: 5, position: "ZAG" },
+      { name: "Lucas Mendes", number: 5, position: "ZAG" },
 
-      { name: "Homam Ahmed", number: 14, position: "LAT" },
-      { name: "Ismaeel Mohammad", number: 7, position: "LAT" },
+      { name: "Homam Al-Amin", number: 14, position: "LAT" },
+      { name: "Ayoub Al-Alawi", number: 7, position: "LAT" },
 
       { name: "Karim Boudiaf", number: 12, position: "VOL" },
       { name: "Abdulaziz Hatem", number: 6, position: "MEI" },
@@ -1485,62 +1577,64 @@ export const squads: ISquad[] = [
       { name: "Akram Afif", number: 10, position: "ATA" },
       { name: "Almoez Ali", number: 19, position: "ATA" },
     ],
+
     reserves: [
-      { name: "Saad Al Sheeb", number: 21, position: "GOL" },
+      { name: "Mahmoud Abunada", number: 21, position: "GOL" },
       { name: "Salah Zakaria", number: 22, position: "GOL" },
 
-      { name: "Bassam Al-Rawi", number: 15, position: "ZAG" },
-      { name: "Jassem Gaber", number: 3, position: "ZAG" },
+      { name: "Al-Hashmi Al-Hussain", number: 15, position: "ZAG" },
+      { name: "Sultan Al-Brake", number: 3, position: "ZAG" },
 
-      { name: "Hassan Al-Haydos", number: 11, position: "MEI" },
-      { name: "Assim Madibo", number: 23, position: "VOL" },
+      { name: "Issa Laye", number: 4, position: "LAT" },
+      { name: "Jassem Gaber", number: 23, position: "MEI" },
 
+      { name: "Assim Madibo", number: 8, position: "VOL" },
+      { name: "Mohamed Mannaj", number: 13, position: "MEI" },
+
+      { name: "Ahmed Al-Ganehi", number: 11, position: "ATA" },
+      { name: "Ahmed Alaa", number: 17, position: "ATA" },
       { name: "Mohammed Muntari", number: 9, position: "ATA" },
-      { name: "Ahmed Alaaeldin", number: 17, position: "ATA" },
-
-      { name: "Yusuf Abdurisag", number: 18, position: "ATA" },
-      { name: "Naif Al-Hadhrami", number: 8, position: "MEI" },
-      { name: "Khaled Mohammed", number: 13, position: "MEI" },
-      { name: "Musab Kheder", number: 4, position: "ZAG" },
+      { name: "Youssef Abdulrazzaq", number: 18, position: "ATA" },
     ],
   },
   {
     code: "KOR",
     formation: "4-2-3-1",
     starters: [
-      { name: "Kim Seung-gyu", number: 1, position: "GOL" },
+      { name: "Kim Seunggyu", number: 1, position: "GOL" },
 
-      { name: "Kim Tae-hwan", number: 23, position: "LAT" },
+      { name: "Kim Moonhwan", number: 23, position: "LAT" },
       { name: "Kim Min-jae", number: 4, position: "ZAG" },
-      { name: "Jung Seung-hyun", number: 15, position: "ZAG" },
-      { name: "Kim Jin-su", number: 3, position: "LAT" },
+      { name: "Cho Yumin", number: 15, position: "ZAG" },
+      { name: "Seol Youngwoo", number: 3, position: "LAT" },
 
-      { name: "Hwang In-beom", number: 6, position: "VOL" },
-      { name: "Park Yong-woo", number: 5, position: "VOL" },
+      { name: "Hwang Inbeom", number: 6, position: "VOL" },
+      { name: "Paik Seungho", number: 5, position: "VOL" },
 
       { name: "Lee Kang-in", number: 18, position: "MEI" },
       { name: "Son Heung-min", number: 7, position: "ATA" },
-      { name: "Hwang Hee-chan", number: 11, position: "ATA" },
+      { name: "Hwang Heechan", number: 11, position: "ATA" },
 
       { name: "Cho Gue-sung", number: 9, position: "ATA" },
     ],
+
     reserves: [
-      { name: "Jo Hyeon-woo", number: 21, position: "GOL" },
-      { name: "Song Bum-keun", number: 12, position: "GOL" },
+      { name: "Jo Hyeonwoo", number: 21, position: "GOL" },
+      { name: "Song Bumkeun", number: 12, position: "GOL" },
 
-      { name: "Kim Young-gwon", number: 19, position: "ZAG" },
-      { name: "Kwon Kyung-won", number: 20, position: "ZAG" },
+      { name: "Lee Hanbeom", number: 19, position: "ZAG" },
+      { name: "Kim Taehyeon", number: 20, position: "ZAG" },
 
-      { name: "Seol Young-woo", number: 2, position: "LAT" },
-      { name: "Lee Ki-je", number: 22, position: "LAT" },
+      { name: "Lee Taeseok", number: 22, position: "LAT" },
+      { name: "Lee Kihyuk", number: 2, position: "LAT" },
 
-      { name: "Lee Jae-sung", number: 10, position: "MEI" },
-      { name: "Hong Hyun-seok", number: 8, position: "MEI" },
+      { name: "Lee Jaesung", number: 10, position: "MEI" },
+      { name: "Bae Junho", number: 8, position: "MEI" },
 
-      { name: "Oh Hyeon-gyu", number: 16, position: "ATA" },
-      { name: "Hwang Ui-jo", number: 17, position: "ATA" },
-      { name: "Jeong Woo-yeong", number: 13, position: "ATA" },
-      { name: "Yang Hyun-jun", number: 14, position: "ATA" },
+      { name: "Oh Hyeongyu", number: 16, position: "ATA" },
+      { name: "Yang Hyunjun", number: 14, position: "ATA" },
+      { name: "Lee Donggyeong", number: 13, position: "MEI" },
+      { name: "Eom Jisung", number: 17, position: "ATA" },
     ],
   },
   {
@@ -1549,36 +1643,37 @@ export const squads: ISquad[] = [
     starters: [
       { name: "Alireza Beiranvand", number: 1, position: "GOL" },
 
-      { name: "Sadegh Moharrami", number: 2, position: "LAT" },
+      { name: "Ramin Rezaeiyan", number: 23, position: "LAT" },
       { name: "Hossein Kanaani", number: 5, position: "ZAG" },
-      { name: "Morteza Pouraliganji", number: 4, position: "ZAG" },
-      { name: "Milad Mohammadi", number: 3, position: "LAT" },
-
-      { name: "Saeid Ezatolahi", number: 6, position: "VOL" },
-      { name: "Ahmad Nourollahi", number: 8, position: "MEI" },
-      { name: "Alireza Jahanbakhsh", number: 7, position: "MEI" },
-
-      { name: "Mehdi Taremi", number: 9, position: "ATA" },
-      { name: "Sardar Azmoun", number: 20, position: "ATA" },
-      { name: "Mehdi Ghayedi", number: 10, position: "ATA" },
-    ],
-    reserves: [
-      { name: "Payam Niazmand", number: 12, position: "GOL" },
-      { name: "Hossein Hosseini", number: 22, position: "GOL" },
-
       { name: "Shoja Khalilzadeh", number: 3, position: "ZAG" },
-      { name: "Majid Hosseini", number: 19, position: "ZAG" },
+      { name: "Milad Mohammadi", number: 13, position: "LAT" },
 
-      { name: "Ramin Rezaeian", number: 23, position: "LAT" },
-      { name: "Ali Karimi", number: 18, position: "MEI" },
-
-      { name: "Omid Ebrahimi", number: 15, position: "VOL" },
+      { name: "Saeid Ezatollahi", number: 6, position: "VOL" },
+      { name: "Rouzbeh Cheshmi", number: 15, position: "VOL" },
       { name: "Saman Ghoddos", number: 14, position: "MEI" },
 
-      { name: "Karim Ansarifard", number: 11, position: "ATA" },
-      { name: "Allahyar Sayyadmanesh", number: 16, position: "ATA" },
-      { name: "Amirhossein Hosseinzadeh", number: 17, position: "ATA" },
-      { name: "Reza Asadi", number: 21, position: "ATA" },
+      { name: "Alireza Jahanbakhsh", number: 7, position: "ATA" },
+      { name: "Mohammad Mohebbi", number: 11, position: "ATA" },
+      { name: "Mehdi Ghayedi", number: 10, position: "ATA" },
+    ],
+
+    reserves: [
+      { name: "Hossein Hosseini", number: 22, position: "GOL" },
+      { name: "Payam Niazmand", number: 12, position: "GOL" },
+
+      { name: "Ali Nemati", number: 4, position: "ZAG" },
+      { name: "Daniyal Eiri", number: 19, position: "ZAG" },
+
+      { name: "Saleh Hardani", number: 2, position: "LAT" },
+      { name: "Ehsan Hajisafi", number: 21, position: "LAT" },
+
+      { name: "Mohammad Ghorbani", number: 18, position: "VOL" },
+      { name: "Amir Mohammad Razagah Niya", number: 8, position: "MEI" },
+
+      { name: "Mehdi Torabi", number: 17, position: "ATA" },
+      { name: "Ariya Yousefi", number: 20, position: "ATA" },
+      { name: "Sardar Azmoun", number: 9, position: "ATA" },
+      { name: "Mehdi Taremi", number: 16, position: "ATA" },
     ],
   },
   {
@@ -1587,37 +1682,38 @@ export const squads: ISquad[] = [
     starters: [
       { name: "Jalal Hassan", number: 1, position: "GOL" },
 
-      { name: "Zaid Tahseen", number: 2, position: "LAT" },
+      { name: "Hussein Ali", number: 21, position: "LAT" },
       { name: "Rebin Sulaka", number: 4, position: "ZAG" },
-      { name: "Mustafa Nadhim", number: 5, position: "ZAG" },
-      { name: "Frans Dhia Putros", number: 3, position: "LAT" },
+      { name: "Zaid Tahsin", number: 2, position: "ZAG" },
+      { name: "Mirkhas Doski", number: 3, position: "LAT" },
 
-      { name: "Amjad Attwan", number: 6, position: "VOL" },
-      { name: "Osama Rashid", number: 8, position: "MEI" },
+      { name: "Amir Al-Ammari", number: 6, position: "VOL" },
+      { name: "Zidane Iqbal", number: 7, position: "MEI" },
 
-      { name: "Ali Jasim", number: 17, position: "ATA" },
+      { name: "Ali Jassim", number: 17, position: "ATA" },
       { name: "Ibrahim Bayesh", number: 10, position: "MEI" },
-      { name: "Youssef Amyn", number: 11, position: "ATA" },
+      { name: "Yousef Amin", number: 11, position: "ATA" },
 
       { name: "Aymen Hussein", number: 9, position: "ATA" },
     ],
+
     reserves: [
       { name: "Ahmed Basil", number: 12, position: "GOL" },
       { name: "Fahad Talib", number: 23, position: "GOL" },
 
-      { name: "Saad Natiq", number: 15, position: "ZAG" },
-      { name: "Ali Faez", number: 14, position: "ZAG" },
+      { name: "Frans Putros", number: 14, position: "ZAG" },
+      { name: "Manaf Younis", number: 15, position: "ZAG" },
 
-      { name: "Hussein Ali", number: 21, position: "LAT" },
-      { name: "Mustafa Mohammed", number: 16, position: "LAT" },
+      { name: "Ahmed Yahya", number: 16, position: "LAT" },
+      { name: "Mustafa Saadoun", number: 18, position: "LAT" },
 
-      { name: "Ahmed Al-Hajjaj", number: 18, position: "VOL" },
-      { name: "Danilo Al-Saeed", number: 20, position: "MEI" },
+      { name: "Aimar Sher", number: 20, position: "VOL" },
+      { name: "Kevin Yaqoub", number: 22, position: "MEI" },
 
-      { name: "Mohanad Ali", number: 19, position: "ATA" },
-      { name: "Alaa Abbas", number: 22, position: "ATA" },
       { name: "Ali Al-Hamadi", number: 13, position: "ATA" },
-      { name: "Zidane Iqbal", number: 7, position: "MEI" },
+      { name: "Mohanad Ali", number: 19, position: "ATA" },
+      { name: "Ahmed Qasim", number: 24, position: "ATA" },
+      { name: "Marco Faraj", number: 25, position: "ATA" },
     ],
   },
   {
@@ -1628,113 +1724,118 @@ export const squads: ISquad[] = [
 
       { name: "Takehiro Tomiyasu", number: 16, position: "LAT" },
       { name: "Ko Itakura", number: 4, position: "ZAG" },
-      { name: "Takehiro Tomiyasu", number: 22, position: "ZAG" },
+      { name: "Shogo Taniguchi", number: 22, position: "ZAG" },
       { name: "Hiroki Ito", number: 21, position: "LAT" },
 
       { name: "Wataru Endo", number: 6, position: "VOL" },
-      { name: "Hidemasa Morita", number: 5, position: "MEI" },
+      { name: "Ao Tanaka", number: 17, position: "MEI" },
       { name: "Daichi Kamada", number: 15, position: "MEI" },
 
       { name: "Takefusa Kubo", number: 20, position: "ATA" },
       { name: "Ayase Ueda", number: 9, position: "ATA" },
-      { name: "Kaoru Mitoma", number: 7, position: "ATA" },
+      { name: "Junya Ito", number: 13, position: "ATA" },
     ],
+
     reserves: [
-      { name: "Daniel Schmidt", number: 12, position: "GOL" },
       { name: "Keisuke Osako", number: 1, position: "GOL" },
+      { name: "Tomoki Hayakawa", number: 12, position: "GOL" },
 
-      { name: "Yuta Nakayama", number: 3, position: "ZAG" },
-      { name: "Maya Yoshida", number: 19, position: "ZAG" },
+      { name: "Ayumu Seko", number: 3, position: "ZAG" },
+      { name: "Tsuyoshi Watanabe", number: 19, position: "ZAG" },
 
-      { name: "Yukihiro Sugawara", number: 2, position: "LAT" },
-      { name: "Daiki Hashioka", number: 14, position: "LAT" },
+      { name: "Yukinari Sugawara", number: 2, position: "LAT" },
+      { name: "Yuto Nagatomo", number: 14, position: "LAT" },
 
-      { name: "Ao Tanaka", number: 17, position: "MEI" },
-      { name: "Reo Hatate", number: 8, position: "MEI" },
+      { name: "Kaishu Sano", number: 8, position: "VOL" },
+      { name: "Yuito Suzuki", number: 18, position: "MEI" },
 
       { name: "Ritsu Doan", number: 10, position: "ATA" },
-      { name: "Takuma Asano", number: 18, position: "ATA" },
-      { name: "Kyogo Furuhashi", number: 11, position: "ATA" },
-      { name: "Junya Ito", number: 13, position: "ATA" },
+      { name: "Daizen Maeda", number: 11, position: "ATA" },
+      { name: "Keito Nakamura", number: 7, position: "ATA" },
+      { name: "Koki Ogawa", number: 24, position: "ATA" },
     ],
   },
   {
     code: "JOR",
     formation: "3-4-2-1",
     starters: [
-      { name: "Yazeed Abulaila", number: 1, position: "GOL" },
+      { name: "Yazeed Abu Laila", number: 1, position: "GOL" },
 
       { name: "Abdallah Nasib", number: 3, position: "ZAG" },
       { name: "Yazan Al-Arab", number: 5, position: "ZAG" },
-      { name: "Salem Al-Ajalin", number: 23, position: "ZAG" },
+      { name: "Mohammad Abu Hashish", number: 12, position: "ZAG" },
 
-      { name: "Ehsan Haddad", number: 4, position: "LAT" },
-      { name: "Mohammad Abu Hasheesh", number: 12, position: "LAT" },
+      { name: "Ihsan Haddad", number: 4, position: "LAT" },
+      { name: "Mohannad Abu Taha", number: 13, position: "LAT" },
 
       { name: "Nizar Al-Rashdan", number: 21, position: "VOL" },
-      { name: "Noor Al-Rawabdeh", number: 8, position: "MEI" },
+      { name: "Nour Al-Rawabdeh", number: 8, position: "MEI" },
 
-      { name: "Mousa Al-Taamari", number: 10, position: "ATA" },
+      { name: "Mahmoud Al-Mardi", number: 17, position: "ATA" },
+      { name: "Musa Al-Taamari", number: 10, position: "ATA" },
+
       { name: "Ali Olwan", number: 9, position: "ATA" },
-
-      { name: "Yazan Al-Naimat", number: 11, position: "ATA" },
     ],
+
     reserves: [
-      { name: "Ahmad Abed", number: 22, position: "GOL" },
       { name: "Abdullah Al-Fakhouri", number: 16, position: "GOL" },
+      { name: "Nour Bani Attiah", number: 22, position: "GOL" },
 
-      { name: "Bara Marei", number: 15, position: "ZAG" },
-      { name: "Hamza Al-Dardour", number: 6, position: "ZAG" },
+      { name: "Saleem Obaid", number: 15, position: "ZAG" },
+      { name: "Mohammad Abualnadi", number: 6, position: "ZAG" },
 
-      { name: "Feras Shelbayeh", number: 13, position: "LAT" },
-      { name: "Yousef Abu Jalboush", number: 20, position: "LAT" },
+      { name: "Saed Al-Rosan", number: 20, position: "LAT" },
+      { name: "Husam Abu Dahab", number: 23, position: "LAT" },
 
-      { name: "Mahmoud Al-Mardi", number: 17, position: "MEI" },
-      { name: "Anas Bani Yaseen", number: 2, position: "ZAG" },
+      { name: "Rajaei Ayed", number: 2, position: "VOL" },
+      { name: "Odeh Fakhouri", number: 19, position: "MEI" },
 
       { name: "Ibrahim Sadeh", number: 7, position: "ATA" },
-      { name: "Oday Dabbagh", number: 14, position: "ATA" },
-      { name: "Baha Faisal", number: 18, position: "ATA" },
-      { name: "Yazan Abu Al-Arab", number: 19, position: "MEI" },
+      { name: "Mohammad Abu Zrayq", number: 14, position: "ATA" },
+      { name: "Ali Al-Azaizeh", number: 18, position: "ATA" },
+      { name: "Mohammad Al-Dawoud", number: 11, position: "ATA" },
     ],
   },
   {
     code: "UZB",
     formation: "4-2-3-1",
     starters: [
-      { name: "Utkir Yusupov", number: 1, position: "GOL" },
+      { name: "Otkir Yusupov", number: 1, position: "GOL" },
 
-      { name: "Khozhimat Erkinov", number: 7, position: "LAT" },
+      { name: "Hojiakbar Alijonov", number: 7, position: "LAT" },
       { name: "Rustam Ashurmatov", number: 5, position: "ZAG" },
-      { name: "Abdukodir Khusanov", number: 2, position: "ZAG" },
-      { name: "Farrukh Sayfiev", number: 3, position: "LAT" },
+      { name: "Abdukodir Husanov", number: 2, position: "ZAG" },
+      { name: "Farruh Sayfiyev", number: 3, position: "LAT" },
 
       { name: "Otabek Shukurov", number: 6, position: "VOL" },
-      { name: "Jaloliddin Masharipov", number: 10, position: "MEI" },
+      { name: "Odil Hamrobekov", number: 8, position: "MEI" },
 
-      { name: "Abbosbek Fayzullaev", number: 22, position: "ATA" },
-      { name: "Odiljon Hamrobekov", number: 8, position: "MEI" },
-      { name: "Jasurbek Jaloliddinov", number: 17, position: "ATA" },
+      { name: "Abbosbek Fayzullayev", number: 22, position: "ATA" },
+      { name: "Jaloliddin Masharipov", number: 10, position: "MEI" },
+      { name: "Oston O'runov", number: 17, position: "ATA" },
 
       { name: "Eldor Shomurodov", number: 14, position: "ATA" },
     ],
+
     reserves: [
-      { name: "Ignatiy Nesterov", number: 12, position: "GOL" },
       { name: "Abduvohid Nematov", number: 16, position: "GOL" },
+      { name: "Botirali Ergashev", number: 12, position: "GOL" },
 
-      { name: "Islom Tukhtahujaev", number: 4, position: "ZAG" },
-      { name: "Davron Ergashev", number: 15, position: "ZAG" },
+      { name: "Umar Eshmurodov", number: 4, position: "ZAG" },
+      { name: "Sherzod Nasrullayev", number: 13, position: "LAT" },
+      { name: "Abdulla Abdullayev", number: 15, position: "ZAG" },
+      { name: "Avazbek Olmasaliyev", number: 20, position: "ZAG" },
+      { name: "Jahongir Orozov", number: 21, position: "ZAG" },
+      { name: "Behruz Karimov", number: 24, position: "ZAG" },
 
-      { name: "Zafarmurod Abdirakhmatov", number: 21, position: "LAT" },
-      { name: "Dostonbek Tursunov", number: 20, position: "LAT" },
+      { name: "Akmal Mozgovoy", number: 11, position: "MEI" },
+      { name: "Jamshid Iskanderov", number: 18, position: "MEI" },
+      { name: "Aziz G'aniyev", number: 23, position: "MEI" },
 
-      { name: "Azizbek Turgunboev", number: 11, position: "MEI" },
-      { name: "Ikromjon Alibaev", number: 18, position: "MEI" },
-
-      { name: "Igor Sergeev", number: 9, position: "ATA" },
-      { name: "Sherzod Nasrullaev", number: 13, position: "ATA" },
-      { name: "Bobur Abdukholikov", number: 19, position: "ATA" },
-      { name: "Umidjon Hamrobekov", number: 23, position: "MEI" },
+      { name: "Dostonbek Hamdamov", number: 19, position: "ATA" },
+      { name: "Sherzod Esanov", number: 25, position: "ATA" },
+      { name: "Igor Sergeyev", number: 9, position: "ATA" },
+      { name: "Azizbek Omonov", number: 26, position: "ATA" },
     ],
   },
   {
@@ -1745,112 +1846,122 @@ export const squads: ISquad[] = [
 
       { name: "Daniel Muñoz", number: 21, position: "LAT" },
       { name: "Davinson Sánchez", number: 23, position: "ZAG" },
-      { name: "Carlos Cuesta", number: 2, position: "ZAG" },
+      { name: "Jhon Lucumí", number: 3, position: "ZAG" },
       { name: "Johan Mojica", number: 17, position: "LAT" },
 
       { name: "Jefferson Lerma", number: 16, position: "VOL" },
-      { name: "Richard Ríos", number: 6, position: "MEI" },
+      { name: "Richard Ríos", number: 6, position: "VOL" },
 
       { name: "Jhon Arias", number: 11, position: "ATA" },
       { name: "James Rodríguez", number: 10, position: "MEI" },
       { name: "Luis Díaz", number: 7, position: "ATA" },
 
-      { name: "Rafael Santos Borré", number: 19, position: "ATA" },
+      { name: "Jhon Córdoba", number: 9, position: "ATA" },
     ],
+
     reserves: [
       { name: "Álvaro Montero", number: 12, position: "GOL" },
-      { name: "Kevin Mier", number: 22, position: "GOL" },
+      { name: "David Ospina", number: 22, position: "GOL" },
 
       { name: "Yerry Mina", number: 13, position: "ZAG" },
-      { name: "Jhon Lucumí", number: 3, position: "ZAG" },
+      { name: "Willer Ditta", number: 2, position: "ZAG" },
 
       { name: "Santiago Arias", number: 4, position: "LAT" },
       { name: "Deiver Machado", number: 15, position: "LAT" },
 
-      { name: "Mateus Uribe", number: 8, position: "MEI" },
-      { name: "Jorge Carrascal", number: 18, position: "MEI" },
+      { name: "Kevin Castaño", number: 8, position: "VOL" },
+      { name: "Gustavo Puerta", number: 18, position: "MEI" },
+      { name: "Jorge Carrascal", number: 20, position: "MEI" },
+      { name: "Juan Quintero", number: 14, position: "MEI" },
+      { name: "Juan Portilla", number: 5, position: "VOL" },
+      { name: "Jaminton Campaz", number: 19, position: "ATA" },
 
-      { name: "Luis Sinisterra", number: 20, position: "ATA" },
-      { name: "Jhon Durán", number: 9, position: "ATA" },
-      { name: "Miguel Borja", number: 14, position: "ATA" },
-      { name: "Yaser Asprilla", number: 5, position: "MEI" },
+      { name: "Cucho Hernández", number: 24, position: "ATA" },
+      { name: "Luis Suárez", number: 25, position: "ATA" },
+      { name: "Andrés Gómez", number: 26, position: "ATA" },
     ],
   },
   {
     code: "ECU",
     formation: "4-3-3",
     starters: [
-      { name: "Alexander Domínguez", number: 22, position: "GOL" },
+      { name: "Hernán Galíndez", number: 1, position: "GOL" },
 
       { name: "Ángelo Preciado", number: 17, position: "LAT" },
       { name: "Piero Hincapié", number: 3, position: "ZAG" },
-      { name: "Félix Torres", number: 2, position: "ZAG" },
+      { name: "Willian Pacho", number: 6, position: "ZAG" },
       { name: "Pervis Estupiñán", number: 7, position: "LAT" },
 
       { name: "Moisés Caicedo", number: 23, position: "VOL" },
-      { name: "Carlos Gruezo", number: 8, position: "VOL" },
+      { name: "Alan Franco", number: 21, position: "VOL" },
       { name: "Kendry Páez", number: 10, position: "MEI" },
 
       { name: "Gonzalo Plata", number: 19, position: "ATA" },
       { name: "Enner Valencia", number: 13, position: "ATA" },
-      { name: "Jeremy Sarmiento", number: 16, position: "ATA" },
+      { name: "John Yeboah", number: 9, position: "ATA" },
     ],
+
     reserves: [
-      { name: "Hernán Galíndez", number: 1, position: "GOL" },
       { name: "Moisés Ramírez", number: 12, position: "GOL" },
+      { name: "Gonzalo Valle", number: 22, position: "GOL" },
 
-      { name: "Willian Pacho", number: 6, position: "ZAG" },
-      { name: "Robert Arboleda", number: 4, position: "ZAG" },
+      { name: "Félix Torres", number: 2, position: "ZAG" },
+      { name: "Joel Ordóñez", number: 4, position: "ZAG" },
+      { name: "Jackson Porozo", number: 5, position: "ZAG" },
 
-      { name: "José Hurtado", number: 15, position: "LAT" },
-      { name: "Diego Palacios", number: 18, position: "LAT" },
+      { name: "Yaimar Medina", number: 15, position: "LAT" },
 
-      { name: "Jhegson Méndez", number: 20, position: "VOL" },
-      { name: "Alan Franco", number: 21, position: "MEI" },
+      { name: "Jordy Alcívar", number: 8, position: "MEI" },
+      { name: "Pedro Vite", number: 14, position: "MEI" },
+      { name: "Denil Castillo", number: 20, position: "VOL" },
+      { name: "Nilson Angulo", number: 18, position: "ATA" },
 
       { name: "Kevin Rodríguez", number: 11, position: "ATA" },
-      { name: "John Yeboah", number: 9, position: "ATA" },
-      { name: "Ángel Mena", number: 14, position: "ATA" },
-      { name: "Leonardo Campana", number: 24, position: "ATA" },
+      { name: "Jordy Caicedo", number: 24, position: "ATA" },
+      { name: "Jeremy Arévalo", number: 25, position: "ATA" },
+      { name: "Anthony Valencia", number: 16, position: "ATA" },
     ],
   },
   {
     code: "PAR",
     formation: "4-2-3-1",
     starters: [
-      { name: "Carlos Coronel", number: 1, position: "GOL" },
+      { name: "Orlando Gill", number: 1, position: "GOL" },
 
-      { name: "Robert Rojas", number: 2, position: "LAT" },
+      { name: "Juan Cáceres", number: 2, position: "LAT" },
       { name: "Gustavo Gómez", number: 15, position: "ZAG" },
       { name: "Omar Alderete", number: 3, position: "ZAG" },
-      { name: "Blas Riveros", number: 4, position: "LAT" },
+      { name: "Junior Alonso", number: 6, position: "LAT" },
 
       { name: "Andrés Cubas", number: 14, position: "VOL" },
-      { name: "Mathías Villasanti", number: 8, position: "VOL" },
+      { name: "Diego Gómez", number: 18, position: "VOL" },
 
       { name: "Miguel Almirón", number: 10, position: "MEI" },
       { name: "Julio Enciso", number: 19, position: "MEI" },
       { name: "Ramón Sosa", number: 11, position: "ATA" },
 
-      { name: "Adam Bareiro", number: 9, position: "ATA" },
+      { name: "Antonio Sanabria", number: 7, position: "ATA" },
     ],
+
     reserves: [
       { name: "Gatito Fernández", number: 12, position: "GOL" },
-      { name: "Santiago Rojas", number: 22, position: "GOL" },
+      { name: "Gastón Olveira", number: 22, position: "GOL" },
 
       { name: "Fabián Balbuena", number: 5, position: "ZAG" },
-      { name: "Junior Alonso", number: 6, position: "ZAG" },
+      { name: "José Canale", number: 4, position: "ZAG" },
+      { name: "Gustavo Velázquez", number: 13, position: "ZAG" },
+      { name: "Alexandro Maidana", number: 17, position: "ZAG" },
 
-      { name: "Iván Piris", number: 13, position: "LAT" },
-      { name: "Santiago Arzamendia", number: 17, position: "LAT" },
-
-      { name: "Richard Sánchez", number: 16, position: "MEI" },
-      { name: "Diego Gómez", number: 18, position: "MEI" },
-
-      { name: "Antonio Sanabria", number: 7, position: "ATA" },
-      { name: "Gabriel Ávalos", number: 20, position: "ATA" },
-      { name: "Carlos González", number: 21, position: "ATA" },
       { name: "Braian Ojeda", number: 23, position: "VOL" },
+      { name: "Damián Bobadilla", number: 16, position: "MEI" },
+      { name: "Alejandro Romero Gamarra", number: 8, position: "MEI" },
+      { name: "Mauricio Galarza", number: 20, position: "MEI" },
+      { name: "Matías Galarza", number: 21, position: "MEI" },
+
+      { name: "Gabriel Ávalos", number: 9, position: "ATA" },
+      { name: "Isidro Pitta", number: 24, position: "ATA" },
+      { name: "Álex Arce", number: 25, position: "ATA" },
+      { name: "Gustavo Caballero", number: 26, position: "ATA" },
     ],
   },
   {
@@ -1859,8 +1970,8 @@ export const squads: ISquad[] = [
     starters: [
       { name: "Sergio Rochet", number: 1, position: "GOL" },
 
-      { name: "Nahitan Nández", number: 8, position: "LAT" },
-      { name: "Ronald Araújo", number: 4, position: "ZAG" },
+      { name: "Guillermo Varela", number: 13, position: "LAT" },
+      { name: "Ronald Araujo", number: 4, position: "ZAG" },
       { name: "José María Giménez", number: 2, position: "ZAG" },
       { name: "Matías Viña", number: 17, position: "LAT" },
 
@@ -1872,23 +1983,27 @@ export const squads: ISquad[] = [
       { name: "Darwin Núñez", number: 9, position: "ATA" },
       { name: "Maximiliano Araújo", number: 20, position: "ATA" },
     ],
+
     reserves: [
-      { name: "Franco Israel", number: 23, position: "GOL" },
+      { name: "Fernando Muslera", number: 23, position: "GOL" },
       { name: "Santiago Mele", number: 12, position: "GOL" },
 
       { name: "Sebastián Cáceres", number: 3, position: "ZAG" },
-      { name: "Matías Olivera", number: 16, position: "LAT" },
+      { name: "Santiago Bueno", number: 14, position: "ZAG" },
 
-      { name: "Guillermo Varela", number: 13, position: "LAT" },
-      { name: "Agustín Canobbio", number: 14, position: "ATA" },
+      { name: "Matías Olivera", number: 16, position: "LAT" },
+      { name: "Joaquín Piquerez", number: 22, position: "LAT" },
 
       { name: "Rodrigo Bentancur", number: 6, position: "MEI" },
       { name: "Giorgian De Arrascaeta", number: 10, position: "MEI" },
+      { name: "Emiliano Martínez", number: 8, position: "MEI" },
+      { name: "Juan Manuel Sanabria", number: 18, position: "MEI" },
+      { name: "Rodrigo Zalazar", number: 21, position: "MEI" },
 
-      { name: "Brian Rodríguez", number: 18, position: "ATA" },
-      { name: "Cristian Olivera", number: 19, position: "ATA" },
-      { name: "Luis Suárez", number: 21, position: "ATA" },
-      { name: "Edinson Cavani", number: 22, position: "ATA" },
+      { name: "Brian Rodríguez", number: 19, position: "ATA" },
+      { name: "Agustín Canobbio", number: 24, position: "ATA" },
+      { name: "Rodrigo Aguirre", number: 25, position: "ATA" },
+      { name: "Federico Viñas", number: 26, position: "ATA" },
     ],
   },
   {
@@ -1899,35 +2014,38 @@ export const squads: ISquad[] = [
 
       { name: "Tim Payne", number: 2, position: "LAT" },
       { name: "Michael Boxall", number: 5, position: "ZAG" },
-      { name: "Liberato Cacace", number: 13, position: "ZAG" },
-      { name: "Sam Sutton", number: 3, position: "LAT" },
+      { name: "Tyler Bindon", number: 4, position: "ZAG" },
+      { name: "Liberato Cacace", number: 13, position: "LAT" },
 
       { name: "Joe Bell", number: 6, position: "MEI" },
-      { name: "Clayton Lewis", number: 8, position: "MEI" },
+      { name: "Marko Stamenic", number: 17, position: "MEI" },
       { name: "Matthew Garbett", number: 7, position: "MEI" },
-      { name: "Elijah Just", number: 11, position: "MEI" },
+      { name: "Ben Old", number: 10, position: "MEI" },
 
       { name: "Chris Wood", number: 9, position: "ATA" },
-      { name: "Ben Waine", number: 10, position: "ATA" },
+      { name: "Ben Waine", number: 11, position: "ATA" },
     ],
 
     reserves: [
-      { name: "Stefan Marinovic", number: 12, position: "GOL" },
-      { name: "Oliver Sail", number: 23, position: "GOL" },
+      { name: "Alex Paulsen", number: 12, position: "GOL" },
+      { name: "Michael Woud", number: 23, position: "GOL" },
 
-      { name: "Tommy Smith", number: 4, position: "ZAG" },
-      { name: "Bill Tuiloma", number: 14, position: "ZAG" },
+      { name: "Tommy Smith", number: 14, position: "ZAG" },
+      { name: "Finn Surman", number: 15, position: "ZAG" },
+      { name: "Nando Pijnaker", number: 16, position: "ZAG" },
 
-      { name: "Niko Kirwan", number: 15, position: "LAT" },
-      { name: "Deklan Wynne", number: 16, position: "LAT" },
+      { name: "Callan Elliot", number: 18, position: "LAT" },
+      { name: "Francis de Vries", number: 19, position: "LAT" },
 
-      { name: "Marko Stamenic", number: 17, position: "MEI" },
-      { name: "Alex Greive", number: 18, position: "ATA" },
+      { name: "Alex Rufer", number: 20, position: "MEI" },
+      { name: "Sarpreet Singh", number: 21, position: "MEI" },
+      { name: "Ryan Thomas", number: 22, position: "MEI" },
+      { name: "Lachlan Bayliss", number: 24, position: "MEI" },
 
-      { name: "Callum McCowatt", number: 19, position: "ATA" },
-      { name: "Sarpreet Singh", number: 20, position: "MEI" },
-      { name: "Logan Rogerson", number: 21, position: "ATA" },
-      { name: "Kosta Barbarouses", number: 22, position: "ATA" },
+      { name: "Eli Just", number: 25, position: "ATA" },
+      { name: "Callum McCowatt", number: 26, position: "ATA" },
+      { name: "Kosta Barbarouses", number: 27, position: "ATA" },
+      { name: "Jesse Randall", number: 28, position: "ATA" },
     ],
   }  
 ];
