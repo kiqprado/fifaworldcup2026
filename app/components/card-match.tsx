@@ -219,40 +219,41 @@ export function CardMatch({
           </span>
         </div>
 
-        <div>
-        <h4>Assista ao vivo em:</h4>
-        <div
-          className='flex justify-evenly items-center'
-        >
-          <Link
-          href={`https://www.youtube.com/@CazeTV`}
-          target='_blank'
-          className='px-6 py-1 rounded-lg
-          border border-zinc-950 bg-red-700'
-        >
-          <Image
-            src={'/midia/caze-tv.png'}
-            alt='caze tv image logo'
-            width={56}
-            height={52}
-            className='object-fill'
-          />
-        </Link>
-        <Link
-          href={`https://globoplay.globo.com/sportv/ao-vivo/7339108/`}
-          target='_blank'
-          className='px-6 py-1 rounded-lg
-          border border-zinc-950 bg-red-700'
-        >
-          <Image
-            src={'/midia/sportv.png'}
-            alt='sportv image logo'
-            width={56}
-            height={52}
-          />
-        </Link>
+        <div className='space-y-2'>
+          <h4 className='text-zinc-300 tracking-widest text-sm'>Assista ao vivo em:</h4>
+          <div className='grid grid-cols-2 gap-2'>
+            <Link
+              href={`https://www.youtube.com/@CazeTV`}
+              target='_blank'
+              className='px-2 py-1 rounded-lg border border-zinc-950 bg-red-700 flex items-center justify-center'
+            >
+              <Image src={'/midia/caze-tv.png'} alt='caze tv image logo' width={56} height={52} className='object-fill' />
+            </Link>
 
-        </div>
+            <Link
+              href={`https://sports.sbt.com.br/`}
+              target='_blank'
+              className='px-2 py-1 rounded-lg border border-zinc-950 bg-red-700 flex items-center justify-center'
+            >
+              <Image src={'/midia/sbtsports.png'} alt='SBT Sports image logo' width={56} height={52} className='object-fill' />
+            </Link>
+
+            <Link
+              href={`https://globoplay.globo.com/sportv/ao-vivo/7339108/`}
+              target='_blank'
+              className='px-2 py-1 rounded-lg border border-zinc-950 bg-red-700 flex items-center justify-center'
+            >
+              <Image src={'/midia/getv.png'} alt='sportv image logo' width={56} height={52} />
+            </Link>
+
+            <Link
+              href={`https://globoplay.globo.com/sportv/ao-vivo/7339108/`}
+              target='_blank'
+              className='px-2 py-1 rounded-lg border border-zinc-950 bg-red-700 flex items-center justify-center'
+            >
+              <Image src={'/midia/sportv.png'} alt='sportv image logo' width={56} height={52} />
+            </Link>
+          </div>
         </div>
 
         <div className="
