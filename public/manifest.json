@@ -1,0 +1,15 @@
+{
+  "name": "Copa do Mundo FIFA 2026",
+  "short_name": "World Cup 2026",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#09090b",
+  "theme_color": "#09090b",
+  "icons": [
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

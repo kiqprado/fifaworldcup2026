@@ -4,7 +4,6 @@ import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-import Link from 'next/link'
 import { editions } from '@/data/history-editions'
 import { HistoryEditionCard } from '@/app/components/card-history-edition'
 import { HeaderPageTitle } from '@/app/elements/header-page-title'
