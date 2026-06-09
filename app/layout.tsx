@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Michroma } from "next/font/google";
 
 import { Toaster } from 'sonner'
 
@@ -14,6 +14,12 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const michroma = Michroma({ 
+  variable: "--font-michroma",
+  subsets: ['latin'],
+  weight: "400"  
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://fifaworldcup2026on.vercel.app/"),
@@ -113,7 +119,7 @@ export default function RootLayout({
     <html
       lang="pt-BR"
       className={`
-        ${geistSans.variable} ${geistMono.variable} 
+        ${geistSans.variable} ${geistMono.variable}  ${michroma.variable}
         h-full antialiased
         bg-zinc-950 text-zinc-50
         scrollbar-dark`}

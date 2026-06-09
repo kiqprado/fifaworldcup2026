@@ -9,6 +9,8 @@ import Image from 'next/image'
 
 import { useBreakpoint } from '@/app/hook/use-media-query'
 
+import { CountDown } from '../components/countdown'
+
 gsap.registerPlugin(ScrollTrigger)
 
 interface IHeroSectionProps {
@@ -124,6 +126,8 @@ export function HeroSection({onExplore}: IHeroSectionProps) {
       ref={sectionRef}
       className='min-h-svh relative overflow-hidden flex'
     >
+      <CountDown/>
+      
       <Image
         ref={bgRef}
         src={bg}
