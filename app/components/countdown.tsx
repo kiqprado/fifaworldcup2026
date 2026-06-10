@@ -31,18 +31,16 @@ export function CountDown() {
   const containerRef = useRef<HTMLDivElement>(null)
 
 
- useEffect(() => {
-  const update = () => setTime(getTimeRemaining())
+  useEffect(() => {
+    function update(){ 
+      setTime(getTimeRemaining())
+    }
+    update()
 
-  update()
+    const id = setInterval(update, 1000)
+    return () => clearInterval(id)
+  }, [])
 
-  const id = setInterval(update, 1000)
-
-  return () => clearInterval(id)
-}, [])
-
- 
-  // Fecha suavemente com fade + slide
   const HandleToggleModal = () => {
     if (containerRef.current) {
       containerRef.current.style.transition = 'opacity 0.5s ease, transform 0.5s ease'
@@ -216,7 +214,8 @@ export function CountDown() {
 
         {/* Link */}
         <Link
-          href="#abertura"
+          href="https://www.youtube.com/watch?v=YCNysrewn7k"
+          target='_blank'
           className="
             text-[0.7rem]
             uppercase

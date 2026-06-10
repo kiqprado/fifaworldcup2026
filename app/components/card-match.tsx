@@ -8,6 +8,12 @@ import { CalendarCheck, MapPinCheck, Star } from 'lucide-react'
 import gsap from 'gsap'
 import Tilt from 'react-parallax-tilt'
 
+interface IBroadcast {
+  name: string
+  logo: string
+  url: string
+}
+
 export interface IMatch {
   id: number;
   isFavorite?: boolean
@@ -20,6 +26,7 @@ export interface IMatch {
   stadium: string;
   stadiumView: string;
   city: string;
+  broadcasts: IBroadcast[],
   highlighted?: boolean
 }
 
@@ -34,6 +41,7 @@ export function CardMatch({
   away,
   stadium,
   stadiumView,
+  broadcasts,
   city,
   highlighted = false
 }: IMatch) {
@@ -222,37 +230,16 @@ export function CardMatch({
         <div className='space-y-2'>
           <h4 className='text-zinc-300 tracking-widest text-sm'>Assista ao vivo em:</h4>
           <div className='grid grid-cols-2 gap-2'>
+          {broadcasts.map((broadcast) => (
             <Link
-              href={`https://www.youtube.com/@CazeTV`}
+              key={broadcast.name}
+              href={broadcast.url}
               target='_blank'
               className='px-2 py-1 rounded-lg border border-zinc-950 bg-red-700 flex items-center justify-center'
             >
-              <Image src={'/midia/caze-tv.png'} alt='caze tv image logo' width={56} height={52} className='object-fill' />
+              <Image src={broadcast.logo} alt={broadcast.name} width={56} height={52} className='object-fill' />
             </Link>
-
-            <Link
-              href={`https://sports.sbt.com.br/`}
-              target='_blank'
-              className='px-2 py-1 rounded-lg border border-zinc-950 bg-red-700 flex items-center justify-center'
-            >
-              <Image src={'/midia/sbtsports.png'} alt='SBT Sports image logo' width={56} height={52} className='object-fill' />
-            </Link>
-
-            <Link
-              href={`https://globoplay.globo.com/sportv/ao-vivo/7339108/`}
-              target='_blank'
-              className='px-2 py-1 rounded-lg border border-zinc-950 bg-red-700 flex items-center justify-center'
-            >
-              <Image src={'/midia/getv.png'} alt='sportv image logo' width={56} height={52} />
-            </Link>
-
-            <Link
-              href={`https://globoplay.globo.com/sportv/ao-vivo/7339108/`}
-              target='_blank'
-              className='px-2 py-1 rounded-lg border border-zinc-950 bg-red-700 flex items-center justify-center'
-            >
-              <Image src={'/midia/sportv.png'} alt='sportv image logo' width={56} height={52} />
-            </Link>
+          ))}
           </div>
         </div>
 

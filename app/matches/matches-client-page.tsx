@@ -497,6 +497,7 @@ export default function MatchesClientPage() {
                   match.stadiumView
                 }
                 city={match.city}
+                broadcasts={match.broadcasts}
                 highlighted={
                   match.id ===
                   highlightedMatchId

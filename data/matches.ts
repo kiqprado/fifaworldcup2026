@@ -2,143 +2,574 @@ import { IMatch } from '@/app/components/card-match'
 
 export const matches: IMatch[] = [
   // ── Grupo A ──
-  { id: 1, group: "A", date: "11/06", time: "16:00", home: { name: "México", code: "MEX", flag: "/flags/mx.png" }, away: { name: "África do Sul", code: "RSA", flag: "/flags/za.png" }, stadium: "Estadio Azteca", stadiumView: "/stadiums/Azteca.png", city: "Cidade do México" },
-  { id: 2, group: "A", date: "11/06", time: "23:00", home: { name: "Coreia do Sul", code: "KOR", flag: "/flags/kr.png" }, away: { name: "Tchéquia", code: "CZE", flag: "/flags/cz.png" }, stadium: "Estadio Akron", stadiumView: "/stadiums/Akron.png", city: "Guadalajara" },
-  { id: 3, group: "A", date: "18/06", time: "13:00", home: { name: "Tchéquia", code: "CZE", flag: "/flags/cz.png" }, away: { name: "África do Sul", code: "RSA", flag: "/flags/za.png" }, stadium: "Mercedes-Benz Stadium", stadiumView: "/stadiums/Mercedes.png", city: "Atlanta" },
-  { id: 4, group: "A", date: "18/06", time: "22:00", home: { name: "México", code: "MEX", flag: "/flags/mx.png" }, away: { name: "Coreia do Sul", code: "KOR", flag: "/flags/kr.png" }, stadium: "Estadio Akron", stadiumView: "/stadiums/Akron.png", city: "Cidade do México" },
-  { id: 5, group: "A", date: "24/06", time: "22:00", home: { name: "África do Sul", code: "RSA", flag: "/flags/za.png" }, away: { name: "Coreia do Sul", code: "KOR", flag: "/flags/kr.png" }, stadium: "Estadio BBVA", stadiumView: "/stadiums/BBVA.png", city: "Monterrey" },
-  { id: 6, group: "A", date: "24/06", time: "22:00", home: { name: "Tchéquia", code: "CZE", flag: "/flags/cz.png" }, away: { name: "México", code: "MEX", flag: "/flags/mx.png" }, stadium: "Estadio Azteca", stadiumView: "/stadiums/Azteca.png", city: "Cidade do México" },
+  { id: 1, group: "A", date: "11/06", time: "16:00", home: { name: "México", code: "MEX", flag: "/flags/mx.png" }, away: { name: "África do Sul", code: "RSA", flag: "/flags/za.png" }, stadium: "Estadio Azteca", stadiumView: "/stadiums/Azteca.png", city: "Cidade do México", 
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]},
+  { id: 2, group: "A", date: "11/06", time: "23:00", home: { name: "Coreia do Sul", code: "KOR", flag: "/flags/kr.png" }, away: { name: "Tchéquia", code: "CZE", flag: "/flags/cz.png" }, stadium: "Estadio Akron", stadiumView: "/stadiums/Akron.png", city: "Guadalajara", 
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=LjEP9frJ2CE" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]},
+  { id: 3, group: "A", date: "18/06", time: "13:00", home: { name: "Tchéquia", code: "CZE", flag: "/flags/cz.png" }, away: { name: "África do Sul", code: "RSA", flag: "/flags/za.png" }, stadium: "Mercedes-Benz Stadium", stadiumView: "/stadiums/Mercedes.png", city: "Atlanta", 
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=61qIjGER86Q" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]},
+  { id: 4, group: "A", date: "18/06", time: "22:00", home: { name: "México", code: "MEX", flag: "/flags/mx.png" }, away: { name: "Coreia do Sul", code: "KOR", flag: "/flags/kr.png" }, stadium: "Estadio Akron", stadiumView: "/stadiums/Akron.png", city: "Cidade do México",
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=SVwg-Aiy2po" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] },
+  { id: 5, group: "A", date: "24/06", time: "22:00", home: { name: "África do Sul", code: "RSA", flag: "/flags/za.png" }, away: { name: "Coreia do Sul", code: "KOR", flag: "/flags/kr.png" }, stadium: "Estadio BBVA", stadiumView: "/stadiums/BBVA.png", city: "Monterrey",
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] },
+  { id: 6, group: "A", date: "24/06", time: "22:00", home: { name: "Tchéquia", code: "CZE", flag: "/flags/cz.png" }, away: { name: "México", code: "MEX", flag: "/flags/mx.png" }, stadium: "Estadio Azteca", stadiumView: "/stadiums/Azteca.png", city: "Cidade do México",
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] },
 
   // ── Grupo B ──
-  { id: 7, group: "B", date: "12/06", time: "16:00", home: { name: "Canadá", code: "CAN", flag: "/flags/ca.png" }, away: { name: "Bósnia e Herzegovina", code: "BIH", flag: "/flags/ba.png" }, stadium: "BMO Field", stadiumView: "/stadiums/BMO.png", city: "Toronto" },
-  { id: 8, group: "B", date: "13/06", time: "16:00", home: { name: "Catar", code: "QAT", flag: "/flags/qa.png" }, away: { name: "Suíça", code: "SUI", flag: "/flags/ch.png" }, stadium: "Levi's Stadium", stadiumView: "/stadiums/Levis.png", city: "São Francisco" },
-  { id: 9, group: "B", date: "18/06", time: "16:00", home: { name: "Suiça", code: "SUI", flag: "/flags/ch.png" }, away: { name: "Bósnia e Herzegovina", code: "BIH", flag: "/flags/ba.png" }, stadium: "Sofi Stadium", stadiumView: "/stadiums/Sofi.png", city: "Los Angeles"
+  { id: 7, group: "B", date: "12/06", time: "16:00", home: { name: "Canadá", code: "CAN", flag: "/flags/ca.png" }, away: { name: "Bósnia e Herzegovina", code: "BIH", flag: "/flags/ba.png" }, stadium: "BMO Field", stadiumView: "/stadiums/BMO.png", city: "Toronto",
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=CRtjePKnGvA" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] },
+  { id: 8, group: "B", date: "13/06", time: "16:00", home: { name: "Catar", code: "QAT", flag: "/flags/qa.png" }, away: { name: "Suíça", code: "SUI", flag: "/flags/ch.png" }, stadium: "Levi's Stadium", stadiumView: "/stadiums/Levis.png", city: "São Francisco",
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=ljah6d9m7Z0" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] },
+  { id: 9, group: "B", date: "18/06", time: "16:00", home: { name: "Suiça", code: "SUI", flag: "/flags/ch.png" }, away: { name: "Bósnia e Herzegovina", code: "BIH", flag: "/flags/ba.png" }, stadium: "Sofi Stadium", stadiumView: "/stadiums/Sofi.png", city: "Los Angeles",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=DL372r8XEDg" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]
 },
-  { id: 10, group: "B", date: "18/06", time: "19:00", home: { name: "Canada", code: "CAN", flag: "/flags/ca.png" }, away: { name: "Catar", code: "QAT", flag: "/flags/qa.png" }, stadium: "BC PLace Stadium", stadiumView: "/stadiums/BCPlace.png", city: "Vancouver" 
+  { id: 10, group: "B", date: "18/06", time: "19:00", home: { name: "Canada", code: "CAN", flag: "/flags/ca.png" }, away: { name: "Catar", code: "QAT", flag: "/flags/qa.png" }, stadium: "BC PLace Stadium", stadiumView: "/stadiums/BCPlace.png", city: "Vancouver",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=fOLiF5uK2og" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 11, group: "B", date: "24/06", time: "16:00", home: { name: "Suíça", code: "SUI", flag: "/flags/ch.png" }, away: { name: "Canada", code: "CAN", flag: "/flags/ca.png" }, stadium: "BC Place Stadium", stadiumView: "/stadiums/BCPlace.png", city: "Vancouver" },
-  { id: 12, group: "B", date: "24/06", time: "16:00", home: { name: "Bósnia e Herzegovina", code: "BIH", flag: "/flags/ba.png" }, away: { name: "Catar", code: "QAT", flag: "/flags/qa.png" }, stadium: "Lumen Field", stadiumView: "/stadiums/Lumen.png", city: "Seattle" },
+  { id: 11, group: "B", date: "24/06", time: "16:00", home: { name: "Suíça", code: "SUI", flag: "/flags/ch.png" }, away: { name: "Canada", code: "CAN", flag: "/flags/ca.png" }, stadium: "BC Place Stadium", stadiumView: "/stadiums/BCPlace.png", city: "Vancouver",
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] },
+  { id: 12, group: "B", date: "24/06", time: "16:00", home: { name: "Bósnia e Herzegovina", code: "BIH", flag: "/flags/ba.png" }, away: { name: "Catar", code: "QAT", flag: "/flags/qa.png" }, stadium: "Lumen Field", stadiumView: "/stadiums/Lumen.png", city: "Seattle",
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] },
 
   // ── Grupo C ──
-  { id: 13, group: "C", date: "13/06", time: "19:00", home: { name: "Brasil", code: "BRA", flag: "/flags/br.png" }, away: { name: "Marrocos", code: "MAR", flag: "/flags/ma.png" }, stadium: "MetLife Stadium", stadiumView: "/stadiums/MetLife.png", city: "Nova York / Nova Jersey" },
-  { id: 14, group: "C", date: "13/06", time: "22:00", home: { name: "Haiti", code: "HAI", flag: "/flags/ht.png" }, away: { name: "Escócia", code: "SCO", flag: "/flags/sc.png" }, stadium: "Gillette Stadium", stadiumView: "/stadiums/Gillette.png", city: "Boston" },
-  { id: 15, group: "C", date: "19/06", time: "19:00", home: { name: "Escócia", code: "SCO", flag: "/flags/sc.png" }, away: { name: "Marrocos", code: "MAR", flag: "/flags/ma.png" }, stadium: "Gillette Stadium", stadiumView: "/stadiums/Gillette.png", city: "Boston" 
+  { id: 13, group: "C", date: "13/06", time: "19:00", home: { name: "Brasil", code: "BRA", flag: "/flags/br.png" }, away: { name: "Marrocos", code: "MAR", flag: "/flags/ma.png" }, stadium: "MetLife Stadium", stadiumView: "/stadiums/MetLife.png", city: "Nova York / Nova Jersey",
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=vC3fV_awcWE&pp=0gcJCTkLAYcqIYzv" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] },
+  { id: 14, group: "C", date: "13/06", time: "22:00", home: { name: "Haiti", code: "HAI", flag: "/flags/ht.png" }, away: { name: "Escócia", code: "SCO", flag: "/flags/sc.png" }, stadium: "Gillette Stadium", stadiumView: "/stadiums/Gillette.png", city: "Boston",
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=yBUg81qhrNo" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] },
+  { id: 15, group: "C", date: "19/06", time: "19:00", home: { name: "Escócia", code: "SCO", flag: "/flags/sc.png" }, away: { name: "Marrocos", code: "MAR", flag: "/flags/ma.png" }, stadium: "Gillette Stadium", stadiumView: "/stadiums/Gillette.png", city: "Boston",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=d1q2o990TZE" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 16, group: "C", date: "19/06", time: "21:30", home: { name: "Brasil", code: "BRA", flag: "/flags/br.png" }, away: { name: "Haiti", code: "HAI", flag: "/flags/ht.png" }, stadium: "Lincoln Financial Field", stadiumView: "/stadiums/Lincoln.png", city: "Filadélfia" },
-  { id: 17, group: "C", date: "24/06", time: "19:00", home: { name: "Marrocos", code: "MAR", flag: "/flags/ma.png" }, away: { name: "Haiti", code: "HAI", flag: "/flags/ht.png" }, stadium: "Mercedes-Benz Stadium", stadiumView: "/stadiums/Mercedes.png", city: "Atlanta" 
+  { id: 16, group: "C", date: "19/06", time: "21:30", home: { name: "Brasil", code: "BRA", flag: "/flags/br.png" }, away: { name: "Haiti", code: "HAI", flag: "/flags/ht.png" }, stadium: "Lincoln Financial Field", stadiumView: "/stadiums/Lincoln.png", city: "Filadélfia",
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=DUuWdi0r1RI" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] },
+  { id: 17, group: "C", date: "24/06", time: "19:00", home: { name: "Marrocos", code: "MAR", flag: "/flags/ma.png" }, away: { name: "Haiti", code: "HAI", flag: "/flags/ht.png" }, stadium: "Mercedes-Benz Stadium", stadiumView: "/stadiums/Mercedes.png", city: "Atlanta",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 18, group: "C", date: "24/06", time: "19:00", home: { name: "Escócia", code: "SCO", flag: "/flags/sc.png" }, away: { name: "Brasil", code: "BRA", flag: "/flags/br.png" }, stadium: "Hard Rock Stadium", stadiumView: "/stadiums/HardRock.png", city: "Miami" },
+  { id: 18, group: "C", date: "24/06", time: "19:00", home: { name: "Escócia", code: "SCO", flag: "/flags/sc.png" }, away: { name: "Brasil", code: "BRA", flag: "/flags/br.png" }, stadium: "Hard Rock Stadium", stadiumView: "/stadiums/HardRock.png", city: "Miami",
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] },
 
   // ── Grupo D ──
-  { id: 19, group: "D", date: "12/06", time: "22:00", home: { name: "Estados Unidos", code: "USA", flag: "/flags/us.png" }, away: { name: "Paraguai", code: "PAR", flag: "/flags/py.png" }, stadium: "SoFi Stadium", stadiumView: "/stadiums/Sofi.png", city: "Los Angeles" },
-  { id: 20, group: "D", date: "14/06", time: "01:00", home: { name: "Austrália", code: "AUS", flag: "/flags/au.png" }, away: { name: "Turquia", code: "TUR", flag: "/flags/tr.png" }, stadium: "BC Place", stadiumView: "/stadiums/BCPlace.png", city: "Vancouver" },
-  { id: 21, group: "D", date: "19/06", time: "16:00", home: { name: "Estados Unidos", code: "USA", flag: "/flags/us.png" }, away: { name: "Austrália", code: "AUS", flag: "/flags/au.png" }, stadium: "Lumen Field", stadiumView: "/stadiums/Lumen.png", city: "Seattle" },
-  { id: 22, group: "D", date: "20/06", time: "01:00", home: { name: "Turquia", code: "TUR", flag: "/flags/tr.png" }, away: { name: "Paraguai", code: "PAR", flag: "/flags/py.png" }, stadium: "Levi's Stadium", stadiumView: "/stadiums/Levis.png", city: "São Francisco (Santa Clara)" 
+  { id: 19, group: "D", date: "12/06", time: "22:00", home: { name: "Estados Unidos", code: "USA", flag: "/flags/us.png" }, away: { name: "Paraguai", code: "PAR", flag: "/flags/py.png" }, stadium: "SoFi Stadium", stadiumView: "/stadiums/Sofi.png", city: "Los Angeles",
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=7EFTDmwcleI" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] },
+  { id: 20, group: "D", date: "14/06", time: "01:00", home: { name: "Austrália", code: "AUS", flag: "/flags/au.png" }, away: { name: "Turquia", code: "TUR", flag: "/flags/tr.png" }, stadium: "BC Place", stadiumView: "/stadiums/BCPlace.png", city: "Vancouver",
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=8rr-857IbHA" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] },
+  { id: 21, group: "D", date: "19/06", time: "16:00", home: { name: "Estados Unidos", code: "USA", flag: "/flags/us.png" }, away: { name: "Austrália", code: "AUS", flag: "/flags/au.png" }, stadium: "Lumen Field", stadiumView: "/stadiums/Lumen.png", city: "Seattle",
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=_6cfUXA1UUw" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] },
+  { id: 22, group: "D", date: "20/06", time: "01:00", home: { name: "Turquia", code: "TUR", flag: "/flags/tr.png" }, away: { name: "Paraguai", code: "PAR", flag: "/flags/py.png" }, stadium: "Levi's Stadium", stadiumView: "/stadiums/Levis.png", city: "São Francisco (Santa Clara)",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 23, group: "D", date: "25/06", time: "23:00", home: { name: "Turquia", code: "TUR", flag: "/flags/tr.png" }, away: { name: "Estados Unidos", code: "USA", flag: "/flags/us.png" }, stadium: "Rose Bowl", stadiumView: "/stadiums/RoseBowl.png", city: "Los Angeles (Pasadena)" },
-  { id: 24, group: "D", date: "25/06", time: "20:00", home: { name: "Paraguai", code: "PAR", flag: "/flags/py.png" }, away: { name: "Austrália", code: "AUS", flag: "/flags/au.png" }, stadium: "Levi's Stadium", stadiumView: "/stadiums/Levis.png", city: "São Francisco (Santa Clara)" },
+  { id: 23, group: "D", date: "25/06", time: "23:00", home: { name: "Turquia", code: "TUR", flag: "/flags/tr.png" }, away: { name: "Estados Unidos", code: "USA", flag: "/flags/us.png" }, stadium: "Rose Bowl", stadiumView: "/stadiums/RoseBowl.png", city: "Los Angeles (Pasadena)",
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] },
+  { id: 24, group: "D", date: "25/06", time: "20:00", home: { name: "Paraguai", code: "PAR", flag: "/flags/py.png" }, away: { name: "Austrália", code: "AUS", flag: "/flags/au.png" }, stadium: "Levi's Stadium", stadiumView: "/stadiums/Levis.png", city: "São Francisco (Santa Clara)",
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] },
 
   // ── Grupo E ──
-  { id: 25, group: "E", date: "14/06", time: "14:00", home: { name: "Alemanha", code: "GER", flag: "/flags/de.png" }, away: { name: "Curaçau", code: "CUW", flag: "/flags/cw.png" }, stadium: "NRG Stadium", stadiumView: "/stadiums/Nrg.png", city: "Houston" 
+  { id: 25, group: "E", date: "14/06", time: "14:00", home: { name: "Alemanha", code: "GER", flag: "/flags/de.png" }, away: { name: "Curaçau", code: "CUW", flag: "/flags/cw.png" }, stadium: "NRG Stadium", stadiumView: "/stadiums/Nrg.png", city: "Houston",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=byP1peOCkzI" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 26, group: "E", date: "14/06", time: "20:00", home: { name: "Costa do Marfim", code: "CIV", flag: "/flags/ci.png" }, away: { name: "Equador", code: "ECU", flag: "/flags/ec.png" }, stadium: "Lincoln Financial Field", stadiumView: "/stadiums/Lincoln.png", city: "Filadélfia" },
-  { id: 27, group: "E", date: "20/06", time: "17:00", home: { name: "Alemanha", code: "GER", flag: "/flags/de.png" }, away: { name: "Costa do Marfim", code: "CIV", flag: "/flags/ci.png" }, stadium: "BMO Field", stadiumView: "/stadiums/BMO.png", city: "Toronto" 
+  { id: 26, group: "E", date: "14/06", time: "20:00", home: { name: "Costa do Marfim", code: "CIV", flag: "/flags/ci.png" }, away: { name: "Equador", code: "ECU", flag: "/flags/ec.png" }, stadium: "Lincoln Financial Field", stadiumView: "/stadiums/Lincoln.png", city: "Filadélfia",
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=IFh8Nuuhgcc&pp=0gcJCTkLAYcqIYzv" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] },
+  { id: 27, group: "E", date: "20/06", time: "17:00", home: { name: "Alemanha", code: "GER", flag: "/flags/de.png" }, away: { name: "Costa do Marfim", code: "CIV", flag: "/flags/ci.png" }, stadium: "BMO Field", stadiumView: "/stadiums/BMO.png", city: "Toronto",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-{ id: 28, group: "E", date: "20/06", time: "21:00", home: { name: "Equador", code: "ECU", flag: "/flags/ec.png" }, away: { name: "Curaçau", code: "CUW", flag: "/flags/cw.png" }, stadium: "Arrowhead Stadium", stadiumView: "/stadiums/ArrowHead.png", city: "Kansas city" 
+{ id: 28, group: "E", date: "20/06", time: "21:00", home: { name: "Equador", code: "ECU", flag: "/flags/ec.png" }, away: { name: "Curaçau", code: "CUW", flag: "/flags/cw.png" }, stadium: "Arrowhead Stadium", stadiumView: "/stadiums/ArrowHead.png", city: "Kansas city",
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-{ id: 29, group: "E", date: "25/06", time: "17:00", home: { name: "Equador", code: "ECU", flag: "/flags/ec.png" }, away: { name: "Alemanha", code: "GER", flag: "/flags/de.png" }, stadium: "MetLife Stadium", stadiumView: "/stadiums/MetLife.png", city: "Nova York / Nova Jersey" 
+{ id: 29, group: "E", date: "25/06", time: "17:00", home: { name: "Equador", code: "ECU", flag: "/flags/ec.png" }, away: { name: "Alemanha", code: "GER", flag: "/flags/de.png" }, stadium: "MetLife Stadium", stadiumView: "/stadiums/MetLife.png", city: "Nova York / Nova Jersey",
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-{ id: 30, group: "E", date: "25/06", time: "17:00", home: { name: "Curaçau", code: "CUW", flag: "/flags/cw.png" }, away: { name: "Costa do Marfim", code: "CIV", flag: "/flags/ci.png" }, stadium: "Lincoln Financial Field", stadiumView: "/stadiums/Lincoln.png", city: "Filadélfia" 
+{ id: 30, group: "E", date: "25/06", time: "17:00", home: { name: "Curaçau", code: "CUW", flag: "/flags/cw.png" }, away: { name: "Costa do Marfim", code: "CIV", flag: "/flags/ci.png" }, stadium: "Lincoln Financial Field", stadiumView: "/stadiums/Lincoln.png", city: "Filadélfia",
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
 
   // ── Grupo F ──
-  { id: 31, group: "F", date: "14/06", time: "17:00", home: { name: "Holanda", code: "NED", flag: "/flags/nl.png" }, away: { name: "Japão", code: "JPN", flag: "/flags/jp.png" }, stadium: "AT&T Stadium", stadiumView: "/stadiums/AT&T.png", city: "Dallas" 
+  { id: 31, group: "F", date: "14/06", time: "17:00", home: { name: "Holanda", code: "NED", flag: "/flags/nl.png" }, away: { name: "Japão", code: "JPN", flag: "/flags/jp.png" }, stadium: "AT&T Stadium", stadiumView: "/stadiums/AT&T.png", city: "Dallas",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=6Ca_GzyVOs0" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 32, group: "F", date: "14/06", time: "23:00", home: { name: "Suécia", code: "SWE", flag: "/flags/se.png" }, away: { name: "Tunísia", code: "TUN", flag: "/flags/tn.png" }, stadium: "Estadio BBVA", stadiumView: "/stadiums/BBVA.png", city: "Monterrey" 
+  { id: 32, group: "F", date: "14/06", time: "23:00", home: { name: "Suécia", code: "SWE", flag: "/flags/se.png" }, away: { name: "Tunísia", code: "TUN", flag: "/flags/tn.png" }, stadium: "Estadio BBVA", stadiumView: "/stadiums/BBVA.png", city: "Monterrey",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=o2wC007Jp-A" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 33, group: "F", date: "20/06", time: "14:00", home: { name: "Holanda", code: "NED", flag: "/flags/nl.png" }, away: { name: "Suécia", code: "SWE", flag: "/flags/se.png" }, stadium: "NRG Stadium", stadiumView: "/stadiums/Nrg.png", city: "Houston" 
+  { id: 33, group: "F", date: "20/06", time: "14:00", home: { name: "Holanda", code: "NED", flag: "/flags/nl.png" }, away: { name: "Suécia", code: "SWE", flag: "/flags/se.png" }, stadium: "NRG Stadium", stadiumView: "/stadiums/Nrg.png", city: "Houston",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 34, group: "F", date: "21/06", time: "01:00", home: { name: "Tunisia", code: "TUN", flag: "/flags/tn.png" }, away: { name: "Japão", code: "JPN", flag: "/flags/jp.png" }, stadium: "Estadio BBVA", stadiumView: "/stadiums/BBVA.png", city: "Monterrey" 
+  { id: 34, group: "F", date: "21/06", time: "01:00", home: { name: "Tunisia", code: "TUN", flag: "/flags/tn.png" }, away: { name: "Japão", code: "JPN", flag: "/flags/jp.png" }, stadium: "Estadio BBVA", stadiumView: "/stadiums/BBVA.png", city: "Monterrey",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 35, group: "F", date: "25/06", time: "20:00", home: { name: "Tunisia", code: "TUN", flag: "/flags/tn.png" }, away: { name: "Holanda", code: "NED", flag: "/flags/nl.png" }, stadium: "Arrowhead Stadium", stadiumView: "/stadiums/ArrowHead.png", city: "Kansas City" 
+  { id: 35, group: "F", date: "25/06", time: "20:00", home: { name: "Tunisia", code: "TUN", flag: "/flags/tn.png" }, away: { name: "Holanda", code: "NED", flag: "/flags/nl.png" }, stadium: "Arrowhead Stadium", stadiumView: "/stadiums/ArrowHead.png", city: "Kansas City",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 36, group: "F", date: "25/06", time: "20:00", home: { name: "Japão", code: "JPN", flag: "/flags/jp.png" }, away: { name: "Suécia", code: "SWE", flag: "/flags/se.png" }, stadium: "AT&T Stadium", stadiumView: "/stadiums/AT&T.png", city: "Dallas" 
+  { id: 36, group: "F", date: "25/06", time: "20:00", home: { name: "Japão", code: "JPN", flag: "/flags/jp.png" }, away: { name: "Suécia", code: "SWE", flag: "/flags/se.png" }, stadium: "AT&T Stadium", stadiumView: "/stadiums/AT&T.png", city: "Dallas",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
 
   // ── Grupo G ──
-  { id: 37, group: "G", date: "15/06", time: "16:00", home: { name: "Bélgica", code: "BEL", flag: "/flags/be.png" }, away: { name: "Egito", code: "EGY", flag: "/flags/eg.png" }, stadium: "Lumen Field", stadiumView: "/stadiums/Lumen.png", city: "Seattle" 
+  { id: 37, group: "G", date: "15/06", time: "16:00", home: { name: "Bélgica", code: "BEL", flag: "/flags/be.png" }, away: { name: "Egito", code: "EGY", flag: "/flags/eg.png" }, stadium: "Lumen Field", stadiumView: "/stadiums/Lumen.png", city: "Seattle",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=aclBHrhLQr4" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 38, group: "G", date: "15/06", time: "22:00", home: { name: "Irã", code: "IRN", flag: "/flags/ir.png" }, away: { name: "Nova Zelândia", code: "NZL", flag: "/flags/nz.png" }, stadium: "So-fi Stadium", stadiumView: "/stadiums/Sofi.png", city: "Los Angeles" 
+  { id: 38, group: "G", date: "15/06", time: "22:00", home: { name: "Irã", code: "IRN", flag: "/flags/ir.png" }, away: { name: "Nova Zelândia", code: "NZL", flag: "/flags/nz.png" }, stadium: "So-fi Stadium", stadiumView: "/stadiums/Sofi.png", city: "Los Angeles",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=vrY_cXwm--g" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 39, group: "G", date: "21/06", time: "16:00", home: { name: "Bélgica", code: "BEL", flag: "/flags/be.png" }, away: { name: "Irã", code: "IRN", flag: "/flags/ir.png" }, stadium: "SoFi Stadium", stadiumView: "/stadiums/Sofi.png", city: "Los Angeles" 
+  { id: 39, group: "G", date: "21/06", time: "16:00", home: { name: "Bélgica", code: "BEL", flag: "/flags/be.png" }, away: { name: "Irã", code: "IRN", flag: "/flags/ir.png" }, stadium: "SoFi Stadium", stadiumView: "/stadiums/Sofi.png", city: "Los Angeles",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]
 },
-  { id: 40, group: "G", date: "21/06", time: "22:00", home: { name: "Nova Zelândia", code: "NZE", flag: "/flags/nz.png" }, away: { name: "Egito", code: "EGY", flag: "/flags/eg.png" }, stadium: "BC Place", stadiumView: "/stadiums/BCPlace.png", city: "Vancouver" 
+  { id: 40, group: "G", date: "21/06", time: "22:00", home: { name: "Nova Zelândia", code: "NZE", flag: "/flags/nz.png" }, away: { name: "Egito", code: "EGY", flag: "/flags/eg.png" }, stadium: "BC Place", stadiumView: "/stadiums/BCPlace.png", city: "Vancouver",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 41, group: "G", date: "27/06", time: "00:00", home: { name: "Egito", code: "EGY", flag: "/flags/eg.png" }, away: { name: "Irã", code: "IRN", flag: "/flags/ir.png" }, stadium: "Lumen Field", stadiumView: "/stadiums/Lumen.png", city: "Seattle" 
+  { id: 41, group: "G", date: "27/06", time: "00:00", home: { name: "Egito", code: "EGY", flag: "/flags/eg.png" }, away: { name: "Irã", code: "IRN", flag: "/flags/ir.png" }, stadium: "Lumen Field", stadiumView: "/stadiums/Lumen.png", city: "Seattle",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 42, group: "G", date: "27/06", time: "00:00", home: { name: "Nova Zelândia", code: "NZE", flag: "/flags/nz.png" }, away: { name: "Bélgica", code: "BEL", flag: "/flags/be.png" }, stadium: "BC Place Stadium", stadiumView: "/stadiums/BCPlace.png", city: "Vancouver" 
+  { id: 42, group: "G", date: "27/06", time: "00:00", home: { name: "Nova Zelândia", code: "NZE", flag: "/flags/nz.png" }, away: { name: "Bélgica", code: "BEL", flag: "/flags/be.png" }, stadium: "BC Place Stadium", stadiumView: "/stadiums/BCPlace.png", city: "Vancouver",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
 
   // ── Grupo H ──
-  { id: 43, group: "H", date: "15/06", time: "13:00", home: { name: "Espanha", code: "ESP", flag: "/flags/es.png" }, away: { name: "Cabo Verde", code: "CPV", flag: "/flags/cv.png" }, stadium: "Mercedes-Benz Stadium", stadiumView: "/stadiums/Mercedes.png", city: "Atlanta" 
+  { id: 43, group: "H", date: "15/06", time: "13:00", home: { name: "Espanha", code: "ESP", flag: "/flags/es.png" }, away: { name: "Cabo Verde", code: "CPV", flag: "/flags/cv.png" }, stadium: "Mercedes-Benz Stadium", stadiumView: "/stadiums/Mercedes.png", city: "Atlanta",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=EYStZQ5FsVk" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 44, group: "H", date: "15/06", time: "19:00", home: { name: "Arábia Saudita", code: "KSA", flag: "/flags/sa.png" }, away: { name: "Uruguai", code: "URY", flag: "/flags/uy.png" }, stadium: "Hard Rock Stadium", stadiumView: "/stadiums/HardRock.png", city: "Miami" 
+  { id: 44, group: "H", date: "15/06", time: "19:00", home: { name: "Arábia Saudita", code: "KSA", flag: "/flags/sa.png" }, away: { name: "Uruguai", code: "URY", flag: "/flags/uy.png" }, stadium: "Hard Rock Stadium", stadiumView: "/stadiums/HardRock.png", city: "Miami",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=Mh-iBLsiYDw" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 45, group: "H", date: "21/06", time: "13:00", home: { name: "Espanha", code: "ESP", flag: "/flags/es.png" }, away: { name: "Arábia Saudita", code: "KSA", flag: "/flags/sa.png" }, stadium: "Mercedes-Benz Stadium", stadiumView: "/stadiums/Mercedes.png", city: "Atlanta" 
+  { id: 45, group: "H", date: "21/06", time: "13:00", home: { name: "Espanha", code: "ESP", flag: "/flags/es.png" }, away: { name: "Arábia Saudita", code: "KSA", flag: "/flags/sa.png" }, stadium: "Mercedes-Benz Stadium", stadiumView: "/stadiums/Mercedes.png", city: "Atlanta",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 46, group: "H", date: "21/06", time: "19:00", home: { name: "Uruguai", code: "URY", flag: "/flags/uy.png" }, away: { name: "Cabo Verde", code: "CPV", flag: "/flags/cv.png" }, stadium: "Hard Rock Stadium", stadiumView: "/stadiums/HardRock.png", city: "Miami" 
+  { id: 46, group: "H", date: "21/06", time: "19:00", home: { name: "Uruguai", code: "URY", flag: "/flags/uy.png" }, away: { name: "Cabo Verde", code: "CPV", flag: "/flags/cv.png" }, stadium: "Hard Rock Stadium", stadiumView: "/stadiums/HardRock.png", city: "Miami",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 47, group: "H", date: "26/06", time: "21:00", home: { name: "Cabo Verde", code: "CPV", flag: "/flags/cv.png" }, away: { name: "Arábia Saudita", code: "KSA", flag: "/flags/sa.png" }, stadium: "NRG Stadium", stadiumView: "/stadiums/Nrg.png", city: "Houston" 
+  { id: 47, group: "H", date: "26/06", time: "21:00", home: { name: "Cabo Verde", code: "CPV", flag: "/flags/cv.png" }, away: { name: "Arábia Saudita", code: "KSA", flag: "/flags/sa.png" }, stadium: "NRG Stadium", stadiumView: "/stadiums/Nrg.png", city: "Houston",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 48, group: "H", date: "26/06", time: "21:00", home: { name: "Uruguai", code: "URY", flag: "/flags/uy.png" }, away: { name: "Espanha", code: "ESP", flag: "/flags/es.png" }, stadium: "Estadio Akron", stadiumView: "/stadiums/Akron.png", city: "Guadalajara" 
+  { id: 48, group: "H", date: "26/06", time: "21:00", home: { name: "Uruguai", code: "URY", flag: "/flags/uy.png" }, away: { name: "Espanha", code: "ESP", flag: "/flags/es.png" }, stadium: "Estadio Akron", stadiumView: "/stadiums/Akron.png", city: "Guadalajara",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
 
   // ── Grupo I ──
-  { id: 49, group: "I", date: "16/06", time: "16:00", home: { name: "França", code: "FRA", flag: "/flags/fr.png" }, away: { name: "Senegal", code: "SEN", flag: "/flags/sn.png" }, stadium: "MetLife Stadium", stadiumView: "/stadiums/MetLife.png", city: "Nova York / Nova Jersey" },
-  { id: 50, group: "I", date: "16/06", time: "19:00", home: { name: "Iraque", code: "IRQ", flag: "/flags/iq.png" }, away: { name: "Noruega", code: "NOR", flag: "/flags/no.png" } , stadium: "Gillette Stadium", stadiumView: "/stadiums/Gillette.png", city: "Boston (Foxborough)" 
+  { id: 49, group: "I", date: "16/06", time: "16:00", home: { name: "França", code: "FRA", flag: "/flags/fr.png" }, away: { name: "Senegal", code: "SEN", flag: "/flags/sn.png" }, stadium: "MetLife Stadium", stadiumView: "/stadiums/MetLife.png", city: "Nova York / Nova Jersey",
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=m1vplAfSs_A" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] },
+  { id: 50, group: "I", date: "16/06", time: "19:00", home: { name: "Iraque", code: "IRQ", flag: "/flags/iq.png" }, away: { name: "Noruega", code: "NOR", flag: "/flags/no.png" } , stadium: "Gillette Stadium", stadiumView: "/stadiums/Gillette.png", city: "Boston (Foxborough)",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=Dgvz5nHdttk&pp=0gcJCTkLAYcqIYzv" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 51, group: "I", date: "22/06", time: "18:00", home: { name: "França", code: "FRA", flag: "/flags/fr.png" }, away: { name: "Iraque", code: "IRQ", flag: "/flags/iq.png" } , stadium: "Lincoln Financial Field", stadiumView: "/stadiums/Lincoln.png", city: "Filadélfia" 
+  { id: 51, group: "I", date: "22/06", time: "18:00", home: { name: "França", code: "FRA", flag: "/flags/fr.png" }, away: { name: "Iraque", code: "IRQ", flag: "/flags/iq.png" } , stadium: "Lincoln Financial Field", stadiumView: "/stadiums/Lincoln.png", city: "Filadélfia",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 52, group: "I", date: "22/06", time: "21:00", home: { name: "Noruega", code: "NOR", flag: "/flags/no.png" }, away: { name: "Senegal", code: "SEN", flag: "/flags/sn.png" } , stadium: "MetLife Stadium", stadiumView: "/stadiums/MetLife.png", city: "Nova York / Nova Jersey" 
+  { id: 52, group: "I", date: "22/06", time: "21:00", home: { name: "Noruega", code: "NOR", flag: "/flags/no.png" }, away: { name: "Senegal", code: "SEN", flag: "/flags/sn.png" } , stadium: "MetLife Stadium", stadiumView: "/stadiums/MetLife.png", city: "Nova York / Nova Jersey",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
- { id: 53, group: "I", date: "26/06", time: "16:00", home: { name: "Senegal", code: "SEN", flag: "/flags/sn.png" }, away: { name: "Iraque", code: "IRQ", flag: "/flags/iq.png" } , stadium: "BMO Field", stadiumView: "/stadiums/BMO.png", city: "Toronto" 
+ { id: 53, group: "I", date: "26/06", time: "16:00", home: { name: "Senegal", code: "SEN", flag: "/flags/sn.png" }, away: { name: "Iraque", code: "IRQ", flag: "/flags/iq.png" } , stadium: "BMO Field", stadiumView: "/stadiums/BMO.png", city: "Toronto",
+ broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 54, group: "I", date: "26/06", time: "16:00", home: { name: "Noruega", code: "NOR", flag: "/flags/no.png" }, away: { name: "França", code: "FRA", flag: "/flags/fr.png" } , stadium: "Gillette Stadium", stadiumView: "/stadiums/Gillette.png", city: "Boston" 
+  { id: 54, group: "I", date: "26/06", time: "16:00", home: { name: "Noruega", code: "NOR", flag: "/flags/no.png" }, away: { name: "França", code: "FRA", flag: "/flags/fr.png" } , stadium: "Gillette Stadium", stadiumView: "/stadiums/Gillette.png", city: "Boston",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
 
   // ── Grupo J ──
-  { id: 55, group: "J", date: "16/06", time: "22:00", home: { name: "Argentina", code: "ARG", flag: "/flags/ar.png" }, away: { name: "Argélia", code: "ALG", flag: "/flags/dz.png" }, stadium: "Arrowhead Stadium", stadiumView: "/stadiums/ArrowHead.png", city: "Kansas City" },
-  { id: 56, group: "J", date: "17/06", time: "01:00", home: { name: "Áustria", code: "AUT", flag: "/flags/at.png" }, away: { name: "Jordânia", code: "JOR", flag: "/flags/jo.png" }, stadium: "Levi's Stadium", stadiumView: "/stadiums/Levis.png", city: "São Francisco (Santa Clara)" 
+  { id: 55, group: "J", date: "16/06", time: "22:00", home: { name: "Argentina", code: "ARG", flag: "/flags/ar.png" }, away: { name: "Argélia", code: "ALG", flag: "/flags/dz.png" }, stadium: "Arrowhead Stadium", stadiumView: "/stadiums/ArrowHead.png", city: "Kansas City",
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=RhpNoBWVQGA" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] },
+  { id: 56, group: "J", date: "17/06", time: "01:00", home: { name: "Áustria", code: "AUT", flag: "/flags/at.png" }, away: { name: "Jordânia", code: "JOR", flag: "/flags/jo.png" }, stadium: "Levi's Stadium", stadiumView: "/stadiums/Levis.png", city: "São Francisco (Santa Clara)",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=r97R-p-TlNM" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 57, group: "J", date: "22/06", time: "14:00", home: { name: "Argentina", code: "ARG", flag: "/flags/ar.png" }, away: { name: "Áustria", code: "AUT", flag: "/flags/at.png" }, stadium: "AT&T Stadium", stadiumView: "/stadiums/AT&T.png", city: "Dallas" 
+  { id: 57, group: "J", date: "22/06", time: "14:00", home: { name: "Argentina", code: "ARG", flag: "/flags/ar.png" }, away: { name: "Áustria", code: "AUT", flag: "/flags/at.png" }, stadium: "AT&T Stadium", stadiumView: "/stadiums/AT&T.png", city: "Dallas",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 58, group: "J", date: "23/06", time: "00:00", home: { name: "Jordânia", code: "JOR", flag: "/flags/jo.png" }, away: { name: "Argélia", code: "ALG", flag: "/flags/dz.png" }, stadium: "Levi's Stadium", stadiumView: "/stadiums/Levis.png", city: "São Francisco (Santa Clara)" 
+  { id: 58, group: "J", date: "23/06", time: "00:00", home: { name: "Jordânia", code: "JOR", flag: "/flags/jo.png" }, away: { name: "Argélia", code: "ALG", flag: "/flags/dz.png" }, stadium: "Levi's Stadium", stadiumView: "/stadiums/Levis.png", city: "São Francisco (Santa Clara)",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 59, group: "J", date: "27/06", time: "23:00", home: { name: "Jordânia", code: "JOR", flag: "/flags/jo.png" }, away: { name: "Argentina", code: "ARG", flag: "/flags/ar.png" }, stadium: "AT&T Stadium", stadiumView: "/stadiums/AT&T.png", city: "Dallas" 
+  { id: 59, group: "J", date: "27/06", time: "23:00", home: { name: "Jordânia", code: "JOR", flag: "/flags/jo.png" }, away: { name: "Argentina", code: "ARG", flag: "/flags/ar.png" }, stadium: "AT&T Stadium", stadiumView: "/stadiums/AT&T.png", city: "Dallas",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 60, group: "J", date: "27/06", time: "23:00", home: { name: "Argélia", code: "ALG", flag: "/flags/dz.png" }, away: { name: "Áustria", code: "AUT", flag: "/flags/at.png" }, stadium: "Arrowhead Stadium", stadiumView: "/stadiums/ArrowHead.png", city: "Kansas City" 
+  { id: 60, group: "J", date: "27/06", time: "23:00", home: { name: "Argélia", code: "ALG", flag: "/flags/dz.png" }, away: { name: "Áustria", code: "AUT", flag: "/flags/at.png" }, stadium: "Arrowhead Stadium", stadiumView: "/stadiums/ArrowHead.png", city: "Kansas City",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
 
 
   // ── Grupo K ──
-  { id: 61, group: "K", date: "17/06", time: "14:00", home: { name: "Portugal", code: "POR", flag: "/flags/pt.png" }, away:{ name: "RD Congo", code: "COD", flag: "/flags/cd.png" }, stadium: "NRG Stadium", stadiumView: "/stadiums/Nrg.png", city: "Houston"
+  { id: 61, group: "K", date: "17/06", time: "14:00", home: { name: "Portugal", code: "POR", flag: "/flags/pt.png" }, away:{ name: "RD Congo", code: "COD", flag: "/flags/cd.png" }, stadium: "NRG Stadium", stadiumView: "/stadiums/Nrg.png", city: "Houston",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=HpzKFDctbNw" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]
 },
-  { id: 62, group: "K", date: "17/06", time: "23:00", home: { name: "Uzbequistão", code: "UZB", flag: "/flags/uz.png" }, away: { name: "Colômbia", code: "COL", flag: "/flags/co.png" }, stadium: "Estadio Azteca", stadiumView: "/stadiums/Azteca.png", city: "Cidade do México" },
-  { id: 63, group: "K", date: "23/06", time: "14:00", home: { name: "Portugal", code: "POR", flag: "/flags/pt.png" }, away:{ name: "Uzbequistão", code: "UZB", flag: "/flags/uz.png" }, stadium: "NRG Stadium", stadiumView: "/stadiums/Nrg.png", city: "Houston"
+  { id: 62, group: "K", date: "17/06", time: "23:00", home: { name: "Uzbequistão", code: "UZB", flag: "/flags/uz.png" }, away: { name: "Colômbia", code: "COL", flag: "/flags/co.png" }, stadium: "Estadio Azteca", stadiumView: "/stadiums/Azteca.png", city: "Cidade do México",
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=BWsf2c4zKZs&pp=0gcJCTkLAYcqIYzv" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] },
+  { id: 63, group: "K", date: "23/06", time: "14:00", home: { name: "Portugal", code: "POR", flag: "/flags/pt.png" }, away:{ name: "Uzbequistão", code: "UZB", flag: "/flags/uz.png" }, stadium: "NRG Stadium", stadiumView: "/stadiums/Nrg.png", city: "Houston",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]
 },
-  { id: 64, group: "K", date: "23/06", time: "23:00", home: { name: "Colômbia", code: "COL", flag: "/flags/co.png" }, away:{ name: "RD Congo", code: "COD", flag: "/flags/cd.png" }, stadium: "Estadio Akron", stadiumView: "/stadiums/Akron.png", city: "Guadalajara"},
-  { id: 65, group: "K", date: "27/06", time: "20:30", home: { name: "RD Congo", code: "COD", flag: "/flags/cd.png" }, away:{ name: "Uzbequistão", code: "UZB", flag: "/flags/uz.png" }, stadium: "Mercedes-Benz Stadium", stadiumView: "/stadiums/Mercedes.png", city: "Atlanta"},
-  { id: 66, group: "K", date: "27/06", time: "20:30", home: { name: "Colômbia", code: "COL", flag: "/flags/co.png" }, away:{ name: "Portugal", code: "POR", flag: "/flags/pt.png" }, stadium: "Hard Rock Stadium", stadiumView: "/stadiums/HardRock.png", city: "Miami"},
+  { id: 64, group: "K", date: "23/06", time: "23:00", home: { name: "Colômbia", code: "COL", flag: "/flags/co.png" }, away:{ name: "RD Congo", code: "COD", flag: "/flags/cd.png" }, stadium: "Estadio Akron", stadiumView: "/stadiums/Akron.png", city: "Guadalajara",
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]},
+  { id: 65, group: "K", date: "27/06", time: "20:30", home: { name: "RD Congo", code: "COD", flag: "/flags/cd.png" }, away:{ name: "Uzbequistão", code: "UZB", flag: "/flags/uz.png" }, stadium: "Mercedes-Benz Stadium", stadiumView: "/stadiums/Mercedes.png", city: "Atlanta",
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]},
+  { id: 66, group: "K", date: "27/06", time: "20:30", home: { name: "Colômbia", code: "COL", flag: "/flags/co.png" }, away:{ name: "Portugal", code: "POR", flag: "/flags/pt.png" }, stadium: "Hard Rock Stadium", stadiumView: "/stadiums/HardRock.png", city: "Miami", 
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]},
 
   // ── Grupo L ──
-  { id: 67, group: "L", date: "17/06", time: "17:00", home: { name: "Inglaterra", code: "ENG", flag: "/flags/en.png" }, away:{ name: "Croácia", code: "CRO", flag: "/flags/hr.png" }, stadium: "AT&T Stadium", stadiumView: "/stadiums/AT&T.png", city: "Dallas" },
-  { id: 68, group: "L", date: "17/06", time: "20:00", home: { name: "Gana", code: "GHA", flag: "/flags/gh.png" }, away: { name: "Panamá", code: "PAN", flag: "/flags/pa.png" }, stadium: "BMO Field", stadiumView: "/stadiums/BMO.png", city: "Toronto" 
+  { id: 67, group: "L", date: "17/06", time: "17:00", home: { name: "Inglaterra", code: "ENG", flag: "/flags/en.png" }, away:{ name: "Croácia", code: "CRO", flag: "/flags/hr.png" }, stadium: "AT&T Stadium", stadiumView: "/stadiums/AT&T.png", city: "Dallas", 
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=DaAFndjKuf8" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] },
+  { id: 68, group: "L", date: "17/06", time: "20:00", home: { name: "Gana", code: "GHA", flag: "/flags/gh.png" }, away: { name: "Panamá", code: "PAN", flag: "/flags/pa.png" }, stadium: "BMO Field", stadiumView: "/stadiums/BMO.png", city: "Toronto",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=t7XBWsD5p6A" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 69, group: "L", date: "23/06", time: "17:00", home: { name: "Inglaterra", code: "ENG", flag: "/flags/en.png" }, away: { name: "Gana", code: "GHA", flag: "/flags/gh.png" }, stadium: "Gillette Stadium", stadiumView: "/stadiums/Gillette.png", city: "Boston (Foxborough)" },
-  { id: 70, group: "L", date: "23/06", time: "20:00", home: { name: "Panamá", code: "PAN", flag: "/flags/pa.png" }, away: { name: "Croácia", code: "CRO", flag: "/flags/hr.png" }, stadium: "BMO Field", stadiumView: "/stadiums/BMO.png", city: "Toronto" 
+  { id: 69, group: "L", date: "23/06", time: "17:00", home: { name: "Inglaterra", code: "ENG", flag: "/flags/en.png" }, away: { name: "Gana", code: "GHA", flag: "/flags/gh.png" }, stadium: "Gillette Stadium", stadiumView: "/stadiums/Gillette.png", city: "Boston (Foxborough)",
+broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] },
+  { id: 70, group: "L", date: "23/06", time: "20:00", home: { name: "Panamá", code: "PAN", flag: "/flags/pa.png" }, away: { name: "Croácia", code: "CRO", flag: "/flags/hr.png" }, stadium: "BMO Field", stadiumView: "/stadiums/BMO.png", city: "Toronto",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 71, group: "L", date: "27/06", time: "18:00", home: { name: "Croácia", code: "CRO", flag: "/flags/hr.png" }, away: { name: "Gana", code: "GHA", flag: "/flags/gh.png" }, stadium: "Lincoln Financial Field", stadiumView: "/stadiums/Lincoln.png", city: "Filadélfia" 
+  { id: 71, group: "L", date: "27/06", time: "18:00", home: { name: "Croácia", code: "CRO", flag: "/flags/hr.png" }, away: { name: "Gana", code: "GHA", flag: "/flags/gh.png" }, stadium: "Lincoln Financial Field", stadiumView: "/stadiums/Lincoln.png", city: "Filadélfia",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ] 
 },
-  { id: 72, group: "L", date: "27/06", time: "18:00", home: { name: "Panamá", code: "PAN", flag: "/flags/pa.png" }, away: { name: "Inglaterra", code: "ENG", flag: "/flags/en.png" }, stadium: "MetLife Stadium", stadiumView: "/stadiums/MetLife.png", city: "Nova York / Nova Jersey" 
-},
+  { id: 72, group: "L", date: "27/06", time: "18:00", home: { name: "Panamá", code: "PAN", flag: "/flags/pa.png" }, away: { name: "Inglaterra", code: "ENG", flag: "/flags/en.png" }, stadium: "MetLife Stadium", stadiumView: "/stadiums/MetLife.png", city: "Nova York / Nova Jersey",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]},
 ];
