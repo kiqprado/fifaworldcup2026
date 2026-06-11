@@ -8,7 +8,7 @@ import { ChevronUp } from 'lucide-react'
 import { differenceInSeconds } from 'date-fns'
 import { toZonedTime } from 'date-fns-tz'
 
-const OPPENING_DATE = new Date('2026-06-11T20:00:00-03:00')
+const OPPENING_DATE = new Date('2026-06-11T14:30:00-03:00')
 const BRASILIA_TZ = 'America/Sao_Paulo'
 
 function getTimeRemaining() {
