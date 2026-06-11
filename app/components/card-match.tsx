@@ -4,6 +4,10 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useEffect, useRef, } from 'react'
 
+import { useNow } from '@/app/hook/use-match-status'
+import { MatchStatus } from '../elements/match-status'
+import { getMatchStatus } from '../utils/get-match-status'
+
 import { CalendarCheck, MapPinCheck, Star } from 'lucide-react'
 import gsap from 'gsap'
 import Tilt from 'react-parallax-tilt'
@@ -47,6 +51,9 @@ export function CardMatch({
 }: IMatch) {
   const ref = useRef<HTMLDivElement>(null)
 
+  const now = useNow()
+  const matchStatus = getMatchStatus(date, time, now)
+
   useEffect(() => {
     if (!ref.current) return
 
@@ -67,6 +74,13 @@ export function CardMatch({
       glareEnable
       glareMaxOpacity={0.08}
     >
+      { matchStatus && (
+          <MatchStatus
+            status={matchStatus.status}
+            variant={matchStatus.variant}
+          />
+      )}
+      
       <div
         ref={ref}
         className={`
@@ -83,6 +97,7 @@ export function CardMatch({
           }
         `}
       >
+
         {/* BG */}
         <div className="absolute inset-0 -z-10">
           <Image
@@ -104,7 +119,6 @@ export function CardMatch({
             from-black/70 via-black/40 to-black/85
           " />
         </div>
-
 
         <div className="flex items-center justify-between text-xs text-zinc-300">
 

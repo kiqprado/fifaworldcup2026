@@ -35,7 +35,7 @@ button, link {
   background: #09090b;
 }
  
-
+/* CountDown */
 .countdown-root {
   font-family: 'Michroma', sans-serif;
 }
@@ -119,5 +119,67 @@ button, link {
   100% {
     transform: translateY(-6px);
     opacity: 0;
+  }
+}
+
+/* ===========================
+   FINISHED
+=========================== */
+
+.match-status-finished {
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.9),
+    0 0 10px rgba(255,255,255,.35),
+    0 0 25px rgba(255,255,255,.15);
+}
+
+/* ===========================
+   UPCOMING
+=========================== */
+
+.match-status-upcoming {
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.9),
+    0 0 10px rgba(255,255,255,.3),
+    0 0 20px rgba(255,255,255,.1);
+}
+
+/* ===========================
+   LIVE
+=========================== */
+
+.match-status-live {
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.9),
+    0 0 8px rgba(0,255,120,.9),
+    0 0 18px rgba(0,255,120,.7),
+    0 0 30px rgba(0,255,120,.45);
+
+  animation: liveGlow 1.8s ease-in-out infinite;
+}
+
+@keyframes liveGlow {
+  0% {
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,.9),
+      0 0 6px rgba(0,255,120,.7),
+      0 0 14px rgba(0,255,120,.5),
+      0 0 24px rgba(0,255,120,.3);
+  }
+
+  50% {
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,1),
+      0 0 12px rgba(0,255,120,1),
+      0 0 24px rgba(0,255,120,.8),
+      0 0 40px rgba(0,255,120,.6);
+  }
+
+  100% {
+    box-shadow:
+      0 0 0 1px rgba(255,255,255,.9),
+      0 0 6px rgba(0,255,120,.7),
+      0 0 14px rgba(0,255,120,.5),
+      0 0 24px rgba(0,255,120,.3);
   }
 }
