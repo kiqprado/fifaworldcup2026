@@ -4,22 +4,23 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import { sortGroupTeams } from '../utils/sort-groups-teams'
+
 import Tilt from 'react-parallax-tilt'
 
 import { useBreakpoint } from '../hook/use-media-query'
-export interface IGroupTeam {
-  code?: string
-  name: string;
-  flag: string;
-  // Standings data
-  pts?: number;
-  j?: number;
-  v?: number;
-  e?: number;
-  d?: number;
-  gp?: number;
-  gc?: number;
-  sg?: number;
+interface IGroupTeam {
+  name: string
+  flag: string
+  code: string
+  pts: number
+  j: number
+  v: number
+  e: number
+  d: number
+  gp: number
+  gc: number
+  sg: number
 }
 
 export interface IGroup {
@@ -108,6 +109,9 @@ export function CardGroup({ teams, keyGroup, highlight }: IGroup & { highlight?:
 }
 
 export function CardGroupQualifier({ keyGroup, teams, highlight }: IGroup & { highlight?: boolean }) {
+
+  const sortedTeams = sortGroupTeams(teams)
+
   // BREAKPOINTS INDIVIDUALS
   const isMobileXS = useBreakpoint('mobileXS')
   const isMobileSM = useBreakpoint('mobileSM')
@@ -182,50 +186,52 @@ export function CardGroupQualifier({ keyGroup, teams, highlight }: IGroup & { hi
           </h2>
 
           <div className="w-full">
-  <table className="w-full table-fixed text-center bg-zinc-900">
-    <thead>
-      <tr className="text-zinc-400 bg-zinc-950/50">
-        <th className="text-sm px-2 py-2 w-6">#</th>
-        <th className="text-sm text-start py-2 w-full">Seleção</th>  {/* ← stretch aqui */}
-        <th className="text-sm px-1 py-2 w-8">Pts</th>
-        <th className="text-sm px-1 py-2 w-6">J</th>
-        <th className="text-sm px-1 py-2 w-6">V</th>
-        <th className="text-sm px-1 py-2 w-6">E</th>
-        <th className="text-sm px-1 py-2 w-6">D</th>
-        <th className={`${mobileRangeFull || tabletRangeFull ? 'hidden' : ''} text-sm px-0.5 py-2 w-8`}>GP</th>
-        <th className={`${mobileRangeFull || tabletRangeFull ? 'hidden' : ''} text-sm px-0.5 py-2 w-8`}>GC</th>
-        <th className={`${mobileRangeFull ? 'hidden' : ''} text-sm px-0.5 py-2 w-8`}>SG</th>
-      </tr>
-    </thead>
+            <table className="w-full table-fixed text-center bg-zinc-900">
+              <thead>
+                <tr className="text-zinc-400 bg-zinc-950/50">
+                  <th className="text-sm px-2 py-2 w-6">#</th>
+                  <th className="text-sm text-start py-2 w-full">Seleção</th>  {/* ← stretch aqui */}
+                  <th className="text-sm px-1 py-2 w-8">Pts</th>
+                  <th className="text-sm px-1 py-2 w-6">J</th>
+                  <th className="text-sm px-1 py-2 w-6">V</th>
+                  <th className="text-sm px-1 py-2 w-6">E</th>
+                  <th className="text-sm px-1 py-2 w-6">D</th>
+                  <th className={`${mobileRangeFull || tabletRangeFull ? 'hidden' : ''} text-sm px-0.5 py-2 w-8`}>GP</th>
+                  <th className={`${mobileRangeFull || tabletRangeFull ? 'hidden' : ''} text-sm px-0.5 py-2 w-8`}>GC</th>
+                  <th className={`${mobileRangeFull ? 'hidden' : ''} text-sm px-0.5 py-2 w-8`}>SG</th>
+                </tr>
+              </thead>
 
-    <tbody>
-      {teams.map((team, i) => {
-        const bg = getRowTableBg(i)
-        return (
-          <tr key={team.name} className={`${bg} transition-all duration-300 ease-in-out`}>
-            <td className="py-1.5 text-xs font-extralight">{i + 1}</td>
+              <tbody>
+                {sortedTeams.map((team, i) => {
+                  const bg = getRowTableBg(i)
+                  return (
+                    <tr key={team.name} className={`${bg} transition-all duration-300 ease-in-out`}>
+                      <td className="py-1.5 text-xs font-extralight">{i + 1}</td>
 
-            <td className="py-1.5 text-start font-bold tracking-wider">
-              <div className="flex items-center gap-2">  {/* ← tirei flex do <td> */}
-                <Image src={team.flag} alt={team.name} width={36} height={36} />
-                <Link href={`/lineup/${team.code}`}>{team.name}</Link>
-              </div>
-            </td>
+                      <td className="py-1.5 text-start font-bold tracking-wider">
+                        <div className="flex items-center gap-2">  {/* ← tirei flex do <td> */}
+                          <Image src={team.flag} alt={team.name} width={36} height={36} />
+                          <Link href={`/lineup/${team.code}`}>{team.name}</Link>
+                        </div>
+                      </td>
 
-            <td className="py-1.5">{team.pts}</td>
-            <td className="py-1.5">{team.j}</td>
-            <td className="py-1.5">{team.v}</td>
-            <td className="py-1.5">{team.e}</td>
-            <td className="py-1.5">{team.d}</td>
-            <td className={`${mobileRangeFull || tabletRangeFull ? 'hidden' : ''} py-1.5`}>{team.gp}</td>
-            <td className={`${mobileRangeFull || tabletRangeFull ? 'hidden' : ''} py-1.5`}>{team.gc}</td>
-            <td className={`${mobileRangeFull ? 'hidden' : ''} py-1.5`}>{team.sg}</td>
-          </tr>
-        )
-      })}
-    </tbody>
-  </table>
-</div>
+                      <td className="py-1.5">{team.pts}</td>
+                      <td className="py-1.5">{team.j}</td>
+                      <td className="py-1.5">{team.v}</td>
+                      <td className="py-1.5">{team.e}</td>
+                      <td className="py-1.5">{team.d}</td>
+                      <td className={`${mobileRangeFull || tabletRangeFull ? 'hidden' : ''} py-1.5`}>{team.gp}</td>
+                      <td className={`${mobileRangeFull || tabletRangeFull ? 'hidden' : ''} py-1.5`}>{team.gc}</td>
+                      <td 
+                        className={`${mobileRangeFull ? 'hidden' : ''}
+                        ${team.sg >= 0 ? '' : 'text-red-500'} py-1.5`}>{team.sg}</td>
+                    </tr>
+                  )
+                })}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </Tilt>
