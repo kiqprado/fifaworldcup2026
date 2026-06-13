@@ -53,7 +53,7 @@ broadcasts: [
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] },
-  { id: 8, group: "B", date: "13/06", time: "16:00", home: { name: "Catar", code: "QAT", flag: "/flags/qa.png" }, away: { name: "Suíça", code: "SUI", flag: "/flags/ch.png" }, stadium: "Levi's Stadium", stadiumView: "/stadiums/Levis.png", city: "São Francisco",
+  { id: 8, group: "B", date: "13/06", time: "16:00", home: { name: "Catar", code: "QAT", flag: "/flags/qa.png" }, away: { name: "Suíça", code: "SUI", flag: "/flags/ch.png" }, stadium: "Levi's Stadium", stadiumView: "/stadiums/Levis.png", city: "São Francisco", result: { home: 1, away: 1},
 broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=ljah6d9m7Z0" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
