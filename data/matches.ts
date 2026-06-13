@@ -2,14 +2,14 @@ import { IMatch } from '@/app/components/card-match'
 
 export const matches: IMatch[] = [
   // ── Grupo A ──
-  { id: 1, group: "A", date: "11/06", time: "16:00", home: { name: "México", code: "MEX", flag: "/flags/mx.png" }, away: { name: "África do Sul", code: "RSA", flag: "/flags/za.png" }, stadium: "Estadio Azteca", stadiumView: "/stadiums/Azteca.png", city: "Cidade do México", 
+  { id: 1, group: "A", date: "11/06", time: "16:00", home: { name: "México", code: "MEX", flag: "/flags/mx.png" }, away: { name: "África do Sul", code: "RSA", flag: "/flags/za.png" }, stadium: "Estadio Azteca", stadiumView: "/stadiums/Azteca.png", city: "Cidade do México", result: { home: 2, away: 0},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
-  { id: 2, group: "A", date: "11/06", time: "23:00", home: { name: "Coreia do Sul", code: "KOR", flag: "/flags/kr.png" }, away: { name: "Tchéquia", code: "CZE", flag: "/flags/cz.png" }, stadium: "Estadio Akron", stadiumView: "/stadiums/Akron.png", city: "Guadalajara", 
+  { id: 2, group: "A", date: "11/06", time: "23:00", home: { name: "Coreia do Sul", code: "KOR", flag: "/flags/kr.png" }, away: { name: "Tchéquia", code: "CZE", flag: "/flags/cz.png" }, stadium: "Estadio Akron", stadiumView: "/stadiums/Akron.png", city: "Guadalajara", result: { home: 2, away: 1},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=LjEP9frJ2CE" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
@@ -46,7 +46,7 @@ broadcasts: [
   ] },
 
   // ── Grupo B ──
-  { id: 7, group: "B", date: "12/06", time: "16:00", home: { name: "Canadá", code: "CAN", flag: "/flags/ca.png" }, away: { name: "Bósnia e Herzegovina", code: "BIH", flag: "/flags/ba.png" }, stadium: "BMO Field", stadiumView: "/stadiums/BMO.png", city: "Toronto",
+  { id: 7, group: "B", date: "12/06", time: "16:00", home: { name: "Canadá", code: "CAN", flag: "/flags/ca.png" }, away: { name: "Bósnia e Herzegovina", code: "BIH", flag: "/flags/ba.png" }, stadium: "BMO Field", stadiumView: "/stadiums/BMO.png", city: "Toronto", result: { home: 1, away: 1},
 broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=CRtjePKnGvA" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
@@ -138,7 +138,7 @@ broadcasts: [
   ] },
 
   // ── Grupo D ──
-  { id: 19, group: "D", date: "12/06", time: "22:00", home: { name: "Estados Unidos", code: "USA", flag: "/flags/us.png" }, away: { name: "Paraguai", code: "PAR", flag: "/flags/py.png" }, stadium: "SoFi Stadium", stadiumView: "/stadiums/Sofi.png", city: "Los Angeles",
+  { id: 19, group: "D", date: "12/06", time: "22:00", home: { name: "Estados Unidos", code: "USA", flag: "/flags/us.png" }, away: { name: "Paraguai", code: "PAR", flag: "/flags/py.png" }, stadium: "SoFi Stadium", stadiumView: "/stadiums/Sofi.png", city: "Los Angeles", result: { home: 4, away: 1},
 broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=7EFTDmwcleI" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },

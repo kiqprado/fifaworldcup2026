@@ -158,14 +158,40 @@ export default function MatchesClientPage() {
     setDateFilter('upcoming')
   }
 
+
+  function IsOldMatch( match: typeof matches[number]) {
+    const today = NormalizeDate(new Date())
+    const yesterday = AddDays(today, -1)
+
+    const matchDate =
+      CreateMatchDate(match.date)
+
+    return matchDate < yesterday
+  }
+
   const hasActiveFilters =
     searchValue.trim().length > 0 ||
     dateFilter !== 'upcoming'
-
+  
   const filteredMatches = useMemo(() => {
     return matches.filter(match => {
+
+      const isSearching =
+        searchValue.trim().length > 0
+
+      const hideOldMatches =
+        dateFilter === 'upcoming' &&
+        !isSearching
+
+      if (
+        hideOldMatches &&
+        IsOldMatch(match)
+      ) {
+        return false
+      }
+
       const matchesSearch =
-        searchValue.trim()
+        isSearching
           ? DoesMatchSearch(
               match,
               searchValue
@@ -496,6 +522,7 @@ export default function MatchesClientPage() {
                 stadiumView={
                   match.stadiumView
                 }
+                result={match.result}
                 city={match.city}
                 broadcasts={match.broadcasts}
                 highlighted={

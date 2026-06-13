@@ -31,6 +31,10 @@ export interface IMatch {
   stadiumView: string;
   city: string;
   broadcasts: IBroadcast[],
+  result?: {
+    home: number
+    away: number
+  },
   highlighted?: boolean
 }
 
@@ -47,6 +51,7 @@ export function CardMatch({
   stadiumView,
   broadcasts,
   city,
+  result,
   highlighted = false
 }: IMatch) {
   const ref = useRef<HTMLDivElement>(null)
@@ -241,21 +246,83 @@ export function CardMatch({
           </span>
         </div>
 
-        <div className='space-y-2'>
-          <h4 className='text-zinc-300 tracking-widest text-sm'>Assista ao vivo em:</h4>
-          <div className='grid grid-cols-2 gap-2'>
-          {broadcasts.map((broadcast) => (
-            <Link
-              key={broadcast.name}
-              href={broadcast.url}
-              target='_blank'
-              className='px-2 py-1 rounded-lg border border-zinc-950 bg-red-700 flex items-center justify-center'
-            >
-              <Image src={broadcast.logo} alt={broadcast.name} width={56} height={52} className='object-fill' />
-            </Link>
-          ))}
-          </div>
-        </div>
+        { matchStatus?.variant === 'finished'
+          ?(
+              <div className="space-y-2">
+
+                <h4 className="
+                  text-zinc-300
+                  tracking-widest
+                  text-sm
+                  text-center
+                ">
+                  Resultado Final
+                </h4>
+
+                <div
+                  className="
+                    flex
+                    items-center
+                    justify-center
+
+                    rounded-xl
+
+                    border
+                    border-yellow-400/20
+
+                    bg-yellow-500/5
+
+                    py-4
+                  "
+                >
+                  <span
+                    className="
+                      text-4xl
+                      font-black
+                      text-yellow-400
+                    "
+                  >
+                    {result?.home} X {result?.away}
+                  </span>
+                </div>
+
+              </div>
+          )
+          : (
+              <div className="space-y-2">
+                <h4 className="text-zinc-300 tracking-widest text-sm">
+                  Assista ao vivo em:
+                </h4>
+
+                <div className="grid grid-cols-2 gap-2">
+                  {broadcasts.map(broadcast => (
+                    <Link
+                      key={broadcast.name}
+                      href={broadcast.url}
+                      target="_blank"
+                      className="
+                        px-2 py-1
+                        rounded-lg
+                        border border-zinc-950
+                        bg-red-700
+                        flex
+                        items-center
+                        justify-center
+                      "
+                    >
+                      <Image
+                        src={broadcast.logo}
+                        alt={broadcast.name}
+                        width={56}
+                        height={52}
+                        className="object-fill"
+                      />
+                    </Link>
+                  ))}
+                </div>
+              </div>
+          )
+        }
 
         <div className="
           pointer-events-none absolute inset-0
