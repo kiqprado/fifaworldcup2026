@@ -249,7 +249,6 @@ export function CardMatch({
         { matchStatus?.variant === 'finished'
           ?(
               <div className="space-y-2">
-
                 <h4 className="
                   text-zinc-300
                   tracking-widest
@@ -261,31 +260,50 @@ export function CardMatch({
 
                 <div
                   className="
-                    flex
-                    items-center
-                    justify-center
-
+                    flex items-center justify-evenly py-4
                     rounded-xl
-
-                    border
-                    border-yellow-400/20
-
-                    bg-yellow-500/5
-
-                    py-4
+                    border border-white/10
+                    transition-all duration-300
+                    group-hover:border-yellow-100/30
+                    group-hover:shadow-[0_0_20px_rgba(250,204,21,0.08)]
                   "
                 >
                   <span
                     className="
                       text-4xl
                       font-black
-                      text-yellow-400
+                      text-zinc-300
+                      transition-all duration-300
+                      drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]
+                      group-hover:scale-105
+                      group-hover:drop-shadow-[0_0_12px_rgba(250,204,21,0.5)]
                     "
                   >
-                    {result?.home} X {result?.away}
+                    {result?.home}
+                  </span>
+
+                  <span
+                    className="text-3xl text-zinc-500
+                      transition-all duration-300
+                      group-hover:text-zinc-300"
+                  >
+                    X
+                  </span>
+
+                  <span
+                    className="
+                      text-4xl
+                      font-black
+                      text-zinc-300
+                      transition-all duration-300
+                      drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]
+                      group-hover:scale-105
+                      group-hover:drop-shadow-[0_0_12px_rgba(250,204,21,0.5)]
+                    "
+                  >
+                    {result?.away}
                   </span>
                 </div>
-
               </div>
           )
           : (
