@@ -232,7 +232,7 @@ broadcasts: [
 },
 
   // ── Grupo F ──
-  { id: 31, group: "F", date: "14/06", time: "17:00", home: { name: "Holanda", code: "NED", flag: "/flags/nl.png" }, away: { name: "Japão", code: "JPN", flag: "/flags/jp.png" }, stadium: "AT&T Stadium", stadiumView: "/stadiums/AT&T.png", city: "Dallas",
+  { id: 31, group: "F", date: "14/06", time: "17:00", home: { name: "Holanda", code: "NED", flag: "/flags/nl.png" }, away: { name: "Japão", code: "JPN", flag: "/flags/jp.png" }, stadium: "AT&T Stadium", stadiumView: "/stadiums/AT&T.png", city: "Dallas", result: { home: 2, away: 2},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=byP1peOCkzI" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
