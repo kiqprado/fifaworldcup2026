@@ -129,7 +129,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] 
 },
-  { id: 18, group: "C", date: "24/06", time: "19:00", home: { name: "Escócia", code: "SCO", flag: "/flags/sc.png" }, away: { name: "Brasil", code: "BRA", flag: "/flags/br.png" }, stadium: "Hard Rock Stadium", stadiumView: "/stadiums/HardRock.png", city: "Miami",
+  { id: 18, group: "C", date: "24/06", time: "19:00", home: { name: "Escócia", code: "SCO", flag: "/flags/sc.png" }, away: { name: "Brasil", code: "BRA", flag: "/flags/br.png" }, stadium: "Hard Rock Stadium", stadiumView: "/stadiums/HardRock.png", city: "Miami", result: { home: 1, away: 0},
 broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YCNysrewn7k" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
