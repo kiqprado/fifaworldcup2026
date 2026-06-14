@@ -145,7 +145,7 @@ broadcasts: [
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] },
-  { id: 20, group: "D", date: "14/06", time: "01:00", home: { name: "Austrália", code: "AUS", flag: "/flags/au.png" }, away: { name: "Turquia", code: "TUR", flag: "/flags/tr.png" }, stadium: "BC Place", stadiumView: "/stadiums/BCPlace.png", city: "Vancouver",
+  { id: 20, group: "D", date: "14/06", time: "01:00", home: { name: "Austrália", code: "AUS", flag: "/flags/au.png" }, away: { name: "Turquia", code: "TUR", flag: "/flags/tr.png" }, stadium: "BC Place", stadiumView: "/stadiums/BCPlace.png", city: "Vancouver", result: { home: 2, away: 0},
 broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=8rr-857IbHA" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
