@@ -183,7 +183,7 @@ broadcasts: [
   ] },
 
   // ── Grupo E ──
-  { id: 25, group: "E", date: "14/06", time: "14:00", home: { name: "Alemanha", code: "GER", flag: "/flags/de.png" }, away: { name: "Curaçau", code: "CUW", flag: "/flags/cw.png" }, stadium: "NRG Stadium", stadiumView: "/stadiums/Nrg.png", city: "Houston",
+  { id: 25, group: "E", date: "14/06", time: "14:00", home: { name: "Alemanha", code: "GER", flag: "/flags/de.png" }, away: { name: "Curaçau", code: "CUW", flag: "/flags/cw.png" }, stadium: "NRG Stadium", stadiumView: "/stadiums/Nrg.png", city: "Houston", result: { home: 7, away: 1},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=byP1peOCkzI" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
