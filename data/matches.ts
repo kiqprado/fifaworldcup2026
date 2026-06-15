@@ -282,7 +282,7 @@ broadcasts: [
 },
 
   // ── Grupo G ──
-  { id: 37, group: "G", date: "15/06", time: "16:00", home: { name: "Bélgica", code: "BEL", flag: "/flags/be.png" }, away: { name: "Egito", code: "EGY", flag: "/flags/eg.png" }, stadium: "Lumen Field", stadiumView: "/stadiums/Lumen.png", city: "Seattle",
+  { id: 37, group: "G", date: "15/06", time: "16:00", home: { name: "Bélgica", code: "BEL", flag: "/flags/be.png" }, away: { name: "Egito", code: "EGY", flag: "/flags/eg.png" }, stadium: "Lumen Field", stadiumView: "/stadiums/Lumen.png", city: "Seattle", result: {home: 1, away: 1},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=aclBHrhLQr4" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
