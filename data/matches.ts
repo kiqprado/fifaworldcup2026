@@ -240,7 +240,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] 
 },
-  { id: 32, group: "F", date: "14/06", time: "23:00", home: { name: "Suécia", code: "SWE", flag: "/flags/se.png" }, away: { name: "Tunísia", code: "TUN", flag: "/flags/tn.png" }, stadium: "Estadio BBVA", stadiumView: "/stadiums/BBVA.png", city: "Monterrey",
+  { id: 32, group: "F", date: "14/06", time: "23:00", home: { name: "Suécia", code: "SWE", flag: "/flags/se.png" }, away: { name: "Tunísia", code: "TUN", flag: "/flags/tn.png" }, stadium: "Estadio BBVA", stadiumView: "/stadiums/BBVA.png", city: "Monterrey", result: { home: 5, away: 1},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=o2wC007Jp-A" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
