@@ -332,7 +332,7 @@ broadcasts: [
 },
 
   // ── Grupo H ──
-  { id: 43, group: "H", date: "15/06", time: "13:00", home: { name: "Espanha", code: "ESP", flag: "/flags/es.png" }, away: { name: "Cabo Verde", code: "CPV", flag: "/flags/cv.png" }, stadium: "Mercedes-Benz Stadium", stadiumView: "/stadiums/Mercedes.png", city: "Atlanta",
+  { id: 43, group: "H", date: "15/06", time: "13:00", home: { name: "Espanha", code: "ESP", flag: "/flags/es.png" }, away: { name: "Cabo Verde", code: "CPV", flag: "/flags/cv.png" }, stadium: "Mercedes-Benz Stadium", stadiumView: "/stadiums/Mercedes.png", city: "Atlanta", result: { home: 0, away: 0},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=EYStZQ5FsVk" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
