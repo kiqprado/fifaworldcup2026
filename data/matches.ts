@@ -340,7 +340,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] 
 },
-  { id: 44, group: "H", date: "15/06", time: "19:00", home: { name: "Arábia Saudita", code: "KSA", flag: "/flags/sa.png" }, away: { name: "Uruguai", code: "URY", flag: "/flags/uy.png" }, stadium: "Hard Rock Stadium", stadiumView: "/stadiums/HardRock.png", city: "Miami",
+  { id: 44, group: "H", date: "15/06", time: "19:00", home: { name: "Arábia Saudita", code: "KSA", flag: "/flags/sa.png" }, away: { name: "Uruguai", code: "URY", flag: "/flags/uy.png" }, stadium: "Hard Rock Stadium", stadiumView: "/stadiums/HardRock.png", city: "Miami", result: { home: 1, away: 1},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=Mh-iBLsiYDw" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
