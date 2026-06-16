@@ -179,6 +179,7 @@ export function CardMatch({
             ">
               <Link
                 href={`/lineup/${home.code}`}
+                title='Ver escalação desta Seleção'
               >
                 <Image
                   src={home.flag}
@@ -218,6 +219,7 @@ export function CardMatch({
             ">
               <Link
                 href={`/lineup/${away.code}`}
+                title='Ver escalação desta Seleção'
               >
                 <Image
                   src={away.flag}
