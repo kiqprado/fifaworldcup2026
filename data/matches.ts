@@ -382,7 +382,7 @@ broadcasts: [
 },
 
   // ── Grupo I ──
-  { id: 49, group: "I", date: "16/06", time: "16:00", home: { name: "França", code: "FRA", flag: "/flags/fr.png" }, away: { name: "Senegal", code: "SEN", flag: "/flags/sn.png" }, stadium: "MetLife Stadium", stadiumView: "/stadiums/MetLife.png", city: "Nova York / Nova Jersey",
+  { id: 49, group: "I", date: "16/06", time: "16:00", home: { name: "França", code: "FRA", flag: "/flags/fr.png" }, away: { name: "Senegal", code: "SEN", flag: "/flags/sn.png" }, stadium: "MetLife Stadium", stadiumView: "/stadiums/MetLife.png", city: "Nova York / Nova Jersey", result: { home: 3, away: 10},
 broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=m1vplAfSs_A" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
