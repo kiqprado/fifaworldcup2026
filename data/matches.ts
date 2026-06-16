@@ -290,7 +290,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] 
 },
-  { id: 38, group: "G", date: "15/06", time: "22:00", home: { name: "Irã", code: "IRN", flag: "/flags/ir.png" }, away: { name: "Nova Zelândia", code: "NZL", flag: "/flags/nz.png" }, stadium: "So-fi Stadium", stadiumView: "/stadiums/Sofi.png", city: "Los Angeles",
+  { id: 38, group: "G", date: "15/06", time: "22:00", home: { name: "Irã", code: "IRN", flag: "/flags/ir.png" }, away: { name: "Nova Zelândia", code: "NZL", flag: "/flags/nz.png" }, stadium: "So-fi Stadium", stadiumView: "/stadiums/Sofi.png", city: "Los Angeles", result: { home: 2, away: 2 },
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=vrY_cXwm--g" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
