@@ -152,6 +152,7 @@ export function CardMatch({
               transition-all duration-300
               hover:scale-110
             "
+            title={isFavorite ? 'Remover de Favoritos' : 'Adicionar a favoritos'}
           >
             <Star
               size={18}

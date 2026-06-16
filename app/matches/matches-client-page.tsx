@@ -344,7 +344,7 @@ export default function MatchesClientPage() {
 
       <HeaderPageTitle
         title="Partidas"
-        description="72 partidas da fase de grupos. Filtre por grupo para encontrar os jogos."
+        description="72 partidas da fase de grupos. Utilize os filtros para encontrar os jogos."
       />
 
       <div className="w-full">
