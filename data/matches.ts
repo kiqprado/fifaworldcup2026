@@ -527,7 +527,7 @@ broadcasts: [
   ]},
 
   // ── Grupo L ──
-  { id: 67, group: "L", date: "17/06", time: "17:00", home: { name: "Inglaterra", code: "ENG", flag: "/flags/en.png" }, away:{ name: "Croácia", code: "CRO", flag: "/flags/hr.png" }, stadium: "AT&T Stadium", stadiumView: "/stadiums/AT&T.png", city: "Dallas", 
+  { id: 67, group: "L", date: "17/06", time: "17:00", home: { name: "Inglaterra", code: "ENG", flag: "/flags/en.png" }, away:{ name: "Croácia", code: "CRO", flag: "/flags/hr.png" }, stadium: "AT&T Stadium", stadiumView: "/stadiums/AT&T.png", city: "Dallas", result: { home: 4, away: 2},
 broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=DaAFndjKuf8" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
