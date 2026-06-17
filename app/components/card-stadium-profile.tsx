@@ -140,11 +140,10 @@ export function StadiumCard({
 
             <p
               className="
-                w-fit
+                w-fit h-30
                 text-justify
                 text-sm text-zinc-400
                 leading-relaxed
-                min-h-[120px]
                 overflow-y-auto
                 group-hover:text-zinc-300
                 transition-colors

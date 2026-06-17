@@ -1,4 +1,4 @@
-import { IStadium } from '@/app/components/stadium-profile-card'
+import { IStadium } from '@/app/components/card-stadium-profile'
 
 export const stadiums: IStadium[] = [
   {

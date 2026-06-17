@@ -11,7 +11,7 @@ import { Footer } from '@/app/elements/footer'
 import { stadiums } from '@/data/stadiums'
 import { matches } from '@/data/matches'
 
-import { StadiumCard } from '@/app/components/stadium-profile-card'
+import { StadiumCard } from '@/app/components/card-stadium-profile'
 
 import { useBreakpoint } from '../hook/use-media-query'
 

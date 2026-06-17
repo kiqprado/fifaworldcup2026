@@ -1,4 +1,4 @@
-import { StarPlayer } from "@/app/components/player-profile-card";
+import { StarPlayer } from "@/app/components/card-player-profile";
 
 export const stars: StarPlayer[] = [
   {

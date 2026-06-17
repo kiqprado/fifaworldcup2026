@@ -5,7 +5,7 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 import { stars } from '@/data/stars'
-import { StarPlayerCard } from '@/app/components/player-profile-card'
+import { StarPlayerCard } from '@/app/components/card-player-profile'
 
 import { useBreakpoint } from '../hook/use-media-query'
 
