@@ -438,7 +438,7 @@ broadcasts: [
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] },
-  { id: 56, group: "J", date: "17/06", time: "01:00", home: { name: "Áustria", code: "AUT", flag: "/flags/at.png" }, away: { name: "Jordânia", code: "JOR", flag: "/flags/jo.png" }, stadium: "Levi's Stadium", stadiumView: "/stadiums/Levis.png", city: "São Francisco (Santa Clara)",
+  { id: 56, group: "J", date: "17/06", time: "01:00", home: { name: "Áustria", code: "AUT", flag: "/flags/at.png" }, away: { name: "Jordânia", code: "JOR", flag: "/flags/jo.png" }, stadium: "Levi's Stadium", stadiumView: "/stadiums/Levis.png", city: "São Francisco (Santa Clara)", result: {home: 3, away: 1},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=r97R-p-TlNM" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
