@@ -389,7 +389,7 @@ broadcasts: [
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] },
-  { id: 50, group: "I", date: "16/06", time: "19:00", home: { name: "Iraque", code: "IRQ", flag: "/flags/iq.png" }, away: { name: "Noruega", code: "NOR", flag: "/flags/no.png" } , stadium: "Gillette Stadium", stadiumView: "/stadiums/Gillette.png", city: "Boston (Foxborough)",
+  { id: 50, group: "I", date: "16/06", time: "19:00", home: { name: "Iraque", code: "IRQ", flag: "/flags/iq.png" }, away: { name: "Noruega", code: "NOR", flag: "/flags/no.png" } , stadium: "Gillette Stadium", stadiumView: "/stadiums/Gillette.png", city: "Boston (Foxborough)", result: { home: 1, away: 4},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=Dgvz5nHdttk&pp=0gcJCTkLAYcqIYzv" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
