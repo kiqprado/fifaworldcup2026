@@ -481,7 +481,7 @@ broadcasts: [
 
 
   // ── Grupo K ──
-  { id: 61, group: "K", date: "17/06", time: "14:00", home: { name: "Portugal", code: "POR", flag: "/flags/pt.png" }, away:{ name: "RD Congo", code: "COD", flag: "/flags/cd.png" }, stadium: "NRG Stadium", stadiumView: "/stadiums/Nrg.png", city: "Houston",
+  { id: 61, group: "K", date: "17/06", time: "14:00", home: { name: "Portugal", code: "POR", flag: "/flags/pt.png" }, away:{ name: "RD Congo", code: "COD", flag: "/flags/cd.png" }, stadium: "NRG Stadium", stadiumView: "/stadiums/Nrg.png", city: "Houston", result: { home: 1, away: 1 },
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=HpzKFDctbNw" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
