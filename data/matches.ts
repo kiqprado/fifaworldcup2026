@@ -431,7 +431,7 @@ broadcasts: [
 },
 
   // ── Grupo J ──
-  { id: 55, group: "J", date: "16/06", time: "22:00", home: { name: "Argentina", code: "ARG", flag: "/flags/ar.png" }, away: { name: "Argélia", code: "ALG", flag: "/flags/dz.png" }, stadium: "Arrowhead Stadium", stadiumView: "/stadiums/ArrowHead.png", city: "Kansas City",
+  { id: 55, group: "J", date: "16/06", time: "22:00", home: { name: "Argentina", code: "ARG", flag: "/flags/ar.png" }, away: { name: "Argélia", code: "ALG", flag: "/flags/dz.png" }, stadium: "Arrowhead Stadium", stadiumView: "/stadiums/ArrowHead.png", city: "Kansas City", result: { home: 3, away: 0},
 broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=RhpNoBWVQGA" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
