@@ -65,7 +65,7 @@ export default function Home() {
           border border-yellow-300/20
           shadow-[0_0_15px_rgba(255,215,0,0.5)]
           hover:shadow-[0_0_25px_rgba(255,215,0,0.8)]`}
-          title='Voltar ao início.'
+          title='Voltar ao topo da página.'
         >
           <ArrowUp size={22}/>
         </button>
