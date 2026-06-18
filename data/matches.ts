@@ -16,7 +16,7 @@ export const matches: IMatch[] = [
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
-  { id: 3, group: "A", date: "18/06", time: "13:00", home: { name: "Tchéquia", code: "CZE", flag: "/flags/cz.png" }, away: { name: "África do Sul", code: "RSA", flag: "/flags/za.png" }, stadium: "Mercedes-Benz Stadium", stadiumView: "/stadiums/Mercedes.png", city: "Atlanta", 
+  { id: 3, group: "A", date: "18/06", time: "13:00", home: { name: "Tchéquia", code: "CZE", flag: "/flags/cz.png" }, away: { name: "África do Sul", code: "RSA", flag: "/flags/za.png" }, stadium: "Mercedes-Benz Stadium", stadiumView: "/stadiums/Mercedes.png", city: "Atlanta", result: { home: 1, away: 1},
 broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=61qIjGER86Q" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
