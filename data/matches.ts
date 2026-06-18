@@ -489,7 +489,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]
 },
-  { id: 62, group: "K", date: "17/06", time: "23:00", home: { name: "Uzbequistão", code: "UZB", flag: "/flags/uz.png" }, away: { name: "Colômbia", code: "COL", flag: "/flags/co.png" }, stadium: "Estadio Azteca", stadiumView: "/stadiums/Azteca.png", city: "Cidade do México",
+  { id: 62, group: "K", date: "17/06", time: "23:00", home: { name: "Uzbequistão", code: "UZB", flag: "/flags/uz.png" }, away: { name: "Colômbia", code: "COL", flag: "/flags/co.png" }, stadium: "Estadio Azteca", stadiumView: "/stadiums/Azteca.png", city: "Cidade do México", result: { home: 1, away: 3},
 broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=BWsf2c4zKZs&pp=0gcJCTkLAYcqIYzv" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
