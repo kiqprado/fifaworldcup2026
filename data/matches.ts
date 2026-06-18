@@ -60,7 +60,7 @@ broadcasts: [
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] },
-  { id: 9, group: "B", date: "18/06", time: "16:00", home: { name: "Suiça", code: "SUI", flag: "/flags/ch.png" }, away: { name: "Bósnia e Herzegovina", code: "BIH", flag: "/flags/ba.png" }, stadium: "Sofi Stadium", stadiumView: "/stadiums/Sofi.png", city: "Los Angeles",
+  { id: 9, group: "B", date: "18/06", time: "16:00", home: { name: "Suiça", code: "SUI", flag: "/flags/ch.png" }, away: { name: "Bósnia e Herzegovina", code: "BIH", flag: "/flags/ba.png" }, stadium: "Sofi Stadium", stadiumView: "/stadiums/Sofi.png", city: "Los Angeles", result: { home: 4, away: 1},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=DL372r8XEDg" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
