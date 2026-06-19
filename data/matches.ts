@@ -23,7 +23,7 @@ broadcasts: [
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
-  { id: 4, group: "A", date: "18/06", time: "22:00", home: { name: "México", code: "MEX", flag: "/flags/mx.png" }, away: { name: "Coreia do Sul", code: "KOR", flag: "/flags/kr.png" }, stadium: "Estadio Akron", stadiumView: "/stadiums/Akron.png", city: "Cidade do México",
+  { id: 4, group: "A", date: "18/06", time: "22:00", home: { name: "México", code: "MEX", flag: "/flags/mx.png" }, away: { name: "Coreia do Sul", code: "KOR", flag: "/flags/kr.png" }, stadium: "Estadio Akron", stadiumView: "/stadiums/Akron.png", city: "Cidade do México", result: {home: 1, away: 1},
 broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=SVwg-Aiy2po" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
