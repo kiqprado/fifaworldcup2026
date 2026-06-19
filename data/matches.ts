@@ -152,7 +152,7 @@ broadcasts: [
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] },
-  { id: 21, group: "D", date: "19/06", time: "16:00", home: { name: "Estados Unidos", code: "USA", flag: "/flags/us.png" }, away: { name: "Austrália", code: "AUS", flag: "/flags/au.png" }, stadium: "Lumen Field", stadiumView: "/stadiums/Lumen.png", city: "Seattle",
+  { id: 21, group: "D", date: "19/06", time: "16:00", home: { name: "Estados Unidos", code: "USA", flag: "/flags/us.png" }, away: { name: "Austrália", code: "AUS", flag: "/flags/au.png" }, stadium: "Lumen Field", stadiumView: "/stadiums/Lumen.png", city: "Seattle", result: { home: 2, away: 0},
 broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=_6cfUXA1UUw" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
