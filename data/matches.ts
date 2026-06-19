@@ -68,7 +68,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]
 },
-  { id: 10, group: "B", date: "18/06", time: "19:00", home: { name: "Canada", code: "CAN", flag: "/flags/ca.png" }, away: { name: "Catar", code: "QAT", flag: "/flags/qa.png" }, stadium: "BC PLace Stadium", stadiumView: "/stadiums/BCPlace.png", city: "Vancouver",
+  { id: 10, group: "B", date: "18/06", time: "19:00", home: { name: "Canada", code: "CAN", flag: "/flags/ca.png" }, away: { name: "Catar", code: "QAT", flag: "/flags/qa.png" }, stadium: "BC PLace Stadium", stadiumView: "/stadiums/BCPlace.png", city: "Vancouver", result: { home: 6, away: 0},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=fOLiF5uK2og" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
