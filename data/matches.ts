@@ -248,7 +248,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] 
 },
-  { id: 33, group: "F", date: "20/06", time: "14:00", home: { name: "Holanda", code: "NED", flag: "/flags/nl.png" }, away: { name: "Suécia", code: "SWE", flag: "/flags/se.png" }, stadium: "NRG Stadium", stadiumView: "/stadiums/Nrg.png", city: "Houston",
+  { id: 33, group: "F", date: "20/06", time: "14:00", home: { name: "Holanda", code: "NED", flag: "/flags/nl.png" }, away: { name: "Suécia", code: "SWE", flag: "/flags/se.png" }, stadium: "NRG Stadium", stadiumView: "/stadiums/Nrg.png", city: "Houston", result: { home: 5, away: 1 },
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=xN4B1527vDc" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
