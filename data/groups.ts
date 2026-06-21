@@ -263,7 +263,7 @@ export const groups: IGroup[] = [
         flag:'/flags/ec.png',
         code: 'ECU',
         pts: 1,
-        j: 1,
+        j: 2,
         v: 0,
         e: 1,
         d: 1,
