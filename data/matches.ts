@@ -256,7 +256,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] 
 },
-  { id: 34, group: "F", date: "21/06", time: "01:00", home: { name: "Tunisia", code: "TUN", flag: "/flags/tn.png" }, away: { name: "Japão", code: "JPN", flag: "/flags/jp.png" }, stadium: "Estadio BBVA", stadiumView: "/stadiums/BBVA.png", city: "Monterrey",
+  { id: 34, group: "F", date: "21/06", time: "01:00", home: { name: "Tunisia", code: "TUN", flag: "/flags/tn.png" }, away: { name: "Japão", code: "JPN", flag: "/flags/jp.png" }, stadium: "Estadio BBVA", stadiumView: "/stadiums/BBVA.png", city: "Monterrey", result: { home: 0, away: 4 },
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=wEQfiiPmMSM" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
