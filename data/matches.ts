@@ -348,7 +348,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] 
 },
-  { id: 45, group: "H", date: "21/06", time: "13:00", home: { name: "Espanha", code: "ESP", flag: "/flags/es.png" }, away: { name: "Arábia Saudita", code: "KSA", flag: "/flags/sa.png" }, stadium: "Mercedes-Benz Stadium", stadiumView: "/stadiums/Mercedes.png", city: "Atlanta",
+  { id: 45, group: "H", date: "21/06", time: "13:00", home: { name: "Espanha", code: "ESP", flag: "/flags/es.png" }, away: { name: "Arábia Saudita", code: "KSA", flag: "/flags/sa.png" }, stadium: "Mercedes-Benz Stadium", stadiumView: "/stadiums/Mercedes.png", city: "Atlanta", result: { home: 4, away: 0},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=lMtrJbAfEaY" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
