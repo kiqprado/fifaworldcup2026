@@ -298,7 +298,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] 
 },
-  { id: 39, group: "G", date: "21/06", time: "16:00", home: { name: "Bélgica", code: "BEL", flag: "/flags/be.png" }, away: { name: "Irã", code: "IRN", flag: "/flags/ir.png" }, stadium: "SoFi Stadium", stadiumView: "/stadiums/Sofi.png", city: "Los Angeles",
+  { id: 39, group: "G", date: "21/06", time: "16:00", home: { name: "Bélgica", code: "BEL", flag: "/flags/be.png" }, away: { name: "Irã", code: "IRN", flag: "/flags/ir.png" }, stadium: "SoFi Stadium", stadiumView: "/stadiums/Sofi.png", city: "Los Angeles", result: { home: 0, away: 0 },
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=X3QQGOE2RA4" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
