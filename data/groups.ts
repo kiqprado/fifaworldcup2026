@@ -390,7 +390,7 @@ export const groups: IGroup[] = [
         flag:'/flags/nz.png',
         code: 'NZL',
         pts: 1,
-        j: 0,
+        j: 1,
         v: 0,
         e: 1,
         d: 0,
