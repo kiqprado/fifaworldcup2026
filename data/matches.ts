@@ -446,7 +446,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] 
 },
-  { id: 57, group: "J", date: "22/06", time: "14:00", home: { name: "Argentina", code: "ARG", flag: "/flags/ar.png" }, away: { name: "Áustria", code: "AUT", flag: "/flags/at.png" }, stadium: "AT&T Stadium", stadiumView: "/stadiums/AT&T.png", city: "Dallas",
+  { id: 57, group: "J", date: "22/06", time: "14:00", home: { name: "Argentina", code: "ARG", flag: "/flags/ar.png" }, away: { name: "Áustria", code: "AUT", flag: "/flags/at.png" }, stadium: "AT&T Stadium", stadiumView: "/stadiums/AT&T.png", city: "Dallas", result: { home: 2, away: 0},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=OweGZocHnjk" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
