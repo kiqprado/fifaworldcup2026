@@ -149,7 +149,7 @@ export const groups: IGroup[] = [
         flag:'/flags/ht.png',
         code: 'HAI',
         pts: 0,
-        j: 1,
+        j: 2,
         v: 0,
         e: 0,
         d: 2,
