@@ -454,7 +454,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] 
 },
-  { id: 58, group: "J", date: "23/06", time: "00:00", home: { name: "Jordânia", code: "JOR", flag: "/flags/jo.png" }, away: { name: "Argélia", code: "ALG", flag: "/flags/dz.png" }, stadium: "Levi's Stadium", stadiumView: "/stadiums/Levis.png", city: "São Francisco (Santa Clara)",
+  { id: 58, group: "J", date: "23/06", time: "00:00", home: { name: "Jordânia", code: "JOR", flag: "/flags/jo.png" }, away: { name: "Argélia", code: "ALG", flag: "/flags/dz.png" }, stadium: "Levi's Stadium", stadiumView: "/stadiums/Levis.png", city: "São Francisco (Santa Clara)", result: { home: 1, away: 2},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=ptoJO9bn8T4" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
