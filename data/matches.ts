@@ -542,7 +542,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] 
 },
-  { id: 69, group: "L", date: "23/06", time: "17:00", home: { name: "Inglaterra", code: "ENG", flag: "/flags/en.png" }, away: { name: "Gana", code: "GHA", flag: "/flags/gh.png" }, stadium: "Gillette Stadium", stadiumView: "/stadiums/Gillette.png", city: "Boston (Foxborough)",
+  { id: 69, group: "L", date: "23/06", time: "17:00", home: { name: "Inglaterra", code: "ENG", flag: "/flags/en.png" }, away: { name: "Gana", code: "GHA", flag: "/flags/gh.png" }, stadium: "Gillette Stadium", stadiumView: "/stadiums/Gillette.png", city: "Boston (Foxborough)", result: { home: 0, away: 0},
 broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=vTnBwT_hN5o" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
