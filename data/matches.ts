@@ -405,7 +405,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] 
 },
-  { id: 52, group: "I", date: "22/06", time: "21:00", home: { name: "Noruega", code: "NOR", flag: "/flags/no.png" }, away: { name: "Senegal", code: "SEN", flag: "/flags/sn.png" } , stadium: "MetLife Stadium", stadiumView: "/stadiums/MetLife.png", city: "Nova York / Nova Jersey",
+  { id: 52, group: "I", date: "22/06", time: "21:00", home: { name: "Noruega", code: "NOR", flag: "/flags/no.png" }, away: { name: "Senegal", code: "SEN", flag: "/flags/sn.png" } , stadium: "MetLife Stadium", stadiumView: "/stadiums/MetLife.png", city: "Nova York / Nova Jersey", result: { home: 3, away: 2 },
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=dFPUO7Vdh6Q" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
