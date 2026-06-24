@@ -504,7 +504,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]
 },
-  { id: 64, group: "K", date: "23/06", time: "23:00", home: { name: "Colômbia", code: "COL", flag: "/flags/co.png" }, away:{ name: "RD Congo", code: "COD", flag: "/flags/cd.png" }, stadium: "Estadio Akron", stadiumView: "/stadiums/Akron.png", city: "Guadalajara",
+  { id: 64, group: "K", date: "23/06", time: "23:00", home: { name: "Colômbia", code: "COL", flag: "/flags/co.png" }, away:{ name: "RD Congo", code: "COD", flag: "/flags/cd.png" }, stadium: "Estadio Akron", stadiumView: "/stadiums/Akron.png", city: "Guadalajara", result: { home: 1, away: 0 },
 broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=WUvxr2xCpjQ" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
