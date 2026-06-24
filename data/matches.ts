@@ -549,7 +549,7 @@ broadcasts: [
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] },
-  { id: 70, group: "L", date: "23/06", time: "20:00", home: { name: "Panamá", code: "PAN", flag: "/flags/pa.png" }, away: { name: "Croácia", code: "CRO", flag: "/flags/hr.png" }, stadium: "BMO Field", stadiumView: "/stadiums/BMO.png", city: "Toronto",
+  { id: 70, group: "L", date: "23/06", time: "20:00", home: { name: "Panamá", code: "PAN", flag: "/flags/pa.png" }, away: { name: "Croácia", code: "CRO", flag: "/flags/hr.png" }, stadium: "BMO Field", stadiumView: "/stadiums/BMO.png", city: "Toronto", result: {home: 0, away: 1},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=o0PHBI9QAdY" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
