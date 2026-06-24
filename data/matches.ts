@@ -76,14 +76,14 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] 
 },
-  { id: 11, group: "B", date: "24/06", time: "16:00", home: { name: "Suíça", code: "SUI", flag: "/flags/ch.png" }, away: { name: "Canada", code: "CAN", flag: "/flags/ca.png" }, stadium: "BC Place Stadium", stadiumView: "/stadiums/BCPlace.png", city: "Vancouver",
+  { id: 11, group: "B", date: "24/06", time: "16:00", home: { name: "Suíça", code: "SUI", flag: "/flags/ch.png" }, away: { name: "Canada", code: "CAN", flag: "/flags/ca.png" }, stadium: "BC Place Stadium", stadiumView: "/stadiums/BCPlace.png", city: "Vancouver", result: { home: 2, away: 1},
 broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=ioH5k4ss_tY" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] },
-  { id: 12, group: "B", date: "24/06", time: "16:00", home: { name: "Bósnia e Herzegovina", code: "BIH", flag: "/flags/ba.png" }, away: { name: "Catar", code: "QAT", flag: "/flags/qa.png" }, stadium: "Lumen Field", stadiumView: "/stadiums/Lumen.png", city: "Seattle",
+  { id: 12, group: "B", date: "24/06", time: "16:00", home: { name: "Bósnia e Herzegovina", code: "BIH", flag: "/flags/ba.png" }, away: { name: "Catar", code: "QAT", flag: "/flags/qa.png" }, stadium: "Lumen Field", stadiumView: "/stadiums/Lumen.png", city: "Seattle", result: { home: 3, away: 1},
 broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YAa0XEHZCys" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
