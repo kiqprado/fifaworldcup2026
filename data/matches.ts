@@ -30,14 +30,14 @@ broadcasts: [
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] },
-  { id: 5, group: "A", date: "24/06", time: "22:00", home: { name: "África do Sul", code: "RSA", flag: "/flags/za.png" }, away: { name: "Coreia do Sul", code: "KOR", flag: "/flags/kr.png" }, stadium: "Estadio BBVA", stadiumView: "/stadiums/BBVA.png", city: "Monterrey",
+  { id: 5, group: "A", date: "24/06", time: "22:00", home: { name: "África do Sul", code: "RSA", flag: "/flags/za.png" }, away: { name: "Coreia do Sul", code: "KOR", flag: "/flags/kr.png" }, stadium: "Estadio BBVA", stadiumView: "/stadiums/BBVA.png", city: "Monterrey", result: { home: 1, away: 0},
 broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=cFu_iI4h1to" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] },
-  { id: 6, group: "A", date: "24/06", time: "22:00", home: { name: "Tchéquia", code: "CZE", flag: "/flags/cz.png" }, away: { name: "México", code: "MEX", flag: "/flags/mx.png" }, stadium: "Estadio Azteca", stadiumView: "/stadiums/Azteca.png", city: "Cidade do México",
+  { id: 6, group: "A", date: "24/06", time: "22:00", home: { name: "Tchéquia", code: "CZE", flag: "/flags/cz.png" }, away: { name: "México", code: "MEX", flag: "/flags/mx.png" }, stadium: "Estadio Azteca", stadiumView: "/stadiums/Azteca.png", city: "Cidade do México", result: { home: 0, away: 3},
 broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=D0947hff-G0" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
