@@ -121,7 +121,7 @@ broadcasts: [
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] },
-  { id: 17, group: "C", date: "24/06", time: "19:00", home: { name: "Marrocos", code: "MAR", flag: "/flags/ma.png" }, away: { name: "Haiti", code: "HAI", flag: "/flags/ht.png" }, stadium: "Mercedes-Benz Stadium", stadiumView: "/stadiums/Mercedes.png", city: "Atlanta",
+  { id: 17, group: "C", date: "24/06", time: "19:00", home: { name: "Marrocos", code: "MAR", flag: "/flags/ma.png" }, away: { name: "Haiti", code: "HAI", flag: "/flags/ht.png" }, stadium: "Mercedes-Benz Stadium", stadiumView: "/stadiums/Mercedes.png", city: "Atlanta", result: { home: 4, away: 2},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=Cy-JKocMCf8&pp=0gcJCT8LAYcqIYzv" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
@@ -129,7 +129,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] 
 },
-  { id: 18, group: "C", date: "24/06", time: "19:00", home: { name: "Escócia", code: "SCO", flag: "/flags/sc.png" }, away: { name: "Brasil", code: "BRA", flag: "/flags/br.png" }, stadium: "Hard Rock Stadium", stadiumView: "/stadiums/HardRock.png", city: "Miami", result: { home: 1, away: 0},
+  { id: 18, group: "C", date: "24/06", time: "19:00", home: { name: "Escócia", code: "SCO", flag: "/flags/sc.png" }, away: { name: "Brasil", code: "BRA", flag: "/flags/br.png" }, stadium: "Hard Rock Stadium", stadiumView: "/stadiums/HardRock.png", city: "Miami", result: { home: 0, away: 3},
 broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=dxYTTxhgVNU" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
