@@ -413,7 +413,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] 
 },
- { id: 53, group: "I", date: "26/06", time: "16:00", home: { name: "Senegal", code: "SEN", flag: "/flags/sn.png" }, away: { name: "Iraque", code: "IRQ", flag: "/flags/iq.png" } , stadium: "BMO Field", stadiumView: "/stadiums/BMO.png", city: "Toronto",
+ { id: 53, group: "I", date: "26/06", time: "16:00", home: { name: "Senegal", code: "SEN", flag: "/flags/sn.png" }, away: { name: "Iraque", code: "IRQ", flag: "/flags/iq.png" } , stadium: "BMO Field", stadiumView: "/stadiums/BMO.png", city: "Toronto", result: { home: 5, away: 0},
  broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=VFF2tuap6mo" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
@@ -421,7 +421,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] 
 },
-  { id: 54, group: "I", date: "26/06", time: "16:00", home: { name: "Noruega", code: "NOR", flag: "/flags/no.png" }, away: { name: "França", code: "FRA", flag: "/flags/fr.png" } , stadium: "Gillette Stadium", stadiumView: "/stadiums/Gillette.png", city: "Boston",
+  { id: 54, group: "I", date: "26/06", time: "16:00", home: { name: "Noruega", code: "NOR", flag: "/flags/no.png" }, away: { name: "França", code: "FRA", flag: "/flags/fr.png" } , stadium: "Gillette Stadium", stadiumView: "/stadiums/Gillette.png", city: "Boston", result: { home: 1, away: 4 },
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=mAcTmVkI0Kw" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
