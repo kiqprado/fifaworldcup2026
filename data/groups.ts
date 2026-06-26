@@ -504,7 +504,7 @@ export const groups: IGroup[] = [
         flag:'/flags/no.png',
         code: 'NOR',
         pts: 6,
-        j: 2,
+        j: 3,
         v: 2,
         e: 0,
         d: 0,
