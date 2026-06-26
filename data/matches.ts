@@ -214,7 +214,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] 
 },
-{ id: 29, group: "E", date: "25/06", time: "17:00", home: { name: "Equador", code: "ECU", flag: "/flags/ec.png" }, away: { name: "Alemanha", code: "GER", flag: "/flags/de.png" }, stadium: "MetLife Stadium", stadiumView: "/stadiums/MetLife.png", city: "Nova York / Nova Jersey",
+{ id: 29, group: "E", date: "25/06", time: "17:00", home: { name: "Equador", code: "ECU", flag: "/flags/ec.png" }, away: { name: "Alemanha", code: "GER", flag: "/flags/de.png" }, stadium: "MetLife Stadium", stadiumView: "/stadiums/MetLife.png", city: "Nova York / Nova Jersey", result: { home: 2, away: 1},
 broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=DeIPppohrnQ" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
@@ -222,7 +222,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] 
 },
-{ id: 30, group: "E", date: "25/06", time: "17:00", home: { name: "Curaçau", code: "CUW", flag: "/flags/cw.png" }, away: { name: "Costa do Marfim", code: "CIV", flag: "/flags/ci.png" }, stadium: "Lincoln Financial Field", stadiumView: "/stadiums/Lincoln.png", city: "Filadélfia",
+{ id: 30, group: "E", date: "25/06", time: "17:00", home: { name: "Curaçau", code: "CUW", flag: "/flags/cw.png" }, away: { name: "Costa do Marfim", code: "CIV", flag: "/flags/ci.png" }, stadium: "Lincoln Financial Field", stadiumView: "/stadiums/Lincoln.png", city: "Filadélfia", result: { home: 0, away: 2 },
 broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=yiq5VPpo34U" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
