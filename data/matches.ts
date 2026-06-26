@@ -138,7 +138,7 @@ broadcasts: [
   ] },
 
   // ── Grupo D ──
-  { id: 19, group: "D", date: "12/06", time: "22:00", home: { name: "Estados Unidos", code: "USA", flag: "/flags/us.png" }, away: { name: "Paraguai", code: "PAR", flag: "/flags/py.png" }, stadium: "SoFi Stadium", stadiumView: "/stadiums/Sofi.png", city: "Los Angeles", result: { home: 4, away: 1},
+  { id: 19, group: "D", date: "12/06", time: "22:00", home: { name: "Estados Unidos", code: "USA", flag: "/flags/us.png" }, away: { name: "Paraguai", code: "PAR", flag: "/flags/py.png" }, stadium: "SoFi Stadium", stadiumView: "/stadiums/Sofi.png", city: "Los Angeles", result: { home: 4, away: 2},
 broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=7EFTDmwcleI" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
