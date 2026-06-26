@@ -167,14 +167,14 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] 
 },
-  { id: 23, group: "D", date: "25/06", time: "23:00", home: { name: "Turquia", code: "TUR", flag: "/flags/tr.png" }, away: { name: "Estados Unidos", code: "USA", flag: "/flags/us.png" }, stadium: "Rose Bowl", stadiumView: "/stadiums/RoseBowl.png", city: "Los Angeles (Pasadena)",
+  { id: 23, group: "D", date: "25/06", time: "23:00", home: { name: "Turquia", code: "TUR", flag: "/flags/tr.png" }, away: { name: "Estados Unidos", code: "USA", flag: "/flags/us.png" }, stadium: "Rose Bowl", stadiumView: "/stadiums/RoseBowl.png", city: "Los Angeles (Pasadena)", result: { home: 3, away: 2 },
 broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=cAl4PErpiuE" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] },
-  { id: 24, group: "D", date: "25/06", time: "23:00", home: { name: "Paraguai", code: "PAR", flag: "/flags/py.png" }, away: { name: "Austrália", code: "AUS", flag: "/flags/au.png" }, stadium: "Levi's Stadium", stadiumView: "/stadiums/Levis.png", city: "São Francisco (Santa Clara)",
+  { id: 24, group: "D", date: "25/06", time: "23:00", home: { name: "Paraguai", code: "PAR", flag: "/flags/py.png" }, away: { name: "Austrália", code: "AUS", flag: "/flags/au.png" }, stadium: "Levi's Stadium", stadiumView: "/stadiums/Levis.png", city: "São Francisco (Santa Clara)", result: { home: 0, away: 0 },
 broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=YUNznGUccxc&pp=0gcJCT8LAYcqIYzv" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
