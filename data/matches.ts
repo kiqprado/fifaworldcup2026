@@ -314,7 +314,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] 
 },
-  { id: 41, group: "G", date: "27/06", time: "00:00", home: { name: "Egito", code: "EGY", flag: "/flags/eg.png" }, away: { name: "Irã", code: "IRN", flag: "/flags/ir.png" }, stadium: "Lumen Field", stadiumView: "/stadiums/Lumen.png", city: "Seattle",
+  { id: 41, group: "G", date: "27/06", time: "00:00", home: { name: "Egito", code: "EGY", flag: "/flags/eg.png" }, away: { name: "Irã", code: "IRN", flag: "/flags/ir.png" }, stadium: "Lumen Field", stadiumView: "/stadiums/Lumen.png", city: "Seattle", result: { home: 1, away: 1 },
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=eeSdrrpKVlY&pp=0gcJCT8LAYcqIYzv" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
@@ -322,7 +322,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] 
 },
-  { id: 42, group: "G", date: "27/06", time: "00:00", home: { name: "Nova Zelândia", code: "NZE", flag: "/flags/nz.png" }, away: { name: "Bélgica", code: "BEL", flag: "/flags/be.png" }, stadium: "BC Place Stadium", stadiumView: "/stadiums/BCPlace.png", city: "Vancouver",
+  { id: 42, group: "G", date: "27/06", time: "00:00", home: { name: "Nova Zelândia", code: "NZE", flag: "/flags/nz.png" }, away: { name: "Bélgica", code: "BEL", flag: "/flags/be.png" }, stadium: "BC Place Stadium", stadiumView: "/stadiums/BCPlace.png", city: "Vancouver", result: { home: 1, away: 5},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=W9axGxeojYo" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
