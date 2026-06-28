@@ -511,14 +511,14 @@ broadcasts: [
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
-  { id: 65, group: "K", date: "27/06", time: "20:30", home: { name: "RD Congo", code: "COD", flag: "/flags/cd.png" }, away:{ name: "Uzbequistão", code: "UZB", flag: "/flags/uz.png" }, stadium: "Mercedes-Benz Stadium", stadiumView: "/stadiums/Mercedes.png", city: "Atlanta",
+  { id: 65, group: "K", date: "27/06", time: "20:30", home: { name: "RD Congo", code: "COD", flag: "/flags/cd.png" }, away:{ name: "Uzbequistão", code: "UZB", flag: "/flags/uz.png" }, stadium: "Mercedes-Benz Stadium", stadiumView: "/stadiums/Mercedes.png", city: "Atlanta", result: { home: 3, away: 1 },
 broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=QHHK06-b7aI"},
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
-  { id: 66, group: "K", date: "27/06", time: "20:30", home: { name: "Colômbia", code: "COL", flag: "/flags/co.png" }, away:{ name: "Portugal", code: "POR", flag: "/flags/pt.png" }, stadium: "Hard Rock Stadium", stadiumView: "/stadiums/HardRock.png", city: "Miami", 
+  { id: 66, group: "K", date: "27/06", time: "20:30", home: { name: "Colômbia", code: "COL", flag: "/flags/co.png" }, away:{ name: "Portugal", code: "POR", flag: "/flags/pt.png" }, stadium: "Hard Rock Stadium", stadiumView: "/stadiums/HardRock.png", city: "Miami",  result: { home: 0, away: 0 },
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=x-ftF0Pm1oo" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
