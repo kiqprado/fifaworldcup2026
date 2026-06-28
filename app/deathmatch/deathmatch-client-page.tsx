@@ -215,8 +215,8 @@ export default function DeathMatchClientPage({ teamCode }: IDeathMatchClientPage
             />
           ) : (
             <CardTeamsOnDeathMatchBracket
-              teams={deathMatch.teams}
-              searchValue={searchValue}
+              //teams={deathMatch.teams}
+              //searchValue={searchValue}
             />
           )}
         </div>
