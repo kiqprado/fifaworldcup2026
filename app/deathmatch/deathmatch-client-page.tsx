@@ -207,7 +207,10 @@ export default function DeathMatchClientPage({ teamCode }: IDeathMatchClientPage
           mobileRangeFull ? 'px-6' : ''
         }`}
       >
-        <div className="group-card">
+        <div 
+          className={`group-card 
+          ${mobileRangeFull ? 'w-full' : 'w-[80%]'}`}
+        >
           {view === 'list' ? (
             <CardTeamsDeathMatchList
               teams={deathMatch.teams}

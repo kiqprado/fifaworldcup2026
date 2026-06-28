@@ -5,12 +5,14 @@ import Link from 'next/link'
 
 import Tilt from 'react-parallax-tilt'
 
+import { useBreakpoint } from '../hook/use-media-query'
 import { NormalizeText } from '../utils/normalize-input-search'
 
 interface ITeamQualified {
   name: string
   flag: string
   code: string
+  position: string
 }
 
 export interface ICardTeamsOnDeathMatch {
@@ -18,101 +20,184 @@ export interface ICardTeamsOnDeathMatch {
   searchValue?: string
 }
 
-export function CardTeamsDeathMatchList({ teams, searchValue,}: ICardTeamsOnDeathMatch) {
+export function CardTeamsDeathMatchList({
+  teams,
+  searchValue,
+}: ICardTeamsOnDeathMatch) {
   const normalizedSearch = NormalizeText(searchValue ?? '')
 
+  const isMobileXS = useBreakpoint('mobileXS')
+  const isMobileSM = useBreakpoint('mobileSM')
+  const isMobileMD = useBreakpoint('mobileMD')
+  const isMobileLG = useBreakpoint('mobileLG')
+  const isMobileXL = useBreakpoint('mobileXL')
+
+  const mobileRangeFull =
+    isMobileXS ||
+    isMobileSM ||
+    isMobileMD ||
+    isMobileLG ||
+    isMobileXL
+
   return (
-    <Tilt
-      tiltMaxAngleX={8}
-      tiltMaxAngleY={8}
-      perspective={1000}
-      scale={1.03}
-      transitionSpeed={1200}
-      gyroscope
-      className="w-fit"
+    <div
+      className="
+        group
+        relative rounded-xl overflow-hidden p-[1px]
+        bg-gradient-to-br from-zinc-700 via-zinc-600 to-zinc-700
+        hover:from-amber-300 hover:via-lime-400 hover:to-emerald-400
+        transition-all duration-300 ease-out
+        hover:scale-[1.05]
+      "
     >
       <div
         className="
-          relative w-86 rounded-xl overflow-hidden p-[1px]
-          transition-all duration-300 ease-out
+          relative
+          rounded-xl
+          bg-zinc-950
+          overflow-hidden
+          transition-all duration-300
+          shadow-[0_6px_14px_rgba(0,0,0,0.65)]
+          group-hover:shadow-[0_10px_28px_rgba(16,185,129,0.22),0_4px_16px_rgba(251,191,36,0.18)]
         "
       >
+        <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 via-zinc-950 to-black opacity-95" />
+
         <div
           className="
-            relative flex flex-col rounded-xl bg-zinc-950 overflow-hidden
-            transition-all duration-300
+            absolute inset-0
+            opacity-0
+            group-hover:opacity-100
+            transition-opacity duration-500
+            bg-gradient-to-br from-amber-400/10 via-transparent to-emerald-400/10
+          "
+        />
+
+        <h2
+          className="
+            relative z-10
+            py-3 px-4
+            text-3xl
+            font-bold
+            tracking-wide
+            text-amber-300
+            text-center
           "
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 via-zinc-950 to-black opacity-95" />
+          Classificados
+        </h2>
 
-          <div className="absolute inset-0 opacity-0 hover:opacity-100 transition duration-500 bg-gradient-to-br from-amber-400/10 via-transparent to-emerald-400/10" />
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-zinc-600 to-transparent" />
 
-          <h2 className="relative z-10 py-3 px-4 text-3xl font-bold tracking-wide text-amber-300">
-            Mata Mata
-          </h2>
+        <div
+          className={`
+            relative z-10
+            flex
+            gap-2
+            p-3
+            ${
+              mobileRangeFull
+                ? 'flex-col'
+                : 'flex-wrap'
+            }
+          `}
+        >
+          {teams.map(team => {
+            const highlighted =
+              normalizedSearch &&
+              (
+                NormalizeText(team.name).includes(normalizedSearch) ||
+                NormalizeText(team.code).includes(normalizedSearch)
+              )
 
-          <div className="h-px w-full bg-gradient-to-r from-transparent via-zinc-600 to-transparent" />
+            return (
+              <div
+                key={team.code}
+                className={`
+                  flex
+                  items-center
+                  gap-3
+                  px-4
+                  py-2
+                  rounded-lg
+                  transition-all duration-300
 
-          <div className="relative z-10 flex flex-col">
-            {teams.map(team => {
-              const highlighted =
-                normalizedSearch &&
-                (
-                  NormalizeText(team.name).includes(normalizedSearch) ||
-                  NormalizeText(team.code).includes(normalizedSearch)
-                )
+                  ${
+                    mobileRangeFull
+                      ? 'w-full'
+                      : 'w-[calc(50%-0.25rem)]'
+                  }
 
-              return (
-                <div
-                  key={team.code}
+                  ${
+                    highlighted
+                      ? `
+                        scale-[1.05]
+                        bg-gradient-to-r from-amber-400/15 via-emerald-400/10 to-transparent
+                        ring-1 ring-amber-400/40
+                        shadow-[0_0_18px_rgba(251,191,36,0.18)]
+                      `
+                      : `
+                        hover:bg-white/5
+                      `
+                  }
+                `}
+              >
+                <Image
+                  src={team.flag}
+                  alt={team.name}
+                  width={34}
+                  height={34}
                   className={`
-                    flex items-center gap-3 px-4 py-2 rounded-lg
-                    transition-all duration-300
-                    hover:bg-white/5
+                    rounded-sm
+                    transition-transform duration-300
+                    ${highlighted ? 'scale-110' : ''}
+                  `}
+                />
+
+                <Link
+                  href={`/lineup/${team.code}`}
+                  className={`
+                    flex-1
+                    text-lg
+                    tracking-wide
+                    transition-colors
                     ${
                       highlighted
-                        ? 'scale-[1.04] bg-amber-400/10 ring-1 ring-amber-400/40 shadow-lg shadow-amber-400/10'
-                        : ''
+                        ? 'text-amber-300 font-semibold'
+                        : 'text-zinc-200'
                     }
                   `}
                 >
-                  <div
-                    className={`
-                      transition-transform duration-300
-                      ${highlighted ? 'scale-110' : ''}
-                    `}
-                  >
-                    <Image
-                      src={team.flag}
-                      alt={team.name}
-                      width={34}
-                      height={34}
-                      className="rounded-sm"
-                    />
-                  </div>
+                  {team.name}
+                </Link>
 
-                  <Link
-                    href={`/lineup/${team.code}`}
-                    className={`
-                      text-lg tracking-wide transition-colors
-                      ${
-                        highlighted
-                          ? 'text-amber-300 font-semibold'
-                          : 'text-zinc-200'
-                      }
-                    `}
-                  >
-                    {team.name}
-                  </Link>
-                </div>
-              )
-            })}
-          </div>
-
-          <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-emerald-400/50 to-transparent opacity-80" />
+                <span
+                  className="
+                    text-xs
+                    tracking-widest
+                    text-zinc-400
+                  "
+                >
+                  {team.position}
+                </span>
+              </div>
+            )
+          })}
         </div>
+
+        <div
+          className="
+            h-[2px]
+            w-full
+            bg-gradient-to-r
+            from-transparent
+            via-emerald-400/50
+            to-transparent
+            opacity-80
+          "
+        />
       </div>
-    </Tilt>
+    </div>
   )
 }
 
