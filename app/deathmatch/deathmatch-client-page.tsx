@@ -4,6 +4,7 @@ import { useMemo, useState, useEffect, useRef, useCallback } from 'react'
 import gsap from 'gsap'
 
 import { deathMatch } from '@/data/death-match'
+import { matches } from '@/data/matches'
 
 import { CardTeamsDeathMatchList, CardTeamsOnDeathMatchBracket } from '@/app/components/card-death-match'
 import { HeaderPageTitle } from '@/app/elements/header-page-title'
@@ -207,22 +208,32 @@ export default function DeathMatchClientPage({ teamCode }: IDeathMatchClientPage
           mobileRangeFull ? 'px-6' : ''
         }`}
       >
-        <div 
-          className={`group-card 
-          ${mobileRangeFull ? 'w-full' : 'w-[80%]'}`}
-        >
-          {view === 'list' ? (
+        {view === 'list' ? (
+          <div
+            className={`
+              group-card
+              ${mobileRangeFull ? 'w-full' : 'w-[80%]'}
+            `}
+          >
             <CardTeamsDeathMatchList
               teams={deathMatch.teams}
               searchValue={searchValue}
             />
-          ) : (
-            <CardTeamsOnDeathMatchBracket
-              //teams={deathMatch.teams}
-              //searchValue={searchValue}
-            />
-          )}
-        </div>
+          </div>
+        ) : (
+          matches
+            .filter(match => match.stage === '16 avos')
+            .map(match => (
+              <div
+                key={match.id}
+                className="group-card"
+              >
+                <CardTeamsOnDeathMatchBracket
+                  match={match}
+                />
+              </div>
+            ))
+        )}
       </div>
     ) : (
       <div className="mt-12 rounded-xl border border-zinc-800 bg-zinc-950/70 px-8 py-6">
