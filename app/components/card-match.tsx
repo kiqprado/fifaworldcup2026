@@ -19,30 +19,40 @@ interface IBroadcast {
 }
 
 export interface IMatch {
-  id: number;
+  id: number
   isFavorite?: boolean
   onFavorite?: (id: number) => void
-  group: string;
-  date: string;
-  time: string;
-  home: { name: string; code: string; flag: string };
-  away: { name: string; code: string; flag: string };
-  stadium: string;
-  stadiumView: string;
-  city: string;
-  broadcasts: IBroadcast[],
+  group?: string
+  stage?: string
+  date: string
+  time: string
+  home: {
+    name: string
+    code: string
+    flag: string
+  }
+  away: {
+    name: string
+    code: string
+    flag: string
+  }
+  stadium: string
+  stadiumView: string
+  city: string
+  broadcasts: IBroadcast[]
   result?: {
     home: number
     away: number
-  },
+  }
   highlighted?: boolean
 }
 
 export function CardMatch({
-  id,
+   id,
   isFavorite = false,
   onFavorite,
   group,
+  stage,
   date,
   time,
   home,
@@ -132,18 +142,34 @@ export function CardMatch({
             <span>{time} • {date}</span>
           </div>
 
-          <Link
-            href={'/groups'}
-            className="
-              px-2 py-0.5 rounded-md
-              bg-white/5
-              border border-white/10
-              group-hover:border-cyan-400/50
-              transition-all duration-300 ease-in-out
-            "
-          >
-            Grupo {group}
-          </Link>
+          {group ? (
+            <Link
+              href="/groups"
+              className="
+                px-2 py-0.5 rounded-md
+                bg-white/5
+                border border-white/10
+                group-hover:border-cyan-400/50
+                transition-all duration-300 ease-in-out
+              "
+            >
+              Grupo {group}
+            </Link>
+          ) : stage ? (
+            <Link
+              href="/death-match"
+              className="
+                px-2 py-0.5 rounded-md
+                bg-cyan-500/10
+                border border-cyan-400/30
+                text-cyan-300
+                group-hover:border-cyan-400
+                transition-all duration-300 ease-in-out
+              "
+            >
+              {stage}
+            </Link>
+          ) : null}
 
           <button
             onClick={() => onFavorite?.(id)}

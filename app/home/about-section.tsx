@@ -136,9 +136,9 @@ export function AboutSection() {
 
         <div className='about-card'>
           <CardButton
-            href={'/groups'}
-            title="Grupos"
-            about="12 grupos com 4 seleções cada na fase inicial"
+            href={'/deathmatch'}
+            title="Mata Mata"
+            about="32 Seleções disputando a permanência na Copa"
             icon={Sheet}
             iconProps={{ className: 'text-sky-500' }}
           />

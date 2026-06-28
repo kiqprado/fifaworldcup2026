@@ -29,9 +29,17 @@ import { toast } from 'sonner'
 
 gsap.registerPlugin(ScrollTrigger)
 
-type TDateFilter = | 'upcoming' | 'yesterday' | 'today' | 'tomorrow'
+type TDateFilter =
+  | 'upcoming'
+  | 'yesterday'
+  | 'today'
+  | 'tomorrow'
 
-type TSortMode = | 'group' | 'team' | 'favorites'
+type TSortMode =
+  | 'group'
+  | 'stage'
+  | 'team'
+  | 'favorites'
 
 export default function MatchesClientPage() {
   const cardsRef = useRef<HTMLDivElement[]>([])
@@ -40,19 +48,20 @@ export default function MatchesClientPage() {
   const [dateFilter, setDateFilter] = useState<TDateFilter>('upcoming')
 
   const [sortMode, setSortMode] = useState<TSortMode>('group')
+
   const [favorites, setFavorites] = useState<number[]>(() => {
-    if ( typeof window === 'undefined') {
+    if (typeof window === 'undefined') {
       return []
     }
 
     const storedFavorites = localStorage.getItem('favorites')
 
-    if (!storedFavorites) { return []}
+    if (!storedFavorites) {
+      return []
+    }
 
     try {
-      return JSON.parse(
-        storedFavorites
-      )
+      return JSON.parse(storedFavorites)
     } catch {
       return []
     }
@@ -67,14 +76,28 @@ export default function MatchesClientPage() {
     })
   }
 
-  function DoesMatchSearch(match: typeof matches[number], search: string) {
+  function GetMatchPhaseLabel(match: typeof matches[number]) {
+    if (match.group) {
+      return `Grupo ${match.group}`
+    }
+
+    return match.stage ?? ''
+  }
+
+  function DoesMatchSearch(
+    match: typeof matches[number],
+    search: string
+  ) {
     const normalizedSearch = NormalizeText(search)
 
-    if (!normalizedSearch) { return false }
+    if (!normalizedSearch) {
+      return false
+    }
 
     const fields = [
-      match.group,
-      `Grupo ${match.group}`,
+      match.group ?? '',
+      match.stage ?? '',
+      GetMatchPhaseLabel(match),
       match.date,
       match.time,
       match.home.name,
@@ -86,37 +109,30 @@ export default function MatchesClientPage() {
     ]
 
     return fields.some(field =>
-      NormalizeText(field).includes(
-        normalizedSearch
-      )
+      NormalizeText(field).includes(normalizedSearch)
     )
   }
 
-  function DoesMatchDateFilter( match: typeof matches[number], filter: TDateFilter) {
+  function DoesMatchDateFilter(
+    match: typeof matches[number],
+    filter: TDateFilter
+  ) {
     const today = NormalizeDate(new Date())
     const yesterday = AddDays(today, -1)
     const tomorrow = AddDays(today, 1)
+
     const matchDate = CreateMatchDate(match.date)
 
     if (filter === 'yesterday') {
-      return IsSameDate(
-        matchDate,
-        yesterday
-      )
+      return IsSameDate(matchDate, yesterday)
     }
 
     if (filter === 'today') {
-      return IsSameDate(
-        matchDate,
-        today
-      )
+      return IsSameDate(matchDate, today)
     }
 
     if (filter === 'tomorrow') {
-      return IsSameDate(
-        matchDate,
-        tomorrow
-      )
+      return IsSameDate(matchDate, tomorrow)
     }
 
     return matchDate >= today
@@ -124,13 +140,11 @@ export default function MatchesClientPage() {
 
   function HandleFavorite(matchId: number) {
     setFavorites(prev => {
-      const alreadyFavorite =
-        prev.includes(matchId)
+      const alreadyFavorite = prev.includes(matchId)
 
-      const updatedFavorites =
-        alreadyFavorite
-          ? prev.filter(id => id !== matchId)
-          : [...prev, matchId]
+      const updatedFavorites = alreadyFavorite
+        ? prev.filter(id => id !== matchId)
+        : [...prev, matchId]
 
       localStorage.setItem(
         'favorites',
@@ -138,15 +152,11 @@ export default function MatchesClientPage() {
       )
 
       if (alreadyFavorite) {
-        toast.info(
-          'Partida removida dos favoritos'
-        )
+        toast.info('Partida removida dos favoritos')
       }
 
       if (!alreadyFavorite) {
-        toast.success(
-          'Partida adicionada aos favoritos'
-        )
+        toast.success('Partida adicionada aos favoritos')
       }
 
       return updatedFavorites
@@ -158,21 +168,44 @@ export default function MatchesClientPage() {
     setDateFilter('upcoming')
   }
 
-
-  function IsOldMatch( match: typeof matches[number]) {
+  function IsOldMatch(match: typeof matches[number]) {
     const today = NormalizeDate(new Date())
     const yesterday = AddDays(today, -1)
 
-    const matchDate =
-      CreateMatchDate(match.date)
+    const matchDate = CreateMatchDate(match.date)
 
     return matchDate < yesterday
+  }
+
+  function GetStageOrder(stage?: string) {
+    switch (stage) {
+      case '16 avos':
+        return 1
+
+      case 'Oitavas':
+        return 2
+
+      case 'Quartas':
+        return 3
+
+      case 'Semifinal':
+        return 4
+
+      case 'Terceiro Lugar':
+        return 5
+
+      case 'Final':
+        return 6
+
+      default:
+        return 999
+    }
   }
 
   const hasActiveFilters =
     searchValue.trim().length > 0 ||
     dateFilter !== 'upcoming'
-  
+
   const filteredMatches = useMemo(() => {
     return matches.filter(match => {
 
@@ -192,32 +225,46 @@ export default function MatchesClientPage() {
 
       const matchesSearch =
         isSearching
-          ? DoesMatchSearch(
-              match,
-              searchValue
-            )
+          ? DoesMatchSearch(match, searchValue)
           : true
 
       const matchesDate =
-        DoesMatchDateFilter(
-          match,
-          dateFilter
-        )
+        DoesMatchDateFilter(match, dateFilter)
 
       return (
         matchesSearch &&
         matchesDate
       )
     })
-  }, [ searchValue, dateFilter ])
+  }, [searchValue, dateFilter])
 
   const sortedMatches = useMemo(() => {
     const copiedMatches = [...filteredMatches]
 
     if (sortMode === 'group') {
+      return copiedMatches.sort((a, b) => {
+
+        if (a.group && b.group) {
+          return a.group.localeCompare(b.group)
+        }
+
+        if (a.group) {
+          return -1
+        }
+
+        if (b.group) {
+          return 1
+        }
+
+        return GetStageOrder(a.stage) - GetStageOrder(b.stage)
+      })
+    }
+
+    if (sortMode === 'stage') {
       return copiedMatches.sort(
         (a, b) =>
-          a.group.localeCompare(b.group)
+          GetStageOrder(a.stage) -
+          GetStageOrder(b.stage)
       )
     }
 
@@ -229,24 +276,19 @@ export default function MatchesClientPage() {
     }
 
     if (sortMode === 'favorites') {
-      return copiedMatches.sort(
-        (a, b) => {
-          const aFavorite =
-            favorites.includes(a.id)
+      return copiedMatches.sort((a, b) => {
+        const aFavorite = favorites.includes(a.id)
+        const bFavorite = favorites.includes(b.id)
 
-          const bFavorite =
-            favorites.includes(b.id)
-
-          return Number(bFavorite) - Number(aFavorite)
-        }
-      )
+        return Number(bFavorite) - Number(aFavorite)
+      })
     }
 
     return copiedMatches
-  }, [ filteredMatches, sortMode, favorites])
+  }, [filteredMatches, sortMode, favorites])
 
- const highlightedMatchId =
-  sortedMatches[0]?.id ?? null
+  const highlightedMatchId =
+    sortedMatches[0]?.id ?? null
 
   // BREAKPOINTS
   const isMobileXS =
