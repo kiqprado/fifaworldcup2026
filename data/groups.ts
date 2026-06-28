@@ -617,7 +617,7 @@ export const groups: IGroup[] = [
         name: 'Colômbia',
         flag:'/flags/co.png',
         code: 'COL',
-        pts: 6,
+        pts: 7,
         j: 2,
         v: 2,
         e: 0,
