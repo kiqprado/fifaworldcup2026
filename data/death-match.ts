@@ -23,12 +23,22 @@ export const deathMatch: ICardTeamsOnDeathMatch = {
       code: 'AUS',
     },
     {
+      name: 'Aústria',
+      flag: '/flags/au.png',
+      code: 'AUT'
+    },
+    {
+      name: 'Argélia',
+      flag: '/flags/ag.png',
+      code: 'ALG'
+    },
+    {
       name: 'Bélgica',
       flag: '/flags/be.png',
       code: 'BEL',
     },
     {
-      name: 'Bósnia',
+      name: 'Bósnia e Herzegovina',
       flag: '/flags/ba.png',
       code: 'BIH',
     },
@@ -53,6 +63,16 @@ export const deathMatch: ICardTeamsOnDeathMatch = {
       code: 'CIV',
     },
     {
+      name: 'Croácia',
+      flag: '/flags/co.png',
+      code: 'CRO'
+    },
+    {
+      name: 'Colômbia',
+      flag: '/flags/co.png',
+      code: 'COL',
+    },
+    {
       name: 'Egito',
       flag: '/flags/eg.png',
       code: 'EGY',
@@ -68,6 +88,11 @@ export const deathMatch: ICardTeamsOnDeathMatch = {
       code: 'USA',
     },
     {
+      name: 'Equador',
+      flag: '/flags/eq.png',
+      code: 'EQU'
+    },
+    {
       name: 'França',
       flag: '/flags/fr.png',
       code: 'FRA',
@@ -81,6 +106,11 @@ export const deathMatch: ICardTeamsOnDeathMatch = {
       name: 'Japão',
       flag: '/flags/jp.png',
       code: 'JPN',
+    },
+    {
+      name: 'Gana',
+      flag: '/flags/gn.png',
+      code: 'GHA'
     },
     {
       name: 'Marrocos',
@@ -112,5 +142,15 @@ export const deathMatch: ICardTeamsOnDeathMatch = {
       flag: '/flags/mx.png',
       code: 'MEX',
     },
+    {
+      name: 'Irá',
+      flag: '/flags/ir.png',
+      code: 'IRN'
+    },
+    {
+      name: 'Inglaterra',
+      flag: '/flags/en.png',
+      code: 'ENG'
+    }
   ],
 }
