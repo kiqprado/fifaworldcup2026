@@ -557,7 +557,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] 
 },
-  { id: 71, group: "L", date: "27/06", time: "18:00", home: { name: "Croácia", code: "CRO", flag: "/flags/hr.png" }, away: { name: "Gana", code: "GHA", flag: "/flags/gh.png" }, stadium: "Lincoln Financial Field", stadiumView: "/stadiums/Lincoln.png", city: "Filadélfia",
+  { id: 71, group: "L", date: "27/06", time: "18:00", home: { name: "Croácia", code: "CRO", flag: "/flags/hr.png" }, away: { name: "Gana", code: "GHA", flag: "/flags/gh.png" }, stadium: "Lincoln Financial Field", stadiumView: "/stadiums/Lincoln.png", city: "Filadélfia", result: { home: 2, away: 1 },
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=mBZMegb2r90&pp=0gcJCT8LAYcqIYzv" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
@@ -565,7 +565,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ] 
 },
-  { id: 72, group: "L", date: "27/06", time: "18:00", home: { name: "Panamá", code: "PAN", flag: "/flags/pa.png" }, away: { name: "Inglaterra", code: "ENG", flag: "/flags/en.png" }, stadium: "MetLife Stadium", stadiumView: "/stadiums/MetLife.png", city: "Nova York / Nova Jersey",
+  { id: 72, group: "L", date: "27/06", time: "18:00", home: { name: "Panamá", code: "PAN", flag: "/flags/pa.png" }, away: { name: "Inglaterra", code: "ENG", flag: "/flags/en.png" }, stadium: "MetLife Stadium", stadiumView: "/stadiums/MetLife.png", city: "Nova York / Nova Jersey", result: { home: 0, away: 2},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=FDCM9HggRlM" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
