@@ -5,13 +5,15 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 import Image from "next/image"
-import Trophy from '@/public/trophy.png'
-
-import { HeaderSectionTitle } from '@/app/elements/header-section-title'
-import { ShieldUser, Swords, Sheet } from 'lucide-react'
-import { CardButton } from '@/app/components/card-button'
+import trophy from '@/public/trophy.png'
 
 import { useBreakpoint } from "../hook/use-media-query"
+
+import { HeaderSectionTitle } from '@/app/elements/header-section-title'
+import { CardButton } from '@/app/components/card-button'
+
+import { ShieldUser, Swords, Sheet, Trophy } from 'lucide-react'
+
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -115,7 +117,7 @@ export function AboutSection() {
 
         <div ref={trophyRef} className={`${mobileRangeFull ? 'absolute opacity-15' : 'visible'}`}>
           <Image
-            src={Trophy}
+            src={trophy}
             alt='Trophy World Cup 2026'
             height={356}
           />
@@ -139,8 +141,8 @@ export function AboutSection() {
             href={'/deathmatch'}
             title="Mata Mata"
             about="32 Seleções disputando a permanência na Copa"
-            icon={Sheet}
-            iconProps={{ className: 'text-sky-500' }}
+            icon={Trophy}
+            iconProps={{ className: 'text-red-500' }}
           />
         </div>
 
