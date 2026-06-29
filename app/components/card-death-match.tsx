@@ -281,7 +281,7 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
             href={`/matches`}
             target='_blank'
             className="px-6 py-2 block
-              text-lg text-center
+              text-md text-center
               tracking-wider
               text-amber-300
               bg-zinc-900
