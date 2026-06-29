@@ -281,10 +281,9 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
             href={`/matches`}
             target='_blank'
             className="px-6 py-2 block
-              text-md text-center
-              tracking-wider
-              text-amber-300
-              bg-zinc-900
+              text-sm text-center tracking-wider
+              text-amber-300 bg-zinc-900 hover:text-cyan-300
+              transition-all duration-300 ease-in-out
             "
           >
             Exibir detalhes da partida
