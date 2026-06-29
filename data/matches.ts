@@ -651,4 +651,48 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
 
+  { id: 110, stage: "16 avos", date: "02/07", time: "16:00", home: { name: "Espanha", code: "ESP", flag: "/flags/es.png" }, away: { name: "Áustria", code: "AUT", flag: "/flags/at.png" }, stadium: "Rose Bowl", stadiumView: "/stadiums/RoseBowl.png", city: "Los Angeles (Pasadena)",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=FDCM9HggRlM" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]},
+   { id: 111, stage: "16 avos", date: "02/07", time: "20:00", home: { name: "Portugal", code: "POR", flag: "/flags/pt.png" }, away: { name: "Croácia", code: "CRO", flag: "/flags/hr.png" }, stadium: "BMO Field", stadiumView: "/stadiums/BMO.png", city: "Toronto",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=FDCM9HggRlM" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]},
+
+  { id: 112, stage: "16 avos", date: "03/07", time: "00:00", home: { name: "Suiça", code: "SUI", flag: "/flags/ch.png" }, away: { name: "Argélia", code: "ALG", flag: "/flags/dz.png" }, stadium: "BC Place", stadiumView: "/stadiums/BCPlace.png", city: "Vancouver",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=FDCM9HggRlM" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]},
+  { id: 113, stage: "16 avos", date: "03/07", time: "15:00", home: { name: "Austrália", code: "AUS", flag: "/flags/au.png" }, away: { name: "Egito", code: "EGY", flag: "/flags/eg.png" }, stadium: "AT&T Stadium", stadiumView: "/stadiums/AT&T.png", city: "Dallas",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=FDCM9HggRlM" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]},
+  { id: 114, stage: "16 avos", date: "03/07", time: "19:00", home: { name: "Argentina", code: "ARG", flag: "/flags/ar.png" }, away: { name: "Cabo Verde", code: "CPV", flag: "/flags/cv.png" }, stadium: "Hard Rock Stadium", stadiumView: "/stadiums/HardRock.png", city: "Miami",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=FDCM9HggRlM" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]},
+  { id: 115, stage: "16 avos", date: "03/07", time: "22:30", home: { name: "Colômbia", code: "COL", flag: "/flags/co.png" }, away: { name: "Gana", code: "GHA", flag: "/flags/gh.png" }, stadium: "Arrowhead Stadium", stadiumView: "/stadiums/ArrowHead.png", city: "Kansas City",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=FDCM9HggRlM" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]},
+
 ];
