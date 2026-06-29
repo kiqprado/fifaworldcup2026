@@ -343,7 +343,9 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
                   }
                 />
 
-                <span
+                <Link
+                  href={`/lineup/${match.home.code}`}
+                  target='_blank'
                   className={
                     finished && !homeWinner
                       ? 'tracking-wide text-zinc-500'
@@ -351,7 +353,7 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
                   }
                 >
                   {match.home.name}
-                </span>
+                </Link>
 
               </div>
 
@@ -411,7 +413,9 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
                   }
                 />
 
-                <span
+                <Link
+                  href={`/lineup/${match.away.code}`}
+                  target='_blank'
                   className={
                     finished && !awayWinner
                       ? 'tracking-wide text-zinc-500'
@@ -419,7 +423,7 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
                   }
                 >
                   {match.away.name}
-                </span>
+                </Link>
 
               </div>
 
