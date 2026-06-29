@@ -250,19 +250,12 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
       transitionSpeed={1000}
     >
       <div 
-        className={`relative
-        ${
-          mobileRangeFull
-            ? 'w-[400px]'
-            : tabletRangeFull
-              ? 'w-[480px]'
-              : 'w-[540px]'
-        }
+        className={`relative w-full
         rounded-xl group`}
       >
 
         <div
-          className=" absolute inset-0
+          className={`absolute inset-0
             rounded-xl
             bg-gradient-to-br
             from-amber-400
@@ -271,13 +264,11 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
             opacity-80
             group-hover:opacity-100
             transition-all
-            duration-500
-          "
+            duration-500`}
         />
 
         <div
-          className="
-            relative
+          className="relative
             rounded-xl
             overflow-hidden
             bg-zinc-900
@@ -329,8 +320,10 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
               `}
             >
 
-              <div className="flex items-center gap-3">
-
+              <div 
+                className={`flex items-center gap-3
+                ${mobileRangeFull ? 'min-w-[222px]' : ''}`}
+              >
                 <Image
                   src={match.home.flag}
                   alt={match.home.name}
@@ -399,7 +392,10 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
               `}
             >
 
-              <div className="flex items-center gap-3">
+              <div 
+                className={`flex items-center gap-3
+                ${mobileRangeFull ? 'min-w-[222px]' : ''}`}
+              >
 
                 <Image
                   src={match.away.flag}

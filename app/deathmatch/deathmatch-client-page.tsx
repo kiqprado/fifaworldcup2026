@@ -204,8 +204,9 @@ export default function DeathMatchClientPage({ teamCode }: IDeathMatchClientPage
     {hasAnyResult ? (
       <div
         ref={gridRef}
-        className={`flex gap-8 py-8 justify-center
-          ${mobileRangeFull ? 'flex-col' : 'flex-wrap'}
+        className={`flex gap-8 py-8 justify-center 
+          ${mobileRangeFull ? 'flex-col px-4' : 'flex-wrap'}
+          ${view !== 'list' && desktopRangeFull ? 'px-26' : ''}
         `}
       >
         {view === 'list' ? (
@@ -226,8 +227,16 @@ export default function DeathMatchClientPage({ teamCode }: IDeathMatchClientPage
             .map(match => (
               <div
                 key={match.id}
-                className={`group-card
-                  ${mobileRangeFull ? 'w-full' : 'w-[40%]'}`}
+                className={`
+                  group-card
+                  ${
+                    mobileRangeFull
+                      ? 'w-full'
+                      : tabletRangeFull
+                        ? 'w-[40%]'
+                        : 'w-[48%]'
+                  }
+                `}
               >
                 <CardTeamsOnDeathMatchBracket
                   match={match}
