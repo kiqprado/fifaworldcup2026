@@ -142,7 +142,7 @@ export function AboutSection() {
             title="Mata Mata"
             about="32 Seleções disputando a permanência na Copa"
             icon={Trophy}
-            iconProps={{ className: 'text-red-500' }}
+            iconProps={{ className: 'text-amber-500' }}
           />
         </div>
 
@@ -152,7 +152,7 @@ export function AboutSection() {
             title="Partidas"
             about="Calendário completo de jogos e resultados"
             icon={Swords}
-            iconProps={{ className: 'text-amber-500' }}
+            iconProps={{ className: 'text-red-500' }}
           />
         </div>
 
