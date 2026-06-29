@@ -251,7 +251,13 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
     >
       <div 
         className={`relative
-        ${ mobileRangeFull ? 'w-[80%]' : 'w-[540px]'}
+        ${
+          mobileRangeFull
+            ? 'w-[400px]'
+            : tabletRangeFull
+              ? 'w-[480px]'
+              : 'w-[540px]'
+        }
         rounded-xl group`}
       >
 
@@ -298,15 +304,8 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
             {/* Home */}
 
             <div
-              className={`
-                flex
-                items-center
-                justify-between
-                px-4
-                py-2
-                transition-all
-                duration-300
-
+              className={`flex items-center justify-between px-4 py-2
+                transition-all duration-300
                 ${
                   !finished
                     ? `
@@ -373,15 +372,8 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
             {/* Away */}
 
             <div
-              className={`
-                flex
-                items-center
-                justify-between
-                px-4
-                py-2
-                transition-all
-                duration-300
-
+              className={`flex items-center justify-between px-4 py-2
+                transition-all duration-300
                 ${
                   !finished
                     ? `
@@ -444,11 +436,8 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
               )}
 
             </div>
-
           </div>
-
         </div>
-
       </div>
     </Tilt>
   )
