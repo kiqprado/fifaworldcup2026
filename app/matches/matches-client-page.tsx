@@ -567,6 +567,7 @@ export default function MatchesClientPage() {
                 result={match.result}
                 city={match.city}
                 broadcasts={match.broadcasts}
+                penalty={match.penalty}
                 highlighted={
                   match.id ===
                   highlightedMatchId

@@ -44,6 +44,7 @@ export interface IMatch {
     home: number
     away: number
   }
+  penalty?: boolean
   highlighted?: boolean
 }
 
@@ -62,6 +63,7 @@ export function CardMatch({
   broadcasts,
   city,
   result,
+  penalty,
   highlighted = false
 }: IMatch) {
   const ref = useRef<HTMLDivElement>(null)
@@ -288,7 +290,7 @@ export function CardMatch({
                 </h4>
 
                 <div
-                  className="
+                  className="relative
                     flex items-center justify-evenly py-4
                     rounded-xl
                     border border-white/10
@@ -332,6 +334,17 @@ export function CardMatch({
                   >
                     {result?.away}
                   </span>
+                  { penalty && (
+                    <span
+                      className="absolute w-full 
+                        z-50 -bottom-2.5 left-1/2 -translate-x-1/2
+                        text-sm font-bold uppercase text-center text-lime-300
+                        tracking-widest drop-shadow-[0_0_3px_rgba(190,242,100,0.9)]
+                      "
+                    >
+                      P ê n a l t i s
+                    </span>
+                  )}
                 </div>
               </div>
           )

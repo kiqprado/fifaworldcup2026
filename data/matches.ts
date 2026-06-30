@@ -592,7 +592,7 @@ broadcasts: [
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
-   { id: 102, stage: "16 avos", date: "29/06", time: "17:30", home: { name: "Alemanha", code: "GER", flag: "/flags/de.png" }, away: { name: "Paraguai", code: "PAR", flag: "/flags/py.png" }, stadium: "Gillette Stadium", stadiumView: "/stadiums/Gillette.png", city: "Boston (Foxborough)",
+   { id: 102, stage: "16 avos", date: "29/06", time: "17:30", home: { name: "Alemanha", code: "GER", flag: "/flags/de.png" }, away: { name: "Paraguai", code: "PAR", flag: "/flags/py.png" }, stadium: "Gillette Stadium", stadiumView: "/stadiums/Gillette.png", city: "Boston (Foxborough)", result: { home: 3 , away: 4}, penalty: true,
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=619QGpUBV3o" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
