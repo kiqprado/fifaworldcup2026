@@ -607,7 +607,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
 
-  { id: 104, stage: "16 avos", date: "30/06", time: "14:00", home: { name: "Costa do Marfim", code: "CIV", flag: "/flags/ci.png" }, away: { name: "Noruega", code: "NOR", flag: "/flags/no.png"}, stadium: "AT&T Stadium", stadiumView: "/stadiums/AT&T.png", city: "Dallas",
+  { id: 104, stage: "16 avos", date: "30/06", time: "14:00", home: { name: "Costa do Marfim", code: "CIV", flag: "/flags/ci.png" }, away: { name: "Noruega", code: "NOR", flag: "/flags/no.png"}, stadium: "AT&T Stadium", stadiumView: "/stadiums/AT&T.png", city: "Dallas", result: { home: 1, away: 2 },
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=-1LksEX-4Ig" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
