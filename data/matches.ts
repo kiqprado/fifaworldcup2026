@@ -599,7 +599,7 @@ broadcasts: [
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
-  { id: 103, stage: "16 avos", date: "29/06", time: "22:00", home: { name: "Holanda", code: "NED", flag: "/flags/nl.png" }, away: { name: "Marrocos", code: "MAR", flag: "/flags/ma.png" }, stadium: "Gigante de Acero", stadiumView: "/stadiums/BBVA.png", city: "Guadalupe, Nuevo León",
+  { id: 103, stage: "16 avos", date: "29/06", time: "22:00", home: { name: "Holanda", code: "NED", flag: "/flags/nl.png" }, away: { name: "Marrocos", code: "MAR", flag: "/flags/ma.png" }, stadium: "Gigante de Acero", stadiumView: "/stadiums/BBVA.png", city: "Guadalupe, Nuevo León", result: { home: 2, away: 3}, penalty: true,
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=SWLm3YgA418" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
