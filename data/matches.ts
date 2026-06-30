@@ -614,7 +614,7 @@ broadcasts: [
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
-  { id: 105, stage: "16 avos", date: "30/06", time: "18:00", home: { name: "França", code: "FRA", flag: "/flags/fr.png" }, away: {  name: "Suécia", code: "SWE", flag: "/flags/se.png"}, stadium: "MetLife Stadium", stadiumView: "/stadiums/MetLife.png", city: "Nova York / Nova Jersey",
+  { id: 105, stage: "16 avos", date: "30/06", time: "18:00", home: { name: "França", code: "FRA", flag: "/flags/fr.png" }, away: {  name: "Suécia", code: "SWE", flag: "/flags/se.png"}, stadium: "MetLife Stadium", stadiumView: "/stadiums/MetLife.png", city: "Nova York / Nova Jersey", result: { home: 3, away: 0 },
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=4qbRFozLQhE" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
