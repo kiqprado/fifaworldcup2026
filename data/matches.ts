@@ -629,7 +629,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
   
-  { id: 107, stage: "16 avos", date: "01/07", time: "13:00", home: { name: "Inglaterra", code: "ENG", flag: "/flags/en.png" }, away: { name: "RD Congo", code: "COD", flag: "/flags/cd.png" }, stadium: "Mercedes-Benz Stadium", stadiumView: "/stadiums/Mercedes.png", city: "Atlanta",
+  { id: 107, stage: "16 avos", date: "01/07", time: "13:00", home: { name: "Inglaterra", code: "ENG", flag: "/flags/en.png" }, away: { name: "RD Congo", code: "COD", flag: "/flags/cd.png" }, stadium: "Mercedes-Benz Stadium", stadiumView: "/stadiums/Mercedes.png", city: "Atlanta", result: { home: 2, away: 1 },
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=aSXLerQStXA" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
