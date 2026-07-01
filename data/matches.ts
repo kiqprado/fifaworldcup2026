@@ -621,7 +621,7 @@ broadcasts: [
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
-  { id: 106, stage: "16 avos", date: "30/06", time: "22:00", home: { name: "México", code: "MEX", flag: "/flags/mx.png" }, away: {  name: "Equador", code: "ECU", flag: "/flags/ec.png"}, stadium: "Estadio Azteca", stadiumView: "/stadiums/Azteca.png", city: "Cidade do México",
+  { id: 106, stage: "16 avos", date: "30/06", time: "22:00", home: { name: "México", code: "MEX", flag: "/flags/mx.png" }, away: {  name: "Equador", code: "ECU", flag: "/flags/ec.png"}, stadium: "Estadio Azteca", stadiumView: "/stadiums/Azteca.png", city: "Cidade do México", result:  { home: 2, away: 0},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=FDCM9HggRlM" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
