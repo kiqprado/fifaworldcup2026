@@ -479,7 +479,6 @@ broadcasts: [
   ] 
 },
 
-
   // ── Grupo K ──
   { id: 61, group: "K", date: "17/06", time: "14:00", home: { name: "Portugal", code: "POR", flag: "/flags/pt.png" }, away:{ name: "RD Congo", code: "COD", flag: "/flags/cd.png" }, stadium: "NRG Stadium", stadiumView: "/stadiums/Nrg.png", city: "Houston", result: { home: 1, away: 1 },
   broadcasts: [
@@ -688,6 +687,48 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
   { id: 115, stage: "16 avos", date: "03/07", time: "22:30", home: { name: "Colômbia", code: "COL", flag: "/flags/co.png" }, away: { name: "Gana", code: "GHA", flag: "/flags/gh.png" }, stadium: "Arrowhead Stadium", stadiumView: "/stadiums/ArrowHead.png", city: "Kansas City",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=pgm5kUr6EVU&pp=0gcJCUwLAYcqIYzv" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]},
+
+  // -----------------------
+  // Oitavas
+  // -----------------------
+
+  { id: 116, stage: "Oitavas", date: "04/07", time: "14:00", home: { name: "Canada", code: "CAN", flag: "/flags/ca.png" }, away: { name: "Marrocos", code: "MAR", flag: "/flags/ma.png" }, stadium: "NRG Stadium", stadiumView: "/stadiums/Nrg.png", city: "Houston",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=pgm5kUr6EVU&pp=0gcJCUwLAYcqIYzv" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]},
+  { id: 117, stage: "Oitavas", date: "04/07", time: "18:00", home: { name: "Paraguai", code: "PAR", flag: "/flags/py.png" }, away: { name: "França", code: "FRA", flag: "/flags/fr.png" }, stadium: "Lincoln Financial Field", stadiumView: "/stadiums/Lincoln.png", city: "Filadélfia",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=pgm5kUr6EVU&pp=0gcJCUwLAYcqIYzv" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]},
+
+  { id: 118, stage: "Oitavas", date: "05/07", time: "17:00", home: { name: "Brasil", code: "BRA", flag: "/flags/br.png" }, away: { name: "Noruega", code: "NOR", flag: "/flags/no.png" }, stadium: "MetLife Stadium", stadiumView: "/stadiums/MetLife.png", city: "Nova York / Nova Jersey",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=pgm5kUr6EVU&pp=0gcJCUwLAYcqIYzv" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]},
+   { id: 119, stage: "Oitavas", date: "05/07", time: "21:00", home: { name: "México", code: "MEX", flag: "/flags/mx.png" }, away: { name: "Inglaterra", code: "ENG", flag: "/flags/en.png" }, stadium: "Cidade do México", stadiumView: "/stadiums/Azteca.png", city: "Cidade do México",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=pgm5kUr6EVU&pp=0gcJCUwLAYcqIYzv" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]},
+
+   { id: 121, stage: "Oitavas", date: "06/07", time: "21:00", home: { name: "Estados Unidos", code: "USA", flag: "/flags/us.png" }, away: { name: "Bélgica", code: "BEL", flag: "/flags/be.png" }, stadium: "Lumen Field", stadiumView: "/stadiums/Lumen.png", city: "Seattle",
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=pgm5kUr6EVU&pp=0gcJCUwLAYcqIYzv" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },

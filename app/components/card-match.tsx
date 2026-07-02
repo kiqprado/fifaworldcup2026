@@ -137,9 +137,9 @@ export function CardMatch({
           " />
         </div>
 
-        <div className="flex items-center justify-between text-xs text-zinc-300">
+        <div className="flex items-center justify-between text-zinc-300">
 
-          <div className="flex items-center gap-2 min-w-fit">
+          <div className="flex items-center gap-2 text-xs min-w-fit">
             <CalendarCheck size={14} />
             <span>{time} • {date}</span>
           </div>
@@ -147,12 +147,9 @@ export function CardMatch({
           {group ? (
             <Link
               href="/groups"
-              className="
-                px-2 py-0.5 rounded-md
-                bg-white/5
-                border border-white/10
-                group-hover:border-cyan-400/50
-                transition-all duration-300 ease-in-out
+              className="-ml-20 text-sm
+                text-sm font-bold uppercase text-center text-lime-300
+                tracking-widest drop-shadow-[0_0_3px_rgba(190,242,100,0.9)]
               "
             >
               Grupo {group}
@@ -160,13 +157,9 @@ export function CardMatch({
           ) : stage ? (
             <Link
               href="/death-match"
-              className="
-                px-2 py-0.5 rounded-md
-                bg-cyan-500/10
-                border border-cyan-400/30
-                text-cyan-300
-                group-hover:border-cyan-400
-                transition-all duration-300 ease-in-out
+              className="-ml-20 text-sm
+                text-sm font-bold uppercase text-center text-lime-300
+                tracking-widest drop-shadow-[0_0_3px_rgba(190,242,100,0.9)]
               "
             >
               {stage}

@@ -556,6 +556,7 @@ export default function MatchesClientPage() {
               <CardMatch
                 id={match.id}
                 group={match.group}
+                //stage={match.stage}
                 date={match.date}
                 time={match.time}
                 home={match.home}
