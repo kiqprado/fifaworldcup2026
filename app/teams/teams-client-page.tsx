@@ -160,7 +160,7 @@ export default function TeamsClientPage() {
 
       <div
         ref={gridRef}
-        className='flex flex-wrap gap-6 justify-center space-y-4 py-12'
+        className={`flex flex-wrap gap-6 justify-center space-y-4 py-12`}
       >
         {orderedTeams.map(team => (
           <div key={team.code} className='team-card'>
