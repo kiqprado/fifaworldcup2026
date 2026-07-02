@@ -386,7 +386,7 @@ export default function MatchesClientPage() {
 
       <HeaderPageTitle
         title="Partidas"
-        description="72 partidas da fase de grupos. Utilize os filtros para encontrar os jogos."
+        description="Agora é Mata-Mata raiz: quem vencer fica, quem perder volta pra casa."
       />
 
       <div className="w-full">
