@@ -636,7 +636,7 @@ broadcasts: [
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
-  { id: 108, stage: "16 avos", date: "01/07", time: "17:00", home: { name: "Bélgica", code: "BEL", flag: "/flags/be.png" }, away: { name: "Senegal", code: "SEN", flag: "/flags/sn.png" }, stadium: "Lumen Field", stadiumView: "/stadiums/Lumen.png", city: "Seattle",
+  { id: 108, stage: "16 avos", date: "01/07", time: "17:00", home: { name: "Bélgica", code: "BEL", flag: "/flags/be.png" }, away: { name: "Senegal", code: "SEN", flag: "/flags/sn.png" }, stadium: "Lumen Field", stadiumView: "/stadiums/Lumen.png", city: "Seattle", result: { home: 3, away: 2},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=JAwz4EsvJEA" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
