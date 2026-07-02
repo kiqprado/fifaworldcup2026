@@ -650,7 +650,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
 
-  { id: 110, stage: "16 avos", date: "02/07", time: "16:00", home: { name: "Espanha", code: "ESP", flag: "/flags/es.png" }, away: { name: "Áustria", code: "AUT", flag: "/flags/at.png" }, stadium: "Rose Bowl", stadiumView: "/stadiums/RoseBowl.png", city: "Los Angeles (Pasadena)",
+  { id: 110, stage: "16 avos", date: "02/07", time: "16:00", home: { name: "Espanha", code: "ESP", flag: "/flags/es.png" }, away: { name: "Áustria", code: "AUT", flag: "/flags/at.png" }, stadium: "Rose Bowl", stadiumView: "/stadiums/RoseBowl.png", city: "Los Angeles (Pasadena)", result: { home: 3, away: 0},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=__xDLB2Pi0w" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
