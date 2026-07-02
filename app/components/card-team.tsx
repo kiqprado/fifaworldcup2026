@@ -161,29 +161,45 @@ export function CardTeam({
             <Link
               href="/groups"
               title="Fique por dentro dos grupos da Copa"
-              className="flex-1 px-4 py-2
-                rounded-md border border-cyan-400
-                text-center text-sm tracking-wider text-cyan-400
+              className="group/button relative flex-1 px-4 py-2.5
+                overflow-hidden rounded-lg
+                border border-cyan-400/70 bg-zinc-950
+                text-center text-sm font-medium tracking-[0.08em] text-cyan-300
                 transition-all duration-300
-                hover:bg-cyan-400 hover:text-black
-                hover:shadow-[0_0_20px_rgba(34,211,238,0.7)]
-              "
+                hover:border-cyan-200 hover:bg-cyan-400/10 hover:text-cyan-100
+                hover:shadow-[0_0_12px_rgba(34,211,238,.35),inset_0_0_8px_rgba(34,211,238,.15)]"
             >
-              Grupo
+              <span
+                  className="absolute inset-0 
+                    bg-gradient-to-r from-transparent via-cyan-200/10 to-transparent
+                    -translate-x-full group-hover/button:translate-x-full
+                    transition-transform duration-700"
+              />
+              <span className="relative">
+                Grupo
+              </span>
             </Link>
 
             <Link
               href={`/lineup/${code}`}
               title={`Veja os detalhes da escalação de ${name}`}
-              className="flex-1 px-4 py-2
-                rounded-md border border-cyan-400
-                text-center text-sm tracking-wider text-cyan-400
+              className="group/button relative flex-1 px-4 py-2.5
+                overflow-hidden rounded-lg
+                border border-cyan-400/70 bg-zinc-950
+                text-center text-sm font-medium tracking-[0.08em] text-cyan-300
                 transition-all duration-300
-                hover:bg-cyan-400 hover:text-black
-                hover:shadow-[0_0_20px_rgba(34,211,238,0.7)]
-              "
+                hover:border-cyan-200 hover:bg-cyan-400/10 hover:text-cyan-100
+                hover:shadow-[0_0_12px_rgba(34,211,238,.35),inset_0_0_8px_rgba(34,211,238,.15)]"
             >
-              Escalação
+              <span
+                  className="absolute inset-0 
+                    bg-gradient-to-r from-transparent via-cyan-200/10 to-transparent
+                    -translate-x-full group-hover/button:translate-x-full
+                    transition-transform duration-700"
+              />
+              <span className="relative">
+                Escalação
+              </span>
             </Link>
           </div>
 
