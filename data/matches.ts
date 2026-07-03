@@ -665,7 +665,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
 
-  { id: 112, stage: "16 avos", date: "03/07", time: "00:00", home: { name: "Suiça", code: "SUI", flag: "/flags/ch.png" }, away: { name: "Argélia", code: "ALG", flag: "/flags/dz.png" }, stadium: "BC Place", stadiumView: "/stadiums/BCPlace.png", city: "Vancouver",
+  { id: 112, stage: "16 avos", date: "03/07", time: "00:00", home: { name: "Suiça", code: "SUI", flag: "/flags/ch.png" }, away: { name: "Argélia", code: "ALG", flag: "/flags/dz.png" }, stadium: "BC Place", stadiumView: "/stadiums/BCPlace.png", city: "Vancouver", result: { home: 2, away: 0},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=jzjZOLYj4oY&pp=0gcJCUwLAYcqIYzvv" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
