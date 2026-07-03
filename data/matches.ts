@@ -672,7 +672,7 @@ broadcasts: [
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
-  { id: 113, stage: "16 avos", date: "03/07", time: "15:00", home: { name: "Austrália", code: "AUS", flag: "/flags/au.png" }, away: { name: "Egito", code: "EGY", flag: "/flags/eg.png" }, stadium: "AT&T Stadium", stadiumView: "/stadiums/AT&T.png", city: "Dallas",
+  { id: 113, stage: "16 avos", date: "03/07", time: "15:00", home: { name: "Austrália", code: "AUS", flag: "/flags/au.png" }, away: { name: "Egito", code: "EGY", flag: "/flags/eg.png" }, stadium: "AT&T Stadium", stadiumView: "/stadiums/AT&T.png", city: "Dallas", result: { home: 2, away: 4}, penalty: true,
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=OwVHSCdF37g" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
