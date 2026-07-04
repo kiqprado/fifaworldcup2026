@@ -686,7 +686,7 @@ broadcasts: [
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
-  { id: 115, stage: "16 avos", date: "03/07", time: "22:30", home: { name: "Colômbia", code: "COL", flag: "/flags/co.png" }, away: { name: "Gana", code: "GHA", flag: "/flags/gh.png" }, stadium: "Arrowhead Stadium", stadiumView: "/stadiums/ArrowHead.png", city: "Kansas City",
+  { id: 115, stage: "16 avos", date: "03/07", time: "22:30", home: { name: "Colômbia", code: "COL", flag: "/flags/co.png" }, away: { name: "Gana", code: "GHA", flag: "/flags/gh.png" }, stadium: "Arrowhead Stadium", stadiumView: "/stadiums/ArrowHead.png", city: "Kansas City", result: { home: 1, away: 0},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=pgm5kUr6EVU&pp=0gcJCUwLAYcqIYzv" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
