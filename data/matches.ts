@@ -698,7 +698,7 @@ broadcasts: [
   // Oitavas
   // -----------------------
 
-  { id: 116, stage: "Oitavas", date: "04/07", time: "14:00", home: { name: "Canada", code: "CAN", flag: "/flags/ca.png" }, away: { name: "Marrocos", code: "MAR", flag: "/flags/ma.png" }, stadium: "NRG Stadium", stadiumView: "/stadiums/Nrg.png", city: "Houston",
+  { id: 116, stage: "Oitavas", date: "04/07", time: "14:00", home: { name: "Canada", code: "CAN", flag: "/flags/ca.png" }, away: { name: "Marrocos", code: "MAR", flag: "/flags/ma.png" }, stadium: "NRG Stadium", stadiumView: "/stadiums/Nrg.png", city: "Houston", result: { home: 0, away: 3},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=mOv8dFdAqI0" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
