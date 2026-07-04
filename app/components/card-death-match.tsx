@@ -321,7 +321,7 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
 
               <div 
                 className={`flex items-center gap-3
-                ${mobileRangeFull ? 'min-w-[222px]' : ''}`}
+                ${mobileRangeFull ? 'flex-1' : ''}`}
               >
                 <Image
                   src={match.home.flag}
@@ -351,11 +351,11 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
 
               {finished && (
                 <span
-                  className={
-                    homeWinner
+                  className={`
+                    ${homeWinner
                       ? 'text-emerald-300 font-bold'
-                      : 'text-red-400'
-                  }
+                      : 'text-red-400'}
+                  `}
                 >
                   {homeWinner ? 'Classificado' : 'Eliminado'}
                 </span>
@@ -393,7 +393,7 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
 
               <div 
                 className={`flex items-center gap-3
-                ${mobileRangeFull ? 'min-w-[222px]' : ''}`}
+                ${mobileRangeFull ? 'flex-1' : ''}`}
               >
 
                 <Image
@@ -424,11 +424,11 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
 
               {finished && (
                 <span
-                  className={
-                    awayWinner
+                  className={`
+                    ${awayWinner
                       ? 'text-emerald-300 font-bold'
-                      : 'text-red-400'
-                  }
+                      : 'text-red-400'}
+                  `}
                 >
                   {awayWinner ? 'Classificado' : 'Eliminado'}
                 </span>

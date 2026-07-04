@@ -204,7 +204,7 @@ export default function DeathMatchClientPage({ teamCode }: IDeathMatchClientPage
     {hasAnyResult ? (
       <div
         ref={gridRef}
-        className={`flex gap-8 py-8 justify-center 
+        className={`w-full flex gap-8 py-8 justify-center items-center 
           ${mobileRangeFull ? 'flex-col px-4' : 'flex-wrap'}
           ${view !== 'list' && desktopRangeFull ? 'px-26' : ''}
         `}
