@@ -743,4 +743,12 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
 
+  { id: 122, stage: "Oitavas", date: "07/07", time: "13:00", home: { name: "Argentina", code: "ARG", flag: "/flags/ar.png" }, away: { name: "Egito", code: "EGY", flag: "/flags/eg.png" }, stadium: "BC Place", stadiumView: "/stadiums/BCPlace.png", city: "Vancouver",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=pgm5kUr6EVU&pp=0gcJCUwLAYcqIYzv" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]},
+
 ];
