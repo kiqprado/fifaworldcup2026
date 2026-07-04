@@ -129,8 +129,8 @@ export default function DeathMatchClientPage({ teamCode }: IDeathMatchClientPage
     <LinkToBack href="/" />
 
     <HeaderPageTitle
-      title="Mata-Mata"
-      description="As seleções classificadas seguem na disputa em confrontos eliminatórios."
+      title="Oitavas de final"
+      description="A hora da verdade: os 16 sobreviventes em busca da glória."
     />
 
     <div className={`${mobileRangeFull ? 'w-full' : 'w-[80%]'}`}>
@@ -223,7 +223,7 @@ export default function DeathMatchClientPage({ teamCode }: IDeathMatchClientPage
           </div>
         ) : (
           matches
-            .filter(match => match.stage === '16 avos')
+            .filter(match => match.stage === 'Oitavas')
             .map(match => (
               <div
                 key={match.id}
