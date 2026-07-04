@@ -705,7 +705,7 @@ broadcasts: [
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
-  { id: 117, stage: "Oitavas", date: "04/07", time: "18:00", home: { name: "Paraguai", code: "PAR", flag: "/flags/py.png" }, away: { name: "França", code: "FRA", flag: "/flags/fr.png" }, stadium: "Lincoln Financial Field", stadiumView: "/stadiums/Lincoln.png", city: "Filadélfia",
+  { id: 117, stage: "Oitavas", date: "04/07", time: "18:00", home: { name: "Paraguai", code: "PAR", flag: "/flags/py.png" }, away: { name: "França", code: "FRA", flag: "/flags/fr.png" }, stadium: "Lincoln Financial Field", stadiumView: "/stadiums/Lincoln.png", city: "Filadélfia", result: { home: 0, away: 1},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=iE1_W7Oj_LA" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
