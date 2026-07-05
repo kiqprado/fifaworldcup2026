@@ -713,7 +713,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
 
-  { id: 118, stage: "Oitavas", date: "05/07", time: "17:00", home: { name: "Brasil", code: "BRA", flag: "/flags/br.png" }, away: { name: "Noruega", code: "NOR", flag: "/flags/no.png" }, stadium: "MetLife Stadium", stadiumView: "/stadiums/MetLife.png", city: "Nova York / Nova Jersey",
+  { id: 118, stage: "Oitavas", date: "05/07", time: "17:00", home: { name: "Brasil", code: "BRA", flag: "/flags/br.png" }, away: { name: "Noruega", code: "NOR", flag: "/flags/no.png" }, stadium: "MetLife Stadium", stadiumView: "/stadiums/MetLife.png", city: "Nova York / Nova Jersey", result: { home: 1, away: 2},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=nJtyshk43Xo" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
