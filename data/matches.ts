@@ -728,7 +728,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
 
-  { id: 120, stage: "Oitavas", date: "06/07", time: "16:00", home: { name: "Portugal", code: "POR", flag: "/flags/pt.png" }, away: { name: "Espanha", code: "ESP", flag: "/flags/es.png" }, stadium: "AT&T Stadium", stadiumView: "/stadiums/AT&T.png", city: "Dallas",
+  { id: 120, stage: "Oitavas", date: "06/07", time: "16:00", home: { name: "Portugal", code: "POR", flag: "/flags/pt.png" }, away: { name: "Espanha", code: "ESP", flag: "/flags/es.png" }, stadium: "AT&T Stadium", stadiumView: "/stadiums/AT&T.png", city: "Dallas", result: { home: 0, away: 1},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=pgm5kUr6EVU&pp=0gcJCUwLAYcqIYzv" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
