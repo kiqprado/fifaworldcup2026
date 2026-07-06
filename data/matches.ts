@@ -720,7 +720,7 @@ broadcasts: [
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
-   { id: 119, stage: "Oitavas", date: "05/07", time: "21:00", home: { name: "México", code: "MEX", flag: "/flags/mx.png" }, away: { name: "Inglaterra", code: "ENG", flag: "/flags/en.png" }, stadium: "Cidade do México", stadiumView: "/stadiums/Azteca.png", city: "Cidade do México",
+   { id: 119, stage: "Oitavas", date: "05/07", time: "21:00", home: { name: "México", code: "MEX", flag: "/flags/mx.png" }, away: { name: "Inglaterra", code: "ENG", flag: "/flags/en.png" }, stadium: "Cidade do México", stadiumView: "/stadiums/Azteca.png", city: "Cidade do México", result: { home: 2, away: 3 },
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=WFjglRQSPd8" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
