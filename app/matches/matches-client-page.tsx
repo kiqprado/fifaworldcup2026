@@ -18,7 +18,7 @@ import {
   CreateMatchDate,
   IsSameDate,
   AddDays
-} from '@/app/utils/nomalize-date'
+} from '@/app/utils/normalize-date'
 
 import { NormalizeText } from '../utils/normalize-input-search'
 import { useBreakpoint } from '@/app/hook/use-media-query'

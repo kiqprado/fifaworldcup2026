@@ -758,4 +758,25 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
 
+  // -----------------------
+  // Oitavas
+  // -----------------------
+
+  { id: 124, stage: "Quartas", date: "09/07", time: "17:00", home: { name: "França", code: "FRA", flag: "/flags/fr.png" }, away: { name: "Marrocos", code: "MAR", flag: "/flags/ma.png" }, stadium: "Gillette Stadium", stadiumView: "/stadiums/Gillette.png", city: "Boston (Foxborough)",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=pgm5kUr6EVU&pp=0gcJCUwLAYcqIYzv" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]},
+
+  { id: 126, stage: "Quartas", date: "11/07", time: "18:00", home: { name: "Noruega", code: "NOR", flag: "/flags/no.png" }, away: { name: "Inglaterra", code: "ENG", flag: "/flags/en.png" }, stadium: "Hard Rock Stadium", stadiumView: "/stadiums/HardRock.png", city: "Miami",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=pgm5kUr6EVU&pp=0gcJCUwLAYcqIYzv" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]},
+
+
 ];

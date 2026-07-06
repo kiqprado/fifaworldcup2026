@@ -154,7 +154,7 @@ export function CardMatch({
             >
               Grupo {group}
             </Link>
-          ) : stage && stage === "Oitavas" ? (
+          ) : stage ? (
             <Link
               href="/death-match"
               className="-ml-20 text-sm
