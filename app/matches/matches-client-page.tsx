@@ -386,7 +386,8 @@ export default function MatchesClientPage() {
 
       <HeaderPageTitle
         title="Partidas"
-        description="Agora é Mata-Mata raiz: quem vencer fica, quem perder volta pra casa."
+        description="Oito camisas pesadas lutando pela sobrevivência. Só os fortes chegam às semis"
+        //"Agora é Mata-Mata raiz: quem vencer fica, quem perder volta pra casa." //
       />
 
       <div className="w-full">
@@ -503,26 +504,28 @@ export default function MatchesClientPage() {
                   </div>
                 </div>
                 
-                <div
-                  className="
-                    min-w-fit flex items-center px-4
-                    rounded-2xl border border-zinc-700
-                    bg-zinc-900/90 backdrop-blur-xl
-                  "
-                >
-                  <div className="flex items-center gap-3">
-                    <ArrowDownAZ size={18} className="text-zinc-400" />
-                    <select
-                      value={sortMode}
-                      onChange={e => setSortMode(e.target.value as TSortMode)}
-                      className="appearance-none bg-transparent text-sm text-zinc-200 outline-none cursor-pointer"
-                    >
-                      <option value="group">Grupo A-Z</option>
-                      <option value="team">Seleção A-Z</option>
-                      <option value="favorites">Favoritos</option>
-                    </select>
-                  </div>
-                </div>
+                {/* BOTAO DE PROCURA POR GRUPO QUE SERÁ ATIVADO APÓS TÉRMINO DA COMPETIÇÃO PARA CATALOGO
+                  <div
+                    className="
+                      min-w-fit flex items-center px-4
+                      rounded-2xl border border-zinc-700
+                      bg-zinc-900/90 backdrop-blur-xl
+                    "
+                  >
+                    <div className="flex items-center gap-3">
+                      <ArrowDownAZ size={18} className="text-zinc-400" />
+                      <select
+                        value={sortMode}
+                        onChange={e => setSortMode(e.target.value as TSortMode)}
+                        className="appearance-none bg-transparent text-sm text-zinc-200 outline-none cursor-pointer"
+                      >
+                        <option value="group">Grupo A-Z</option>
+                        <option value="team">Seleção A-Z</option>
+                        <option value="favorites">Favoritos</option>
+                      </select>
+                    </div>
+                  </div> 
+                */}
 
               </div>
             </div>
@@ -531,18 +534,12 @@ export default function MatchesClientPage() {
       </div>
 
       <div
-        className={`
-          flex flex-wrap gap-6 py-12
-          ${
-            mobileRangeFull
-              ? 'px-6'
-              : ''
-          }
-          justify-center
-        `}
+        className={`flex flex-wrap gap-6 py-12
+          ${mobileRangeFull ? 'px-6' : ''}
+          justify-center`}
       >
-        {sortedMatches.map(
-          (match, index) => (
+        {sortedMatches.length > 0 ? (
+          sortedMatches.map((match, index) => (
             <div
               key={match.id}
               ref={el => {if (el) {cardsRef.current[index] = el}}}
@@ -556,26 +553,43 @@ export default function MatchesClientPage() {
                 home={match.home}
                 away={match.away}
                 stadium={match.stadium}
-                stadiumView={
-                  match.stadiumView
-                }
+                stadiumView={match.stadiumView}
                 result={match.result}
                 city={match.city}
                 broadcasts={match.broadcasts}
                 penalty={match.penalty}
-                highlighted={
-                  match.id ===
-                  highlightedMatchId
-                }
-                isFavorite={favorites.includes(
-                  match.id
-                )}
-                onFavorite={
-                  HandleFavorite
-                }
+                highlighted={match.id === highlightedMatchId}
+                isFavorite={favorites.includes(match.id)}
+                onFavorite={HandleFavorite}
               />
             </div>
-          )
+          ))
+        ) : searchValue.trim() ? (
+          <div
+            className="w-full max-w-2xl px-8 py-8
+              rounded-2xl border border-zinc-800
+              bg-zinc-950/70 text-center"
+          >
+            <h3 className="text-lg font-semibold text-red-600">
+              Seleção não encontrada
+            </h3>
+            <p className="mt-2 text-zinc-400">
+              Nenhuma Seleção corresponde à sua pesquisa nesta fase da competição.
+            </p>
+          </div>
+        ) : (
+          <div
+            className="w-full max-w-2xl px-8 py-8 text-center
+              rounded-2xl border border-amber-400/15 bg-zinc-950/70"
+          >
+            <h3 className="text-lg font-semibold text-amber-300">
+              Nenhuma partida programada
+            </h3>
+            <p className="mt-2 text-justify text-zinc-400">
+              Não há partidas neste dia. Aproveite para conferir o calendário completo
+              e acompanhar os próximos confrontos.
+            </p>
+          </div>
         )}
       </div>
 
