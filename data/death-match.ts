@@ -2,13 +2,14 @@ import {ICardTeamsOnDeathMatch }  from '@/app/components/card-death-match'
 
 export const deathMatch: ICardTeamsOnDeathMatch = {
   teams: [
+    /* OITAVAS
     {
       name: 'México',
       flag: '/flags/mx.png',
       code: 'MEX',
       position: '1° grupo A'
     },
-    /* 16 avos
+    / 16 avos
     {
       name: 'África do Sul',
       flag: '/flags/za.png',
@@ -21,6 +22,7 @@ export const deathMatch: ICardTeamsOnDeathMatch = {
       code: 'SUI',
       position: '1° grupo B'
     },
+    /* OITAVAS
     {
       name: 'Canadá',
       flag: '/flags/ca.png',
@@ -33,20 +35,22 @@ export const deathMatch: ICardTeamsOnDeathMatch = {
       flag: '/flags/ba.png',
       code: 'BIH',
       position: '3° grupo B'
-    }, */
+    }, 
+    / OITAVAS
     {
       name: 'Brasil',
       flag: '/flags/br.png',
       code: 'BRA',
       position: '1° grupo C'
-    },
+    }, */
     {
       name: 'Marrocos',
       flag: '/flags/ma.png',
       code: 'MAR',
       position: '2° grupo C'
     },
-     {
+    /* OITAVAS
+    {
       name: 'Estados Unidos',
       flag: '/flags/us.png',
       code: 'USA',
@@ -58,7 +62,8 @@ export const deathMatch: ICardTeamsOnDeathMatch = {
       flag: '/flags/au.png',
       code: 'AUS',
       position: '2° grupo D'
-    }, */
+    },
+    / OITAVAS
     {
       name: 'Paraguai',
       flag: '/flags/py.png',
@@ -108,12 +113,13 @@ export const deathMatch: ICardTeamsOnDeathMatch = {
       code: 'BEL',
       position: '1° grupo G'
     },
+    /* OITAVAS
     {
       name: 'Egito',
       flag: '/flags/eg.png',
       code: 'EGY',
       position: '2° grupo G'
-    },
+    }, */
     {
       name: 'Espanha',
       flag: '/flags/es.png',
@@ -164,20 +170,22 @@ export const deathMatch: ICardTeamsOnDeathMatch = {
       flag: '/flags/dz.png',
       code: 'ALG',
       position: '3° grupo J'
-    }, */
+    },
+    / OITAVAS
     {
       name: 'Colômbia',
       flag: '/flags/co.png',
       code: 'COL',
       position: '1° grupo K'
     },
+    /* OITAVAS
     {
       name: 'Portugal',
       flag: '/flags/pt.png',
       code: 'PTG',
       position: '2° grupo K'
     },
-    /* 16 avos
+    / 16 avos
     {
       name: 'Congo',
       flag: '/flags/cd.png',

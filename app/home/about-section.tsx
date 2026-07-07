@@ -139,8 +139,8 @@ export function AboutSection() {
         <div className='about-card'>
           <CardButton
             href={'/deathmatch'}
-            title="Oitavas de final"
-            about="16 Seleções disputando a permanência na Copa"
+            title="Quartas de final"
+            about="Coração no limite: vale vaga entre os 4 melhores!"
             icon={Trophy}
             iconProps={{ className: 'text-amber-500' }}
           />

@@ -129,8 +129,8 @@ export default function DeathMatchClientPage({ teamCode }: IDeathMatchClientPage
     <LinkToBack href="/" />
 
     <HeaderPageTitle
-      title="Oitavas de final"
-      description="A hora da verdade: os 16 sobreviventes em busca da glória."
+      title="Quartas de final"
+      description="A glória está logo ali. Oito gigantes em campo, quatro vagas na história. Quem vai resistir?"
     />
 
     <div className={`${mobileRangeFull ? 'w-full' : 'w-[80%]'}`}>
