@@ -223,7 +223,7 @@ export default function DeathMatchClientPage({ teamCode }: IDeathMatchClientPage
           </div>
         ) : (
           matches
-            .filter(match => match.stage === 'Oitavas')
+            .filter(match => match.stage === 'Quartas')
             .map(match => (
               <div
                 key={match.id}

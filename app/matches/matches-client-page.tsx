@@ -545,13 +545,7 @@ export default function MatchesClientPage() {
           (match, index) => (
             <div
               key={match.id}
-              ref={el => {
-                if (el) {
-                  cardsRef.current[
-                    index
-                  ] = el
-                }
-              }}
+              ref={el => {if (el) {cardsRef.current[index] = el}}}
             >
               <CardMatch
                 id={match.id}
