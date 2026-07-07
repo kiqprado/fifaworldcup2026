@@ -735,7 +735,7 @@ broadcasts: [
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
-   { id: 121, stage: "Oitavas", date: "06/07", time: "21:00", home: { name: "Estados Unidos", code: "USA", flag: "/flags/us.png" }, away: { name: "Bélgica", code: "BEL", flag: "/flags/be.png" }, stadium: "Lumen Field", stadiumView: "/stadiums/Lumen.png", city: "Seattle",
+   { id: 121, stage: "Oitavas", date: "06/07", time: "21:00", home: { name: "Estados Unidos", code: "USA", flag: "/flags/us.png" }, away: { name: "Bélgica", code: "BEL", flag: "/flags/be.png" }, stadium: "Lumen Field", stadiumView: "/stadiums/Lumen.png", city: "Seattle", result: { home: 1, away: 4},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=lACWwfL5QaI" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
@@ -763,6 +763,14 @@ broadcasts: [
   // -----------------------
 
   { id: 124, stage: "Quartas", date: "09/07", time: "17:00", home: { name: "França", code: "FRA", flag: "/flags/fr.png" }, away: { name: "Marrocos", code: "MAR", flag: "/flags/ma.png" }, stadium: "Gillette Stadium", stadiumView: "/stadiums/Gillette.png", city: "Boston (Foxborough)",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=pgm5kUr6EVU&pp=0gcJCUwLAYcqIYzv" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]},
+
+  { id: 125, stage: "Quartas", date: "10/07", time: "18:00", home: { name: "Espanha", code: "ESP", flag: "/flags/es.png" }, away: { name: "Bélgica", code: "BEL", flag: "/flags/be.png" }, stadium: "SoFi Stadium", stadiumView: "/stadiums/Sofi.png", city: "Los Angeles",
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=pgm5kUr6EVU&pp=0gcJCUwLAYcqIYzv" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
