@@ -763,7 +763,7 @@ broadcasts: [
   // Oitavas
   // -----------------------
 
-  { id: 124, stage: "Quartas", date: "09/07", time: "17:00", home: { name: "França", code: "FRA", flag: "/flags/fr.png" }, away: { name: "Marrocos", code: "MAR", flag: "/flags/ma.png" }, stadium: "Gillette Stadium", stadiumView: "/stadiums/Gillette.png", city: "Boston (Foxborough)",
+  { id: 124, stage: "Quartas", date: "09/07", time: "17:00", home: { name: "França", code: "FRA", flag: "/flags/fr.png" }, away: { name: "Marrocos", code: "MAR", flag: "/flags/ma.png" }, stadium: "Gillette Stadium", stadiumView: "/stadiums/Gillette.png", city: "Boston (Foxborough)", result: { home: 2, away: 0},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=WP7qXzta_a0" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
