@@ -771,7 +771,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
 
-  { id: 125, stage: "Quartas", date: "10/07", time: "18:00", home: { name: "Espanha", code: "ESP", flag: "/flags/es.png" }, away: { name: "Bélgica", code: "BEL", flag: "/flags/be.png" }, stadium: "SoFi Stadium", stadiumView: "/stadiums/Sofi.png", city: "Los Angeles",
+  { id: 125, stage: "Quartas", date: "10/07", time: "18:00", home: { name: "Espanha", code: "ESP", flag: "/flags/es.png" }, away: { name: "Bélgica", code: "BEL", flag: "/flags/be.png" }, stadium: "SoFi Stadium", stadiumView: "/stadiums/Sofi.png", city: "Los Angeles", result: { home: 2, away: 1 },
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=54apQSJpf0A" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
