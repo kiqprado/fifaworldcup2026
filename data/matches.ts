@@ -787,7 +787,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
 
-  { id: 127, stage: "Quartas", date: "11/07", time: "22:00", home: { name: "Argentina", code: "ARG", flag: "/flags/ar.png" }, away: { name: "Suiça", code: "SUI", flag: "/flags/ch.png" }, stadium: "Arrowhead Stadium", stadiumView: "/stadiums/ArrowHead.png", city: "Kansas City",
+  { id: 127, stage: "Quartas", date: "11/07", time: "22:00", home: { name: "Argentina", code: "ARG", flag: "/flags/ar.png" }, away: { name: "Suiça", code: "SUI", flag: "/flags/ch.png" }, stadium: "Arrowhead Stadium", stadiumView: "/stadiums/ArrowHead.png", city: "Kansas City", result: { home: 3, away: 1},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=8nQWMkCOET4" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
