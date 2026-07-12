@@ -15,13 +15,14 @@ export const deathMatch: ICardTeamsOnDeathMatch = {
       flag: '/flags/za.png',
       code: 'RSA',
       position: '2° grupo A'
-    },*/
+    },/
+    / QUARTAS
     {
       name: 'Suíça',
       flag: '/flags/ch.png',
       code: 'SUI',
       position: '1° grupo B'
-    },
+    }, */
     /* OITAVAS
     {
       name: 'Canadá',
@@ -42,7 +43,8 @@ export const deathMatch: ICardTeamsOnDeathMatch = {
       flag: '/flags/br.png',
       code: 'BRA',
       position: '1° grupo C'
-    }, */
+    }, /
+    / QUARTAS
     {
       name: 'Marrocos',
       flag: '/flags/ma.png',
@@ -106,7 +108,8 @@ export const deathMatch: ICardTeamsOnDeathMatch = {
       flag: '/flags/se.png',
       code: 'SWE',
       position: '3° grupo F'
-    }, */
+    }, /
+    / QUARTAS
     {
       name: 'Bélgica',
       flag: '/flags/be.png',
@@ -139,6 +142,7 @@ export const deathMatch: ICardTeamsOnDeathMatch = {
       code: 'FRA',
       position: '1° grupo I'
     },
+    /* QUARTAS
     {
       name: 'Noruega',
       flag: '/flags/no.png',
