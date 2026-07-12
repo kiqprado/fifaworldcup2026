@@ -129,9 +129,10 @@ export default function DeathMatchClientPage({ teamCode }: IDeathMatchClientPage
     <LinkToBack href="/" />
 
     <HeaderPageTitle
-      title="Quartas de final"
-      description="A glória está logo ali. Oito gigantes em campo, quatro vagas na história. Quem vai resistir?"
+      title="Semifinais"
+      description="Quatro vagas preenchidas. É sangue, suor e vaga na decisão, quem vai resistir?"
     />
+    {/*A glória está logo ali. Oito gigantes em campo, quatro vagas na história. Quem vai resistir?*/}
 
     <div className={`${mobileRangeFull ? 'w-full' : 'w-[80%]'}`}>
       <div

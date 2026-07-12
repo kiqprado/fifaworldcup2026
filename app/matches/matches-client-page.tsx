@@ -386,7 +386,7 @@ export default function MatchesClientPage() {
 
       <HeaderPageTitle
         title="Partidas"
-        description="Oito camisas pesadas lutando pela sobrevivência. Só os fortes chegam às semis"
+        description="Quatro Países e último obstáculo antes de lutar pelo topo do mundo."
         //"Agora é Mata-Mata raiz: quem vencer fica, quem perder volta pra casa." //
       />
 
