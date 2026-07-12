@@ -139,7 +139,7 @@ export function AboutSection() {
         <div className='about-card'>
           <CardButton
             href={'/deathmatch'}
-            title="Semifinais."
+            title="Semifinais"
             about="Guerra de gigantes. Quem vai pra decisão?"
             icon={Trophy}
             iconProps={{ className: 'text-amber-500' }}
