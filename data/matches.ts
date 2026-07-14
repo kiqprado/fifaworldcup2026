@@ -801,7 +801,7 @@ broadcasts: [
 
   { id: 128, stage: "Semifinal", date: "14/07", time: "16:00", home: { name: "França", code: "FRA", flag: "/flags/fr.png" }, away: { name: "Espanha", code: "ESP", flag: "/flags/es.png" }, stadium: "AT&T Stadium", stadiumView: "/stadiums/AT&T.png", city: "Dallas",
   broadcasts: [
-    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=8nQWMkCOET4" },
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=oT27XPYJo_U" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
@@ -809,7 +809,7 @@ broadcasts: [
 
   { id: 129, stage: "Semifinal", date: "15/07", time: "16:00", home: { name: "Inglaterra", code: "ENG", flag: "/flags/en.png" }, away: { name: "Argentina", code: "ARG", flag: "/flags/ar.png" }, stadium: "Mercedes-Benz Stadium", stadiumView: "/stadiums/Mercedes.png", city: "Atlanta",
   broadcasts: [
-    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=8nQWMkCOET4" },
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=QcmQ_zCf8vc" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
     { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
