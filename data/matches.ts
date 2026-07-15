@@ -807,7 +807,23 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
 
-  { id: 129, stage: "Semifinal", date: "15/07", time: "16:00", home: { name: "Inglaterra", code: "ENG", flag: "/flags/en.png" }, away: { name: "Argentina", code: "ARG", flag: "/flags/ar.png" }, stadium: "Mercedes-Benz Stadium", stadiumView: "/stadiums/Mercedes.png", city: "Atlanta",
+  { id: 129, stage: "Semifinal", date: "15/07", time: "16:00", home: { name: "Inglaterra", code: "ENG", flag: "/flags/en.png" }, away: { name: "Argentina", code: "ARG", flag: "/flags/ar.png" }, stadium: "Mercedes-Benz Stadium", stadiumView: "/stadiums/Mercedes.png", city: "Atlanta", result: { home: 1, away: 2},
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=QcmQ_zCf8vc" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]},
+
+  { id: 130, stage: "Terceiro Lugar", date: "18/07", time: "18:00", home: { name: "França", code: "FRA", flag: "/flags/fr.png" }, away: { name: "Inglaterra", code: "ENG", flag: "/flags/en.png" }, stadium: "Hard Rock Stadium", stadiumView: "/stadiums/HardRock.png", city: "Miami",
+  broadcasts: [
+    { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=QcmQ_zCf8vc" },
+    { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
+    { name: "ge TV", logo: "/midia/getv.png", url: "https://ge.globo.com/"},
+    { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
+  ]},
+
+  { id: 131, stage: "Final", date: "19/07", time: "16:00", home: {name: "Espanha", code: "ESP", flag: "/flags/es.png" }, away: {  name: "Argentina", code: "ARG", flag: "/flags/ar.png"}, stadium: "MetLife Stadium", stadiumView: "/stadiums/MetLife.png", city: "Nova York / Nova Jersey",
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=QcmQ_zCf8vc" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },
