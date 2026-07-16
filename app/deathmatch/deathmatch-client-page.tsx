@@ -129,10 +129,12 @@ export default function DeathMatchClientPage({ teamCode }: IDeathMatchClientPage
     <LinkToBack href="/" />
 
     <HeaderPageTitle
-      title="Semifinais"
-      description="Quatro vagas preenchidas. É sangue, suor e vaga na decisão, quem vai resistir?"
+      title="Finais" 
+      description="O mundo vai parar. Dois gigantes, um destino: a taça mais cobiçada do planeta."
     />
-    {/*A glória está logo ali. Oito gigantes em campo, quatro vagas na história. Quem vai resistir?*/}
+    {/*
+    - Quatro vagas preenchidas. É sangue, suor e vaga na decisão, quem vai resistir?
+    - A glória está logo ali. Oito gigantes em campo, quatro vagas na história. Quem vai resistir?*/}
 
     <div className={`${mobileRangeFull ? 'w-full' : 'w-[80%]'}`}>
       <div
@@ -224,7 +226,7 @@ export default function DeathMatchClientPage({ teamCode }: IDeathMatchClientPage
           </div>
         ) : (
           matches
-            .filter(match => match.stage === 'Terceiro Lugar' || 'Final')
+            .filter(match => match.stage === '3° Lugar' || match.stage === 'Final')
             .map(match => (
               <div
                 key={match.id}

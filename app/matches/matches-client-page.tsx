@@ -191,7 +191,7 @@ export default function MatchesClientPage() {
       case 'Semifinal':
         return 4
 
-      case 'Terceiro Lugar':
+      case '3° Lugar':
         return 5
 
       case 'Final':
@@ -386,7 +386,7 @@ export default function MatchesClientPage() {
 
       <HeaderPageTitle
         title="Partidas"
-        description="Quatro Países e um último obstáculo antes de lutar pelo topo do mundo."
+        description="Quatro Países e a briga para subir ao pódio."
         //"Agora é Mata-Mata raiz: quem vencer fica, quem perder volta pra casa." //
       />
 
