@@ -357,7 +357,14 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
                       : 'text-red-400'}
                   `}
                 >
-                  {homeWinner ? 'Classificado' : 'Eliminado'}
+                  {match.stage === '3° Lugar'
+                    ? homeWinner
+                      ? '3° Colocado'
+                      : '4° Colocado'
+                    : homeWinner
+                      ? 'Classificado'
+                      : 'Eliminado'
+                  }
                 </span>
               )}
 
@@ -430,7 +437,14 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
                       : 'text-red-400'}
                   `}
                 >
-                  {awayWinner ? 'Classificado' : 'Eliminado'}
+                  {match.stage === '3° Lugar'
+                    ? awayWinner
+                      ? '3° Colocado'
+                      : '4° Colocado'
+                    : awayWinner
+                      ? 'Classificado'
+                      : 'Eliminado'
+                  }
                 </span>
               )}
 
