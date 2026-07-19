@@ -823,7 +823,7 @@ broadcasts: [
     { name: "sportv", logo: "/midia/sportv.png", url: "https://globoplay.globo.com/sportv/ao-vivo/7339108/"}
   ]},
 
-  { id: 131, stage: "Final", date: "19/07", time: "16:00", home: {name: "Espanha", code: "ESP", flag: "/flags/es.png" }, away: {  name: "Argentina", code: "ARG", flag: "/flags/ar.png"}, stadium: "MetLife Stadium", stadiumView: "/stadiums/MetLife.png", city: "Nova York / Nova Jersey",
+  { id: 131, stage: "Final", date: "19/07", time: "16:00", home: {name: "Espanha", code: "ESP", flag: "/flags/es.png" }, away: {  name: "Argentina", code: "ARG", flag: "/flags/ar.png"}, stadium: "MetLife Stadium", stadiumView: "/stadiums/MetLife.png", city: "Nova York / Nova Jersey", result: { home: 1, away: 0},
   broadcasts: [
     { name: "CazéTV", logo: "/midia/caze-tv.png", url: "https://www.youtube.com/watch?v=QcmQ_zCf8vc" },
     { name: "SBT Sports", logo: "/midia/sbtsports.png", url: "https://sports.sbt.com.br/" },

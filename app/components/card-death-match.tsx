@@ -205,6 +205,9 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
   const homeWinner = finished && match.result!.home > match.result!.away
   const awayWinner = finished && match.result!.away > match.result!.home
 
+  const isThirdPlace = match.stage === '3° Lugar'
+  const isFinal = match.stage === 'Final'
+
    // BREAKPOINTS INDIVIDUALS
     const isMobileXS = useBreakpoint('mobileXS')
     const isMobileSM = useBreakpoint('mobileSM')
@@ -296,25 +299,17 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
             <div
               className={`flex items-center justify-between px-4 py-2
                 transition-all duration-300
-                ${
-                  !finished
-                    ? `
-                      bg-zinc-900
-                    `
+                ${!finished
+                    ? 'bg-zinc-900'
                     : homeWinner
-                      ? `
-                        bg-emerald-700/30
-                        border-l-4
-                        border-emerald-400
-                        shadow-[inset_0_0_18px_rgba(16,185,129,.15)]
-                      `
-                      : `
-                        bg-red-950/40
-                        border-l-4
-                        border-red-500
-                        opacity-70
-                        shadow-[inset_0_0_18px_rgba(239,68,68,.15)]
-                      `
+                      ? isFinal
+                        ? 'bg-yellow-500/20 border-l-4 border-yellow-400 shadow-[inset_0_0_18px_rgba(250,204,21,.25)]'
+                        : isThirdPlace
+                          ? 'bg-orange-700/20 border-l-4 border-orange-400 shadow-[inset_0_0_18px_rgba(251,146,60,.25)]'
+                          : 'bg-emerald-700/30 border-l-4 border-emerald-400 shadow-[inset_0_0_18px_rgba(16,185,129,.15)]'
+                      : isFinal
+                        ? 'bg-slate-400/15 border-l-4 border-slate-300 shadow-[inset_0_0_18px_rgba(203,213,225,.18)]'
+                        : 'bg-red-950/40 border-l-4 border-red-500 opacity-70 shadow-[inset_0_0_18px_rgba(239,68,68,.15)]'
                 }
               `}
             >
@@ -329,9 +324,11 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
                   width={46}
                   height={46}
                   className={
-                    finished && !homeWinner
-                      ? 'grayscale brightness-75'
-                      : ''
+                   finished && !homeWinner
+                    ? isFinal
+                      ? 'brightness-90'
+                      : 'grayscale brightness-75'
+                    : ''
                   }
                 />
 
@@ -339,9 +336,17 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
                   href={`/lineup/${match.home.code}`}
                   target='_blank'
                   className={
-                    finished && !homeWinner
-                      ? 'tracking-wide text-zinc-500'
-                      : 'font-semibold tracking-wide'
+                    finished
+                    ? homeWinner
+                      ? isFinal
+                        ? 'font-semibold tracking-wide text-yellow-100'
+                        : isThirdPlace
+                          ? 'font-semibold tracking-wide text-orange-100'
+                          : 'font-semibold tracking-wide'
+                      : isFinal
+                        ? 'tracking-wide text-slate-300'
+                        : 'tracking-wide text-zinc-500'
+                    : 'font-semibold tracking-wide'
                   }
                 >
                   {match.home.name}
@@ -353,17 +358,28 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
                 <span
                   className={`
                     ${homeWinner
-                      ? 'text-emerald-300 font-bold'
-                      : 'text-red-400'}
+                        ? isFinal
+                          ? 'text-yellow-300 font-bold'
+                          : isThirdPlace
+                            ? 'text-orange-300 font-bold'
+                            : 'text-emerald-300 font-bold'
+                        : isFinal
+                          ? 'text-slate-200 font-bold'
+                          : 'text-red-400'
+                      }
                   `}
                 >
-                  {match.stage === '3° Lugar'
+                  {isFinal
                     ? homeWinner
-                      ? '3° Colocado'
-                      : '4° Colocado'
-                    : homeWinner
-                      ? 'Classificado'
-                      : 'Eliminado'
+                      ? 'Campeão'
+                      : 'Vice-Campeão'
+                    : isThirdPlace
+                      ? homeWinner
+                        ? '3° Colocado'
+                        : '4° Colocado'
+                      : homeWinner
+                        ? 'Classificado'
+                        : 'Eliminado'
                   }
                 </span>
               )}
@@ -375,25 +391,17 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
             <div
               className={`flex items-center justify-between px-4 py-2
                 transition-all duration-300
-                ${
-                  !finished
-                    ? `
-                      bg-zinc-900
-                    `
+                ${!finished
+                    ? 'bg-zinc-900'
                     : awayWinner
-                      ? `
-                        bg-emerald-700/30
-                        border-l-4
-                        border-emerald-400
-                        shadow-[inset_0_0_18px_rgba(16,185,129,.15)]
-                      `
-                      : `
-                        bg-red-950/40
-                        border-l-4
-                        border-red-500
-                        opacity-70
-                        shadow-[inset_0_0_18px_rgba(239,68,68,.15)]
-                      `
+                      ? isFinal
+                        ? 'bg-yellow-500/20 border-l-4 border-yellow-400 shadow-[inset_0_0_18px_rgba(250,204,21,.25)]'
+                        : isThirdPlace
+                          ? 'bg-orange-700/20 border-l-4 border-orange-400 shadow-[inset_0_0_18px_rgba(251,146,60,.25)]'
+                          : 'bg-emerald-700/30 border-l-4 border-emerald-400 shadow-[inset_0_0_18px_rgba(16,185,129,.15)]'
+                      : isFinal
+                        ? 'bg-slate-400/15 border-l-4 border-slate-300 shadow-[inset_0_0_18px_rgba(203,213,225,.18)]'
+                        : 'bg-red-950/40 border-l-4 border-red-500 opacity-70 shadow-[inset_0_0_18px_rgba(239,68,68,.15)]'
                 }
               `}
             >
@@ -402,16 +410,17 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
                 className={`flex items-center gap-3
                 ${mobileRangeFull ? 'flex-1' : ''}`}
               >
-
                 <Image
                   src={match.away.flag}
                   alt={match.away.name}
                   width={46}
                   height={46}
                   className={
-                    finished && !awayWinner
-                      ? 'grayscale brightness-75'
-                      : ''
+                   finished && !awayWinner
+                    ? isFinal
+                      ? 'brightness-90'
+                      : 'grayscale brightness-75'
+                    : ''
                   }
                 />
 
@@ -419,9 +428,17 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
                   href={`/lineup/${match.away.code}`}
                   target='_blank'
                   className={
-                    finished && !awayWinner
-                      ? 'tracking-wide text-zinc-500'
-                      : 'font-semibold tracking-wide'
+                    finished
+                    ? awayWinner
+                      ? isFinal
+                        ? 'font-semibold tracking-wide text-yellow-100'
+                        : isThirdPlace
+                          ? 'font-semibold tracking-wide text-orange-100'
+                          : 'font-semibold tracking-wide'
+                      : isFinal
+                        ? 'tracking-wide text-slate-300'
+                        : 'tracking-wide text-zinc-500'
+                    : 'font-semibold tracking-wide'
                   }
                 >
                   {match.away.name}
@@ -433,17 +450,28 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
                 <span
                   className={`
                     ${awayWinner
-                      ? 'text-emerald-300 font-bold'
-                      : 'text-red-400'}
+                        ? isFinal
+                          ? 'text-yellow-300 font-bold'
+                          : isThirdPlace
+                            ? 'text-orange-300 font-bold'
+                            : 'text-emerald-300 font-bold'
+                        : isFinal
+                          ? 'text-slate-200 font-bold'
+                          : 'text-red-400'
+                      }
                   `}
                 >
-                  {match.stage === '3° Lugar'
+                  {isFinal
                     ? awayWinner
-                      ? '3° Colocado'
-                      : '4° Colocado'
-                    : awayWinner
-                      ? 'Classificado'
-                      : 'Eliminado'
+                      ? 'Campeão'
+                      : 'Vice-Campeão'
+                    : isThirdPlace
+                      ? awayWinner
+                        ? '3° Colocado'
+                        : '4° Colocado'
+                      : awayWinner
+                        ? 'Classificado'
+                        : 'Eliminado'
                   }
                 </span>
               )}
