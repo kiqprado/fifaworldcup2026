@@ -20,7 +20,7 @@ export const stadiums: IStadium[] = [
     mapsQuery: "SoFi+Stadium,+Inglewood,+CA",
   },
   {
-    name: "Estadio El Gigante de Acero",
+    name: "El Gigante de Acero",
     city: "Guadalupe, Nuevo León",
     country: "México",
     image: '/stadiums/BBVA.png',

@@ -10,15 +10,43 @@ import { Footer } from '@/app/elements/footer'
 
 import { stadiums } from '@/data/stadiums'
 import { matches } from '@/data/matches'
-
+import { IMatch } from '../components/card-match'
 import { StadiumCard } from '@/app/components/card-stadium-profile'
-
 import { useBreakpoint } from '../hook/use-media-query'
 
 gsap.registerPlugin(ScrollTrigger)
 
 export function StadiumsSection() {
   const sectionRef = useRef<HTMLDivElement>(null)
+
+  function GetStageOrder(match: IMatch) {
+  if (match.group) {
+    return 0
+  }
+
+  switch (match.stage) {
+    case '16 avos':
+      return 1
+
+    case 'Oitavas':
+      return 2
+
+    case 'Quartas':
+      return 3
+
+    case 'Semifinal':
+      return 4
+
+    case '3° Lugar':
+      return 5
+
+    case 'Final':
+      return 6
+
+    default:
+      return 999
+  }
+}
 
   // BREAKPOINTS INDIVIDUAIS
   
@@ -120,9 +148,9 @@ export function StadiumsSection() {
 
       <div className="flex flex-wrap justify-center gap-6 px-8">
         {stadiums.map(function (stadium) {
-          const stadiumMatches = matches.filter(function (match) {
-            return match.stadium === stadium.name
-          })
+          const stadiumMatches = 
+            matches.filter(match => match.stadium.trim() === stadium.name.trim())
+            .sort((a,b) => GetStageOrder(a) - GetStageOrder(b))
 
           return (
             <div

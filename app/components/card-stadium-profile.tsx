@@ -197,48 +197,60 @@ export function StadiumCard({
 
               <div className="flex-1 space-y-3 overflow-y-auto pr-1">
                 {matches.length > 0 ? (
-                  matches.slice(0, 5).map(function (match) {
+                  matches.map(match => {
                     return (
                       <div
                         key={match.id}
-                        className="w-full px-3 py-1 rounded-lg
-                          border border-white/5 bg-white/5
-                          hover:border-amber-300
-                          transition-all duration-300 ease-in-out
-                        "
+                        className="w-full px-3 py-1
+                          rounded-lg border border-white/5 bg-white/5
+                          transition-all duration-300
+                          hover:border-amber-300"
                       >
-                        <div className=" flex items-center justify-center gap-4">
-                          <div className="flex items-center gap-2 font-medium text-white">
-                            <Image
-                              src={match.home.flag}
-                              alt={match.home.code}
-                              width={26}
-                              height={26}
-                            />
+                          <span
+                            className="px-2 py-0.5 text-center block
+                              text-xs font-bold uppercase tracking-wider text-amber-300"
+                          >
+                            {match.group ? `Grupo ${match.group}` : match.stage}
+                          </span>
+                        
 
-                            <span>{match.home.code}</span>
+                        <div className="mt-2 flex items-center justify-center gap-3">
 
-                            <span className="text-zinc-500">x</span>
+                          <Image
+                            src={match.home.flag}
+                            alt={match.home.code}
+                            width={26}
+                            height={26}
+                          />
 
-                            <span>{match.away.code}</span>
+                          <span className="font-semibold">
+                            {match.home.code}
+                          </span>
 
-                            <Image
-                              src={match.away.flag}
-                              alt={match.away.code}
-                              width={26}
-                              height={26}
-                            />
-                          </div>
+                          <span className="text-zinc-500">
+                            x
+                          </span>
+
+                          <span className="font-semibold">
+                            {match.away.code}
+                          </span>
+
+                          <Image
+                            src={match.away.flag}
+                            alt={match.away.code}
+                            width={26}
+                            height={26}
+                          />
                         </div>
 
-                        <p className="mt-1 text-center text-xs text-zinc-400">
+                        <p className="mt-2 text-center tracking-wider text-xs text-zinc-400">
                           {match.date} • {match.time}
                         </p>
                       </div>
                     )
                   })
                 ) : (
-                  <p className="text-sm text-zinc-500">
+                  <p className="text-sm text-zinc-500 text-center">
                     Nenhuma partida cadastrada para este estádio.
                   </p>
                 )}
