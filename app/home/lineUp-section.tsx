@@ -121,7 +121,7 @@ export function LineUpSection() {
           ${mobileRangeFull ? 'text-4xl' : 'text-6xl'}
           tracking-wide leading-tight`}
         >
-          Quem estará em <span className='text-amber-300'>campo</span>?
+          Quais estrelas brilharam em <span className='text-amber-300'>campo</span>?
         </h2>
 
         <div className={`flex gap-4 

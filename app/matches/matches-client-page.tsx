@@ -41,20 +41,34 @@ type TSortMode =
   | 'team'
   | 'favorites'
 
+type TBracket =
+  | 'groups'
+  | 'knockout'
+  | 'finals'
+
 export default function MatchesClientPage() {
   const cardsRef = useRef<HTMLDivElement[]>([])
 
   const [searchValue, setSearchValue] = useState('')
-  const [dateFilter, setDateFilter] = useState<TDateFilter>('upcoming')
 
-  const [sortMode, setSortMode] = useState<TSortMode>('group')
+  /*
+  const [dateFilter, setDateFilter] =
+    useState<TDateFilter>('upcoming')
+  */
+
+  const [sortMode, setSortMode] =
+    useState<TSortMode>('group')
+
+  const [phaseBracket, setPhaseBracket] =
+    useState<TBracket>('groups')
 
   const [favorites, setFavorites] = useState<number[]>(() => {
     if (typeof window === 'undefined') {
       return []
     }
 
-    const storedFavorites = localStorage.getItem('favorites')
+    const storedFavorites =
+      localStorage.getItem('favorites')
 
     if (!storedFavorites) {
       return []
@@ -67,7 +81,12 @@ export default function MatchesClientPage() {
     }
   })
 
-  const [showScrollTop, setShowScrollTop] = useState(false)
+  const [showScrollTop, setShowScrollTop] =
+    useState(false)
+
+  // ---------------------------------------------------------------------------
+  // HANDLERS
+  // ---------------------------------------------------------------------------
 
   function HandleScrollToTop() {
     window.scrollTo({
@@ -76,7 +95,53 @@ export default function MatchesClientPage() {
     })
   }
 
-  function GetMatchPhaseLabel(match: typeof matches[number]) {
+  function HandleFavorite(matchId: number) {
+    setFavorites(prev => {
+      const alreadyFavorite =
+        prev.includes(matchId)
+
+      const updatedFavorites =
+        alreadyFavorite
+          ? prev.filter(id => id !== matchId)
+          : [...prev, matchId]
+
+      localStorage.setItem(
+        'favorites',
+        JSON.stringify(updatedFavorites)
+      )
+
+      if (alreadyFavorite) {
+        toast.info(
+          'Partida removida dos favoritos'
+        )
+      }
+
+      if (!alreadyFavorite) {
+        toast.success(
+          'Partida adicionada aos favoritos'
+        )
+      }
+
+      return updatedFavorites
+    })
+  }
+
+  function HandleClearFilters() {
+    setSearchValue('')
+    setPhaseBracket('groups')
+
+    /*
+    setDateFilter('upcoming')
+    */
+  }
+
+  // ---------------------------------------------------------------------------
+  // HELPERS
+  // ---------------------------------------------------------------------------
+
+  function GetMatchPhaseLabel(
+    match: typeof matches[number]
+  ) {
     if (match.group) {
       return `Grupo ${match.group}`
     }
@@ -88,7 +153,8 @@ export default function MatchesClientPage() {
     match: typeof matches[number],
     search: string
   ) {
-    const normalizedSearch = NormalizeText(search)
+    const normalizedSearch =
+      NormalizeText(search)
 
     if (!normalizedSearch) {
       return false
@@ -109,10 +175,35 @@ export default function MatchesClientPage() {
     ]
 
     return fields.some(field =>
-      NormalizeText(field).includes(normalizedSearch)
+      NormalizeText(field)
+        .includes(normalizedSearch)
     )
   }
 
+  function DoesMatchBracket(
+    match: typeof matches[number],
+    phase: TBracket
+  ) {
+    if (phase === 'groups') {
+      return !!match.group
+    }
+
+    if (phase === 'knockout') {
+      return [
+        '16 avos',
+        'Oitavas',
+        'Quartas'
+      ].includes(match.stage ?? '')
+    }
+
+    return [
+      'Semifinal',
+      '3° Lugar',
+      'Final'
+    ].includes(match.stage ?? '')
+  }
+
+  /*
   function DoesMatchDateFilter(
     match: typeof matches[number],
     filter: TDateFilter
@@ -138,37 +229,9 @@ export default function MatchesClientPage() {
     return matchDate >= today
   }
 
-  function HandleFavorite(matchId: number) {
-    setFavorites(prev => {
-      const alreadyFavorite = prev.includes(matchId)
-
-      const updatedFavorites = alreadyFavorite
-        ? prev.filter(id => id !== matchId)
-        : [...prev, matchId]
-
-      localStorage.setItem(
-        'favorites',
-        JSON.stringify(updatedFavorites)
-      )
-
-      if (alreadyFavorite) {
-        toast.info('Partida removida dos favoritos')
-      }
-
-      if (!alreadyFavorite) {
-        toast.success('Partida adicionada aos favoritos')
-      }
-
-      return updatedFavorites
-    })
-  }
-
-  function HandleClearFilters() {
-    setSearchValue('')
-    setDateFilter('upcoming')
-  }
-
-  function IsOldMatch(match: typeof matches[number]) {
+  function IsOldMatch(
+    match: typeof matches[number]
+  ) {
     const today = NormalizeDate(new Date())
     const yesterday = AddDays(today, -1)
 
@@ -176,6 +239,7 @@ export default function MatchesClientPage() {
 
     return matchDate < yesterday
   }
+  */
 
   function GetStageOrder(stage?: string) {
     switch (stage) {
@@ -202,13 +266,49 @@ export default function MatchesClientPage() {
     }
   }
 
+  // ---------------------------------------------------------------------------
+  // DERIVED STATE
+  // ---------------------------------------------------------------------------
+
+  const hasActiveFilters =
+    searchValue.trim().length > 0 ||
+    phaseBracket !== 'groups'
+
+  /*
   const hasActiveFilters =
     searchValue.trim().length > 0 ||
     dateFilter !== 'upcoming'
+  */
 
   const filteredMatches = useMemo(() => {
     return matches.filter(match => {
+      const matchesSearch =
+        searchValue.trim()
+          ? DoesMatchSearch(
+              match,
+              searchValue
+            )
+          : true
 
+      const matchesPhase =
+        DoesMatchBracket(
+          match,
+          phaseBracket
+        )
+
+      return (
+        matchesSearch &&
+        matchesPhase
+      )
+    })
+  }, [
+    searchValue,
+    phaseBracket
+  ])
+
+  /*
+  const filteredMatches = useMemo(() => {
+    return matches.filter(match => {
       const isSearching =
         searchValue.trim().length > 0
 
@@ -229,7 +329,10 @@ export default function MatchesClientPage() {
           : true
 
       const matchesDate =
-        DoesMatchDateFilter(match, dateFilter)
+        DoesMatchDateFilter(
+          match,
+          dateFilter
+        )
 
       return (
         matchesSearch &&
@@ -237,13 +340,13 @@ export default function MatchesClientPage() {
       )
     })
   }, [searchValue, dateFilter])
+  */
 
   const sortedMatches = useMemo(() => {
     const copiedMatches = [...filteredMatches]
 
     if (sortMode === 'group') {
       return copiedMatches.sort((a, b) => {
-
         if (a.group && b.group) {
           return a.group.localeCompare(b.group)
         }
@@ -256,7 +359,10 @@ export default function MatchesClientPage() {
           return 1
         }
 
-        return GetStageOrder(a.stage) - GetStageOrder(b.stage)
+        return (
+          GetStageOrder(a.stage) -
+          GetStageOrder(b.stage)
+        )
       })
     }
 
@@ -271,38 +377,63 @@ export default function MatchesClientPage() {
     if (sortMode === 'team') {
       return copiedMatches.sort(
         (a, b) =>
-          a.home.name.localeCompare(b.home.name)
+          a.home.name.localeCompare(
+            b.home.name
+          )
       )
     }
 
     if (sortMode === 'favorites') {
       return copiedMatches.sort((a, b) => {
-        const aFavorite = favorites.includes(a.id)
-        const bFavorite = favorites.includes(b.id)
+        const aFavorite =
+          favorites.includes(a.id)
 
-        return Number(bFavorite) - Number(aFavorite)
+        const bFavorite =
+          favorites.includes(b.id)
+
+        return (
+          Number(bFavorite) -
+          Number(aFavorite)
+        )
       })
     }
 
     return copiedMatches
-  }, [filteredMatches, sortMode, favorites])
+  }, [
+    filteredMatches,
+    sortMode,
+    favorites
+  ])
 
   const highlightedMatchId =
     sortedMatches[0]?.id ?? null
 
+  const hasAnyResult =
+    !searchValue.trim() ||
+    highlightedMatchId !== null
+
+  // ---------------------------------------------------------------------------
   // BREAKPOINTS
+  // ---------------------------------------------------------------------------
+
   const isMobileXS =
     useBreakpoint('mobileXS')
+
   const isMobileSM =
     useBreakpoint('mobileSM')
+
   const isMobileMD =
     useBreakpoint('mobileMD')
+
   const isMobileLG =
     useBreakpoint('mobileLG')
+
   const isMobileXL =
     useBreakpoint('mobileXL')
+
   const isTabletSM =
     useBreakpoint('tabletSM')
+
   const isTabletMD =
     useBreakpoint('tabletMD')
 
@@ -316,6 +447,10 @@ export default function MatchesClientPage() {
   const tabletRangeFull =
     isTabletSM ||
     isTabletMD
+
+  // ---------------------------------------------------------------------------
+  // EFFECTS
+  // ---------------------------------------------------------------------------
 
   useEffect(() => {
     const cards = cardsRef.current
@@ -375,19 +510,13 @@ export default function MatchesClientPage() {
         HandleScroll
       )
   }, [])
-
-  const hasAnyResult =
-    !searchValue.trim() ||
-    highlightedMatchId !== null
-
   return (
     <div className="min-h-svh relative">
       <LinkToBack href="/" />
 
       <HeaderPageTitle
         title="Partidas"
-        description="Quatro Países e a briga para subir ao pódio."
-        //"Agora é Mata-Mata raiz: quem vencer fica, quem perder volta pra casa." //
+        description="Confira todos os confrontos da maior edição já realizada."
       />
 
       <div className="w-full">
@@ -458,23 +587,34 @@ export default function MatchesClientPage() {
                 "
               >
                 <ButtonFilterElement
-                  title={mobileRangeFull || tabletRangeFull ? 'Ontem' : 'O que rolou ontem'}
-                  active={dateFilter === 'yesterday'}
+                  title={mobileRangeFull || tabletRangeFull ? 'Grupos' : 'Fase de grupos'}
+                  //title={mobileRangeFull || tabletRangeFull ? 'Ontem' : 'O que rolou ontem'}
+                  active={phaseBracket === 'groups'}
+                  //active={dateFilter === 'yesterday'}
                   accent="amber"
-                  onClick={() => setDateFilter('yesterday')}
+                  showPulse
+                  onClick={() => setPhaseBracket('groups')}
+                  //onClick={() => setDateFilter('yesterday')}
                 />
                 <ButtonFilterElement
-                  title={mobileRangeFull || tabletRangeFull ? 'Hoje' : 'Jogos do dia'}
-                  active={dateFilter === 'today'}
+                  title={mobileRangeFull || tabletRangeFull ? 'Eliminatórias' : 'Fase Eliminatória'}
+                  //title={mobileRangeFull || tabletRangeFull ? 'Hoje' : 'Jogos do dia'}
+                  active={phaseBracket === 'knockout'}
+                  //active={dateFilter === 'today'}
                   accent="cyan"
                   showPulse
-                  onClick={() => setDateFilter('today')}
+                  onClick={() => setPhaseBracket('knockout')}
+                  //onClick={() => setDateFilter('today')}
                 />
                 <ButtonFilterElement
-                  title={mobileRangeFull || tabletRangeFull ? 'Amanhã' : 'O que vem amanhã?'}
-                  active={dateFilter === 'tomorrow'}
+                  title={mobileRangeFull || tabletRangeFull ? 'Finais' : 'Confrontos Finais'}
+                  //title={mobileRangeFull || tabletRangeFull ? 'Amanhã' : 'O que vem amanhã?'}
+                  active={phaseBracket === 'finals'}
+                  //active={dateFilter === 'tomorrow'}
                   accent="purple"
-                  onClick={() => setDateFilter('tomorrow')}
+                  showPulse
+                  onClick={() => setPhaseBracket('finals')}
+                  //onClick={() => setDateFilter('tomorrow')}
                 />
               </div>
               <div className="xl:w-1/2 flex flex-row gap-3">
@@ -499,7 +639,7 @@ export default function MatchesClientPage() {
                       value={searchValue}
                       onChange={setSearchValue}
                       hasAnyResult={hasAnyResult}
-                      placeholder="Procure sua seleção"
+                      placeholder="Procure uma seleção ou fase"
                     />
                   </div>
                 </div>

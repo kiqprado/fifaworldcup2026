@@ -10,6 +10,7 @@ interface ICardButton extends ComponentProps<typeof Link> {
   iconProps?: LucideProps
   title: string
   about: string
+  desktopRangeFull: boolean
 }
 
 export function CardButton({
@@ -17,6 +18,7 @@ export function CardButton({
   title,
   about,
   iconProps,
+  desktopRangeFull,
   ...props
 }: ICardButton) {
   return (
@@ -32,15 +34,14 @@ export function CardButton({
     >
       <Link
         {...props}
-        className="
+        className={`${desktopRangeFull ? 'min-w-132' : ''}
           group relative flex flex-col gap-3
           px-6 py-5 rounded-xl
           bg-gradient-to-b from-zinc-900 to-zinc-950
           border border-zinc-700
           overflow-hidden
           transition-all duration-500 ease-out
-          hover:border-amber-300/60
-        "
+          hover:border-amber-300/60`}
         style={{ perspective: '1000px' }}
       >
         <div

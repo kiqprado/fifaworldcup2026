@@ -272,25 +272,29 @@ export function CardTeamsOnDeathMatchBracket({ match }: ICardTeamsOnDeathMatchBr
 
         <div
           className="relative
-            rounded-xl
-            overflow-hidden
-            bg-zinc-900
-            border
-            border-zinc-800
+            rounded-xl overflow-hidden
+            bg-zinc-900 border border-zinc-800
           "
         >
+         <div className={`flex items-center justify-between px-6 py-2`}>
+            <span
+              className='tracking-widest font-bold text-amber-300'
+            >
+              {match.stage}
+            </span>
 
-          <Link
-            href={`/matches`}
-            target='_blank'
-            className="px-6 py-2 block
-              text-sm text-center tracking-wider
-              text-amber-300 bg-zinc-900 hover:text-cyan-300
-              transition-all duration-300 ease-in-out
-            "
-          >
-            Exibir detalhes da partida
-          </Link>
+            <Link
+              href={`/matches`}
+              target='_blank'
+              className="
+                text-sm text-center tracking-wider
+                text-amber-300 bg-zinc-900 hover:text-cyan-300
+                transition-all duration-300 ease-in-out
+              "
+            >
+              { mobileRangeFull ? 'Detalhes': 'Detalhes da partida'}
+            </Link>
+         </div>
 
           <div className="border-t border-zinc-800">
 

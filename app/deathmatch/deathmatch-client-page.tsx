@@ -130,12 +130,9 @@ export default function DeathMatchClientPage({ teamCode }: IDeathMatchClientPage
 
     <HeaderPageTitle
       title="Finais" 
-      description="O mundo vai parar. Dois gigantes, um destino: a taça mais cobiçada do planeta."
+      description="Agora que o apito final já ecoou, é hora de reviver a jornada: explore o catálogo e reveja cada passo, 
+      drama e cada gol de toda a fase eliminatória."
     />
-    {/*
-    - Quatro vagas preenchidas. É sangue, suor e vaga na decisão, quem vai resistir?
-    - A glória está logo ali. Oito gigantes em campo, quatro vagas na história. Quem vai resistir?*/}
-
     <div className={`${mobileRangeFull ? 'w-full' : 'w-[80%]'}`}>
       <div
         className={`
@@ -226,7 +223,9 @@ export default function DeathMatchClientPage({ teamCode }: IDeathMatchClientPage
           </div>
         ) : (
           matches
-            .filter(match => match.stage && ['3° Lugar', 'Final'].includes(match.stage))
+            .filter(match => 
+              match.stage && ['16 avos', 'Oitavas', 'Quartas', 'Semifinal', '3° Lugar', 'Final'].includes(match.stage)
+            )
             .map(match => (
               <div
                 key={match.id}

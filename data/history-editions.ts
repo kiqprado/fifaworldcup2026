@@ -23,4 +23,5 @@ export const editions: IHistoryEdition[] = [
   { year: "2014", host: "Brasil", flag: "/flags/de.png", champion: "Alemanha", fact: "O 7×1: a Alemanha humilhou o Brasil na semifinal no Mineirão, resultado que chocou o mundo. Na final, a Alemanha venceu a Argentina na prorrogação com gol de Götze." },
   { year: "2018", host: "Rússia", flag: "/flags/fr.png", champion: "França", fact: "A jovem França de Mbappé (19 anos) dominou o torneio. Venceu a Croácia por 4×2 na final. O VAR foi utilizado pela primeira vez em uma Copa do Mundo." },
   { year: "2022", host: "Catar", flag: "/flags/ar.png", champion: "Argentina", fact: "A melhor final da história: Argentina 3×3 França, com hat-trick de Mbappé e dois gols de Messi. Argentina venceu nos pênaltis. Messi finalmente conquistou o único troféu que faltava." },
+  { year: "2026", host: "EUA, CAN, MEX", flag: "/flags/es.png", champion: "Espanha", fact: "A Espanha conquistou o bicampeonato na primeira Copa com 48 seleções. A campanha invicta comandada por Lamine Yamal que, aos 19 anos, repetiu o feito de Pelé e Mbappé ao brilhar como o melhor jovem do torneio mundial." },
 ];

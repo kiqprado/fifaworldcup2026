@@ -124,25 +124,20 @@ export function AboutSection() {
         </div>
       </div>
 
-      <div className={`flex ${mobileRangeFull || tabletRangeFull ? 'flex-col gap-6 justify-center' : 'justify-evenly'}`}>
+      <div 
+        className={`
+          flex ${mobileRangeFull || tabletRangeFull ? 'flex-col gap-6 justify-center' : 'flex-wrap gap-8 justify-center'}`
+        }
+      >
         
         <div className='about-card'>
           <CardButton
             href={'/teams'}
             title="Seleções"
-            about="48 Seleções classificadas para a maior Copa da história"
+            about="48 Seleções e a maior Copa da história"
             icon={ShieldUser}
             iconProps={{ className: 'text-lime-500' }}
-          />
-        </div>
-
-        <div className='about-card'>
-          <CardButton
-            href={'/deathmatch'}
-            title="Finais"
-            about="Vale o pódio. 3°, 2° e a Grande Campeã."
-            icon={Trophy}
-            iconProps={{ className: 'text-amber-500' }}
+            desktopRangeFull={desktopRangeFull}
           />
         </div>
 
@@ -153,6 +148,29 @@ export function AboutSection() {
             about="Calendário completo de jogos e resultados"
             icon={Swords}
             iconProps={{ className: 'text-red-500' }}
+            desktopRangeFull={desktopRangeFull}
+          />
+        </div>
+
+         <div className='about-card'>
+          <CardButton
+            href={'/groups'}
+            title="Fase de Grupos"
+            about="Reveja todo o histórico das seleções"
+            icon={Sheet}
+            iconProps={{ className: 'text-blue-500' }}
+            desktopRangeFull={desktopRangeFull}
+          />
+        </div>
+
+        <div className='about-card'>
+          <CardButton
+            href={'/deathmatch'}
+            title="Fase Eliminatória"
+            about="Confira todo o histórico do Mata Mata"
+            icon={Trophy}
+            iconProps={{ className: 'text-amber-500' }}
+            desktopRangeFull={desktopRangeFull}
           />
         </div>
 

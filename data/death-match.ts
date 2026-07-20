@@ -2,77 +2,66 @@ import {ICardTeamsOnDeathMatch }  from '@/app/components/card-death-match'
 
 export const deathMatch: ICardTeamsOnDeathMatch = {
   teams: [
-    /* OITAVAS
     {
       name: 'México',
       flag: '/flags/mx.png',
       code: 'MEX',
       position: '1° grupo A'
     },
-    / 16 avos
     {
       name: 'África do Sul',
       flag: '/flags/za.png',
       code: 'RSA',
       position: '2° grupo A'
-    },/
-    / QUARTAS
+    },
     {
       name: 'Suíça',
       flag: '/flags/ch.png',
       code: 'SUI',
       position: '1° grupo B'
-    }, */
-    /* OITAVAS
+    },
     {
       name: 'Canadá',
       flag: '/flags/ca.png',
       code: 'CAN',
       position: '2° grupo B'
     },
-    /* 16 avos
     {
       name: 'Bósnia e Herzegovina',
       flag: '/flags/ba.png',
       code: 'BIH',
       position: '3° grupo B'
     }, 
-    / OITAVAS
     {
       name: 'Brasil',
       flag: '/flags/br.png',
       code: 'BRA',
       position: '1° grupo C'
-    }, /
-    / QUARTAS
+    },
     {
       name: 'Marrocos',
       flag: '/flags/ma.png',
       code: 'MAR',
       position: '2° grupo C'
     },
-    /* OITAVAS
     {
       name: 'Estados Unidos',
       flag: '/flags/us.png',
       code: 'USA',
       position: '1° grupo D'
     },
-    /* 16 avos
     {
       name: 'Austrália',
       flag: '/flags/au.png',
       code: 'AUS',
       position: '2° grupo D'
     },
-    / OITAVAS
     {
       name: 'Paraguai',
       flag: '/flags/py.png',
       code: 'PAR',
       position: '3° grupo D'
     },
-    /* 16 avos
     {
       name: 'Alemanha',
       flag: '/flags/de.png',
@@ -108,61 +97,55 @@ export const deathMatch: ICardTeamsOnDeathMatch = {
       flag: '/flags/se.png',
       code: 'SWE',
       position: '3° grupo F'
-    }, /
-    / QUARTAS
+    },
     {
       name: 'Bélgica',
       flag: '/flags/be.png',
       code: 'BEL',
       position: '1° grupo G'
     },
-    /* OITAVAS
     {
       name: 'Egito',
       flag: '/flags/eg.png',
       code: 'EGY',
       position: '2° grupo G'
-    }, */
+    },
     {
       name: 'Espanha',
       flag: '/flags/es.png',
       code: 'ESP',
       position: '1° grupo H'
     },
-    /* 16 avos
     {
       name: 'Cabo Verde',
       flag: '/flags/cv.png',
       code: 'CPV',
       position: '2° grupo H'
-    }, */
+    },
     {
       name: 'França',
       flag: '/flags/fr.png',
       code: 'FRA',
       position: '1° grupo I'
     },
-    /* QUARTAS
     {
       name: 'Noruega',
       flag: '/flags/no.png',
       code: 'NOR',
       position: '2° grupo I'
     },
-    /* 16 avos
     {
       name: 'Senegal',
       flag: '/flags/sn.png',
       code: 'SEN',
       position: '3° grupo I'
-    }, */
+    },
     {
       name: 'Argentina',
       flag: '/flags/ar.png',
       code: 'ARG',
       position: '1° grupo J'
     },
-    /* 16 avos
     {
       name: 'Aústria',
       flag: '/flags/au.png',
@@ -175,34 +158,30 @@ export const deathMatch: ICardTeamsOnDeathMatch = {
       code: 'ALG',
       position: '3° grupo J'
     },
-    / OITAVAS
     {
       name: 'Colômbia',
       flag: '/flags/co.png',
       code: 'COL',
       position: '1° grupo K'
     },
-    /* OITAVAS
     {
       name: 'Portugal',
       flag: '/flags/pt.png',
       code: 'PTG',
       position: '2° grupo K'
     },
-    / 16 avos
     {
       name: 'Congo',
       flag: '/flags/cd.png',
       code: 'COD',
       position: '3° grupo K'
-    }, */
+    },
     {
       name: 'Inglaterra',
       flag: '/flags/en.png',
       code: 'ENG',
       position: '1° grupo L'
     },
-    /* 16 avos
     {
       name: 'Croácia',
       flag: '/flags/co.png',
@@ -214,6 +193,6 @@ export const deathMatch: ICardTeamsOnDeathMatch = {
       flag: '/flags/gh.png',
       code: 'GHA',
       position: '3° grupo L'
-    }, */
+    }
   ],
 }

@@ -80,7 +80,7 @@ export default function HistoryPage() {
 
       <HeaderPageTitle
         title='História das Copas'
-        description='De 1930 a 2022 — cada edição deixou sua marca. Reviva os momentos que definiram o futebol mundial.'
+        description='De 1930 a 2026 — cada edição deixou sua marca. Reviva os momentos que definiram o futebol mundial.'
       />
 
       <div className='flex flex-col gap-10 items-center py-12 px-6'>

@@ -133,7 +133,7 @@ return (
     >
       <div className='history-stat'>
         <DetailsEditionSummary
-          detail='22'
+          detail='23'
           data='Edições realizadas'
         />
       </div>
@@ -154,8 +154,8 @@ return (
 
       <div className='history-stat'>
         <DetailsEditionSummary
-          detail='900+'
-          data='Gols em finais'
+          detail='3.000+'
+          data='Gols na História'
         />
       </div>
     </div>
@@ -218,8 +218,8 @@ return (
 
       <div className='timeline-item'>
         <CupSummaryTimeLine
-          date='2022'
-          preview='Argentina vence a França nos pênaltis em final épica no Catar.'
+          date='2026'
+          preview='A Espanha se tornou a primeira seleção Bicampeã de Copa do Mundo no século XXI'
         />
       </div>
     </div>
