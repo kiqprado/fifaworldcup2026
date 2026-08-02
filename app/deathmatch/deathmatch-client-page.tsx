@@ -129,7 +129,7 @@ export default function DeathMatchClientPage({ teamCode }: IDeathMatchClientPage
     <LinkToBack href="/" />
 
     <HeaderPageTitle
-      title="Finais" 
+      title="Fase Eliminatória" 
       description="Agora que o apito final já ecoou, é hora de reviver a jornada: explore o catálogo e reveja cada passo, 
       drama e cada gol de toda a fase eliminatória."
     />
